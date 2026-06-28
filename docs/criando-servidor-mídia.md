@@ -11,86 +11,78 @@ Utiliza software popular e confiável para automatizar o processo.
 
 :::tip ⌛ Siga estas etapas:
 	
-	1. **Definir os locais padrão:**
+1. **Definir os locais padrão:**
 
-		- Servarr: `C:\ProgramData`.
-		- Torrents: `E:\torrents`.
-		- Mídia: `E:\media`.
+	- Servarr: `C:\ProgramData`.
+   	- Torrents: `E:\torrents`.
+   	- Mídia: `E:\media`.
 
-	2. **Software necessário:** (*Baixe e instale cada um deles*).
+2. **Software necessário:** (_Baixe e instale cada um deles_).
 
-		- Indexador: [Prowlarr](https://prowlarr.com/) + [Byparr](https://github.com/ThePhaseless/Byparr).
-		- Automação: [Radarr](https://radarr.video/) + [Sonarr](https://sonarr.tv/) + [Bazarr](https://www.bazarr.media/). 
-		- Streaming: [Jellyfin](https://jellyfin.org/).
-		- Cliente de Torrent: [qBittorrent](https://www.qbittorrent.org/).
+   	- Indexador: [Prowlarr](https://prowlarr.com/) + [Byparr](https://github.com/ThePhaseless/Byparr).
+   	- Automação: [Radarr](https://radarr.video/) + [Sonarr](https://sonarr.tv/) + [Bazarr](https://www.bazarr.media/). 
+   	- Streaming: [Jellyfin](https://jellyfin.org/).
+   	- Cliente de Torrent: [qBittorrent](https://www.qbittorrent.org/).
 
-	3. **Configurar Prowlarr:**
+3. **Configurar Prowlarr:**
 
-		- **Usuário:** Coloque um nome qualquer.
-		- **Senha:** Insira uma senha qualquer.
-		- **Conexões (requer Chave API):** Adicione o Radarr e Sonarr.
-		- **Indexadores:** 1337x, [Catálogo BeTor](https://catalogo.betor.top/static/catalogo-betor.yml).
-		- **Mínimo de semeadores:** `0`.
-		- **Proxy:** Byparr.
+   	- Usuário: Coloque um nome qualquer.
+   	- Senha: Insira uma senha qualquer.
+   	- Conexões (requer Chave API): Adicione o Radarr e Sonarr.
+   	- Indexadores: 1337x, [Catálogo BeTor](https://catalogo.betor.top/static/catalogo-betor.yml).
+   	- Mínimo de semeadores: `0`.
+   	- Proxy: Byparr.
 
-	4. **Configurar Radarr:**
+4. **Configurar Radarr:**
 
-		- **Usuário:** Coloque um nome qualquer.
-		- **Senha:** Insira uma senha qualquer.
-		- **Conexões:** Adicione o qBittorrent. (*Requer Chave API*).
-		- **Renomear automaticamente:** Ativado.
-		- **Propers e repacks:** Desativado.
-		- **Monitorar:** Somente filme.
-		- **Formatos personalizados:** (*Insira no painel cada código abaixo*).
-					
-			`{ "name": "WEBDL-1080p", "includeCustomFormatWhenRenaming": false, "specifications": [ { "name": "Fonte", "implementation": "SourceSpecification", "negate": false, "required": false, "fields": { "value": 7 } } ] }`
+   	- Usuário: Coloque um nome qualquer.
+   	- Senha: Insira uma senha qualquer.
+   	- Conexões: Adicione o qBittorrent. (*Requer Chave API*).
+   	- Renomear automaticamente: Ativado.
+   	- Propers e repacks: Desativado.
+   	- Monitorar: Somente filme.
+   	- Formatos personalizados: (_Insira no painel cada código abaixo_).
+
+`{ "name": "WEBDL-1080p", "includeCustomFormatWhenRenaming": false, "specifications": [ { "name": "Fonte", "implementation": "SourceSpecification", "negate": false, "required": false, "fields": { "value": 7 } } ] }`
+`{ "name": "Portuguese", "includeCustomFormatWhenRenaming": false, "specifications": [ { "name": "Idioma", "implementation": "LanguageSpecification", "negate": false, "required": false, "fields": { "value": 18, "exceptLanguage": false } } ] }`
+`{ "name": "HDTV-1080p", "includeCustomFormatWhenRenaming": false, "specifications": [ { "name": "Fonte", "implementation": "SourceSpecification", "negate": false, "required": false, "fields": { "value": 6 } } ] }`
+`{ "name": "English", "includeCustomFormatWhenRenaming": false, "specifications": [ { "name": "Idioma", "implementation": "LanguageSpecification", "negate": false, "required": false, "fields": { "value": 1, "exceptLanguage": false } } ] }`
+`{ "name": "Bluray-1080p", "includeCustomFormatWhenRenaming": false, "specifications": [ { "name": "Fonte", "implementation": "SourceSpecification", "negate": false, "required": false, "fields": { "value": 9 } } ] }`
+
+5. **Configurar Sonarr:**
+
+   	- Usuário: Coloque um nome qualquer.
+   	- Senha: Insira uma senha qualquer.
+   	- Conexões: Adicione o qBittorrent. (_Requer Chave API_).
+   	- Renomear automaticamente: Ativado.
+   	- Propers e repacks: Desativado.
+   	- Sonarr: Episódios ausentes.
+   	- Formato de pasta das séries: `{Series TitleYear}`.
+   	- Formatos personalizados: (_Insira no painel cada código abaixo_).
 			
-			`{ "name": "Portuguese", "includeCustomFormatWhenRenaming": false, "specifications": [ { "name": "Idioma", "implementation": "LanguageSpecification", "negate": false, "required": false, "fields": { "value": 18, "exceptLanguage": false } } ] }`
-			
-			`{ "name": "HDTV-1080p", "includeCustomFormatWhenRenaming": false, "specifications": [ { "name": "Fonte", "implementation": "SourceSpecification", "negate": false, "required": false, "fields": { "value": 6 } } ] }`
-			
-			`{ "name": "English", "includeCustomFormatWhenRenaming": false, "specifications": [ { "name": "Idioma", "implementation": "LanguageSpecification", "negate": false, "required": false, "fields": { "value": 1, "exceptLanguage": false } } ] }`
-			
-			`{ "name": "Bluray-1080p", "includeCustomFormatWhenRenaming": false, "specifications": [ { "name": "Fonte", "implementation": "SourceSpecification", "negate": false, "required": false, "fields": { "value": 9 } } ] }`
-
-	5. **Configurar Sonarr:**
-
-		- **Usuário:** Coloque um nome qualquer.
-		- **Senha:** Insira uma senha qualquer.
-		- **Conexões:** Adicione o qBittorrent. (*Requer Chave API*).
-		- **Renomear automaticamente:** Ativado.
-		- **Propers e repacks:** Desativado.
-		- **Sonarr:** Episódios ausentes.
-		- **Formato de pasta das séries:** `{Series TitleYear}`.
-		- **Formatos personalizados:** (*Insira no painel cada código abaixo*).
-			
-			`{ "name": "WEBDL-1080p", "includeCustomFormatWhenRenaming": false, "specifications": [ { "name": "Fonte", "implementation": "SourceSpecification", "negate": false, "required": false, "fields": { "value": 3 } } ] }`
-				
-			`{ "name": "Portuguese", "includeCustomFormatWhenRenaming": false, "specifications": [ { "name": "Idioma", "implementation": "LanguageSpecification", "negate": false, "required": false, "fields": { "value": 18, "exceptLanguage": false } } ] }`
-				
-			`{ "name": "HDTV-1080p", "includeCustomFormatWhenRenaming": false, "specifications": [ { "name": "Fonte", "implementation": "SourceSpecification", "negate": false, "required": false, "fields": { "value": 1 } } ] }`
-				
-			`{ "name": "English", "includeCustomFormatWhenRenaming": false, "specifications": [ { "name": "Idioma", "implementation": "LanguageSpecification", "negate": false, "required": false, "fields": { "value": 1, "exceptLanguage": false } } ] }`
-			
-			`{ "name": "Bluray-1080p", "includeCustomFormatWhenRenaming": false, "specifications": [ { "name": "Fonte", "implementation": "SourceSpecification", "negate": false, "required": false, "fields": { "value": 6 } } ] }`
+`{ "name": "WEBDL-1080p", "includeCustomFormatWhenRenaming": false, "specifications": [ { "name": "Fonte", "implementation": "SourceSpecification", "negate": false, "required": false, "fields": { "value": 3 } } ] }`
+`{ "name": "Portuguese", "includeCustomFormatWhenRenaming": false, "specifications": [ { "name": "Idioma", "implementation": "LanguageSpecification", "negate": false, "required": false, "fields": { "value": 18, "exceptLanguage": false } } ] }`
+`{ "name": "HDTV-1080p", "includeCustomFormatWhenRenaming": false, "specifications": [ { "name": "Fonte", "implementation": "SourceSpecification", "negate": false, "required": false, "fields": { "value": 1 } } ] }`
+`{ "name": "English", "includeCustomFormatWhenRenaming": false, "specifications": [ { "name": "Idioma", "implementation": "LanguageSpecification", "negate": false, "required": false, "fields": { "value": 1, "exceptLanguage": false } } ] }`
+`{ "name": "Bluray-1080p", "includeCustomFormatWhenRenaming": false, "specifications": [ { "name": "Fonte", "implementation": "SourceSpecification", "negate": false, "required": false, "fields": { "value": 6 } } ] }`
 		
-		- **Perfis de qualidade padrão:** HD-1080p .
-			- **Idioma:** Any.
-			- **Ordem e definições de qualidades:**
-				- **WEBDL-1080p** `10` `100` `200`. (*Retire todos do grupo*).
-				- **Bluray-1080p** `8` `80` `180`.
-				- **HDTV-1080p** `4` `40` `140`.
-			- **Pontuações:**
-				- **Portuguese:** `30`.
-				- **English:** `20`.
-				- **WEBDL-1080p:** `15`.
-				- **Bluray-1080p:** `10`.
-				- **HDTV-1080p:** `5`.
+	- Perfis de qualidade padrão: HD-1080p.
+		- Idioma: Any.
+   		- Ordem e definições de qualidades:
+   			- WEBDL-1080p: `10` `100` `200`. (_Retire todos do grupo_).
+   			- Bluray-1080p: `8` `80` `180`.
+   			- HDTV-1080p: `4` `40` `140`.
+   		- Pontuações:
+   			- Portuguese: `30`.
+   			- English: `20`.
+   			- WEBDL-1080p: `15`.
+   			- Bluray-1080p: `10`.
+   			- HDTV-1080p: `5`.
 
-		- **Perfis de lançamentos:**
-			- **Não deve conter:** `multi` `fullhd` `hdr10+` `imax`.
+	- Perfis de lançamentos:
+		- Não deve conter: `multi` `fullhd` `hdr10+` `imax`.
 
-	6. **Configurar Bazarr**:
+6. **Configurar Bazarr**:
 
 		- **Usuário:** Coloque um nome qualquer.
 		- **Senha:** Insira uma senha qualquer.
