@@ -2,13 +2,14 @@
 
 ---
 
-!!! info Qual o objetivo deste guia?
+:::info 🤔 Qual o objetivo deste guia?
 	Configurar manualmente um Servidor de Mídia no Windows.
 	Utiliza software popular e confiável para automatizar o processo.
+:::
 
 ---
 
-!!! note Siga estas etapas:
+:::tip ⌛ Siga estas etapas:
 	
 	1. **Definir os locais padrão:**
 
@@ -207,3 +208,4 @@ if os.path.isdir(target):
 elif os.path.isfile(target):
     process_file(target)
 ```
+   :::
