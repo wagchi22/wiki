@@ -2,9 +2,10 @@
 
 ---
 
-> [!NOTE] 🤔 Qual o objetivo deste guia?
->	Configurar manualmente um Servidor de Mídia no Windows.
->	Utiliza software popular e confiável para automatizar o processo.
+:::info 🤔 Qual o objetivo deste guia?
+Configurar manualmente um Servidor de Mídia no Windows.
+Utiliza software popular e confiável para automatizar o processo.
+:::
 
 ---
 
