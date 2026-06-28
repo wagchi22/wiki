@@ -7,10 +7,6 @@
 >	Configurar manualmente um Servidor de Mídia no Windows.
 >	Utiliza software popular e confiável para automatizar o processo.
 
-<div style="padding: 15px; border: 1px solid #3085d6; border-radius: 8px; background-color: #f0f8ff; color: #000;">
-    <p>🤖 <b>Qual o objetivo deste guia?</b> Configurar manualmente um Servidor de Mídia no Windows. Utiliza software popular e confiável para automatizar o processo.</p>
-</div>
-
 ---
 
 :::tip ⌛ Siga estas etapas:
