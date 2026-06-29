@@ -69,7 +69,7 @@ Usa software popular e confiável para automatizar o processo.
 { "name": "English", "includeCustomFormatWhenRenaming": false, "specifications": [ { "name": "Idioma", "implementation": "LanguageSpecification", "negate": false, "required": false, "fields": { "value": 1, "exceptLanguage": false } } ] }
 { "name": "Bluray-1080p", "includeCustomFormatWhenRenaming": false, "specifications": [ { "name": "Fonte", "implementation": "SourceSpecification", "negate": false, "required": false, "fields": { "value": 6 } } ] }
 ```
-		
+
 	- Perfis de qualidade padrão: HD-1080p.
 		- Idioma: Any.
    		- Ordem e definições de qualidades:
@@ -82,7 +82,6 @@ Usa software popular e confiável para automatizar o processo.
    			- WEBDL-1080p: `15`.
    			- Bluray-1080p: `10`.
    			- HDTV-1080p: `5`.
-
 	- Perfis de lançamentos:
 		- Não deve conter: `multi` `fullhd` `hdr10+` `imax`.
 
