@@ -111,7 +111,7 @@ Usa software popular e confiável para automatizar o processo.
 
 6. 🔴 **Configurar Bazarr:**
 
-	- Usuário:Coloque um nome qualquer.
+	- Usuário: Coloque um nome qualquer.
 	- Senha: Insira uma senha qualquer.
 	- Conexões: Adicione o Radarr e Sonarr. (_Requer Chave API_).
 	- Legenda padrão para nova mídia: Ativado.
