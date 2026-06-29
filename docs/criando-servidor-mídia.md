@@ -57,8 +57,8 @@ Usa software popular e confiável para automatizar o processo.
 		- Não deve conter: `multi` `fullhd` `hdr10+` `imax`.
    	- Formatos personalizados: (_Insira no painel cada código abaixo_).
 
-<details>
-  <summary><b>👉 Ver o código</b></summary>
+  <details>
+    <summary><b>👉 Ver o código</b></summary>
 
   ```yaml
   { "name": "WEBDL-1080p", "includeCustomFormatWhenRenaming": false, "specifications": [ { "name": "Fonte", "implementation": "SourceSpecification", "negate": false, "required": false, "fields": { "value": 7 } } ] }
@@ -93,8 +93,8 @@ Usa software popular e confiável para automatizar o processo.
    	- Formato de pasta das séries: `{Series TitleYear}`.
    	- Formatos personalizados: (_Insira no painel cada código abaixo_).
 
-<details>
-  <summary><b>👉 Ver o código</b></summary>
+  <details>
+    <summary><b>👉 Ver o código</b></summary>
 
   ```yaml
   { "name": "WEBDL-1080p", "includeCustomFormatWhenRenaming": false, "specifications": [ { "name": "Fonte", "implementation": "SourceSpecification", "negate": false, "required": false, "fields": { "value": 3 } } ] }
@@ -140,8 +140,8 @@ Usa software popular e confiável para automatizar o processo.
 
 	Adicione o código abaixo no **Bloco de Notas** e salve como `Remux.py` na pasta do **Servarr**. No **Agendador de Tarefas** (`taskschd.msc`), crie uma nova tarefa chamada `"Remux"` configurada para rodar `"Ao inicializar"` (mesmo deslogado e sem limite de tempo), definindo a ação de *Iniciar um programa* para executar o script Python via comando `C:\Program Files\Python314\python.exe Remux.py "E:\media"` a partir do diretório `C:\ProgramData`.
 
-<details>
-  <summary><b>👉 Ver o código</b></summary>
+  <details>
+    <summary><b>👉 Ver o código</b></summary>
 
   ```python
   import os, sys, subprocess, ctypes, json
