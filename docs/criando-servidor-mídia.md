@@ -1,10 +1,10 @@
-# Configuração do Servidor de Mídia
+# Criando Servidor de Mídia
 
 ---
 
-:::info 🤔 Qual o objetivo deste guia?
-Configurar manualmente um Servidor de Mídia no Windows.
-Utiliza software popular e confiável para automatizar o processo.
+:::info 🤔 Objetivo deste guia?
+Criar um Servidor de Mídia no Windows.
+Usa software popular e confiável para automatizar o processo.
 :::
 
 ---
@@ -61,12 +61,14 @@ Utiliza software popular e confiável para automatizar o processo.
    	- Sonarr: Episódios ausentes.
    	- Formato de pasta das séries: `{Series TitleYear}`.
    	- Formatos personalizados: (_Insira no painel cada código abaixo_).
-			
-`{ "name": "WEBDL-1080p", "includeCustomFormatWhenRenaming": false, "specifications": [ { "name": "Fonte", "implementation": "SourceSpecification", "negate": false, "required": false, "fields": { "value": 3 } } ] }`
-`{ "name": "Portuguese", "includeCustomFormatWhenRenaming": false, "specifications": [ { "name": "Idioma", "implementation": "LanguageSpecification", "negate": false, "required": false, "fields": { "value": 18, "exceptLanguage": false } } ] }`
-`{ "name": "HDTV-1080p", "includeCustomFormatWhenRenaming": false, "specifications": [ { "name": "Fonte", "implementation": "SourceSpecification", "negate": false, "required": false, "fields": { "value": 1 } } ] }`
-`{ "name": "English", "includeCustomFormatWhenRenaming": false, "specifications": [ { "name": "Idioma", "implementation": "LanguageSpecification", "negate": false, "required": false, "fields": { "value": 1, "exceptLanguage": false } } ] }`
-`{ "name": "Bluray-1080p", "includeCustomFormatWhenRenaming": false, "specifications": [ { "name": "Fonte", "implementation": "SourceSpecification", "negate": false, "required": false, "fields": { "value": 6 } } ] }`
+
+```yaml
+{ "name": "WEBDL-1080p", "includeCustomFormatWhenRenaming": false, "specifications": [ { "name": "Fonte", "implementation": "SourceSpecification", "negate": false, "required": false, "fields": { "value": 3 } } ] }
+{ "name": "Portuguese", "includeCustomFormatWhenRenaming": false, "specifications": [ { "name": "Idioma", "implementation": "LanguageSpecification", "negate": false, "required": false, "fields": { "value": 18, "exceptLanguage": false } } ] }
+{ "name": "HDTV-1080p", "includeCustomFormatWhenRenaming": false, "specifications": [ { "name": "Fonte", "implementation": "SourceSpecification", "negate": false, "required": false, "fields": { "value": 1 } } ] }
+{ "name": "English", "includeCustomFormatWhenRenaming": false, "specifications": [ { "name": "Idioma", "implementation": "LanguageSpecification", "negate": false, "required": false, "fields": { "value": 1, "exceptLanguage": false } } ] }
+{ "name": "Bluray-1080p", "includeCustomFormatWhenRenaming": false, "specifications": [ { "name": "Fonte", "implementation": "SourceSpecification", "negate": false, "required": false, "fields": { "value": 6 } } ] }
+```
 		
 	- Perfis de qualidade padrão: HD-1080p.
 		- Idioma: Any.
@@ -84,44 +86,44 @@ Utiliza software popular e confiável para automatizar o processo.
 	- Perfis de lançamentos:
 		- Não deve conter: `multi` `fullhd` `hdr10+` `imax`.
 
-6. **Configurar Bazarr**:
+6. **Configurar Bazarr:*
+  
+	- Usuário:Coloque um nome qualquer.
+	- Senha: Insira uma senha qualquer.
+	- Conexões: Adicione o Radarr e Sonarr. (_Requer Chave API_).
+	- Legenda padrão para nova mídia: Ativado.
+	- Sincronização automática de legenda: Ativado.
+	- Modificações Sub-Zero: Ative as opções principais.
+	- Provedor de legendas: [Open Subtitles](https://www.opensubtitles.com/).
 
-		- **Usuário:** Coloque um nome qualquer.
-		- **Senha:** Insira uma senha qualquer.
-		- **Conexões:** Adicione o Radarr e Sonarr. (*Requer Chave API*).
-		- **Legenda padrão para nova mídia:** Ativado.
-		- **Sincronização automática de legenda:** Ativado.
-		- **Modificações Sub-Zero:** Ative as opções principais.
-		- **Provedor de legendas:** [Open Subtitles](https://www.opensubtitles.com/).
+7. **Configurar Jellyfin:**
 
-	7. **Configurar Jellyfin:**
+	- Usuário: Coloque um nome qualquer.
+	- Senha: Insira uma senha qualquer.
+	- Agrupar filmes em coleções: Ativado.
+	- Cliente:
+		- Taxa de atualização: No dispositivo.
+		- Cor de legenda: Amarelo.
+		- Tamanho de legenda: 125%.
 
-		- **Usuário:** Coloque um nome qualquer.
-		- **Senha:** Insira uma senha qualquer.
-		- **Agrupar filmes em coleções:** Ativado.
-		- **Cliente:**
-			- **Taxa de atualização:** No dispositivo.
-			- **Cor de legenda:** Amarelo.
-			- **Tamanho de legenda:** 125%.
+8. **Configurar qBittorrent:**
 
-	8. **Configurar qBittorrent:**
+	- Interface Web: Ativado.
+	- Usuário: Coloque um nome qualquer.
+	- Senha: Insira uma senha qualquer.
+	- Limite de semeadura: Parar ao alcançar 0,0.
+	- Modo de gerenciamento de torrents: Automático.
 
-		- **Interface Web:** Ativado.
-		- **Usuário:** Coloque um nome qualquer.
-		- **Senha:** Insira uma senha qualquer.
-		- **Limite de semeadura:** Parar ao alcançar 0,0.
-		- **Modo de gerenciamento de torrents:** Automático.
+9. **Configurar Byparr:**
 
-	9. **Configurar Byparr:**
+	No **Agendador de Tarefas** (`taskschd.msc`), crie a tarefa `"Byparr"` configurada para rodar `"Ao inicializar"` (mesmo deslogado e sem limite de tempo), definindo a ação para iniciar o executável `...\uv.exe` com os argumentos `run "main.py"` a partir de `C:\ProgramData\Byparr`.
 
-		No **Agendador de Tarefas** (`taskschd.msc`), crie a tarefa `"Byparr"` configurada para rodar `"Ao inicializar"` (mesmo deslogado e sem limite de tempo), definindo a ação para iniciar o executável `...\uv.exe` com os argumentos `run "main.py"` a partir de `C:\ProgramData\Byparr`.
+10. **(Opcional) Configurar Remux:** (_Requer [ffmpeg](https://ffmpeg.org/)_).
 
-	10. **(Opcional) Configurar Remux:** (*Requer [ffmpeg](https://ffmpeg.org/)*).
-
-		Adicione o código abaixo no **Bloco de Notas** e salve como `Remux.py` na pasta do **Servarr**. No **Agendador de Tarefas** (`taskschd.msc`), crie uma nova tarefa chamada `"Remux"` configurada para rodar `"Ao inicializar"` (mesmo deslogado e sem limite de tempo), definindo a ação de *Iniciar um programa* para executar o script Python via comando `C:\Program Files\Python314\python.exe Remux.py "E:\media"` a partir do diretório `C:\ProgramData`.
+	Adicione o código abaixo no **Bloco de Notas** e salve como `Remux.py` na pasta do **Servarr**. No **Agendador de Tarefas** (`taskschd.msc`), crie uma nova tarefa chamada `"Remux"` configurada para rodar `"Ao inicializar"` (mesmo deslogado e sem limite de tempo), definindo a ação de *Iniciar um programa* para executar o script Python via comando `C:\Program Files\Python314\python.exe Remux.py "E:\media"` a partir do diretório `C:\ProgramData`.
 :::
 
-``` python
+```python
 import os, sys, subprocess, ctypes, json
 
 def get_file_info(file_path):
