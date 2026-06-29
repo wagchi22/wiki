@@ -1,4 +1,4 @@
-# Criando Servidor de Mídia
+# 📜 Criando Servidor de Mídia
 
 ---
 
@@ -11,13 +11,13 @@ Usa software popular e confiável para automatizar o processo.
 
 :::tip ⌛ Siga estas etapas:
 	
-1. **Definir os locais padrão:**
+1. 🧰 **Definir os locais padrão:**
 
 	- Servarr: `C:\ProgramData`.
    	- Torrents: `E:\torrents`.
    	- Mídia: `E:\media`.
 
-2. **Software necessário:** (_Baixe e instale cada um deles_).
+2. ⚙️ **Software necessário:** (_Baixe e instale cada um deles_).
 
    	- Indexador: [Prowlarr](https://prowlarr.com/) + [Byparr](https://github.com/ThePhaseless/Byparr).
    	- Automação: [Radarr](https://radarr.video/) + [Sonarr](https://sonarr.tv/) + [Bazarr](https://www.bazarr.media/). 
