@@ -95,16 +95,16 @@ Usa software popular e confiável para automatizar o processo.
    	- Formato de pasta das séries: `{Series TitleYear}`.
    	- Formatos personalizados: (_Insira no painel cada código abaixo_).
 
-<details>
-  <summary><b>👉 Ver o código</b></summary>
-  
-  ```json
-  { "name": "WEBDL-1080p", "includeCustomFormatWhenRenaming": false, "specifications": [ { "name": "Fonte", "implementation": "SourceSpecification", "negate": false, "required": false, "fields": { "value": 3 } } ] }
-  { "name": "Portuguese", "includeCustomFormatWhenRenaming": false, "specifications": [ { "name": "Idioma", "implementation": "LanguageSpecification", "negate": false, "required": false, "fields": { "value": 18, "exceptLanguage": false } } ] }
-  { "name": "HDTV-1080p", "includeCustomFormatWhenRenaming": false, "specifications": [ { "name": "Fonte", "implementation": "SourceSpecification", "negate": false, "required": false, "fields": { "value": 1 } } ] }
-  { "name": "English", "includeCustomFormatWhenRenaming": false, "specifications": [ { "name": "Idioma", "implementation": "LanguageSpecification", "negate": false, "required": false, "fields": { "value": 1, "exceptLanguage": false } } ] }
-  { "name": "Bluray-1080p", "includeCustomFormatWhenRenaming": false, "specifications": [ { "name": "Fonte", "implementation": "SourceSpecification", "negate": false, "required": false, "fields": { "value": 6 } } ] }
-  ```
+      <details>
+        <summary><b>👉 Ver o código</b></summary>
+ 
+      ```json
+ 	  { "name": "WEBDL-1080p", "includeCustomFormatWhenRenaming": false, "specifications": [ { "name": "Fonte", "implementation": "SourceSpecification", "negate": false, "required": false, "fields": { "value": 3 } } ] }
+      { "name": "Portuguese", "includeCustomFormatWhenRenaming": false, "specifications": [ { "name": "Idioma", "implementation": "LanguageSpecification", "negate": false, "required": false, "fields": { "value": 18, "exceptLanguage": false } } ] }
+      { "name": "HDTV-1080p", "includeCustomFormatWhenRenaming": false, "specifications": [ { "name": "Fonte", "implementation": "SourceSpecification", "negate": false, "required": false, "fields": { "value": 1 } } ] }
+      { "name": "English", "includeCustomFormatWhenRenaming": false, "specifications": [ { "name": "Idioma", "implementation": "LanguageSpecification", "negate": false, "required": false, "fields": { "value": 1, "exceptLanguage": false } } ] }
+      { "name": "Bluray-1080p", "includeCustomFormatWhenRenaming": false, "specifications": [ { "name": "Fonte", "implementation": "SourceSpecification", "negate": false, "required": false, "fields": { "value": 6 } } ] }
+      ```
 
 </details>
 
