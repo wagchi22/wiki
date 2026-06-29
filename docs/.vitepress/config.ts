@@ -2,7 +2,7 @@ import { defineConfig } from 'vitepress'
 
 export default defineConfig({
   title: "Minhas Anotações",
-  description: "Meu servidor de mídia e guias",
+  description: "Minhas Anotações",
   base: '/meus-arquivos/', 
   
   themeConfig: {
