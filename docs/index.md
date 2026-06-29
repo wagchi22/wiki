@@ -8,7 +8,7 @@ hero:
   actions:
     - theme: brand
       text: Começar a navegar
-      link: /scripts
+      link: /introducao
     - theme: alt
       text: Ver no GitHub
       link: https://github.com/wagchi22/meus-arquivos
