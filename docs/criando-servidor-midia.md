@@ -56,10 +56,10 @@ Usa software popular e confiável para automatizar o processo.
    			- HDTV-1080p: `5`.
 	- Perfis de lançamentos:
 		- Não deve conter: `multi` `fullhd` `hdr10+` `imax`.
-   	- Formatos personalizados: (_Insira no painel cada código abaixo_).
+   	- Formatos personalizados:
 
       <details>
-        <summary><b>👉 Ver o código</b></summary>
+        <summary><b>👉 Exibir código</b></summary>
  
       ```json
       { "name": "WEBDL-1080p", "includeCustomFormatWhenRenaming": false, "specifications": [ { "name": "Fonte", "implementation": "SourceSpecification", "negate": false, "required": false, "fields": { "value": 7 } } ] }
@@ -94,10 +94,10 @@ Usa software popular e confiável para automatizar o processo.
 	- Perfis de lançamentos:
 		- Não deve conter: `multi` `fullhd` `hdr10+` `imax`.
    	- Formato de pasta das séries: `{Series TitleYear}`.
-   	- Formatos personalizados: (_Insira no painel cada código abaixo_).
+   	- Formatos personalizados:
 
       <details>
-        <summary><b>👉 Ver o código</b></summary>
+        <summary><b>👉 Exibir código</b></summary>
  
       ```json
  	  { "name": "WEBDL-1080p", "includeCustomFormatWhenRenaming": false, "specifications": [ { "name": "Fonte", "implementation": "SourceSpecification", "negate": false, "required": false, "fields": { "value": 3 } } ] }
