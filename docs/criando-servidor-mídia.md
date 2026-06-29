@@ -218,4 +218,5 @@ Usa software popular e confiável para automatizar o processo.
       print("\nVarredura e processamento concluídos!")
   elif os.path.isfile(target):
       process_file(target)
+
 :::
