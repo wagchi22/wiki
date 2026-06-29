@@ -144,10 +144,10 @@ Usa software popular e confiável para automatizar o processo.
 
 	Adicione o código abaixo no **Bloco de Notas** e salve como `Remux.py` na pasta do **Servarr**. No **Agendador de Tarefas** (`taskschd.msc`), crie uma nova tarefa chamada `"Remux"` configurada para rodar `"Ao inicializar"` (mesmo deslogado e sem limite de tempo), definindo a ação de *Iniciar um programa* para executar o script Python via comando `C:\Program Files\Python314\python.exe Remux.py "E:\media"` a partir do diretório `C:\ProgramData`.
 
-  <details>
-    <summary><b>👉 Ver o código</b></summary>
-	
-	```python
+<details>
+  <summary><b>👉 Ver o código</b></summary>
+
+  ```python
   import os, sys, subprocess, ctypes, json
 
   def get_file_info(file_path):
@@ -228,7 +228,7 @@ Usa software popular e confiável para automatizar o processo.
       print("\nVarredura e processamento concluídos!")
   elif os.path.isfile(target):
       process_file(target)
-	```
+  ```
 
 </details>
 
