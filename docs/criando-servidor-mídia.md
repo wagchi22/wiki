@@ -59,6 +59,7 @@ Usa software popular e confiável para automatizar o processo.
 
  <details>
   <summary><b>👉 Ver o código</b></summary>
+ 
   ```json
   { "name": "WEBDL-1080p", "includeCustomFormatWhenRenaming": false, "specifications": [ { "name": "Fonte", "implementation": "SourceSpecification", "negate": false, "required": false, "fields": { "value": 7 } } ] }
   { "name": "Portuguese", "includeCustomFormatWhenRenaming": false, "specifications": [ { "name": "Idioma", "implementation": "LanguageSpecification", "negate": false, "required": false, "fields": { "value": 18, "exceptLanguage": false } } ] }
@@ -66,7 +67,8 @@ Usa software popular e confiável para automatizar o processo.
   { "name": "English", "includeCustomFormatWhenRenaming": false, "specifications": [ { "name": "Idioma", "implementation": "LanguageSpecification", "negate": false, "required": false, "fields": { "value": 1, "exceptLanguage": false } } ] }
   { "name": "Bluray-1080p", "includeCustomFormatWhenRenaming": false, "specifications": [ { "name": "Fonte", "implementation": "SourceSpecification", "negate": false, "required": false, "fields": { "value": 9 } } ] }
   ```
-</details>
+
+ </details>
 
 5. **Configurar Sonarr:**
 
@@ -107,7 +109,7 @@ Usa software popular e confiável para automatizar o processo.
 </details>
 
 6. **Configurar Bazarr:**
-  
+
 	- Usuário:Coloque um nome qualquer.
 	- Senha: Insira uma senha qualquer.
 	- Conexões: Adicione o Radarr e Sonarr. (_Requer Chave API_).
