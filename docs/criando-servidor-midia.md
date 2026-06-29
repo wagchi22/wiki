@@ -13,9 +13,9 @@ Usa software popular e confiável para automatizar o processo.
 	
 1. 🧰 **Definir os locais padrão:**
 
-	- Servarr: `C:\ProgramData`.
-   	- Torrents: `E:\torrents`.
-   	- Mídia: `E:\media`.
+	- Servarr: C:\ProgramData.
+   	- Torrents: E:\torrents.
+   	- Mídia: E:\media.
 
 2. ⚙️ **Software necessário:** (_Baixe e instale cada um deles_).
 
@@ -31,7 +31,7 @@ Usa software popular e confiável para automatizar o processo.
    	- Senha: Insira uma senha qualquer.
    	- Conexões (requer Chave API): Adicione o Radarr e Sonarr.
    	- Indexadores: 1337x, [Catálogo BeTor](https://catalogo.betor.top/static/catalogo-betor.yml).
-   	- Mínimo de semeadores: `0`.
+   	- Mínimo de semeadores: 0.
    	- Proxy: Byparr.
 
 4. 🟠 **Byparr:**
@@ -49,17 +49,17 @@ Usa software popular e confiável para automatizar o processo.
    	- Perfis de qualidade padrão: HD-1080p.
 		- Idioma: Any.
    		- Ordem e definições de qualidades:
-   			- WEBDL-1080p: `10` `100` `200`. (_Retire todos do grupo_).
-   			- Bluray-1080p: `8` `80` `180`.
-   			- HDTV-1080p: `4` `40` `140`.
+   			- WEBDL-1080p: 10 100 200. (_Retire todos do grupo_).
+   			- Bluray-1080p: 8 80 180.
+   			- HDTV-1080p: 4 40 140.
    		- Pontuações:
-   			- Portuguese: `30`.
-   			- English: `20`.
-   			- WEBDL-1080p: `15`.
-   			- Bluray-1080p: `10`.
-   			- HDTV-1080p: `5`.
+   			- Portuguese: 30.
+   			- English: 20.
+   			- WEBDL-1080p: 15.
+   			- Bluray-1080p: 10.
+   			- HDTV-1080p: 5.
 	- Perfis de lançamentos:
-		- Não deve conter: `multi` `fullhd` `hdr10+` `imax`.
+		- Não deve conter: multi fullhd hdr10+ imax.
    	- Formatos personalizados:
 
       <details>
@@ -86,18 +86,18 @@ Usa software popular e confiável para automatizar o processo.
    	- Perfis de qualidade padrão: HD-1080p.
 		- Idioma: Any.
    		- Ordem e definições de qualidades:
-   			- WEBDL-1080p: `10` `100` `200`. (_Retire todos do grupo_).
-   			- Bluray-1080p: `8` `80` `180`.
-   			- HDTV-1080p: `4` `40` `140`.
+   			- WEBDL-1080p: 10 100 200. (_Retire todos do grupo_).
+   			- Bluray-1080p: 8 80 180.
+   			- HDTV-1080p: 4 40 140.
    		- Pontuações:
-   			- Portuguese: `30`.
-   			- English: `20`.
-   			- WEBDL-1080p: `15`.
-   			- Bluray-1080p: `10`.
-   			- HDTV-1080p: `5`.
+   			- Portuguese: 30.
+   			- English: 20.
+   			- WEBDL-1080p: 15.
+   			- Bluray-1080p: 10.
+   			- HDTV-1080p: 5.
 	- Perfis de lançamentos:
-		- Não deve conter: `multi` `fullhd` `hdr10+` `imax`.
-   	- Formato de pasta das séries: `{Series TitleYear}`.
+		- Não deve conter: multi fullhd hdr10+ imax.
+   	- Formato de pasta das séries: {Series TitleYear}.
    	- Formatos personalizados:
 
       <details>
