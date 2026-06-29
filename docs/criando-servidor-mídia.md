@@ -57,7 +57,7 @@ Usa software popular e confiável para automatizar o processo.
 		- Não deve conter: `multi` `fullhd` `hdr10+` `imax`.
    	- Formatos personalizados: (_Insira no painel cada código abaixo_).
 
- 	<details>
+ 		<details>
       <summary><b>👉 Ver o código</b></summary>
  
     ```json
