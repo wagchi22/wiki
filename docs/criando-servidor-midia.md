@@ -34,7 +34,7 @@ Usa software popular e confiável para automatizar o processo.
    	- Mínimo de semeadores: `0`.
    	- Proxy: Byparr.
 
-4. ⚫ **Byparr:**
+4. 🟠 **Byparr:**
 
    - Execute: [byparr.bat](https://github.com/wagchi22/meus-arquivos/blob/main/scripts/byparr.bat)
 
