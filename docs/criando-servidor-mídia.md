@@ -41,6 +41,20 @@ Usa software popular e confiável para automatizar o processo.
    	- Renomear automaticamente: Ativado.
    	- Propers e repacks: Desativado.
    	- Monitorar: Somente filme.
+   	- Perfis de qualidade padrão: HD-1080p.
+		- Idioma: Any.
+   		- Ordem e definições de qualidades:
+   			- WEBDL-1080p: `10` `100` `200`. (_Retire todos do grupo_).
+   			- Bluray-1080p: `8` `80` `180`.
+   			- HDTV-1080p: `4` `40` `140`.
+   		- Pontuações:
+   			- Portuguese: `30`.
+   			- English: `20`.
+   			- WEBDL-1080p: `15`.
+   			- Bluray-1080p: `10`.
+   			- HDTV-1080p: `5`.
+	- Perfis de lançamentos:
+		- Não deve conter: `multi` `fullhd` `hdr10+` `imax`.
    	- Formatos personalizados: (_Insira no painel cada código abaixo_).
 
 ```yaml
@@ -59,18 +73,7 @@ Usa software popular e confiável para automatizar o processo.
    	- Renomear automaticamente: Ativado.
    	- Propers e repacks: Desativado.
    	- Sonarr: Episódios ausentes.
-   	- Formato de pasta das séries: `{Series TitleYear}`.
-   	- Formatos personalizados: (_Insira no painel cada código abaixo_).
-
-```yaml
-{ "name": "WEBDL-1080p", "includeCustomFormatWhenRenaming": false, "specifications": [ { "name": "Fonte", "implementation": "SourceSpecification", "negate": false, "required": false, "fields": { "value": 3 } } ] }
-{ "name": "Portuguese", "includeCustomFormatWhenRenaming": false, "specifications": [ { "name": "Idioma", "implementation": "LanguageSpecification", "negate": false, "required": false, "fields": { "value": 18, "exceptLanguage": false } } ] }
-{ "name": "HDTV-1080p", "includeCustomFormatWhenRenaming": false, "specifications": [ { "name": "Fonte", "implementation": "SourceSpecification", "negate": false, "required": false, "fields": { "value": 1 } } ] }
-{ "name": "English", "includeCustomFormatWhenRenaming": false, "specifications": [ { "name": "Idioma", "implementation": "LanguageSpecification", "negate": false, "required": false, "fields": { "value": 1, "exceptLanguage": false } } ] }
-{ "name": "Bluray-1080p", "includeCustomFormatWhenRenaming": false, "specifications": [ { "name": "Fonte", "implementation": "SourceSpecification", "negate": false, "required": false, "fields": { "value": 6 } } ] }
-```
-
-	- Perfis de qualidade padrão: HD-1080p.
+   	- Perfis de qualidade padrão: HD-1080p.
 		- Idioma: Any.
    		- Ordem e definições de qualidades:
    			- WEBDL-1080p: `10` `100` `200`. (_Retire todos do grupo_).
@@ -84,6 +87,16 @@ Usa software popular e confiável para automatizar o processo.
    			- HDTV-1080p: `5`.
 	- Perfis de lançamentos:
 		- Não deve conter: `multi` `fullhd` `hdr10+` `imax`.
+   	- Formato de pasta das séries: `{Series TitleYear}`.
+   	- Formatos personalizados: (_Insira no painel cada código abaixo_).
+
+```yaml
+{ "name": "WEBDL-1080p", "includeCustomFormatWhenRenaming": false, "specifications": [ { "name": "Fonte", "implementation": "SourceSpecification", "negate": false, "required": false, "fields": { "value": 3 } } ] }
+{ "name": "Portuguese", "includeCustomFormatWhenRenaming": false, "specifications": [ { "name": "Idioma", "implementation": "LanguageSpecification", "negate": false, "required": false, "fields": { "value": 18, "exceptLanguage": false } } ] }
+{ "name": "HDTV-1080p", "includeCustomFormatWhenRenaming": false, "specifications": [ { "name": "Fonte", "implementation": "SourceSpecification", "negate": false, "required": false, "fields": { "value": 1 } } ] }
+{ "name": "English", "includeCustomFormatWhenRenaming": false, "specifications": [ { "name": "Idioma", "implementation": "LanguageSpecification", "negate": false, "required": false, "fields": { "value": 1, "exceptLanguage": false } } ] }
+{ "name": "Bluray-1080p", "includeCustomFormatWhenRenaming": false, "specifications": [ { "name": "Fonte", "implementation": "SourceSpecification", "negate": false, "required": false, "fields": { "value": 6 } } ] }
+```
 
 6. **Configurar Bazarr:**
   
