@@ -13,7 +13,7 @@ export default defineConfig({
       {
         text: 'Guias',
         items: [
-          { text: 'Configurar Servidor de Mídia', link: '/criando-servidor-media' }
+          { text: 'Configurar Servidor de Mídia', link: '/criando-servidor-midia' }
         ]
       }
     ]
