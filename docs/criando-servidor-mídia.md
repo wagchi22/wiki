@@ -106,7 +106,7 @@ Usa software popular e confiável para automatizar o processo.
       { "name": "Bluray-1080p", "includeCustomFormatWhenRenaming": false, "specifications": [ { "name": "Fonte", "implementation": "SourceSpecification", "negate": false, "required": false, "fields": { "value": 6 } } ] }
       ```
 
-</details>
+	  </details>
 
 6. 🔴 **Configurar Bazarr:**
 
@@ -231,5 +231,4 @@ Usa software popular e confiável para automatizar o processo.
  	```
 
     </details>
-
 :::
