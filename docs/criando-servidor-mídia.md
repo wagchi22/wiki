@@ -24,7 +24,7 @@ Usa software popular e confiável para automatizar o processo.
    	- Streaming: [Jellyfin](https://jellyfin.org/).
    	- Cliente de Torrent: [qBittorrent](https://www.qbittorrent.org/).
 
-3. **Configurar Prowlarr:**
+3. 🔵 **Configurar Prowlarr:**
 
    	- Usuário: Coloque um nome qualquer.
    	- Senha: Insira uma senha qualquer.
@@ -33,7 +33,7 @@ Usa software popular e confiável para automatizar o processo.
    	- Mínimo de semeadores: `0`.
    	- Proxy: Byparr.
 
-4. **Configurar Radarr:**
+4. 🟡 **Configurar Radarr:**
 
    	- Usuário: Coloque um nome qualquer.
    	- Senha: Insira uma senha qualquer.
@@ -70,7 +70,7 @@ Usa software popular e confiável para automatizar o processo.
 
  </details>
 
-5. **Configurar Sonarr:**
+5. 🟢 **Configurar Sonarr:**
 
    	- Usuário: Coloque um nome qualquer.
    	- Senha: Insira uma senha qualquer.
@@ -108,7 +108,7 @@ Usa software popular e confiável para automatizar o processo.
 
 </details>
 
-6. **Configurar Bazarr:**
+6. 🔴 **Configurar Bazarr:**
 
 	- Usuário:Coloque um nome qualquer.
 	- Senha: Insira uma senha qualquer.
@@ -118,7 +118,7 @@ Usa software popular e confiável para automatizar o processo.
 	- Modificações Sub-Zero: Ative as opções principais.
 	- Provedor de legendas: [Open Subtitles](https://www.opensubtitles.com/).
 
-7. **Configurar Jellyfin:**
+7. 🟣 **Configurar Jellyfin:**
 
 	- Usuário: Coloque um nome qualquer.
 	- Senha: Insira uma senha qualquer.
@@ -128,7 +128,7 @@ Usa software popular e confiável para automatizar o processo.
 		- Cor de legenda: Amarelo.
 		- Tamanho de legenda: 125%.
 
-8. **Configurar qBittorrent:**
+8. ⬇️ **Configurar qBittorrent:**
 
 	- Interface Web: Ativado.
 	- Usuário: Coloque um nome qualquer.
@@ -136,11 +136,11 @@ Usa software popular e confiável para automatizar o processo.
 	- Limite de semeadura: Parar ao alcançar 0,0.
 	- Modo de gerenciamento de torrents: Automático.
 
-9. **Configurar Byparr:**
+9. 🔓 **Configurar Byparr:**
 
 	No **Agendador de Tarefas** (`taskschd.msc`), crie a tarefa `"Byparr"` configurada para rodar `"Ao inicializar"` (mesmo deslogado e sem limite de tempo), definindo a ação para iniciar o executável `...\uv.exe` com os argumentos `run "main.py"` a partir de `C:\ProgramData\Byparr`.
 
-10. **(Opcional) Script Remux:** (_Requer [python](https://www.python.org/) e [ffmpeg](https://ffmpeg.org/)_).
+10. 📄 **(Opcional) Script Remux:** (_Requer [python](https://www.python.org/) e [ffmpeg](https://ffmpeg.org/)_).
 
 	Adicione o código abaixo no **Bloco de Notas** e salve como `Remux.py` na pasta do **Servarr**. No **Agendador de Tarefas** (`taskschd.msc`), crie uma nova tarefa chamada `"Remux"` configurada para rodar `"Ao inicializar"` (mesmo deslogado e sem limite de tempo), definindo a ação de *Iniciar um programa* para executar o script Python via comando `C:\Program Files\Python314\python.exe Remux.py "E:\media"` a partir do diretório `C:\ProgramData`.
 
