@@ -34,7 +34,11 @@ Usa software popular e confiável para automatizar o processo.
    	- Mínimo de semeadores: `0`.
    	- Proxy: Byparr.
 
-4. 🟡 **Configurar Radarr:**
+4. ⚫ **Byparr:**
+
+   - Execute: [byparr.bat](https://github.com/wagchi22/meus-arquivos/blob/main/scripts/byparr.bat)
+
+5. 🟡 **Configurar Radarr:**
 
    	- Usuário: Coloque um nome qualquer.
    	- Senha: Insira uma senha qualquer.
@@ -71,7 +75,7 @@ Usa software popular e confiável para automatizar o processo.
 
       </details>
 
-5. 🟢 **Configurar Sonarr:**
+6. 🟢 **Configurar Sonarr:**
 
    	- Usuário: Coloque um nome qualquer.
    	- Senha: Insira uma senha qualquer.
@@ -109,7 +113,7 @@ Usa software popular e confiável para automatizar o processo.
 
 	  </details>
 
-6. 🔴 **Configurar Bazarr:**
+7. 🔴 **Configurar Bazarr:**
 
 	- Usuário: Coloque um nome qualquer.
 	- Senha: Insira uma senha qualquer.
@@ -119,7 +123,7 @@ Usa software popular e confiável para automatizar o processo.
 	- Modificações Sub-Zero: Ative as opções principais.
 	- Provedor de legendas: [Open Subtitles](https://www.opensubtitles.com/).
 
-7. 🟣 **Configurar Jellyfin:**
+8. 🟣 **Configurar Jellyfin:**
 
 	- Usuário: Coloque um nome qualquer.
 	- Senha: Insira uma senha qualquer.
@@ -129,15 +133,11 @@ Usa software popular e confiável para automatizar o processo.
 		- Cor de legenda: Amarelo.
 		- Tamanho de legenda: 125%.
 
-8. ⬇️ **Configurar qBittorrent:**
+9. ⬇️ **Configurar qBittorrent:**
 
 	- Interface Web: Ativado.
 	- Usuário: Coloque um nome qualquer.
 	- Senha: Insira uma senha qualquer.
 	- Limite de semeadura: Parar ao alcançar 0,0.
 	- Modo de gerenciamento de torrents: Automático.
-
-9. 🔓 **Configurar Byparr:**
-
-	No **Agendador de Tarefas** (`taskschd.msc`), crie a tarefa `"Byparr"` configurada para rodar `"Ao inicializar"` (mesmo deslogado e sem limite de tempo), definindo a ação para iniciar o executável `...\uv.exe` com os argumentos `run "main.py"` a partir de `C:\ProgramData\Byparr`.
 :::
