@@ -4,15 +4,11 @@
 Ajustes gerais para todo tipo de coisa.
 :::
 
----
-
 ## Iluminação
 
 - Tipo: LED 
 - Potência: 9W
 - Cor: 4000K
-
----
 
 ## TV LG
 
@@ -50,14 +46,10 @@ Não é recomendado, pois anula o ganho de nitidez ao limitar a banda em 4K/120 
 - Otimização de áudio: Parede
 - Volume automático: Ativado
 
----
-
 ## Fire TV
 
 - Nome dos dispositivos: FireTVStick Sala e FireTVStick Quarto
 - Igualar taxa de quadros original: Ativado
-
----
 
 ## PlayStation 5
 
@@ -70,8 +62,6 @@ Ajuste o Contraste conforme a TV, o Branco Papel coloque 200 e Brilho Máximo em
   - 1/2: Totalmente invisível
   - 3: Completo mínimo
 - Áudio 3D (TV): Ativado 
-
----
 
 ## PC Dell
 
@@ -105,8 +95,6 @@ Altere as opções de energia do Adaptador Sem Fio para Desempenho Máximo.
   - uBlock Origin Lite (_Ajuste para modo Completo com todos os filtros ativados_)
   - Tampermonkey (_Adicione o script BLUDV Bypass e permita scripts de usuário_)
 
----
-
 ## iPhone
 
 - Navegador: Chrome
@@ -115,8 +103,6 @@ Altere as opções de energia do Adaptador Sem Fio para Desempenho Máximo.
   - Perguntar onde salvar cada arquivo antes de fazer download: Ativado
 - Anti-spam: Não Me Perturbe
 - Filtrar números desconhecidos: Perguntar motivo da ligação 
-
----
 
 ## Roteador
 
@@ -132,8 +118,6 @@ Se o sinal estiver instável, use o aplicativo [Wifi Analyzer](https://matthafne
 - Rede 5 GHz:
   - Largura de banda: 80 MHz
   - Canal: 36-48, 149-161
-
----
 
 ## HD Externo Toshiba
 
