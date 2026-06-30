@@ -12,6 +12,7 @@
 ***
 
 ## TV LG
+Fonte: [RTINGS](https://www.rtings.com/tv/learn/how-to-calibrate-your-tv)
 !!! warning Modo PC em Console
 	**Não recomendado**, pois anula o ganho de nitidez ao limitar a banda em 4K/120 Hz/HDR.
 * **Local:** Parede
