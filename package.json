@@ -8,9 +8,9 @@
     "docs:preview": "vitepress preview docs"
   },
   "devDependencies": {
-    "@orama/plugin-vitepress": "^0.2.4",
-    "@orama/orama": "^2.0.0",
-    "vitepress": "^1.6.4",
-    "vue": "^3.5.0"
+    "@orama/plugin-vitepress": "latest",
+    "@orama/orama": "latest",
+    "vitepress": "latest",
+    "vue": "latest"
   }
 }
