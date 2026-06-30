@@ -107,7 +107,7 @@ Altere as opções de energia do Adaptador Sem Fio para Desempenho Máximo.
 ## Roteador
 
 :::info Otimização de Sinal
-Se o sinal estiver instável, use o aplicativo [Wifi Analyzer](https://matthafner.com/wifi-analyzer) para encontrar o canal de rede menos congestionado.
+Use [isso](https://matthafner.com/wifi-analyzer) para encontrar o melhor canal.
 :::
 
 - Local: Parede
