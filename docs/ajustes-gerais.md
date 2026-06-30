@@ -88,8 +88,6 @@ Altere as opções de energia do Adaptador Sem Fio para Desempenho Máximo.
   - DNS: Cloudflare
 - Navegador: Chrome
   - Lembrar senhas, pagamentos e endereços: Desativado
-  - Continuar com estas guias: Desativado
-  - Perguntar onde salvar cada arquivo antes de fazer download: Ativado
 - Extensões: 
   - Bitwarden (_Desative as notificações_)	
   - uBlock Origin Lite (_Ajuste para modo Completo com todos os filtros ativados_)
