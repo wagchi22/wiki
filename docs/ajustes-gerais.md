@@ -85,12 +85,12 @@ Altere as opções de energia do Adaptador Sem Fio para Desempenho Máximo.
   - Legendas: Apenas diálogos
 - Rede:
   - IP: Estático
-  - DNS: [Control D](https://controld.com/free-dns)
+  - DNS: [Control D](https://controld.com/free-dns?freeResolverType=blockMalwareAndAds&helpPane=dns)
 - Navegador: Chrome
   - Lembrar senhas, pagamentos e endereços: Desativado
 - Extensões: 
-  - [Bitwarden](https://bitwarden.com/download/#downloads-web-browser-extensions) (_Desative as notificações_)	
-  - [uBlock Origin Lite](https://github.com/uBlockOrigin/uBOL-home) (_Ajuste para modo Completo com todos os filtros ativados_)
+  - [Bitwarden](https://bitwarden.com/download/#downloads-web-browser-extensions) e desative todas as notificações	
+  - [AdGuard](https://adguard.com/pt_br/adguard-browser-extension/overview.html?_plc=pt_br) e ative todos os filtros
   - [Tampermonkey](https://www.tampermonkey.net/) junto desse [script](https://github.com/wagchi22/guia-de-bolso/blob/main/scripts/bludv-bypass.js)
 
 ## iPhone
