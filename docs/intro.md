@@ -1,3 +1,3 @@
-# Bem-vindo às Minhas Anotações
+# Bem-vindo ao meu Guia de Bolso
 
-Escolhe um dos guias na barra lateral à esquerda para começar a ler.
+Escolha um guia ao lado para começar a ler.
