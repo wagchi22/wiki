@@ -6,6 +6,10 @@ export default defineConfig({
   base: '/meus-arquivos/', 
   
   themeConfig: {
+    outline: {
+      label: 'Nesta página'
+    },
+
     nav: [
       { text: 'Início', link: '/' }
     ],
