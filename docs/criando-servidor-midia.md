@@ -28,7 +28,7 @@ Usa software popular e confiável para automatizar o processo.
 
 ---
 
-**Prowlarr:**
+1. **Prowlarr:**
 
    	- Usuário: Coloque um nome qualquer.
    	- Senha: Insira uma senha qualquer.
@@ -37,11 +37,19 @@ Usa software popular e confiável para automatizar o processo.
    	- Mínimo de semeadores: 0.
    	- Proxy: Byparr.
 
-**Byparr:**
+2. **Byparr:**
 
    - Execute: [byparr.bat](https://github.com/wagchi22/meus-arquivos/blob/main/scripts/byparr.bat)
 
-3. **Radarr:**
+3. **qBittorrent:**
+
+	- Interface Web: Ativado.
+	- Usuário: Coloque um nome qualquer.
+	- Senha: Insira uma senha qualquer.
+	- Limite de semeadura: Parar ao alcançar 0,0.
+	- Modo de gerenciamento de torrents: Automático.
+
+4. **Radarr:**
 
    	- Usuário: Coloque um nome qualquer.
    	- Senha: Insira uma senha qualquer.
@@ -78,7 +86,7 @@ Usa software popular e confiável para automatizar o processo.
 
       </details>
 
-4. **Sonarr:**
+5. **Sonarr:**
 
    	- Usuário: Coloque um nome qualquer.
    	- Senha: Insira uma senha qualquer.
@@ -116,7 +124,7 @@ Usa software popular e confiável para automatizar o processo.
 
 	  </details>
 
-5. **Bazarr:**
+6. **Bazarr:**
 
 	- Usuário: Coloque um nome qualquer.
 	- Senha: Insira uma senha qualquer.
@@ -126,7 +134,7 @@ Usa software popular e confiável para automatizar o processo.
 	- Modificações Sub-Zero: Ative as opções principais.
 	- Provedor de legendas: [Open Subtitles](https://www.opensubtitles.com/).
 
-6. **Jellyfin:**
+7. **Jellyfin:**
 
 	- Usuário: Coloque um nome qualquer.
 	- Senha: Insira uma senha qualquer.
@@ -136,10 +144,4 @@ Usa software popular e confiável para automatizar o processo.
 		- Cor de legenda: Amarelo.
 		- Tamanho de legenda: 125%.
 
-7. **qBittorrent:**
 
-	- Interface Web: Ativado.
-	- Usuário: Coloque um nome qualquer.
-	- Senha: Insira uma senha qualquer.
-	- Limite de semeadura: Parar ao alcançar 0,0.
-	- Modo de gerenciamento de torrents: Automático.
