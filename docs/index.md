@@ -4,7 +4,7 @@ layout: home
 hero:
   name: "Meus Arquivos"
   text: "Uma coleção de scripts, links e utilitários."
-  tagline: "Por wagchi22 no estilo FMHY"
+  tagline: "No estilo FMHY"
   actions:
     - theme: brand
       text: Explorar
