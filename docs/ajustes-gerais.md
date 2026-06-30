@@ -85,7 +85,7 @@ Altere as opções de energia do Adaptador Sem Fio para Desempenho Máximo.
   - Legendas: Apenas diálogos
 - Rede:
   - IP: Estático
-  - DNS: Cloudflare
+  - DNS: [Control D](https://controld.com/free-dns)
 - Navegador: Chrome
   - Lembrar senhas, pagamentos e endereços: Desativado
 - Extensões: 
