@@ -17,7 +17,7 @@ Criar um Servidor de Mídia no Windows, usando software popular e confiável par
 	- Automação: [Radarr](https://radarr.video/) + [Sonarr](https://sonarr.tv/) + [Bazarr](https://www.bazarr.media/)
 	- Streaming: [Jellyfin](https://jellyfin.org/)
 	- Cliente de Torrent: [qBittorrent](https://www.qbittorrent.org/)
-	- (Opcional) Script: [remux.py](https://github.com/wagchi22/meus-arquivos/blob/main/scripts/remux.py). (_Requer [ffmpeg](https://ffmpeg.org/) e [python](https://www.python.org/)_)
+	- (Opcional) Script: [remux.py](https://github.com/wagchi22/meus-arquivos/blob/main/scripts/remux.py) (_Requer [ffmpeg](https://ffmpeg.org/) e [python](https://www.python.org/)_)
 
 ## Prowlarr
 
@@ -44,14 +44,14 @@ Criar um Servidor de Mídia no Windows, usando software popular e confiável par
 
 - Usuário: Coloque um nome qualquer
 - Senha: Insira uma senha qualquer
-- Conexões: Adicione o qBittorrent. (_Requer Chave API_)
+- Conexões: Adicione o qBittorrent (_Requer Chave API_)
 - Renomear automaticamente: Ativado
 - Propers e repacks: Desativado
 - Monitorar: Somente filme
 - Perfis de qualidade padrão: HD-1080p
 	- Idioma: Any
 	- Ordem e definições de qualidades:
-		- WEBDL-1080p: 10 100 200. (_Retire todos do grupo_)
+		- WEBDL-1080p: 10 100 200 (_Retire todos do grupo_)
 		- Bluray-1080p: 8 80 180
 		- HDTV-1080p: 4 40 140
 	- Pontuações:
