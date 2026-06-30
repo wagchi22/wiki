@@ -2,30 +2,31 @@
 
 ---
 
-:::info 🤔 Objetivo deste guia?
+:::info Objetivo deste guia?
 Criar um Servidor de Mídia no Windows.
 Usa software popular e confiável para automatizar o processo.
 :::
 
 ---
 
-:::tip ⌛ Siga estas etapas:
+:::tip Siga estas etapas:
 	
-1. 🧰 **Definir os locais padrão:**
+**Locais padrão:**
 
 	- Servarr: C:\ProgramData.
    	- Torrents: E:\torrents.
    	- Mídia: E:\media.
 
-2. ⚙️ **Software necessário:** (_Baixe e instale cada um deles_).
+**Software:** (_Baixe e instale cada um deles_).
 
    	- Indexador: [Prowlarr](https://prowlarr.com/) + [Byparr](https://github.com/ThePhaseless/Byparr).
    	- Automação: [Radarr](https://radarr.video/) + [Sonarr](https://sonarr.tv/) + [Bazarr](https://www.bazarr.media/). 
    	- Streaming: [Jellyfin](https://jellyfin.org/).
    	- Cliente de Torrent: [qBittorrent](https://www.qbittorrent.org/).
    	- (Opcional) Script: [remux.py](https://github.com/wagchi22/meus-arquivos/blob/main/scripts/remux.py). (_Requer [ffmpeg](https://ffmpeg.org/) e [python](https://www.python.org/)_).
+:::
 
-3. 🔵 **Configurar Prowlarr:**
+1. **Prowlarr:**
 
    	- Usuário: Coloque um nome qualquer.
    	- Senha: Insira uma senha qualquer.
@@ -34,11 +35,11 @@ Usa software popular e confiável para automatizar o processo.
    	- Mínimo de semeadores: 0.
    	- Proxy: Byparr.
 
-4. 🟠 **Byparr:**
+2. **Byparr:**
 
    - Execute: [byparr.bat](https://github.com/wagchi22/meus-arquivos/blob/main/scripts/byparr.bat)
 
-5. 🟡 **Configurar Radarr:**
+3. **Radarr:**
 
    	- Usuário: Coloque um nome qualquer.
    	- Senha: Insira uma senha qualquer.
@@ -63,7 +64,7 @@ Usa software popular e confiável para automatizar o processo.
    	- Formatos personalizados:
 
       <details>
-        <summary><b>👉 Exibir código</b></summary>
+        <summary><b>Exibir código</b></summary>
  
       ```json
       { "name": "WEBDL-1080p", "includeCustomFormatWhenRenaming": false, "specifications": [ { "name": "Fonte", "implementation": "SourceSpecification", "negate": false, "required": false, "fields": { "value": 7 } } ] }
@@ -75,7 +76,7 @@ Usa software popular e confiável para automatizar o processo.
 
       </details>
 
-6. 🟢 **Configurar Sonarr:**
+4. **Sonarr:**
 
    	- Usuário: Coloque um nome qualquer.
    	- Senha: Insira uma senha qualquer.
@@ -101,7 +102,7 @@ Usa software popular e confiável para automatizar o processo.
    	- Formatos personalizados:
 
       <details>
-        <summary><b>👉 Exibir código</b></summary>
+        <summary><b>Exibir código</b></summary>
  
       ```json
  	  { "name": "WEBDL-1080p", "includeCustomFormatWhenRenaming": false, "specifications": [ { "name": "Fonte", "implementation": "SourceSpecification", "negate": false, "required": false, "fields": { "value": 3 } } ] }
@@ -113,7 +114,7 @@ Usa software popular e confiável para automatizar o processo.
 
 	  </details>
 
-7. 🔴 **Configurar Bazarr:**
+5. **Bazarr:**
 
 	- Usuário: Coloque um nome qualquer.
 	- Senha: Insira uma senha qualquer.
@@ -123,7 +124,7 @@ Usa software popular e confiável para automatizar o processo.
 	- Modificações Sub-Zero: Ative as opções principais.
 	- Provedor de legendas: [Open Subtitles](https://www.opensubtitles.com/).
 
-8. 🟣 **Configurar Jellyfin:**
+6. **Jellyfin:**
 
 	- Usuário: Coloque um nome qualquer.
 	- Senha: Insira uma senha qualquer.
@@ -133,11 +134,10 @@ Usa software popular e confiável para automatizar o processo.
 		- Cor de legenda: Amarelo.
 		- Tamanho de legenda: 125%.
 
-9. ⬇️ **Configurar qBittorrent:**
+7. **qBittorrent:**
 
 	- Interface Web: Ativado.
 	- Usuário: Coloque um nome qualquer.
 	- Senha: Insira uma senha qualquer.
 	- Limite de semeadura: Parar ao alcançar 0,0.
 	- Modo de gerenciamento de torrents: Automático.
-:::
