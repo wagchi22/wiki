@@ -17,10 +17,10 @@ export default defineConfig({
           { text: 'Configurar Servidor de Mídia', link: '/criando-servidor-midia' },
         ]
       }
-    ]
-  },
-  docFooter: {
-  prev: false,
-  next: false,
+    ],
+    docFooter: {
+      prev: false,
+      next: false,
+    }
   }
 })
