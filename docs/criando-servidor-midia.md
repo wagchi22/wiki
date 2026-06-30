@@ -1,12 +1,8 @@
 # Criando Servidor de Mídia
 
----
-
 :::info Objetivo
 Criar um Servidor de Mídia no Windows, usando software popular e confiável para automatizar o processo.
 :::
-
----
 
 ## Locais
 
@@ -22,8 +18,6 @@ Criar um Servidor de Mídia no Windows, usando software popular e confiável par
 	- Streaming: [Jellyfin](https://jellyfin.org/)
 	- Cliente de Torrent: [qBittorrent](https://www.qbittorrent.org/)
 	- (Opcional) Script: [remux.py](https://github.com/wagchi22/meus-arquivos/blob/main/scripts/remux.py). (_Requer [ffmpeg](https://ffmpeg.org/) e [python](https://www.python.org/)_)
-
----
 
 ## Prowlarr
 
