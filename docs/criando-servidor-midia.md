@@ -2,9 +2,8 @@
 
 ---
 
-:::info Objetivo deste guia?
-Criar um Servidor de Mídia no Windows.
-Usa software popular e confiável para automatizar o processo.
+:::info Objetivo:
+Criar um Servidor de Mídia no Windows, usando software popular e confiável para automatizar o processo.
 :::
 
 ---
