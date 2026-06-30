@@ -8,7 +8,7 @@ hero:
   actions:
     - theme: brand
       text: Explorar
-      link: /intro
+      link: /inicio
     - theme: alt
       text: Ver no GitHub
       link: https://github.com/wagchi22/guia-de-bolso
