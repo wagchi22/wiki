@@ -19,7 +19,7 @@ Ajustes gerais para todo tipo de coisa.
 Fonte: [RTINGS](https://www.rtings.com/tv/learn/how-to-calibrate-your-tv)
 
 :::warning Modo PC em Console
-Não recomendado, pois anula o ganho de nitidez ao limitar a banda em 4K/120 Hz/HDR.
+Não é recomendado, pois anula o ganho de nitidez ao limitar a banda em 4K/120 Hz/HDR.
 :::
 
 - Local: Parede
@@ -66,7 +66,9 @@ Ajuste o Contraste conforme a TV, o Branco Papel coloque 200 e Brilho Máximo em
 :::
 
 - Modo gráfico preferido: Desempenho
-- Calibragem HDR: 1/2 totalmente invisível, 3 completo mínimo
+- Calibragem HDR:
+  - 1/2: Totalmente invisível
+  - 3: Completo mínimo
 - Áudio 3D (TV): Ativado 
 
 ---
