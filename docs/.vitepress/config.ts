@@ -1,9 +1,9 @@
 import { defineConfig } from 'vitepress'
 
 export default defineConfig({
-  title: "Minhas Anotações",
-  description: "Minhas Anotações",
-  base: '/meus-arquivos/', 
+  title: "Guia de Bolso",
+  description: "Guia de Bolso",
+  base: '/guia-de-bolso/', 
   
   themeConfig: {
     outline: {
