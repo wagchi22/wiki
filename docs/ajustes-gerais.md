@@ -89,17 +89,17 @@ Altere as opções de energia do Adaptador Sem Fio para Desempenho Máximo.
 - Navegador: Chrome
   - Lembrar senhas, pagamentos e endereços: Desativado
 - Extensões: 
-  - Bitwarden (_Desative as notificações_)	
-  - uBlock Origin Lite (_Ajuste para modo Completo com todos os filtros ativados_)
-  - Tampermonkey junto desse [script](https://github.com/wagchi22/guia-de-bolso/blob/main/scripts/bludv-bypass.js)
+  - [Bitwarden](https://bitwarden.com/download/#downloads-web-browser-extensions) (_Desative as notificações_)	
+  - [uBlock Origin Lite](https://github.com/gorhill/uBlock) (_Ajuste para modo Completo com todos os filtros ativados_)
+  - [Tampermonkey](https://www.tampermonkey.net/) junto desse [script](https://github.com/wagchi22/guia-de-bolso/blob/main/scripts/bludv-bypass.js)
 
 ## iPhone
 
-- Navegador: Chrome
+- Navegador: [Chrome](https://www.google.com/intl/pt-BR/chrome/)
   - Lembrar senhas, pagamentos e endereços: Desativado
   - Continuar com estas guias: Desativado
   - Perguntar onde salvar cada arquivo antes de fazer download: Ativado
-- Anti-spam: Não Me Perturbe
+- Anti-spam: [Não Me Perturbe](https://www.naomeperturbe.com.br/)
 - Filtrar números desconhecidos: Perguntar motivo da ligação 
 
 ## Roteador
