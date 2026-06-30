@@ -107,7 +107,7 @@ Altere as opções de energia do Adaptador Sem Fio para Desempenho Máximo.
 ## Roteador
 
 :::info Otimização de Sinal
-Use [isso](https://matthafner.com/wifi-analyzer) para encontrar o melhor canal.
+Use esse [software](https://matthafner.com/wifi-analyzer) para encontrar o melhor canal.
 :::
 
 - Local: Parede
