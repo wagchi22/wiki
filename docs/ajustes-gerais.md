@@ -1,8 +1,10 @@
-# Ajustes Otimizados
+# Ajustes Gerais
 
-> Ajustes gerais.
+:::info Objetivo:
+Ajustes gerais para todo tipo de coisa.
+:::
 
-***
+---
 
 ## Iluminação
 * **Tipo:** LED 
@@ -13,7 +15,7 @@
 
 ## TV LG
 Fonte: [RTINGS](https://www.rtings.com/tv/learn/how-to-calibrate-your-tv)
-!!! warning Modo PC em Console
+:::warning Modo PC em Console
 	**Não recomendado**, pois anula o ganho de nitidez ao limitar a banda em 4K/120 Hz/HDR.
 * **Local:** Parede
 * **Modo de imagem:** Avançado, Cinema, Jogos %red%*\*Avançado não está disponível em HDR*%%
@@ -52,7 +54,7 @@ Fonte: [RTINGS](https://www.rtings.com/tv/learn/how-to-calibrate-your-tv)
 ***
 
 ## PlayStation 5
-!!! note Calibração no Jogo
+:::tip Calibração no Jogo
     Ajuste o **Contraste** conforme a TV, o **Branco Papel** coloque 200 e **Brilho Máximo** em 350.
 * **Modo gráfico preferido:** Desempenho
 * **Calibragem HDR:** 1/2 totalmente invisível, 3 completo mínimo
@@ -61,9 +63,9 @@ Fonte: [RTINGS](https://www.rtings.com/tv/learn/how-to-calibrate-your-tv)
 ***
 
 ## PC Dell
-!!! note Atualizações
+:::tip Atualizações
     Mantenha o sistema, firmware e drivers sempre **atualizados** para evitar problemas de compatibilidade.
-!!! note Wi-Fi Lento
+:::tip Wi-Fi Lento
     Altere as opções de energia do Adaptador Sem Fio para **Desempenho Máximo**.
 * **Rótulo da partição:** Sistema
 * **Mostrar os destaques da pesquisa:** Desativado
@@ -100,7 +102,7 @@ Fonte: [RTINGS](https://www.rtings.com/tv/learn/how-to-calibrate-your-tv)
 ***
 
 ## Roteador
-!!! info Otimização de Sinal
+:::info Otimização de Sinal
     Se o sinal estiver instável, use o aplicativo **[Wifi Analyzer](https://matthafner.com/wifi-analyzer)** para encontrar o canal de rede menos congestionado.
 * **Local:** Parede
 * **Band Steering:** Desativado
