@@ -23,7 +23,7 @@ Usa software popular e confiável para automatizar o processo.
    	- Automação: [Radarr](https://radarr.video/) + [Sonarr](https://sonarr.tv/) + [Bazarr](https://www.bazarr.media/). 
    	- Streaming: [Jellyfin](https://jellyfin.org/).
    	- Cliente de Torrent: [qBittorrent](https://www.qbittorrent.org/).
-   	- (Opcional) Script: [remux.py](https://github.com/wagchi22/meus-arquivos/blob/main/scripts/remux.py).
+   	- (Opcional) Script: [remux.py](https://github.com/wagchi22/meus-arquivos/blob/main/scripts/remux.py). (_Requer [ffmpeg](https://ffmpeg.org/) e [python](https://www.python.org/)_).
 
 3. 🔵 **Configurar Prowlarr:**
 
