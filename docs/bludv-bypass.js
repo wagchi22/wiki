@@ -1,7 +1,6 @@
-``` javascript
 // ==UserScript==
 // @name         BLUDV Bypass
-// @description  Pula os anúncios ao fazer download no site do BLUDV
+// @description  Pula os anúncios de download no BLUDV
 // @version      2026-06-17
 // @match        *://*.systemads.xyz/*
 // @match        *://*.systemads.net/*
@@ -92,4 +91,3 @@
         }
     });
 })();
-```
