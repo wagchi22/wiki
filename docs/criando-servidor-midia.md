@@ -3,7 +3,7 @@
 ---
 
 :::info Objetivo
-Criar um Servidor de Mídia no Windows, usando software popular e confiável para automatizar o processo
+Criar um Servidor de Mídia no Windows, usando software popular e confiável para automatizar o processo.
 :::
 
 ---
@@ -50,7 +50,7 @@ Criar um Servidor de Mídia no Windows, usando software popular e confiável par
 
 - Usuário: Coloque um nome qualquer
 - Senha: Insira uma senha qualquer
-- Conexões: Adicione o qBittorrent. (*Requer Chave API*)
+- Conexões: Adicione o qBittorrent. (_Requer Chave API_)
 - Renomear automaticamente: Ativado
 - Propers e repacks: Desativado
 - Monitorar: Somente filme
