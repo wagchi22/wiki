@@ -1,4 +1,4 @@
-# 📜 Criando Servidor de Mídia
+# Criando Servidor de Mídia
 
 ---
 
@@ -9,15 +9,15 @@ Usa software popular e confiável para automatizar o processo.
 
 ---
 
-:::tip Siga estas etapas:
+:::tip Preparando:
 	
-**Locais padrão:**
+1. **Locais padrão:**
 
 	- Servarr: C:\ProgramData.
    	- Torrents: E:\torrents.
    	- Mídia: E:\media.
 
-**Software:** (_Baixe e instale cada um deles_).
+2. **Software:** (_Baixe e instale cada um deles_).
 
    	- Indexador: [Prowlarr](https://prowlarr.com/) + [Byparr](https://github.com/ThePhaseless/Byparr).
    	- Automação: [Radarr](https://radarr.video/) + [Sonarr](https://sonarr.tv/) + [Bazarr](https://www.bazarr.media/). 
@@ -26,7 +26,9 @@ Usa software popular e confiável para automatizar o processo.
    	- (Opcional) Script: [remux.py](https://github.com/wagchi22/meus-arquivos/blob/main/scripts/remux.py). (_Requer [ffmpeg](https://ffmpeg.org/) e [python](https://www.python.org/)_).
 :::
 
-1. **Prowlarr:**
+---
+
+**Prowlarr:**
 
    	- Usuário: Coloque um nome qualquer.
    	- Senha: Insira uma senha qualquer.
@@ -35,7 +37,7 @@ Usa software popular e confiável para automatizar o processo.
    	- Mínimo de semeadores: 0.
    	- Proxy: Byparr.
 
-2. **Byparr:**
+**Byparr:**
 
    - Execute: [byparr.bat](https://github.com/wagchi22/meus-arquivos/blob/main/scripts/byparr.bat)
 
