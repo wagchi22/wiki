@@ -93,7 +93,7 @@ Altere as opções de energia do Adaptador Sem Fio para Desempenho Máximo.
 - Extensões: 
   - Bitwarden (_Desative as notificações_)	
   - uBlock Origin Lite (_Ajuste para modo Completo com todos os filtros ativados_)
-  - Tampermonkey (_Adicione o script [BLUDV Bypass](https://github.com/wagchi22/guia-de-bolso/blob/main/scripts/bludv-bypass.js) e permita a execução do usuário_)
+  - Tampermonkey junto desse [script](https://github.com/wagchi22/guia-de-bolso/blob/main/scripts/bludv-bypass.js)
 
 ## iPhone
 
