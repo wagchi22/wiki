@@ -119,7 +119,7 @@ Se o sinal estiver instável, use o aplicativo [Wifi Analyzer](https://matthafne
   - Largura de banda: 80 MHz
   - Canal: 36-48, 149-161
 
-## HD Externo Toshiba
+## HD Toshiba
 
 - Tipo de partição: exFAT
 - Rótulo da partição: Dados
