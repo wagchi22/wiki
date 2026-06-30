@@ -10,14 +10,15 @@ Criar um Servidor de Mídia no Windows, usando software popular e confiável par
 
 :::tip Preparando:
 	
-1. **Locais padrão:**
+## Locais
 
 	- Servarr: C:\ProgramData.
    	- Torrents: E:\torrents.
    	- Mídia: E:\media.
 
-2. **Software:** (_Baixe e instale cada um deles_).
+## Software
 
+- Instale:
    	- Indexador: [Prowlarr](https://prowlarr.com/) + [Byparr](https://github.com/ThePhaseless/Byparr).
    	- Automação: [Radarr](https://radarr.video/) + [Sonarr](https://sonarr.tv/) + [Bazarr](https://www.bazarr.media/). 
    	- Streaming: [Jellyfin](https://jellyfin.org/).
@@ -27,7 +28,7 @@ Criar um Servidor de Mídia no Windows, usando software popular e confiável par
 
 ---
 
-1. **Prowlarr:**
+## Prowlarr
 
    	- Usuário: Coloque um nome qualquer.
    	- Senha: Insira uma senha qualquer.
@@ -36,11 +37,11 @@ Criar um Servidor de Mídia no Windows, usando software popular e confiável par
    	- Mínimo de semeadores: 0.
    	- Proxy: Byparr.
 
-2. **Byparr:**
+## Byparr
 
    - Execute: [byparr.bat](https://github.com/wagchi22/meus-arquivos/blob/main/scripts/byparr.bat)
 
-3. **qBittorrent:**
+## qBittorrent
 
 	- Interface Web: Ativado.
 	- Usuário: Coloque um nome qualquer.
@@ -48,7 +49,7 @@ Criar um Servidor de Mídia no Windows, usando software popular e confiável par
 	- Limite de semeadura: Parar ao alcançar 0,0.
 	- Modo de gerenciamento de torrents: Automático.
 
-4. **Radarr:**
+## Radarr
 
    	- Usuário: Coloque um nome qualquer.
    	- Senha: Insira uma senha qualquer.
@@ -85,7 +86,7 @@ Criar um Servidor de Mídia no Windows, usando software popular e confiável par
 
       </details>
 
-5. **Sonarr:**
+## Sonarr
 
    	- Usuário: Coloque um nome qualquer.
    	- Senha: Insira uma senha qualquer.
@@ -123,7 +124,7 @@ Criar um Servidor de Mídia no Windows, usando software popular e confiável par
 
 	  </details>
 
-6. **Bazarr:**
+## Bazarr
 
 	- Usuário: Coloque um nome qualquer.
 	- Senha: Insira uma senha qualquer.
@@ -133,7 +134,7 @@ Criar um Servidor de Mídia no Windows, usando software popular e confiável par
 	- Modificações Sub-Zero: Ative as opções principais.
 	- Provedor de legendas: [Open Subtitles](https://www.opensubtitles.com/).
 
-7. **Jellyfin:**
+## Jellyfin
 
 	- Usuário: Coloque um nome qualquer.
 	- Senha: Insira uma senha qualquer.
@@ -142,5 +143,3 @@ Criar um Servidor de Mídia no Windows, usando software popular e confiável par
 		- Taxa de atualização: No dispositivo.
 		- Cor de legenda: Amarelo.
 		- Tamanho de legenda: 125%.
-
-
