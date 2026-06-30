@@ -1,3 +1,3 @@
-## Meus Arquivos
+## Guia de Bolso
 
-Local de armazenamento para meus arquivos e documentações pessoais.
+Minha coleção pessoal de coisas úteis.
