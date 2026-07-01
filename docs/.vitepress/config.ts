@@ -6,8 +6,11 @@ export default defineConfig({
   base: '/guia-de-bolso/', 
   
   cleanUrls: true,
+  
+  lastUpdated: true,
 
   themeConfig: {
+    lastUpdatedText: "Última atualização em",
     // Busca nativa configurada em Português
     search: {
       provider: 'local',
