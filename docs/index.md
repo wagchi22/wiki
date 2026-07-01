@@ -4,7 +4,6 @@ layout: home
 hero:
   name: "Guia de Bolso"
   text: "Minha coleção pessoal de coisas úteis."
-  tagline: "Ao estilo FMHY"
   actions:
     - theme: brand
       text: Explorar
