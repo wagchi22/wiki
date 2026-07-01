@@ -5,13 +5,29 @@ export default defineConfig({
   description: "Guia de Bolso",
   base: '/guia-de-bolso/', 
   
-  // URLs limpas
   cleanUrls: true,
 
   themeConfig: {
-    // ATIVA A BUSCA NATIVA DO VITEPRESS
+    // Busca nativa configurada em Português
     search: {
-      provider: 'local'
+      provider: 'local',
+      options: {
+        translations: {
+          button: {
+            buttonText: 'Pesquisar',
+            buttonAriaLabel: 'Pesquisar documentos'
+          },
+          modal: {
+            noResultsText: 'Nenhum resultado encontrado para',
+            resetButtonTitle: 'Limpar pesquisa',
+            footer: {
+              selectText: 'para selecionar',
+              navigateText: 'para navegar',
+              closeText: 'para fechar'
+            }
+          }
+        }
+      }
     },
 
     outline: {
@@ -25,7 +41,7 @@ export default defineConfig({
     sidebar: [
       {
         text: 'Guias',
-        collapsed: false, // Menu retrátil
+        collapsed: false,
         items: [
           { text: 'Ajustes Gerais', link: '/ajustes-gerais' },
           { text: 'Configurar Servidor de Mídia', link: '/criando-servidor-midia' },
@@ -33,7 +49,6 @@ export default defineConfig({
       }
     ],
 
-    // Link para editar no GitHub
     editLink: {
       pattern: 'https://github.com/wagchi22/meus-arquivos/edit/main/docs/:path',
       text: 'Edite essa página no GitHub'
@@ -45,7 +60,6 @@ export default defineConfig({
     }
   },
 
-  // Numeração de linhas no código
   markdown: {
     lineNumbers: true,
   }
