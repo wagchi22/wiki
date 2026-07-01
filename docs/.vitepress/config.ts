@@ -30,6 +30,14 @@ export default defineConfig({
       }
     },
 
+    // Ícone do GitHub no menu superior
+    socialLinks: [
+      {
+        icon: "github",
+        link: "https://github.com/wagchi22/guia-de-bolso",
+      },
+    ],
+    
     outline: {
       label: 'Nesta página'
     },
@@ -41,7 +49,7 @@ export default defineConfig({
     sidebar: [
       {
         text: 'Guias',
-        collapsed: false,
+        collapsible: true,
         items: [
           { text: 'Ajustes Gerais', link: '/ajustes-gerais' },
           { text: 'Configurar Servidor de Mídia', link: '/criando-servidor-midia' },
