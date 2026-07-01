@@ -76,7 +76,10 @@ export default defineConfig({
 
   markdown: {
     attrs: false,
-    theme: "material-theme-palenight", // Ajustado para o nome padrão correto do tema do Shiki
+    theme: {
+      light: 'github-light',
+      dark: 'material-theme-palenight'
+    },
     lineNumbers: true,
   }
 })
