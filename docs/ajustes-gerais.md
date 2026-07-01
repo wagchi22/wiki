@@ -86,21 +86,21 @@ Altere as opções de energia do Adaptador Sem Fio para Desempenho Máximo.
 - Rede:
   - IP: Estático
   - DNS: [Control D](https://controld.com/free-dns) e selecione _Ads & Tracking_
-- Navegador: Chrome
-  - Lembrar senhas, pagamentos e endereços: Desativado
-- Extensões: 
-  - [Bitwarden](https://bitwarden.com/download/#downloads-web-browser-extensions) e desative todas as _notificações_
-  - [AdGuard](https://adguard.com/pt_br/adguard-browser-extension/overview.html?_plc=pt_br) e ative todos os _filtros_
-  - [Tampermonkey](https://www.tampermonkey.net/) junto desse [script](https://github.com/wagchi22/guia-de-bolso/blob/main/scripts/bludv-bypass.js)
+- Software:
+  - [Office](https://files.rg-adguard.net/files/031460f7-375b-1168-38bd-9c6a581d8920) com esse [Ativador](https://github.com/massgravel/Microsoft-Activation-Scripts)
+  - [Chrome](https://www.google.com/intl/pt-BR/chrome/) e desative salvar _senhas, pagamentos e endereços_
+    - Extensões: 
+      - [Bitwarden](https://bitwarden.com/download/#downloads-web-browser-extensions) e desative todas as _notificações_
+      - [AdGuard](https://adguard.com/pt_br/adguard-browser-extension/overview.html?_plc=pt_br) e ative todos os _filtros_
+      - [Tampermonkey](https://www.tampermonkey.net/) junto desse [script](https://github.com/wagchi22/guia-de-bolso/blob/main/scripts/bludv-bypass.js)
+  - [VLC](https://www.videolan.org/) e desative _redimensionar vídeo_ e _exibir título_
+  - [NanaZip](https://nanazip.org/)
 
 ## iPhone
 
-- Navegador: [Chrome](https://www.google.com/intl/pt-BR/chrome/)
-  - Lembrar senhas, pagamentos e endereços: Desativado
-  - Continuar com estas guias: Desativado
-  - Perguntar onde salvar cada arquivo antes de fazer download: Ativado
-- Anti-spam: [Não Me Perturbe](https://www.naomeperturbe.com.br/)
-- Filtrar números desconhecidos: Perguntar motivo da ligação 
+- Apps:
+  - [Chrome](https://www.google.com/intl/pt-BR/chrome/) e desative salvar _senhas, pagamentos e endereços_
+- Anti-spam: [Não Me Perturbe](https://www.naomeperturbe.com.br/) e em filtar números desconhecidos marque _perguntar motivo da ligação_
 
 ## Roteador
 
