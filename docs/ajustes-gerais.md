@@ -4,13 +4,13 @@
 Ajustes gerais para todo tipo de coisa.
 :::
 
-### Iluminação
+## Iluminação
 
 - Tipo: LED 
 - Potência: 9W
 - Cor: 4000K
 
-### TV LG
+## TV LG
 
 Fonte: [RTINGS](https://www.rtings.com/tv/learn/how-to-calibrate-your-tv)
 
@@ -46,12 +46,12 @@ Não é recomendado, pois anula o ganho de nitidez ao limitar a banda em 4K/120 
 - Otimização de áudio: Parede
 - Volume automático: Ativado
 
-### Fire TV
+## Fire TV
 
 - Nome dos dispositivos: FireTVStick Sala e FireTVStick Quarto
 - Igualar taxa de quadros original: Ativado
 
-### PlayStation 5
+## PlayStation 5
 
 :::tip Calibração no Jogo
 Ajuste o Contraste conforme a TV, o Branco Papel coloque 200 e Brilho Máximo em 350.
@@ -63,7 +63,7 @@ Ajuste o Contraste conforme a TV, o Branco Papel coloque 200 e Brilho Máximo em
   - 3: Completo mínimo
 - Áudio 3D (TV): Ativado 
 
-### PC Dell
+## PC Dell
 
 :::tip Atualizações
 Mantenha o sistema, firmware e drivers sempre atualizados para evitar problemas de compatibilidade.
@@ -93,7 +93,7 @@ Altere as opções de energia do Adaptador Sem Fio para Desempenho Máximo.
   - [AdGuard](https://adguard.com/pt_br/adguard-browser-extension/overview.html?_plc=pt_br) e ative todos os _filtros_
   - [Tampermonkey](https://www.tampermonkey.net/) junto desse [script](https://github.com/wagchi22/guia-de-bolso/blob/main/scripts/bludv-bypass.js)
 
-### iPhone
+## iPhone
 
 - Navegador: [Chrome](https://www.google.com/intl/pt-BR/chrome/)
   - Lembrar senhas, pagamentos e endereços: Desativado
@@ -102,7 +102,7 @@ Altere as opções de energia do Adaptador Sem Fio para Desempenho Máximo.
 - Anti-spam: [Não Me Perturbe](https://www.naomeperturbe.com.br/)
 - Filtrar números desconhecidos: Perguntar motivo da ligação 
 
-### Roteador
+## Roteador
 
 :::info Otimização de Sinal
 Use esse [software](https://matthafner.com/wifi-analyzer) para encontrar o melhor canal.
@@ -117,7 +117,7 @@ Use esse [software](https://matthafner.com/wifi-analyzer) para encontrar o melho
   - Largura de banda: 80 MHz
   - Canal: 36-48, 149-161
 
-### HD Toshiba
+## HD Toshiba
 
 - Tipo de partição: exFAT
 - Rótulo da partição: Dados
