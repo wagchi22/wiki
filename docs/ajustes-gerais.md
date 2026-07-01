@@ -86,7 +86,7 @@ Altere as opções de energia do Adaptador Sem Fio para Desempenho Máximo.
 - Rede:
   - IP: Estático
   - DNS: [Control D](https://controld.com/free-dns) e selecione _Ads & Tracking_
-- Software:
+- Softwares:
   - [Office](https://files.rg-adguard.net/files/031460f7-375b-1168-38bd-9c6a581d8920) com esse [ativador](https://github.com/massgravel/Microsoft-Activation-Scripts)
   - [Chrome](https://www.google.com/intl/pt-BR/chrome/) e desative salvar _senhas, pagamentos e endereços_
     - Extensões: 
