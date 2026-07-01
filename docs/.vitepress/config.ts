@@ -49,7 +49,7 @@ export default defineConfig({
     sidebar: [
       {
         text: 'Guias',
-        collapsible: true,
+        collapsed: false, // Nota: "collapsible" mudou para "collapsed" nas versões novas
         items: [
           { text: 'Ajustes Gerais', link: '/ajustes-gerais' },
           { text: 'Configurar Servidor de Mídia', link: '/criando-servidor-midia' },
@@ -65,10 +65,16 @@ export default defineConfig({
     docFooter: {
       prev: false,
       next: false,
-    }
+    },
+
+    // Configurações Mobile (Corrigidas para dentro de themeConfig)
+    returnToTopLabel: "Voltar ao topo",
+    sidebarMenuLabel: "Menu"
   },
 
   markdown: {
+    attrs: false,
+    theme: "material-theme-palenight", // Ajustado para o nome padrão correto do tema do Shiki
     lineNumbers: true,
   }
 })
