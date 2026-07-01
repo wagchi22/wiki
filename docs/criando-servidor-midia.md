@@ -99,7 +99,7 @@ Criar um Servidor de Mídia no Windows, usando software popular e confiável par
 		- HDTV-1080p: 5
 - Perfis de lançamentos:
 	- Não deve conter: multi fullhd hdr10+ imax
-- Formato de pasta das séries: {Series TitleYear}
+- Formato de pasta das séries: `{Series TitleYear}`
 - Formatos personalizados:
 
 	<details>
