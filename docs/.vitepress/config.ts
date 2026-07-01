@@ -1,5 +1,4 @@
 import { defineConfig } from 'vitepress'
-import { OramaPlugin } from '@orama/plugin-vitepress'
 
 export default defineConfig({
   title: "Guia de Bolso",
@@ -9,12 +8,12 @@ export default defineConfig({
   // URLs limpas
   cleanUrls: true,
 
-  // Plugin de busca do Orama
-  vite: {
-    plugins: [OramaPlugin()],
-  },
-
   themeConfig: {
+    // ATIVA A BUSCA NATIVA DO VITEPRESS
+    search: {
+      provider: 'local'
+    },
+
     outline: {
       label: 'Nesta página'
     },
