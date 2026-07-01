@@ -8,8 +8,6 @@
     "docs:preview": "vitepress preview docs"
   },
   "devDependencies": {
-    "@orama/plugin-vitepress": "latest",
-    "@orama/orama": "latest",
     "vitepress": "latest",
     "vue": "latest"
   }
