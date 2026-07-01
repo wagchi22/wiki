@@ -49,7 +49,6 @@ export default defineConfig({
     sidebar: [
       {
         text: 'Guias',
-        collapsed: false, // Nota: "collapsible" mudou para "collapsed" nas versões novas
         items: [
           { text: 'Ajustes Gerais', link: '/ajustes-gerais' },
           { text: 'Configurar Servidor de Mídia', link: '/criando-servidor-midia' },
