@@ -1,7 +1,7 @@
 # Configurar Servidor de Mídia
 
 :::info Objetivo
-Criar um Servidor de Mídia no Windows, usando software popular e confiável para automatizar o processo.
+Configurar um Servidor de Mídia no Windows, usando software popular e confiável para automatizar o processo.
 :::
 
 ## Locais
