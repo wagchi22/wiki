@@ -1,9 +1,9 @@
 import { defineConfig } from 'vitepress'
 
 export default defineConfig({
-  title: "Guia de Bolso",
-  description: "Guia de Bolso",
-  base: '/guia-de-bolso/', 
+  title: "Wiki",
+  description: "Coleção pessoal de coisas úteis.",
+  base: '/wiki/', 
   
   cleanUrls: true,
   
@@ -37,7 +37,7 @@ export default defineConfig({
     socialLinks: [
       {
         icon: "github",
-        link: "https://github.com/wagchi22/guia-de-bolso",
+        link: "https://github.com/wagchi22/wiki",
       },
     ],
     
@@ -60,7 +60,7 @@ export default defineConfig({
     ],
 
     editLink: {
-      pattern: 'https://github.com/wagchi22/meus-arquivos/edit/main/docs/:path',
+      pattern: 'https://github.com/wagchi22/wiki/edit/main/docs/:path',
       text: 'Edite essa página no GitHub'
     },
     
