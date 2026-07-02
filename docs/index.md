@@ -2,15 +2,15 @@
 layout: home
 
 hero:
-  name: "Guia de Bolso"
-  text: "Minha coleção pessoal de coisas úteis."
+  name: "Wiki"
+  text: "Coleção pessoal de coisas úteis."
   actions:
     - theme: brand
       text: Explorar
       link: /inicio
     - theme: alt
       text: Ver no GitHub
-      link: https://github.com/wagchi22/guia-de-bolso
+      link: https://github.com/wagchi22/wiki
 
 features:
   - title: 🐍 Códigos
