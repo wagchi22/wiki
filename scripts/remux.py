@@ -25,7 +25,10 @@ def get_file_info(file_path):
         has_sub = any(s.get("codec_type") == "subtitle" for s in st)
         has_img = any((s.get("codec_name") or "").lower() in ["mjpeg", "png", "bmp"] or s.get("disposition", {}).get("attached_pic") == 1 for s in st)
         
-        is_dirty = has_dirty or has_sub or any("title" in "".join(s.get("tags", {}).keys()).lower() for s in st) or has_img or len(v_st) > 1 or v_lang or a_wrong
+        # Força arquivos que não sejam .mkv a serem considerados "dirty" para conversão de container
+        is_not_mkv = not file_path.lower().endswith('.mkv')
+        
+        is_dirty = has_dirty or has_sub or any("title" in "".join(s.get("tags", {}).keys()).lower() for s in st) or has_img or len(v_st) > 1 or v_lang or a_wrong or is_not_mkv
         return is_dirty, sorted_audios
     except Exception:
         return True, []
@@ -37,8 +40,8 @@ def process_file(file_path):
     fn = os.path.basename(file_path)
     if not is_dirty: return print(f"Já processado: {fn}")
 
-    dir_n, ext = os.path.dirname(file_path), os.path.splitext(fn)[1]
-    tmp = os.path.join(dir_n, f"{os.path.splitext(fn)[0]}_temp{ext}")
+    dir_n = os.path.dirname(file_path)
+    tmp = os.path.join(dir_n, f"{os.path.splitext(fn)[0]}_temp.mkv")
 
     mux = ctypes.windll.kernel32.CreateMutexW(None, False, "Local\\RadarrSonarrRemuxQueueMutex")
     ctypes.windll.kernel32.WaitForSingleObject(mux, -1)
@@ -55,8 +58,10 @@ def process_file(file_path):
     try:
         subprocess.run(cmd, check=True, stdout=subprocess.DEVNULL, stderr=subprocess.PIPE, text=True, encoding='utf-8', errors='ignore')
         os.remove(file_path)
-        os.rename(tmp, file_path)
-        print(f"Concluído com sucesso: {fn}")
+        
+        final_path = os.path.splitext(file_path)[0] + ".mkv"
+        os.rename(tmp, final_path)
+        print(f"Concluído com sucesso: {os.path.basename(final_path)}")
     except subprocess.CalledProcessError as e:
         print(f"Erro crítico no FFmpeg para {fn}. Código: {e.returncode}")
         if os.path.exists(tmp): os.remove(tmp)
