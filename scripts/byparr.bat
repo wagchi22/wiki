@@ -1,12 +1,9 @@
 @echo off
 chcp 65001 > nul
 
-:: ==========================================
-:: BLOCO DE AUTORIZACAO ELEVADA (ADMIN)
-:: ==========================================
 net session >nul 2>&1
 if %errorlevel% neq 0 (
-    echo Solicitando privilegios de Administrador...
+    echo Solicitando privilégios de Administrador...
     echo Set UAC = CreateObject^("Shell.Application"^) > "%temp%\getadmin.vbs"
     echo UAC.ShellExecute "cmd.exe", "/c cd /d ""%~dp0"" && ""%~f0""", "", "runas", 1 >> "%temp%\getadmin.vbs"
     "%temp%\getadmin.vbs"
@@ -14,31 +11,33 @@ if %errorlevel% neq 0 (
     exit /b
 )
 cd /d "%~dp0"
-:: ==========================================
+
+set "TASK_NAME=Byparr"
+set "UV_PATH=%USERPROFILE%\.local\bin\uv.exe"
+set "XML_PATH=%temp%\byparr_task.xml"
+set "WORK_DIR=C:\ProgramData\Byparr"
 
 :MENU
 cls
-echo ===================================================
-echo       GERENCIADOR DA TAREFA AGENDADA (BYPARR)
-echo ===================================================
+echo.
+echo ==================================
+echo Configurar Inicialização do Byparr
+echo ==================================
+echo.
 echo [1] Instalar Tarefa Agendada
-echo [2] Remover Tarefa Agendada
+echo [2] Desinstalar Tarefa Agendada
 echo [3] Sair
-echo ===================================================
-set /p opcao="Escolha uma opcao (1-3): "
+echo.
+set /p opcao="Digite uma opção (1-3): "
 
 if "%opcao%"=="1" goto INSTALAR
-if "%opcao%"=="2" goto REMOVER
+if "%opcao%"=="2" goto DESINSTALAR
 if "%opcao%"=="3" goto SAIR
 goto MENU
 
 :INSTALAR
 cls
-echo Instalando a tarefa "Byparr"...
 echo.
-
-set "UV_PATH=%USERPROFILE%\.local\bin\uv.exe"
-set "XML_PATH=%temp%\byparr_task.xml"
 
 (
 echo ^<?xml version="1.0" encoding="UTF-16"?^>
@@ -68,42 +67,43 @@ echo   ^<Actions Context="Author"^>
 echo     ^<Exec^>
 echo       ^<Command^>"%UV_PATH%"^</Command^>
 echo       ^<Arguments^>run "main.py"^</Arguments^>
-echo       ^<WorkingDirectory^>C:\ProgramData\Byparr^</WorkingDirectory^>
+echo       ^<WorkingDirectory^>%WORK_DIR%^</WorkingDirectory^>
 echo     ^</Exec^>
 echo   ^</Actions^>
 echo ^</Task^>
 ) > "%XML_PATH%"
 
-schtasks /create /tn "Byparr" /xml "%XML_PATH%" /f >nul 2>&1
+schtasks /create /tn "%TASK_NAME%" /xml "%XML_PATH%" /f >nul 2>&1
+schtasks /run /tn "%TASK_NAME%" >nul 2>&1
 set "task_error=%errorlevel%"
 
 del "%XML_PATH%" >nul 2>&1
 
 if %task_error% equ 0 (
-    echo [SUCESSO] Tarefa "Byparr" criada e configurada com exito!
-    echo Executavel: "%UV_PATH%"
-    echo Iniciar em: C:\ProgramData\Byparr
+    echo Tarefa "%TASK_NAME%" criada com êxito.
 ) else (
-    echo [ERRO] Falha ao configurar a tarefa.
+    echo Erro ao configurar a tarefa "%TASK_NAME%".
 )
 echo.
-pause
+echo Pressione alguma tecla para voltar...
+pause >nul
 goto MENU
 
-:REMOVER
+:DESINSTALAR
 cls
-echo Removendo a tarefa "Byparr"...
 echo.
 
-schtasks /delete /tn "Byparr" /f >nul 2>&1
+taskkill -im python.exe /f >nul 2>&1
+schtasks /delete /tn "%TASK_NAME%" /f >nul 2>&1
 
 if %errorlevel% equ 0 (
-    echo [SUCESSO] Tarefa "Byparr" removida com exito!
+    echo Tarefa "%TASK_NAME%" desinstalada com êxito.
 ) else (
-    echo [AVISO/ERRO] Falha ao remover ou a tarefa nao existia.
+    echo Erro ao desinstalar a tarefa "%TASK_NAME%".
 )
 echo.
-pause
+echo Pressione alguma tecla para voltar...
+pause >nul
 goto MENU
 
 :SAIR
