@@ -1,3 +1,3 @@
-# Bem-vindo ao meu Guia de Bolso
+# Wiki
 
 Escolha um guia ao lado para começar a ler.
