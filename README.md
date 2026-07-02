@@ -1,3 +1,3 @@
-## Guia de Bolso
+## Wiki
 
-Minha coleção pessoal de coisas úteis.
+Coleção pessoal de coisas úteis.
