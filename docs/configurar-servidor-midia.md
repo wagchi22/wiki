@@ -124,7 +124,7 @@ Configurar um Servidor de Mídia no Windows, usando software popular e confiáve
 - Sincronização automática de legenda: Ativado
 - Modificações Sub-Zero: Ative as opções principais
 - Pontuação mínima para filmes: 90
-- Provedor de legendas: [Open Subtitles](https://www.opensubtitles.com/), [Legendas](https://legendas.net/)
+- Provedor de legendas: [OpenSubtitles.com](https://www.opensubtitles.com/), [Legendas.net](https://legendas.net/) (_Use o e-mail como nome de usuário se falhar ao autenticar_)
 
 ## Jellyfin
 
