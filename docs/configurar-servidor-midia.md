@@ -81,14 +81,14 @@ Configurar um Servidor de Mídia no Windows, usando software popular e confiáve
 
 - Usuário: Coloque um nome qualquer
 - Senha: Insira uma senha qualquer
-- Conexões: Adicione o qBittorrent. (_Requer Chave API_)
+- Conexões: Adicione o qBittorrent (_Requer Chave API_)
 - Renomear automaticamente: Ativado
 - Propers e repacks: Desativado
 - Monitorar: Episódios ausentes
 - Perfis de qualidade padrão: HD-1080p
 	- Idioma: Any
 	- Ordem e definições de qualidades:
-		- WEBDL-1080p: 10 100 200. (_Retire todos do grupo_)
+		- WEBDL-1080p: 10 100 200 (_Retire todos do grupo_)
 		- Bluray-1080p: 8 80 180
 		- HDTV-1080p: 4 40 140
 	- Pontuações:
@@ -119,7 +119,7 @@ Configurar um Servidor de Mídia no Windows, usando software popular e confiáve
 
 - Usuário: Coloque um nome qualquer
 - Senha: Insira uma senha qualquer
-- Conexões: Adicione o Radarr e Sonarr. (_Requer Chave API_)
+- Conexões: Adicione o Radarr e Sonarr (_Requer Chave API_)
 - Legenda padrão para nova mídia: Ativado
 - Sincronização automática de legenda: Ativado
 - Modificações Sub-Zero: Ative as opções principais
