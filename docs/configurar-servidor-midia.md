@@ -65,7 +65,7 @@ Configurar um Servidor de Mídia no Windows, usando software popular e confiáve
 - Formatos personalizados:
 
 	<details>
-  	  <summary><b>Exibir código</b></summary>
+      <summary><b>Exibir código</b></summary>
  
 	```json
 	{ "name": "WEBDL-1080p", "includeCustomFormatWhenRenaming": false, "specifications": [ { "name": "Fonte", "implementation": "SourceSpecification", "negate": false, "required": false, "fields": { "value": 7 } } ] }
@@ -103,7 +103,7 @@ Configurar um Servidor de Mídia no Windows, usando software popular e confiáve
 - Formatos personalizados:
 
 	<details>
-  	  <summary><b>Exibir código</b></summary>
+      <summary><b>Exibir código</b></summary>
  
 	```json
 	{ "name": "WEBDL-1080p", "includeCustomFormatWhenRenaming": false, "specifications": [ { "name": "Fonte", "implementation": "SourceSpecification", "negate": false, "required": false, "fields": { "value": 3 } } ] }
@@ -123,7 +123,8 @@ Configurar um Servidor de Mídia no Windows, usando software popular e confiáve
 - Legenda padrão para nova mídia: Ativado
 - Sincronização automática de legenda: Ativado
 - Modificações Sub-Zero: Ative as opções principais
-- Provedor de legendas: [Open Subtitles](https://www.opensubtitles.com/)
+- Pontuação mínima para filmes: 90
+- Provedor de legendas: [Open Subtitles](https://www.opensubtitles.com/) e [Legendas](https://legendas.net/)
 
 ## Jellyfin
 
