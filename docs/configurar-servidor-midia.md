@@ -45,7 +45,6 @@ Configurar um Servidor de Mídia no Windows, usando software popular e confiáve
 - Usuário: Coloque um nome qualquer
 - Senha: Insira uma senha qualquer
 - Conexões: Adicione o qBittorrent (_Requer Chave API_)
-- Renomear automaticamente: Ativado
 - Propers e repacks: Desativado
 - Monitorar: Somente filme
 - Perfis de qualidade padrão: HD-1080p
@@ -62,6 +61,9 @@ Configurar um Servidor de Mídia no Windows, usando software popular e confiáve
 		- HDTV-1080p: 5
 - Perfis de lançamentos:
 	- Não deve conter: multi fullhd hdr10+ imax
+- Renomear automaticamente: Ativado
+	- Pastas: `{Movie CleanTitle} ({Release Year})`
+	- Arquivos: `{Movie.CleanTitle}.{Release Year}.{Quality Title}.{MediaInfo VideoCodec}.{MediaInfo.AudioCodec}.{MediaInfo AudioChannels}`
 - Formatos personalizados:
 
 	<details>
@@ -82,7 +84,6 @@ Configurar um Servidor de Mídia no Windows, usando software popular e confiáve
 - Usuário: Coloque um nome qualquer
 - Senha: Insira uma senha qualquer
 - Conexões: Adicione o qBittorrent (_Requer Chave API_)
-- Renomear automaticamente: Ativado
 - Propers e repacks: Desativado
 - Monitorar: Episódios ausentes
 - Perfis de qualidade padrão: HD-1080p
@@ -99,21 +100,22 @@ Configurar um Servidor de Mídia no Windows, usando software popular e confiáve
 		- HDTV-1080p: 5
 - Perfis de lançamentos:
 	- Não deve conter: multi fullhd hdr10+ imax
-- Formato de pasta das séries: `{Series TitleYear}`
+- Renomear automaticamente: Ativado
+	- Pastas: `{Series CleanTitle} ({Series Year})`
+	- Arquivos: `{Series.CleanTitle}.S{season:00}E{episode:00}.{Episode.CleanTitle}.{Quality Title}.{MediaInfo VideoCodec}.{MediaInfo.AudioCodec}.{MediaInfo AudioChannels}`
 - Formatos personalizados:
 
 	<details>
       <summary><b>Exibir código</b></summary>
  
 	```json
-	{ "name": "WEBDL-1080p", "includeCustomFormatWhenRenaming": false, "specifications": [ { "name": "Fonte", "implementation": "SourceSpecification", "negate": false, "required": false, "fields": { "value": 3 } } ] }
-	{ "name": "Portuguese", "includeCustomFormatWhenRenaming": false, "specifications": [ { "name": "Idioma", "implementation": "LanguageSpecification", "negate": false, "required": false, "fields": { "value": 18, "exceptLanguage": false } } ] }
-	{ "name": "HDTV-1080p", "includeCustomFormatWhenRenaming": false, "specifications": [ { "name": "Fonte", "implementation": "SourceSpecification", "negate": false, "required": false, "fields": { "value": 1 } } ] }
-	{ "name": "English", "includeCustomFormatWhenRenaming": false, "specifications": [ { "name": "Idioma", "implementation": "LanguageSpecification", "negate": false, "required": false, "fields": { "value": 1, "exceptLanguage": false } } ] }
-	{ "name": "Bluray-1080p", "includeCustomFormatWhenRenaming": false, "specifications": [ { "name": "Fonte", "implementation": "SourceSpecification", "negate": false, "required": false, "fields": { "value": 6 } } ] }
-	```
+	{ "name": "Bluray-1080p", "includeCustomFormatWhenRenaming": false, "specifications": [{ "name": "Fonte", "implementation": "SourceSpecification", "negate": false, "required": false, "fields": { "value": 6 } }, { "name": "Resolução", "implementation": "ResolutionSpecification", "negate": false, "required": false, "fields": { "value": 1080 } }] },
+  { "name": "English", "includeCustomFormatWhenRenaming": false, "specifications": [{ "name": "Idioma", "implementation": "LanguageSpecification", "negate": false, "required": false, "fields": { "value": 1, "exceptLanguage": false } }] },
+  { "name": "HDTV-1080p", "includeCustomFormatWhenRenaming": false, "specifications": [{ "name": "Fonte", "implementation": "SourceSpecification", "negate": false, "required": false, "fields": { "value": 1 } }, { "name": "Resolução", "implementation": "ResolutionSpecification", "negate": false, "required": false, "fields": { "value": 1080 } }] },
+  { "name": "Portuguese", "includeCustomFormatWhenRenaming": false, "specifications": [{ "name": "Idioma", "implementation": "LanguageSpecification", "negate": false, "required": false, "fields": { "value": 18, "exceptLanguage": false } }] },
+  { "name": "WEBDL-1080p", "includeCustomFormatWhenRenaming": false, "specifications": [{ "name": "Fonte", "implementation": "SourceSpecification", "negate": false, "required": false, "fields": { "value": 3 } }, { "name": "Resolução", "implementation": "ResolutionSpecification", "negate": false, "required": false, "fields": { "value": 1080 } }] }
 
-	</details>
+ 	</details>
 
 ## Bazarr
 
