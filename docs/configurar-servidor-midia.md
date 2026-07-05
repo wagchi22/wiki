@@ -109,11 +109,12 @@ Configurar um Servidor de Mídia no Windows, usando software popular e confiáve
       <summary><b>Exibir código</b></summary>
  
 	```json
-	{ "name": "Bluray-1080p", "includeCustomFormatWhenRenaming": false, "specifications": [{ "name": "Fonte", "implementation": "SourceSpecification", "negate": false, "required": false, "fields": { "value": 6 } }, { "name": "Resolução", "implementation": "ResolutionSpecification", "negate": false, "required": false, "fields": { "value": 1080 } }] },
+  { "name": "Bluray-1080p", "includeCustomFormatWhenRenaming": false, "specifications": [{ "name": "Fonte", "implementation": "SourceSpecification", "negate": false, "required": false, "fields": { "value": 6 } }, { "name": "Resolução", "implementation": "ResolutionSpecification", "negate": false, "required": false, "fields": { "value": 1080 } }] },
   { "name": "English", "includeCustomFormatWhenRenaming": false, "specifications": [{ "name": "Idioma", "implementation": "LanguageSpecification", "negate": false, "required": false, "fields": { "value": 1, "exceptLanguage": false } }] },
   { "name": "HDTV-1080p", "includeCustomFormatWhenRenaming": false, "specifications": [{ "name": "Fonte", "implementation": "SourceSpecification", "negate": false, "required": false, "fields": { "value": 1 } }, { "name": "Resolução", "implementation": "ResolutionSpecification", "negate": false, "required": false, "fields": { "value": 1080 } }] },
   { "name": "Portuguese", "includeCustomFormatWhenRenaming": false, "specifications": [{ "name": "Idioma", "implementation": "LanguageSpecification", "negate": false, "required": false, "fields": { "value": 18, "exceptLanguage": false } }] },
   { "name": "WEBDL-1080p", "includeCustomFormatWhenRenaming": false, "specifications": [{ "name": "Fonte", "implementation": "SourceSpecification", "negate": false, "required": false, "fields": { "value": 3 } }, { "name": "Resolução", "implementation": "ResolutionSpecification", "negate": false, "required": false, "fields": { "value": 1080 } }] }
+	```
 
  	</details>
 
