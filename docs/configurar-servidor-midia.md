@@ -69,9 +69,6 @@ Configurar um Servidor de Mídia no Windows, usando software popular e confiáve
 	<details>
       <summary><b>Exibir código</b></summary>
  
-	<details>
-      <summary><b>Exibir código</b></summary>
- 
 	```json
   { "name": "Bluray-1080p", "includeCustomFormatWhenRenaming": false, "specifications": [{ "name": "Fonte", "implementation": "SourceSpecification", "negate": false, "required": false, "fields": { "value": 9 } }, { "name": "Resolução", "implementation": "ResolutionSpecification", "negate": false, "required": false, "fields": { "value": 1080 } }] },
   { "name": "English", "includeCustomFormatWhenRenaming": false, "specifications": [{ "name": "Idioma", "implementation": "LanguageSpecification", "negate": false, "required": false, "fields": { "value": 1, "exceptLanguage": false } }] },
