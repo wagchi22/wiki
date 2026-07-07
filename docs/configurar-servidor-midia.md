@@ -12,12 +12,17 @@ Configurar um Servidor de Mídia no Windows, usando software popular e confiáve
 
 ## Software
 
-- Instale:
-	- Indexador: [Prowlarr](https://prowlarr.com/) + [Byparr](https://github.com/ThePhaseless/Byparr)
-	- Automação: [Radarr](https://radarr.video/) + [Sonarr](https://sonarr.tv/) + [Bazarr](https://www.bazarr.media/)
-	- Streaming: [Jellyfin](https://jellyfin.org/)
-	- Cliente de Torrent: [qBittorrent](https://www.qbittorrent.org/)
-	- (Opcional) Script: [remux.py](https://github.com/wagchi22/meus-arquivos/blob/main/scripts/remux.py) (_Requer [python](https://www.python.org/) e [mkvmerge](https://mkvtoolnix.download/)_)
+- Recomendado:
+	- [Prowlarr](https://prowlarr.com/)
+	- [Byparr](https://github.com/ThePhaseless/Byparr)
+	- [Radarr](https://radarr.video/)
+	- [Sonarr](https://sonarr.tv/)
+	- [Bazarr](https://www.bazarr.media/)
+	- [Jellyfin](https://jellyfin.org/)
+	- [qBittorrent](https://www.qbittorrent.org/)
+- Opcional:
+   	- [MediaInfo](https://mediaarea.net/pt/MediaInfo)
+	- [Script](https://github.com/wagchi22/meus-arquivos/blob/main/scripts/remux.py) (_Requer [python](https://www.python.org/) e [mkvmerge](https://mkvtoolnix.download/)_)
 
 ## Prowlarr
 
