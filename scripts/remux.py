@@ -23,7 +23,7 @@ def process_file(file_path):
         
     fn = os.path.basename(file_path)
     if not is_dirty(file_path):
-        print(f"\nJá processado: {fn}")
+        print(f"Já processado: {fn}")
         return
 
     print(f"\nProcessando: {fn}")
@@ -72,9 +72,9 @@ target = os.environ.get('radarr_moviefile_path') or os.environ.get('sonarr_episo
 
 if target:
     if os.path.isdir(target):
-        print(f"\nIniciando varredura recursiva na pasta: {target}")
+        print(f"\nIniciando varredura recursiva na pasta: {target}\n")
         for r, _, files in os.walk(target):
             for f in files: process_file(os.path.join(r, f))
-        print("Varredura e processamento concluídos!")
+        print("\nVarredura e processamento concluídos!")
     elif os.path.isfile(target):
         process_file(target)
