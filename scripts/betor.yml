@@ -1,0 +1,100 @@
+---
+id: betor
+name: Catálogo BeTor
+description: "Agregador de agregadores ;)"
+language: pt-BR
+type: public
+encoding: UTF-8
+links:
+- https://catalogo.betor.top/
+
+caps:
+  categories:
+    movie: Movies
+    tv: TV
+  modes:
+    search: [q]
+    tv-search: [q, imdbid, season]
+    movie-search: [q, imdbid]
+
+search:
+  filters:
+    - name: reject
+      args: ["(?i)CAMRip", "(?i)Telesync", "(?i)TS", "(?i)TC"]
+  paths:
+    - path: "{{ if .Query.Q }}/search/{{ else }}/{{ end }}{{ if .Query.IMDBID }}imdb/{{ .Query.IMDBID }}/{{ else }}filmes/{{ end }}"
+      inputs:
+        q: "{{ .Query.Q }}"
+      categories: ["movie"]
+    - path: "{{ if .Query.Q }}/search/{{ else }}/{{ end }}{{ if .Query.IMDBID }}imdb/{{ .Query.IMDBID }}/{{ else }}{{ end }}{{ if and (.Query.IMDBID) (.Query.Season) }}season/{{ .Query.Season }}/{{ else }}{{ end }}{{ if or (.Query.IMDBID) (.Query.Season) }}{{ else }}series/{{ end }}"
+      inputs:
+        q: "{{ .Query.Q }}"
+      categories: ["tv"]
+  rows:
+    selector: "[data-torrent]"
+  fields:
+    title:
+      attribute: data-torrent-name
+      filters:
+        - name: re_replace
+          args: ["(?i)\\.(mkv|mp4)$", ""]
+        - name: re_replace
+          args: ["\\[[^\\]]*\\]$", ""]
+        - name: re_replace
+          args: [",", ""]
+        - name: re_replace
+          args: ["(?i)STARCKFILMES", ""]
+        - name: re_replace
+          args: ["(?i)WEB[\\.\\s\\-_]+DL", "WEBDL"]
+        - name: re_replace
+          args: ["(?i)1080p(\\.?.*?)full\\.?hd", "Full-1080p$1"]
+        - name: re_replace
+          args: ["(?i)full\\.?hd(\\.?.*?)1080p", "Full-1080p$1"]
+        - name: re_replace
+          args: ["(?i)BluRay", "Bluray"]
+        - name: re_replace
+          args: ["(?i)\\bDUAL\\b", "Brazilian.English"]
+        - name: re_replace
+          args: ["(?i)\\bDUBLADO\\b", "Brazilian"]
+        - name: re_replace
+          args: ["(?i)\\b(ENG|ENGLISH)\\b", "English"]
+        - name: re_replace
+          args: ["\\s+", "."]
+        - name: re_replace
+          args: ["[-_]+", "."]
+        - name: re_replace
+          args: ["\\.\\.+", "."]
+        - name: re_replace
+          args: ["(?i)Full\\.1080p", "Full-1080p"]
+        - name: re_replace
+          args: ["\\.$", ""]
+
+    languages:
+      attribute: data-torrent-languages
+      filters:
+        - name: re_replace
+          args: ["\\bpt\\b", ""]
+        - name: replace
+          args: ["pt-BR", "Portuguese (Brazil)"]
+        - name: replace
+          args: ["en", "English"]
+    category:
+      attribute: data-item-type
+    details:
+      attribute: data-provider-url
+    magnet:
+      attribute: data-torrent-magnet-uri
+    imdbid:
+      attribute: data-item-imdb-id
+    tmdbid:
+      attribute: data-item-tmdb-id
+    date:
+      attribute: data-torrent-inserted-at
+    size:
+      attribute: data-torrent-size
+    seeders:
+      attribute: data-torrent-num-seeds
+    leechers:
+      attribute: data-torrent-num-peers
+
+# json engine n/a
