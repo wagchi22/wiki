@@ -1,7 +1,8 @@
 // ==UserScript==
 // @name         BLUDV Bypass
-// @description  Pula os anúncios de download no BLUDV
-// @version      2026-06-17
+// @description  Pula os anúncios do BLUDV
+// @version      2026-07-07
+// @author       wagchi22
 // @match        *://*.systemads.xyz/*
 // @match        *://*.systemads.net/*
 // @match        *://*.autotop.net/*
