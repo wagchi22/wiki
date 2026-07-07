@@ -92,7 +92,7 @@ Altere as opções de energia do Adaptador Sem Fio para Desempenho Máximo.
     - Extensões: 
       - [Bitwarden](https://bitwarden.com/download/#downloads-web-browser-extensions) e desative todas as _notificações_
       - [AdGuard](https://adguard.com/pt_br/adguard-browser-extension/overview.html?_plc=pt_br) e ative todos os _filtros_
-      - [Tampermonkey](https://www.tampermonkey.net/) junto desse [script](https://github.com/wagchi22/guia-de-bolso/blob/main/scripts/bludv-bypass.js)
+      - [Tampermonkey](https://www.tampermonkey.net/) junto desse [script](https://github.com/wagchi22/guia-de-bolso/blob/main/scripts/bludv-bypass.js) e esse [script](https://github.com/wagchi22/wiki/blob/main/scripts/memoriadatv-bypass.js)
   - [VLC](https://www.videolan.org/) e desative _redimensionar vídeo_ e _exibir título_
   - [NanaZip](https://nanazip.org/)
 
