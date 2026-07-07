@@ -24,7 +24,7 @@ Configurar um Servidor de Mídia no Windows, usando software popular e confiáve
 - Usuário: Coloque um nome qualquer
 - Senha: Insira uma senha qualquer
 - Conexões (requer Chave API): Adicione o Radarr e Sonarr
-- Indexadores: 1337x, [Catálogo BeTor](https://catalogo.betor.top/static/catalogo-betor.yml)
+- Indexadores: [Catálogo BeTor](https://catalogo.betor.top/static/catalogo-betor.yml) com essas [modificações](https://github.com/wagchi22/wiki/blob/main/scripts/catalogo-betor-atualizado.yml)
 - Mínimo de semeadores: 0
 - Proxy: Byparr
 
