@@ -45,11 +45,9 @@ search:
         - name: re_replace
           args: ["(?i)STARCKFILMES", ""]
         - name: re_replace
+          args: ["(?i)-SF", ""]
+        - name: re_replace
           args: ["(?i)WEB[\\.\\s\\-_]+DL", "WEBDL"]
-        - name: re_replace
-          args: ["(?i)1080p(\\.?.*?)full\\.?hd", "Full-1080p$1"]
-        - name: re_replace
-          args: ["(?i)full\\.?hd(\\.?.*?)1080p", "Full-1080p$1"]
         - name: re_replace
           args: ["(?i)BluRay", "Bluray"]
         - name: re_replace
@@ -61,11 +59,9 @@ search:
         - name: re_replace
           args: ["\\s+", "."]
         - name: re_replace
-          args: ["[-_]+", "."]
+          args: ["_+", "."]
         - name: re_replace
           args: ["\\.\\.+", "."]
-        - name: re_replace
-          args: ["(?i)Full\\.1080p", "Full-1080p"]
         - name: re_replace
           args: ["\\.$", ""]
 
