@@ -14,13 +14,10 @@ caps:
     tv: TV
   modes:
     search: [q]
-    tv-search: [q, imdbid, season]
     movie-search: [q, imdbid]
+    tv-search: [q, imdbid, season]
 
 search:
-  filters:
-    - name: reject
-      args: ["(?i)CAMRip", "(?i)Telesync", "(?i)TS", "(?i)TC"]
   paths:
     - path: "{{ if .Query.Q }}/search/{{ else }}/{{ end }}{{ if .Query.IMDBID }}imdb/{{ .Query.IMDBID }}/{{ else }}filmes/{{ end }}"
       inputs:
@@ -33,7 +30,7 @@ search:
   rows:
     selector: "[data-torrent]"
   fields:
-    title:
+    _torrent_name:
       attribute: data-torrent-name
       filters:
         - name: re_replace
@@ -51,29 +48,31 @@ search:
         - name: re_replace
           args: ["(?i)BluRay", "Bluray"]
         - name: re_replace
-          args: ["(?i)\\bDUAL\\b", "Brazilian.English"]
-        - name: re_replace
-          args: ["(?i)\\bDUBLADO\\b", "Brazilian"]
-        - name: re_replace
-          args: ["(?i)\\b(ENG|ENGLISH)\\b", "English"]
-        - name: re_replace
           args: ["\\s+", "."]
         - name: re_replace
           args: ["_+", "."]
         - name: re_replace
           args: ["\\.\\.+", "."]
         - name: re_replace
-          args: ["\\.$", ""]
-
-    languages:
+          args: ["[-.]+$", ""]
+    _languages_tags:
       attribute: data-torrent-languages
       filters:
+        - name: replace
+          args: ["en", "english"]
+        - name: replace
+          args: ["pt-BR", "brazilian"]
+        - name: replace
+          args: ["pt", "portuguese"]
         - name: re_replace
-          args: ["\\bpt\\b", ""]
+          args: ["\\s+", ","]
+    title:
+      text: "{{ .Result._torrent_name }}{{ if .Result._languages_tags }} [{{ .Result._languages_tags }}]{{ else }} [VAZIO]{{ end }}"
+      filters:
+        - name: re_replace
+          args: ["(?i)DUAL(.*?)\\s*\\[VAZIO\\]", "DUAL$1 [portuguese,english]"]
         - name: replace
-          args: ["pt-BR", "Portuguese (Brazil)"]
-        - name: replace
-          args: ["en", "English"]
+          args: [" [VAZIO]", ""]
     category:
       attribute: data-item-type
     details:
