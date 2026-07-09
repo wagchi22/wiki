@@ -4,11 +4,14 @@
 Configurar um Servidor de Mídia no Windows, usando software popular e confiável para automatizar o processo.
 :::
 
+> [!TIP]
+> Algumas informações foram retiradas do [TRaSH Guides](https://trash-guides.info/), como _configurações de qualidade (tamanho de arquivo) e esquema de nomenclatura_.
+
 ## Locais
 
-- Servarr: C:\ProgramData
-- Torrents: E:\torrents
-- Mídia: E:\media
+- Softwares e scripts: `C:\ProgramData`
+- Torrents: `E:\torrents`
+- Biblioteca de mídia: `E:\media`
 
 ## Software
 
