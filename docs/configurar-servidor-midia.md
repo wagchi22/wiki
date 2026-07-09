@@ -52,12 +52,12 @@ Configurar um Servidor de Mídia no Windows, usando software popular e confiáve
 - Conexões: Adicione o qBittorrent (_Requer Chave API_)
 - Propers e repacks: Desativado
 - Monitorar: Somente filme
-- Perfis de qualidade: (_Retire dos grupos e os mova para o topo da lista_)
+- Perfis de qualidade: 
 	- 1080p
    		- Atualizações Permitidas: Ativado
      	- Atualizar até a qualidade: Bluray-1080p
-      	- Atualizar Até Pontuação de Formato Personalizado: 10000
-		- Ordem e definições de qualidades:
+      	- Atualizar até pontuação de formato personalizado: 10000
+		- Ordem e definições de qualidades: (_Retire dos grupos e os mova para o topo da lista_)
 			- Bluray-1080p: 50,8/1999/2000
 			- WEBDL-1080p: 12,5/1999/2000
 		- Pontuações:
@@ -69,8 +69,8 @@ Configurar um Servidor de Mídia no Windows, usando software popular e confiáve
 	- 2160p
    		- Atualizações Permitidas: Ativado
      	- Atualizar até a qualidade: Bluray-1080p
-      	- Atualizar Até Pontuação de Formato Personalizado: 10000
-		- Ordem e definições de qualidades:
+      	- Atualizar até pontuação de formato personalizado: 10000
+		- Ordem e definições de qualidades: (_Retire dos grupos e os mova para o topo da lista_)
 			- Bluray-2160p: 102/1999/2000
 			- WEBDL-2160p: 34,5/1999/2000
 		- Pontuações:
@@ -79,20 +79,12 @@ Configurar um Servidor de Mídia no Windows, usando software popular e confiáve
    			- DUAL: 1500
    			- Português: 1000
 			- Inglês: 500
-
 - Renomear automaticamente: Ativado
 	- Pastas: `{Movie CleanTitle} ({Release Year})`
 	- Arquivos: `{Movie.CleanTitle}.{Release.Year}.{Quality Title}.{MediaInfo VideoCodec}.{Custom.Formats}.{Mediainfo AudioChannels}`
-- Formatos personalizados:
-
-	<details>
-      <summary><b>Exibir código</b></summary>
- 
-	```json
-	
- 	```
-
- 	</details>
+- Formatos personalizados: Acesse [aqui](https://github.com/wagchi22/wiki/blob/main/scripts/custom-formats.json)
+- Script Personalizado: `C:\ProgramData\Remux.py` e marque _ao obter; importar; atualizar; adicionar; interação manual_
+- País da certificação: Brazil
 
 ## Sonarr
 
@@ -118,20 +110,8 @@ Configurar um Servidor de Mídia no Windows, usando software popular e confiáve
 - Renomear automaticamente: Ativado
 	- Pastas: `{Series CleanTitle} ({Series Year})`
 	- Arquivos: `{Series.CleanTitle}.S{season:00}E{episode:00}.{Episode.CleanTitle}.{Quality Title}.{MediaInfo VideoCodec}.{MediaInfo.AudioCodec}.{MediaInfo AudioChannels}`
-- Formatos personalizados:
-
-	<details>
-      <summary><b>Exibir código</b></summary>
- 
-	```json
-  { "name": "Bluray-1080p", "includeCustomFormatWhenRenaming": false, "specifications": [{ "name": "Fonte", "implementation": "SourceSpecification", "negate": false, "required": false, "fields": { "value": 6 } }, { "name": "Resolução", "implementation": "ResolutionSpecification", "negate": false, "required": false, "fields": { "value": 1080 } }] },
-  { "name": "English", "includeCustomFormatWhenRenaming": false, "specifications": [{ "name": "Idioma", "implementation": "LanguageSpecification", "negate": false, "required": false, "fields": { "value": 1, "exceptLanguage": false } }] },
-  { "name": "HDTV-1080p", "includeCustomFormatWhenRenaming": false, "specifications": [{ "name": "Fonte", "implementation": "SourceSpecification", "negate": false, "required": false, "fields": { "value": 1 } }, { "name": "Resolução", "implementation": "ResolutionSpecification", "negate": false, "required": false, "fields": { "value": 1080 } }] },
-  { "name": "Portuguese", "includeCustomFormatWhenRenaming": false, "specifications": [{ "name": "Idioma", "implementation": "LanguageSpecification", "negate": false, "required": false, "fields": { "value": 18, "exceptLanguage": false } }] },
-  { "name": "WEBDL-1080p", "includeCustomFormatWhenRenaming": false, "specifications": [{ "name": "Fonte", "implementation": "SourceSpecification", "negate": false, "required": false, "fields": { "value": 3 } }, { "name": "Resolução", "implementation": "ResolutionSpecification", "negate": false, "required": false, "fields": { "value": 1080 } }] }
-	```
-
- 	</details>
+- Formatos personalizados: Acesse [aqui](https://github.com/wagchi22/wiki/blob/main/scripts/custom-formats.json)
+- Script Personalizado: `C:\ProgramData\Remux.py` e marque _ao obter; importar; atualizar; adicionar; interação manual_
 
 ## Bazarr
 
