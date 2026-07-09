@@ -1,0 +1,98 @@
+{
+  "name": "Bluray",
+  "includeCustomFormatWhenRenaming": false,
+  "specifications": [
+    {
+      "name": "Fonte",
+      "implementation": "SourceSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": 9
+      }
+    }
+  ]
+}
+{
+  "name": "DUAL",
+  "includeCustomFormatWhenRenaming": true,
+  "specifications": [
+    {
+      "name": "Idioma",
+      "implementation": "LanguageSpecification",
+      "negate": false,
+      "required": true,
+      "fields": {
+        "value": 18,
+        "exceptLanguage": false
+      }
+    },
+    {
+      "name": "Idioma",
+      "implementation": "LanguageSpecification",
+      "negate": false,
+      "required": true,
+      "fields": {
+        "value": 1,
+        "exceptLanguage": false
+      }
+    }
+  ]
+}
+{
+  "name": "Inglês",
+  "includeCustomFormatWhenRenaming": false,
+  "specifications": [
+    {
+      "name": "Idioma",
+      "implementation": "LanguageSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": 1,
+        "exceptLanguage": false
+      }
+    }
+  ]
+}
+{
+  "name": "Português",
+  "includeCustomFormatWhenRenaming": false,
+  "specifications": [
+    {
+      "name": "Idioma",
+      "implementation": "LanguageSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": 18,
+        "exceptLanguage": false
+      }
+    },
+    {
+      "name": "Idioma",
+      "implementation": "LanguageSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": 30,
+        "exceptLanguage": false
+      }
+    }
+  ]
+}
+{
+  "name": "WEBDL",
+  "includeCustomFormatWhenRenaming": false,
+  "specifications": [
+    {
+      "name": "Fonte",
+      "implementation": "SourceSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": 7
+      }
+    }
+  ]
+}
