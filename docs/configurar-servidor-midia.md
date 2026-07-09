@@ -53,7 +53,7 @@ Configurar um Servidor de Mídia no Windows, usando software popular e confiáve
 - Propers e repacks: Desativado
 - Monitorar: Somente filme
 - Perfis de qualidade: 
-	- 1080p
+	- 1080p:
    		- Atualizações Permitidas: Ativado
      	- Atualizar até a qualidade: Bluray-1080p
       	- Atualizar até pontuação de formato personalizado: 10000
@@ -66,7 +66,7 @@ Configurar um Servidor de Mídia no Windows, usando software popular e confiáve
    			- DUAL: 1500
    			- Português: 1000
 			- Inglês: 500
-	- 2160p
+	- 2160p:
    		- Atualizações Permitidas: Ativado
      	- Atualizar até a qualidade: Bluray-1080p
       	- Atualizar até pontuação de formato personalizado: 10000
@@ -94,7 +94,7 @@ Configurar um Servidor de Mídia no Windows, usando software popular e confiáve
 - Propers e repacks: Desativado
 - Monitorar: Episódios ausentes
 - Perfis de qualidade: 
-	- 1080p
+	- 1080p:
    		- Atualizações Permitidas: Ativado
      	- Atualizar até a qualidade: Bluray-1080p
       	- Atualizar até pontuação de formato personalizado: 10000
@@ -107,7 +107,7 @@ Configurar um Servidor de Mídia no Windows, usando software popular e confiáve
    			- DUAL: 1500
    			- Português: 1000
 			- Inglês: 500
-	- 2160p
+	- 2160p:
    		- Atualizações Permitidas: Ativado
      	- Atualizar até a qualidade: Bluray-1080p
       	- Atualizar até pontuação de formato personalizado: 10000
