@@ -19,10 +19,10 @@ Configurar um Servidor de Mídia no Windows, usando software popular e confiáve
 	- [Bazarr](https://www.bazarr.media/)
 	- [Jellyfin](https://jellyfin.org/)
 	- [qBittorrent](https://www.qbittorrent.org/)
-- Opcional:
-	- [Byparr](https://github.com/ThePhaseless/Byparr)
-	- [MediaInfo](https://mediaarea.net/pt/MediaInfo)
 	- [Script](https://github.com/wagchi22/meus-arquivos/blob/main/scripts/remux.py) (_Requer [python](https://www.python.org/) e [mkvmerge](https://mkvtoolnix.download/)_)
+- Opcional:
+	- [Byparr](https://github.com/ThePhaseless/Byparr) (_Necessário para o 1337x e outros indexadores_)
+	- [MediaInfo](https://mediaarea.net/pt/MediaInfo) (_Útil para conferir os metadados dos arquivos_)
 
 ## Prowlarr
 
@@ -31,11 +31,11 @@ Configurar um Servidor de Mídia no Windows, usando software popular e confiáve
 - Conexões (requer Chave API): Adicione o Radarr e Sonarr
 - Indexadores: [Catálogo BeTor](https://github.com/wagchi22/wiki/blob/main/scripts/catalogo-betor.yml)
 - Mínimo de semeadores: 0
-- Proxy: Byparr
+- (_Opcional_) Proxy: Byparr
 
-## Byparr
+## (_Opcional_) Byparr
 
-- Execute: [byparr.bat](https://github.com/wagchi22/meus-arquivos/blob/main/scripts/byparr.bat)
+- Execute e instale: [byparr.bat](https://github.com/wagchi22/meus-arquivos/blob/main/scripts/byparr.bat)
 
 ## qBittorrent
 
@@ -83,7 +83,8 @@ Configurar um Servidor de Mídia no Windows, usando software popular e confiáve
 	- Pastas: `{Movie CleanTitle} ({Release Year})`
 	- Arquivos: `{Movie.CleanTitle}.{Release.Year}.{Quality Title}.{MediaInfo VideoCodec}.{Custom.Formats}.{Mediainfo AudioChannels}`
 - Formatos personalizados: Acesse [aqui](https://github.com/wagchi22/wiki/blob/main/scripts/custom-formats.json)
-- Script Personalizado: `C:\ProgramData\remux.py` e marque _ao obter; importar; atualizar; adicionar; interação manual_
+- Conexões:
+	- Script Personalizado: `C:\ProgramData\remux.py` e marque _ao obter; importar; atualizar; adicionar; interação manual_
 - País da certificação: Brazil
 
 ## Sonarr
@@ -124,7 +125,8 @@ Configurar um Servidor de Mídia no Windows, usando software popular e confiáve
 	- Pastas: `{Series CleanTitleWithoutYear} {(Series Year)}`
 	- Arquivos: `{Series.CleanTitleWithoutYear}.{Series.Year}.S{season:00}E{episode:00}.{Quality Title}.{MediaInfo VideoCodec}.{Custom.Formats}.{Mediainfo AudioChannels}`
 - Formatos personalizados: Acesse [aqui](https://github.com/wagchi22/wiki/blob/main/scripts/custom-formats.json)
-- Script Personalizado: `C:\ProgramData\remux.py` e marque _ao obter; importar; atualizar; adicionar; interação manual_
+- Conexões:
+	- Script Personalizado: `C:\ProgramData\remux.py` e marque _ao obter; importar; atualizar; adicionar; interação manual_
 
 ## Bazarr
 
