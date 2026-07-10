@@ -111,7 +111,7 @@ Use esse [software](https://matthafner.com/wifi-analyzer) para encontrar o melho
 - Local: Parede
 - Band Steering: Desativado
 - Rede 2.4 GHz:
-  - Base de dados / Largura de banda: 40 MHz
+  - Largura de banda: 40 MHz
   - Canal: 1, 6, 11
 - Rede 5 GHz:
   - Largura de banda: 80 MHz
