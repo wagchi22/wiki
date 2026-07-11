@@ -25,7 +25,7 @@ Algumas informações foram retiradas do [TRaSH Guides](https://trash-guides.inf
 	- [qBittorrent](https://www.qbittorrent.org/)
 	- [Script](https://github.com/wagchi22/meus-arquivos/blob/main/scripts/remux.py) (_Requer [python](https://www.python.org/) e [mkvmerge](https://mkvtoolnix.download/)_)
 - Opcional:
-	- [Byparr](https://github.com/ThePhaseless/Byparr) (_Necessário para o 1337x e outros indexadores_)
+	- [Byparr](https://github.com/ThePhaseless/Byparr) (_Necessário para o 1337x e outros indexadores protegidos pelo Cloudflare_)
 	- [MediaInfo](https://mediaarea.net/pt/MediaInfo) (_Útil para conferir os metadados dos arquivos_)
 
 ## Prowlarr
