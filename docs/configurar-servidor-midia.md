@@ -97,7 +97,7 @@ Algumas informações foram retiradas do [TRaSH Guides](https://trash-guides.inf
 - Senha: Insira uma senha qualquer
 - Conexões: Adicione o qBittorrent (_Requer Chave API_)
 - Propers e repacks: Desativado
-- Monitorar: Episódios ausentes
+- Monitorar: Todos os episódios
 - Perfis de qualidade: 
 	- 1080p:
    		- Atualizações Permitidas: Ativado
