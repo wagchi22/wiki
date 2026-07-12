@@ -1,9 +1,9 @@
 @echo off
-chcp 65001 > nul
+chcp 1252 >nul
 
 net session >nul 2>&1
 if %errorlevel% neq 0 (
-    echo Solicitando privilÃ©gios de Administrador...
+    echo Solicitando privilégios de Administrador...
     echo Set UAC = CreateObject^("Shell.Application"^) > "%temp%\getadmin.vbs"
     echo UAC.ShellExecute "cmd.exe", "/c cd /d ""%~dp0"" && ""%~f0""", "", "runas", 1 >> "%temp%\getadmin.vbs"
     "%temp%\getadmin.vbs"
@@ -21,14 +21,14 @@ set "WORK_DIR=C:\ProgramData\Byparr"
 cls
 echo.
 echo ==================================
-echo Configurar InicializaÃ§Ã£o do Byparr
+echo Configurar Inicialização do Byparr
 echo ==================================
 echo.
 echo [1] Instalar Tarefa Agendada
 echo [2] Desinstalar Tarefa Agendada
 echo [3] Sair
 echo.
-set /p opcao="Digite uma opÃ§Ã£o (1-3): "
+set /p opcao="Digite uma opção (1-3): "
 
 if "%opcao%"=="1" goto INSTALAR
 if "%opcao%"=="2" goto DESINSTALAR
@@ -80,7 +80,7 @@ set "task_error=%errorlevel%"
 del "%XML_PATH%" >nul 2>&1
 
 if %task_error% equ 0 (
-    echo Tarefa "%TASK_NAME%" criada com Ãªxito.
+    echo Tarefa "%TASK_NAME%" criada com êxito.
 ) else (
     echo Erro ao configurar a tarefa "%TASK_NAME%".
 )
@@ -97,7 +97,7 @@ taskkill -im python.exe /f >nul 2>&1
 schtasks /delete /tn "%TASK_NAME%" /f >nul 2>&1
 
 if %errorlevel% equ 0 (
-    echo Tarefa "%TASK_NAME%" desinstalada com Ãªxito.
+    echo Tarefa "%TASK_NAME%" desinstalada com êxito.
 ) else (
     echo Erro ao desinstalar a tarefa "%TASK_NAME%".
 )
