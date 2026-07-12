@@ -6,7 +6,7 @@ Ajustes gerais para todo tipo de coisa.
 
 ## Iluminação
 
-- Tipo: LED 
+- Tipo: LED
 - Potência: 9W
 - Cor: 4000K
 
@@ -21,7 +21,7 @@ Não é recomendado, pois anula o ganho de nitidez ao limitar a banda em 4K/120 
 - Local: Parede
 - Modo de imagem: Avançado, Cinema, Jogos (_Avançado não está disponível em HDR_)
 - Escala da tela: Just Scan
-- Backlight: 80 (_Ou 100 em HDR_) 
+- Backlight: 80 (_Ou 100 em HDR_)
 - Contraste: 80 (_Ou 100 em HDR_)
 - Brilho: 50
 - Nitidez: 10
@@ -61,7 +61,7 @@ Ajuste o Contraste conforme a TV, o Branco Papel coloque 200 e Brilho Máximo em
 - Calibragem HDR:
   - 1/2: Totalmente invisível
   - 3: Completo mínimo
-- Áudio 3D (TV): Ativado 
+- Áudio 3D (TV): Ativado
 
 ## PC Dell
 
@@ -89,7 +89,7 @@ Altere as opções de energia do Adaptador Sem Fio para Desempenho Máximo.
 - Softwares:
   - [Office](https://files.rg-adguard.net/files/031460f7-375b-1168-38bd-9c6a581d8920) com esse [ativador](https://github.com/massgravel/Microsoft-Activation-Scripts)
   - [Chrome](https://www.google.com/intl/pt-BR/chrome/) e desative salvar _senhas, pagamentos e endereços_
-    - Extensões: 
+    - Extensões:
       - [Bitwarden](https://bitwarden.com/download/#downloads-web-browser-extensions) e desative todas as _notificações_
       - [AdGuard](https://adguard.com/pt_br/adguard-browser-extension/overview.html?_plc=pt_br) e ative todos os _filtros_
       - [Tampermonkey](https://www.tampermonkey.net/) junto desse [script](https://github.com/wagchi22/guia-de-bolso/blob/main/scripts/bludv-bypass.js) e esse [script](https://github.com/wagchi22/wiki/blob/main/scripts/memoriadatv-bypass.js)
