@@ -66,3 +66,5 @@ if target:
             for f in files: process_file(os.path.join(r, f))
     elif os.path.isfile(target):
         process_file(target)
+
+print("")
