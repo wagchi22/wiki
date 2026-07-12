@@ -28,11 +28,11 @@ echo [1] Instalar Tarefa Agendada
 echo [2] Desinstalar Tarefa Agendada
 echo [3] Sair
 echo.
-set /p opcao="Digite uma opção (1-3): "
+set /p opção="Digite uma opção (1-3): "
 
-if "%opcao%"=="1" goto INSTALAR
-if "%opcao%"=="2" goto DESINSTALAR
-if "%opcao%"=="3" goto SAIR
+if "%opção%"=="1" goto INSTALAR
+if "%opção%"=="2" goto DESINSTALAR
+if "%opção%"=="3" goto SAIR
 goto MENU
 
 :INSTALAR
