@@ -1,3 +1,5 @@
+// TS sometimes can't locate vitepress types in local setups; ignore the error here
+// @ts-ignore
 import { defineConfig } from 'vitepress'
 
 export default defineConfig({

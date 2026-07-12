@@ -17,16 +17,16 @@ Algumas informações foram retiradas do [TRaSH Guides](https://trash-guides.inf
 ## Software
 
 - Recomendado:
-	- [Prowlarr](https://prowlarr.com/)
-	- [Radarr](https://radarr.video/)
-	- [Sonarr](https://sonarr.tv/)
-	- [Bazarr](https://www.bazarr.media/)
-	- [Jellyfin](https://jellyfin.org/)
-	- [qBittorrent](https://www.qbittorrent.org/)
-	- [Script](https://github.com/wagchi22/meus-arquivos/blob/main/scripts/remux.py) (_Requer [python](https://www.python.org/) e [mkvmerge](https://mkvtoolnix.download/)_)
+  - [Prowlarr](https://prowlarr.com/)
+  - [Radarr](https://radarr.video/)
+  - [Sonarr](https://sonarr.tv/)
+  - [Bazarr](https://www.bazarr.media/)
+  - [Jellyfin](https://jellyfin.org/)
+  - [qBittorrent](https://www.qbittorrent.org/)
+  - [Script](https://github.com/wagchi22/meus-arquivos/blob/main/scripts/remux.py) (_Requer [python](https://www.python.org/) e [mkvmerge](https://mkvtoolnix.download/)_)
 - Opcional:
-	- [Byparr](https://github.com/ThePhaseless/Byparr) (_Necessário para o 1337x e outros indexadores protegidos pelo Cloudflare_)
-	- [MediaInfo](https://mediaarea.net/pt/MediaInfo) (_Útil para conferir os metadados dos arquivos_)
+  - [Byparr](https://github.com/ThePhaseless/Byparr) (_Necessário para o 1337x e outros indexadores protegidos pelo Cloudflare_)
+  - [MediaInfo](https://mediaarea.net/pt/MediaInfo) (_Útil para conferir os metadados dos arquivos_)
 
 ## Prowlarr
 
@@ -56,39 +56,39 @@ Algumas informações foram retiradas do [TRaSH Guides](https://trash-guides.inf
 - Conexões: Adicione o qBittorrent (_Requer Chave API_)
 - Propers e repacks: Desativado
 - Monitorar: Somente filme
-- Perfis de qualidade: 
-	- 1080p:
-   		- Atualizações Permitidas: Ativado
-     	- Atualizar até a qualidade: Bluray-1080p
-      	- Atualizar até pontuação de formato personalizado: 10000
-		- Ordem e definições de qualidades: (_Retire dos grupos e os mova para o topo da lista_)
-			- Bluray-1080p: 50,8/1999/2000
-			- WEBDL-1080p: 12,5/1999/2000
-		- Pontuações:
-			- Bluray: 4000
-			- WEBDL: 3000
-   			- DUAL: 1500
-   			- Português: 1000
-			- Inglês: 500
-	- 2160p:
-   		- Atualizações Permitidas: Ativado
-     	- Atualizar até a qualidade: Bluray-1080p
-      	- Atualizar até pontuação de formato personalizado: 10000
-		- Ordem e definições de qualidades: (_Retire dos grupos e os mova para o topo da lista_)
-			- Bluray-2160p: 102/1999/2000
-			- WEBDL-2160p: 34,5/1999/2000
-		- Pontuações:
-			- Bluray: 4000
-			- WEBDL: 3000
-   			- DUAL: 1500
-   			- Português: 1000
-			- Inglês: 500
+- Perfis de qualidade:
+  - 1080p:
+    - Atualizações Permitidas: Ativado
+    - Atualizar até a qualidade: Bluray-1080p
+    - Atualizar até pontuação de formato personalizado: 10000
+    - Ordem e definições de qualidades: (_Retire dos grupos e os mova para o topo da lista_)
+      - Bluray-1080p: 50,8/1999/2000
+      - WEBDL-1080p: 12,5/1999/2000
+    - Pontuações:
+      - Bluray: 4000
+      - WEBDL: 3000
+      - DUAL: 1500
+      - Português: 1000
+      - Inglês: 500
+  - 2160p:
+    - Atualizações Permitidas: Ativado
+    - Atualizar até a qualidade: Bluray-1080p
+    - Atualizar até pontuação de formato personalizado: 10000
+    - Ordem e definições de qualidades: (_Retire dos grupos e os mova para o topo da lista_)
+      - Bluray-2160p: 102/1999/2000
+      - WEBDL-2160p: 34,5/1999/2000
+    - Pontuações:
+      - Bluray: 4000
+      - WEBDL: 3000
+      - DUAL: 1500
+      - Português: 1000
+      - Inglês: 500
 - Renomear automaticamente: Ativado
-	- Pastas: `{Movie CleanTitle} ({Release Year})`
-	- Arquivos: `{Movie.CleanTitle}.{Release.Year}.{Quality Title}.{MediaInfo VideoCodec}.{Custom.Formats}.{Mediainfo AudioChannels}`
+  - Pastas: `{Movie CleanTitle} ({Release Year})`
+  - Arquivos: `{Movie.CleanTitle}.{Release.Year}.{Quality Title}.{MediaInfo VideoCodec}.{Custom.Formats}.{Mediainfo AudioChannels}`
 - Formatos personalizados: Acesse [aqui](https://github.com/wagchi22/wiki/blob/main/scripts/custom-formats.json)
 - Conexões:
-	- Script Personalizado: `C:\ProgramData\remux.py` e marque _ao obter; importar; atualizar; adicionar; interação manual_
+  - Script Personalizado: `C:\ProgramData\remux.py` e marque _ao obter; importar; atualizar; adicionar; interação manual_
 - País da certificação: Brazil
 
 ## Sonarr
@@ -98,39 +98,39 @@ Algumas informações foram retiradas do [TRaSH Guides](https://trash-guides.inf
 - Conexões: Adicione o qBittorrent (_Requer Chave API_)
 - Propers e repacks: Desativado
 - Monitorar: Todos os episódios
-- Perfis de qualidade: 
-	- 1080p:
-   		- Atualizações Permitidas: Ativado
-     	- Atualizar até a qualidade: Bluray-1080p
-      	- Atualizar até pontuação de formato personalizado: 10000
-		- Ordem e definições de qualidades: (_Retire dos grupos e os mova para o topo da lista_)
-			- Bluray-1080p: 50,4/995/1000
-			- WEBDL-1080p: 15/995/1000
-		- Pontuações:
-			- Bluray: 4000
-			- WEBDL: 3000
-   			- DUAL: 1500
-   			- Português: 1000
-			- Inglês: 500
-	- 2160p:
-   		- Atualizações Permitidas: Ativado
-     	- Atualizar até a qualidade: Bluray-1080p
-      	- Atualizar até pontuação de formato personalizado: 10000
-		- Ordem e definições de qualidades: (_Retire dos grupos e os mova para o topo da lista_)
-			- Bluray-2160p: 94,6/995/1000
-			- WEBDL-2160p: 25/995/1000
-		- Pontuações:
-			- Bluray: 4000
-			- WEBDL: 3000
-   			- DUAL: 1500
-   			- Português: 1000
-			- Inglês: 500
+- Perfis de qualidade:
+  - 1080p:
+    - Atualizações Permitidas: Ativado
+    - Atualizar até a qualidade: Bluray-1080p
+    - Atualizar até pontuação de formato personalizado: 10000
+    - Ordem e definições de qualidades: (_Retire dos grupos e os mova para o topo da lista_)
+      - Bluray-1080p: 50,4/995/1000
+      - WEBDL-1080p: 15/995/1000
+    - Pontuações:
+      - Bluray: 4000
+      - WEBDL: 3000
+      - DUAL: 1500
+      - Português: 1000
+      - Inglês: 500
+  - 2160p:
+    - Atualizações Permitidas: Ativado
+    - Atualizar até a qualidade: Bluray-1080p
+    - Atualizar até pontuação de formato personalizado: 10000
+    - Ordem e definições de qualidades: (_Retire dos grupos e os mova para o topo da lista_)
+      - Bluray-2160p: 94,6/995/1000
+      - WEBDL-2160p: 25/995/1000
+    - Pontuações:
+      - Bluray: 4000
+      - WEBDL: 3000
+      - DUAL: 1500
+      - Português: 1000
+      - Inglês: 500
 - Renomear automaticamente: Ativado
-	- Pastas: `{Series CleanTitleWithoutYear} {(Series Year)}`
-	- Arquivos: `{Series.CleanTitleWithoutYear}.{Series.Year}.S{season:00}E{episode:00}.{Quality Title}.{MediaInfo VideoCodec}.{Custom.Formats}.{Mediainfo AudioChannels}`
+  - Pastas: `{Series CleanTitleWithoutYear} {(Series Year)}`
+  - Arquivos: `{Series.CleanTitleWithoutYear}.{Series.Year}.S{season:00}E{episode:00}.{Quality Title}.{MediaInfo VideoCodec}.{Custom.Formats}.{Mediainfo AudioChannels}`
 - Formatos personalizados: Acesse [aqui](https://github.com/wagchi22/wiki/blob/main/scripts/custom-formats.json)
 - Conexões:
-	- Script Personalizado: `C:\ProgramData\remux.py` e marque _ao obter; importar; atualizar; adicionar; interação manual_
+  - Script Personalizado: `C:\ProgramData\remux.py` e marque _ao obter; importar; atualizar; adicionar; interação manual_
 
 ## Bazarr
 
@@ -148,6 +148,6 @@ Algumas informações foram retiradas do [TRaSH Guides](https://trash-guides.inf
 - Senha: Insira uma senha qualquer
 - Agrupar filmes em coleções: Ativado
 - Cliente:
-	- Taxa de atualização: No dispositivo
-	- Cor de legenda: Amarelo
-	- Tamanho de legenda: 125%
+  - Taxa de atualização: No dispositivo
+  - Cor de legenda: Amarelo
+  - Tamanho de legenda: 125%
