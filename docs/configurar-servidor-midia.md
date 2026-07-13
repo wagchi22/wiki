@@ -16,15 +16,14 @@ Algumas informações foram retiradas do [TRaSH Guides](https://trash-guides.inf
 
 ## Software
 
-- Recomendado:
-  - [Prowlarr](https://prowlarr.com/)
-  - [Flaresolverr](https://github.com/Flaresolverr/Flaresolverr) (_Bypass para Cloudflare_)
-  - [Radarr](https://radarr.video/)
-  - [Sonarr](https://sonarr.tv/)
-  - [Bazarr](https://www.bazarr.media/)
-  - [Jellyfin](https://jellyfin.org/)
-  - [qBittorrent](https://www.qbittorrent.org/)
-  - [Remux](https://github.com/wagchi22/meus-arquivos/blob/main/scripts/remux.py) (_Requer [python](https://www.python.org/) e [mkvmerge](https://mkvtoolnix.download/)_)
+- [Prowlarr](https://prowlarr.com/)
+- [FlareSolverr](https://github.com/Flaresolverr/Flaresolverr) (_Bypass para Cloudflare_)
+- [Radarr](https://radarr.video/)
+- [Sonarr](https://sonarr.tv/)
+- [Bazarr](https://www.bazarr.media/)
+- [Jellyfin](https://jellyfin.org/)
+- [qBittorrent](https://www.qbittorrent.org/)
+- [Remux](https://github.com/wagchi22/meus-arquivos/blob/main/scripts/remux.py) (_Requer [python](https://www.python.org/) e [mkvmerge](https://mkvtoolnix.download/)_)
 
 ## Prowlarr
 
@@ -35,7 +34,7 @@ Algumas informações foram retiradas do [TRaSH Guides](https://trash-guides.inf
 - Mínimo de semeadores: 0
 - Proxy: Byparr
 
-## Flaresolverr
+## FlareSolverr
 
 ## qBittorrent
 
