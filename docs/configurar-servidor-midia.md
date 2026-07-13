@@ -18,15 +18,13 @@ Algumas informações foram retiradas do [TRaSH Guides](https://trash-guides.inf
 
 - Recomendado:
   - [Prowlarr](https://prowlarr.com/)
+  - [Flaresolverr](https://github.com/Flaresolverr/Flaresolverr) (_Bypass para Cloudflare_)
   - [Radarr](https://radarr.video/)
   - [Sonarr](https://sonarr.tv/)
   - [Bazarr](https://www.bazarr.media/)
   - [Jellyfin](https://jellyfin.org/)
   - [qBittorrent](https://www.qbittorrent.org/)
-  - [Script](https://github.com/wagchi22/meus-arquivos/blob/main/scripts/remux.py) (_Requer [python](https://www.python.org/) e [mkvmerge](https://mkvtoolnix.download/)_)
-- Opcional:
-  - [Byparr](https://github.com/ThePhaseless/Byparr) (_Necessário para o 1337x e outros indexadores protegidos pelo Cloudflare_)
-  - [MediaInfo](https://mediaarea.net/pt/MediaInfo) (_Útil para conferir os metadados dos arquivos_)
+  - [Remux](https://github.com/wagchi22/meus-arquivos/blob/main/scripts/remux.py) (_Requer [python](https://www.python.org/) e [mkvmerge](https://mkvtoolnix.download/)_)
 
 ## Prowlarr
 
@@ -35,11 +33,9 @@ Algumas informações foram retiradas do [TRaSH Guides](https://trash-guides.inf
 - Conexões (requer Chave API): Adicione o Radarr e Sonarr
 - Indexadores: [Catálogo BeTor](https://github.com/wagchi22/wiki/blob/main/scripts/catalogo-betor.yml)
 - Mínimo de semeadores: 0
-- (_Opcional_) Proxy: Byparr
+- Proxy: Byparr
 
-## (_Opcional_) Byparr
-
-- Execute e instale: [byparr.bat](https://github.com/wagchi22/meus-arquivos/blob/main/scripts/byparr.bat)
+## Flaresolverr
 
 ## qBittorrent
 
