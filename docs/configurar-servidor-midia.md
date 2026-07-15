@@ -17,7 +17,6 @@ Algumas informações foram retiradas do [TRaSH Guides](https://trash-guides.inf
 ## Software
 
 - [Prowlarr](https://prowlarr.com/)
-- [FlareSolverr](https://github.com/Flaresolverr/Flaresolverr) (_Bypass para Cloudflare_)
 - [Radarr](https://radarr.video/)
 - [Sonarr](https://sonarr.tv/)
 - [Bazarr](https://www.bazarr.media/)
@@ -32,9 +31,6 @@ Algumas informações foram retiradas do [TRaSH Guides](https://trash-guides.inf
 - Conexões (requer Chave API): Adicione o Radarr e Sonarr
 - Indexadores: [Catálogo BeTor](https://github.com/wagchi22/wiki/blob/main/scripts/catalogo-betor.yml)
 - Mínimo de semeadores: 0
-- Proxy: Byparr
-
-## FlareSolverr
 
 ## qBittorrent
 
