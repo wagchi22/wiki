@@ -38,8 +38,6 @@ search:
       - name: re_replace
         args: ["(?i)\\bAMZN\\b",""]
       - name: re_replace
-        args: ["(?i)\\b4K\\b",""]
-      - name: re_replace
         args: ["(?i)\\b10bit\\b",""]              
       - name: re_replace
         args: ["(?i)\\.(mkv|mp4)$",""]
