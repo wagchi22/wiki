@@ -133,13 +133,27 @@ search:
         args: ["\\s+",","]
 
     title:
-      text: "{{ .Result._torrent_name }}{{ if .Result._languages_tags }} [{{ .Result._languages_tags }}]{{ else }} [english]{{ end }}"
+      text: "{{ .Result._torrent_name }}"
       filters:
       - name: re_replace
-        args: ["(?i)DUAL(.*?)\\s*\\[english\\]","DUAL$1 [portuguese,english]"]
+        args: ["^(.+)$","$1 [english]"]
       - name: re_replace
-        args: ["(?i)(?<![A-Z])\\b(ENG|POR|ITA|FRE|GER|SPA|DUT|JPN|KOR|CHI|RUS|ARA)\\b(?![A-Z]).*","$0"]
-
+        args: ["(?i)^(.*\\bDublado\\b.*) \\[english\\]$","$1 [brazilian]"]
+      - name: re_replace
+        args: ["(?i)^(.*\\bDUAL\\b.*) \\[english\\]$","$1 [portuguese,english]"]
+      - name: re_replace
+        args: ["(?i)^(.*\\bITA\\.ENG\\b.*) \\[english\\]$","$1 [italian,english]"]
+      - name: re_replace
+        args: ["(?i)^(.*\\bITA\\b.*) \\[english\\]$","$1 [italian]"]
+      - name: re_replace
+        args: ["(?i)^(.*\\bPOR\\b.*) \\[english\\]$","$1 [portuguese]"]
+      - name: re_replace
+        args: ["(?i)^(.*\\bFRE\\b.*) \\[english\\]$","$1 [french]"]
+      - name: re_replace
+        args: ["(?i)^(.*\\bGER\\b.*) \\[english\\]$","$1 [german]"]
+      - name: re_replace
+        args: ["(?i)^(.*\\bSPA\\b.*) \\[english\\]$","$1 [spanish]"]
+            
     category:
       attribute: data-item-type
     details:
