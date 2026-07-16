@@ -36,6 +36,12 @@ search:
       attribute: data-torrent-name
       filters:
       - name: re_replace
+        args: ["(?i)\\bAMZN\\b",""]
+      - name: re_replace
+        args: ["(?i)\\b4K\\b",""]
+      - name: re_replace
+        args: ["(?i)\\b10bit\\b",""]              
+      - name: re_replace
         args: ["(?i)\\.(mkv|mp4)$",""]
       - name: re_replace
         args: ["[\\(\\)]",""]
@@ -75,7 +81,6 @@ search:
         args: ["(?i)WEB[\\.\\s\\-_]+DL","WEBDL"]
       - name: re_replace
         args: ["(?i)BluRay","Bluray"]
-
       - name: re_replace
         args: ["\\s+","."]
       - name: re_replace
@@ -90,7 +95,6 @@ search:
         args: ["(?i)YTS\\.GG\\.YTS\\.BZ",""]
       - name: re_replace
         args: ["(?i)-Ben\\.The\\.Men",""]
-
       - name: replace
         args: ["ITA.ITA","ITA"]
       - name: replace
@@ -111,7 +115,6 @@ search:
         args: ["ITA.ENG.ITA.ENG","ITA.ENG"]
       - name: replace
         args: ["ENG.ITA.ENG.ITA","ENG.ITA"]
-
       - name: re_replace
         args: ["\\.{2,}","."]
       - name: re_replace
@@ -130,12 +133,12 @@ search:
         args: ["\\s+",","]
 
     title:
-      text: "{{ .Result._torrent_name }}{{ if .Result._languages_tags }} [{{ .Result._languages_tags }}]{{ else }} [VAZIO]{{ end }}"
+      text: "{{ .Result._torrent_name }}{{ if .Result._languages_tags }} [{{ .Result._languages_tags }}]{{ else }} [english]{{ end }}"
       filters:
       - name: re_replace
-        args: ["(?i)DUAL(.*?)\\s*\\[VAZIO\\]","DUAL$1 [portuguese,english]"]
-      - name: replace
-        args: [" [VAZIO]",""]
+        args: ["(?i)DUAL(.*?)\\s*\\[english\\]","DUAL$1 [portuguese,english]"]
+      - name: re_replace
+        args: ["(?i)(?<![A-Z])\\b(ENG|POR|ITA|FRE|GER|SPA|DUT|JPN|KOR|CHI|RUS|ARA)\\b(?![A-Z]).*","$0"]
 
     category:
       attribute: data-item-type
