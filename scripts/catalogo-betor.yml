@@ -19,60 +19,124 @@ caps:
 
 search:
   paths:
-    - path: "{{ if .Query.Q }}/search/{{ else }}/{{ end }}{{ if .Query.IMDBID }}imdb/{{ .Query.IMDBID }}/{{ else }}filmes/{{ end }}"
-      inputs:
-        q: "{{ .Query.Q }}"
-      categories: ["movie"]
-    - path: "{{ if .Query.Q }}/search/{{ else }}/{{ end }}{{ if .Query.IMDBID }}imdb/{{ .Query.IMDBID }}/{{ else }}{{ end }}{{ if and (.Query.IMDBID) (.Query.Season) }}season/{{ .Query.Season }}/{{ else }}{{ end }}{{ if or (.Query.IMDBID) (.Query.Season) }}{{ else }}series/{{ end }}"
-      inputs:
-        q: "{{ .Query.Q }}"
-      categories: ["tv"]
+  - path: "{{ if .Query.Q }}/search/{{ else }}/{{ end }}{{ if .Query.IMDBID }}imdb/{{ .Query.IMDBID }}/{{ else }}filmes/{{ end }}"
+    inputs:
+      q: "{{ .Query.Q }}"
+    categories: ["movie"]
+  - path: "{{ if .Query.Q }}/search/{{ else }}/{{ end }}{{ if .Query.IMDBID }}imdb/{{ .Query.IMDBID }}/{{ else }}{{ end }}{{ if and (.Query.IMDBID) (.Query.Season) }}season/{{ .Query.Season }}/{{ else }}{{ end }}{{ if or (.Query.IMDBID) (.Query.Season) }}{{ else }}series/{{ end }}"
+    inputs:
+      q: "{{ .Query.Q }}"
+    categories: ["tv"]
+
   rows:
     selector: "[data-torrent]"
+
   fields:
     _torrent_name:
       attribute: data-torrent-name
       filters:
-        - name: re_replace
-          args: ["(?i)\\.(mkv|mp4)$", ""]
-        - name: re_replace
-          args: ["\\[[^\\]]*\\]$", ""]
-        - name: re_replace
-          args: [",", ""]
-        - name: re_replace
-          args: ["(?i)STARCKFILMES", ""]
-        - name: re_replace
-          args: ["(?i)-SF", ""]
-        - name: re_replace
-          args: ["(?i)WEB[\\.\\s\\-_]+DL", "WEBDL"]
-        - name: re_replace
-          args: ["(?i)BluRay", "Bluray"]
-        - name: re_replace
-          args: ["\\s+", "."]
-        - name: re_replace
-          args: ["_+", "."]
-        - name: re_replace
-          args: ["\\.\\.+", "."]
-        - name: re_replace
-          args: ["[-.]+$", ""]
+      - name: re_replace
+        args: ["(?i)\\.(mkv|mp4)$",""]
+      - name: re_replace
+        args: ["[\\(\\)]",""]
+      - name: re_replace
+        args: ["[\\[\\]]",""]
+      - name: re_replace
+        args: [",",""]
+      - name: re_replace
+        args: ["(?i)STARCKFILMES",""]
+      - name: re_replace
+        args: ["(?i)www\\.UIndex\\.org",""]
+      - name: re_replace
+        args: ["(?i)YTS\\.GG\\.YTS\\.BZ",""]
+      - name: re_replace
+        args: ["(?i)YTS\\.GG\\.\\-\\.YTS\\.BZ",""]
+      - name: re_replace
+        args: ["(?i)-Ben\\.The\\.Men",""]
+      - name: re_replace
+        args: ["(?i)-MIRCrew",""]
+      - name: re_replace
+        args: ["(?i)-SF",""]
+      - name: re_replace
+        args: ["(?i)\\bSF\\b",""]
+      - name: re_replace
+        args: ["(?i)\\bV\\.2\\b",""]
+      - name: re_replace
+        args: ["(?i)\\bSub\\b",""]
+      - name: re_replace
+        args: ["^(\\.\\-\\.)+",""]
+      - name: re_replace
+        args: ["\\.\\-\\.","."]
+      - name: re_replace
+        args: ["(?i)\\biTA\\b","ITA"]
+      - name: re_replace
+        args: ["(?i)\\bEnG\\b","ENG"]
+      - name: re_replace
+        args: ["(?i)WEB[\\.\\s\\-_]+DL","WEBDL"]
+      - name: re_replace
+        args: ["(?i)BluRay","Bluray"]
+
+      - name: re_replace
+        args: ["\\s+","."]
+      - name: re_replace
+        args: ["_+","."]
+      - name: re_replace
+        args: ["\\.\\.+","."]
+      - name: re_replace
+        args: ["\\.\\-\\.","."]
+      - name: re_replace
+        args: ["\\.{2,}","."]
+      - name: re_replace
+        args: ["(?i)YTS\\.GG\\.YTS\\.BZ",""]
+      - name: re_replace
+        args: ["(?i)-Ben\\.The\\.Men",""]
+
+      - name: replace
+        args: ["ITA.ITA","ITA"]
+      - name: replace
+        args: ["ENG.ENG","ENG"]
+      - name: replace
+        args: ["FRE.FRE","FRE"]
+      - name: replace
+        args: ["GER.GER","GER"]
+      - name: replace
+        args: ["SPA.SPA","SPA"]
+      - name: replace
+        args: ["POR.POR","POR"]
+      - name: replace
+        args: ["ITA.ENG.ITA","ITA.ENG"]
+      - name: replace
+        args: ["ENG.ITA.ENG","ENG.ITA"]
+      - name: replace
+        args: ["ITA.ENG.ITA.ENG","ITA.ENG"]
+      - name: replace
+        args: ["ENG.ITA.ENG.ITA","ENG.ITA"]
+
+      - name: re_replace
+        args: ["\\.{2,}","."]
+      - name: re_replace
+        args: ["(^[.-]+|[.-]+$)",""]
+
     _languages_tags:
       attribute: data-torrent-languages
       filters:
-        - name: replace
-          args: ["en", "english"]
-        - name: replace
-          args: ["pt-BR", "brazilian"]
-        - name: replace
-          args: ["pt", "portuguese"]
-        - name: re_replace
-          args: ["\\s+", ","]
+      - name: replace
+        args: ["en","english"]
+      - name: replace
+        args: ["pt-BR","brazilian"]
+      - name: replace
+        args: ["pt","portuguese"]
+      - name: re_replace
+        args: ["\\s+",","]
+
     title:
       text: "{{ .Result._torrent_name }}{{ if .Result._languages_tags }} [{{ .Result._languages_tags }}]{{ else }} [VAZIO]{{ end }}"
       filters:
-        - name: re_replace
-          args: ["(?i)DUAL(.*?)\\s*\\[VAZIO\\]", "DUAL$1 [portuguese,english]"]
-        - name: replace
-          args: [" [VAZIO]", ""]
+      - name: re_replace
+        args: ["(?i)DUAL(.*?)\\s*\\[VAZIO\\]","DUAL$1 [portuguese,english]"]
+      - name: replace
+        args: [" [VAZIO]",""]
+
     category:
       attribute: data-item-type
     details:
