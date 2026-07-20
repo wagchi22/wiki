@@ -57,6 +57,7 @@ export default defineConfig({
         items: [
           { text: 'Ajustes Gerais', link: '/ajustes-gerais' },
           { text: 'Configurar Servidor de Mídia', link: '/configurar-servidor-midia' },
+          { text: 'Instalar codec HEVC', link: '/instalar-codec-hevc' },
         ]
       }
     ],
