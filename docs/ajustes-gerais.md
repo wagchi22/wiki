@@ -4,6 +4,8 @@
 Ajustes gerais para todo tipo de coisa.
 :::
 
+Fontes: [RTINGS](https://www.rtings.com/tv/learn/how-to-calibrate-your-tv)
+
 ## Iluminação
 
 - Tipo: LED
@@ -11,8 +13,6 @@ Ajustes gerais para todo tipo de coisa.
 - Cor: 4000K
 
 ## TV LG
-
-Fonte: [RTINGS](https://www.rtings.com/tv/learn/how-to-calibrate-your-tv)
 
 :::warning Modo PC em Console
 Não é recomendado, pois anula o ganho de nitidez ao limitar a banda em 4K/120 Hz/HDR.
