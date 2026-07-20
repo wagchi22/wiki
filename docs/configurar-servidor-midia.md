@@ -4,9 +4,7 @@
 Configurar um Servidor de Mídia no Windows, usando software popular e confiável para automatizar o processo.
 :::
 
-:::tip Dica
-Algumas informações foram retiradas do [TRaSH Guides](https://trash-guides.info/), como _configurações de qualidade (tamanho de arquivo)_ e _esquema de nomenclatura_.
-:::
+Fontes: [TRaSH Guides](https://trash-guides.info/)
 
 ## Locais
 
