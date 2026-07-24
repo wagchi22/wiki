@@ -1,6 +1,6 @@
 # Wiki
 
-Documentação pessoal e referências úteis.
+Documentação pessoal.
 
 ## Sobre
 
@@ -29,4 +29,4 @@ Os conteúdos são organizados em guias para facilitar a navegação e manutenç
 
 A documentação está disponível em:
 
-https://wagchi22.github.io/wiki
+[https://wagchi22.github.io/wiki](https://wagchi22.github.io/wiki)
