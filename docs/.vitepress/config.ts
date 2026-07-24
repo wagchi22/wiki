@@ -11,6 +11,15 @@ export default defineConfig({
   
   lastUpdated: true,
 
+  head: [
+    ['style', {}, `
+      :root {
+        --vp-home-hero-name-color: transparent;
+        --vp-home-hero-name-background: -webkit-linear-gradient(120deg, #bd34fe, #41d1ff);
+      }
+    `]
+  ],
+
   themeConfig: {
     lastUpdatedText: "Última atualização em",
     // Busca nativa configurada em Português
