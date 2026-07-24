@@ -3,7 +3,7 @@ layout: home
 
 hero:
   name: "Wiki"
-  text: "Coleção pessoal de coisas úteis."
+  text: "Documentação pessoal e referências úteis"
   actions:
     - theme: brand
       text: Explorar
@@ -13,10 +13,10 @@ hero:
       link: https://github.com/wagchi22/wiki
 
 features:
-  - title: 🐍 Códigos
-    details: Automações, ferramentas e utilitários que utilizo no dia a dia.
-  - title: 🌐 Organização
-    details: Tudo estruturado de forma simples e rápida através de arquivos Markdown.
-  - title: 🎨 Visual
-    details: Tema personalizado focado na legibilidade e minimalismo.
+  - title: ⚙️ Configurações
+    details: Ajustes pessoais de dispositivos, sistemas e ferramentas utilizadas no dia a dia.
+  - title: 📚 Guias
+    details: Procedimentos organizados para instalação, configuração e manutenção.
+  - title: 📝 Referências
+    details: Informações técnicas, soluções e anotações para consultas futuras.
 ---
