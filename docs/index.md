@@ -3,7 +3,7 @@ layout: home
 
 hero:
   name: "Wiki"
-  text: "Documentação pessoal e referências úteis"
+  text: "Documentação pessoal"
   actions:
     - theme: brand
       text: Explorar

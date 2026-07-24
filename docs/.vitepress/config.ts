@@ -4,7 +4,7 @@ import { defineConfig } from 'vitepress'
 
 export default defineConfig({
   title: "Wiki",
-  description: "Coleção pessoal de coisas úteis.",
+  description: "Documentação pessoal.",
   base: '/wiki/', 
   
   cleanUrls: true,
