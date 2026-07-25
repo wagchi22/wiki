@@ -5,7 +5,7 @@ hero:
   name: "Wiki"
   text: "Documentação pessoal"
   image:
-    src: /logo.svg
+    src: /logo.png
     alt: VitePress
   actions:
     - theme: brand
