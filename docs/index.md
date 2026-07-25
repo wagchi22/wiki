@@ -3,9 +3,9 @@ layout: home
 
 hero:
   name: "Wiki"
-  text: "Documentação pessoal"
+  text: "Pessoal"
   image:
-    src: /icon.png
+    src: /logo.svg
     alt: VitePress
   actions:
     - theme: brand
