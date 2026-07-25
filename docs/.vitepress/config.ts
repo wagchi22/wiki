@@ -21,6 +21,7 @@ export default defineConfig({
   ],
 
   themeConfig: {
+    logo: "/logo.svg",
     lastUpdatedText: "Última atualização em",
     // Busca nativa configurada em Português
     search: {
