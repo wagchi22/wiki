@@ -3,7 +3,7 @@ layout: home
 
 hero:
   name: "Wiki"
-  text: "Pessoal"
+  text: "Documentação pessoal"
   image:
     src: /logo.svg
     alt: VitePress
