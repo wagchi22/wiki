@@ -8,7 +8,7 @@ Fontes: [GitHub](https://gist.github.com/rajibdpi/218be47545f312cc47e577b36e56f5
 
 ## Instalando
 
-1. Acesse o [site](https://store.rg-adguard.net/).
+1. Acesse [aqui](https://store.rg-adguard.net/).
 
 2. Selecione `ProductID` e cole `9n4wgh0z6vhq` e pressione ✔ para procurar.
 
