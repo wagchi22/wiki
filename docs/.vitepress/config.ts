@@ -1,11 +1,9 @@
-// TS sometimes can't locate vitepress types in local setups; ignore the error here
-// @ts-ignore
-import { defineConfig } from 'vitepress'
+import { defineConfig } from "vitepress"
 
 export default defineConfig({
   title: "Wiki",
   description: "Documentação pessoal.",
-  base: '/wiki/', 
+  base: "/wiki/", 
   
   cleanUrls: true,
   
@@ -20,7 +18,7 @@ export default defineConfig({
         href: "/wiki/favicon.ico",
       },
     ],
-    ['style', {}, `
+    ["style", {}, `
       :root {
         --vp-home-hero-name-color: transparent;
         --vp-home-hero-name-background: -webkit-linear-gradient(120deg, #bd34fe, #41d1ff);
@@ -31,29 +29,27 @@ export default defineConfig({
   themeConfig: {
     logo: "/logo.svg",
     lastUpdatedText: "Última atualização em",
-    // Busca nativa configurada em Português
     search: {
-      provider: 'local',
+      provider: "local",
       options: {
         translations: {
           button: {
-            buttonText: 'Pesquisar',
-            buttonAriaLabel: 'Pesquisar documentos'
+            buttonText: "Pesquisar",
+            buttonAriaLabel: "Pesquisar documentos"
           },
           modal: {
-            noResultsText: 'Nenhum resultado encontrado para',
-            resetButtonTitle: 'Limpar pesquisa',
+            noResultsText: "Nenhum resultado encontrado para",
+            resetButtonTitle: "Limpar pesquisa",
             footer: {
-              selectText: 'para selecionar',
-              navigateText: 'para navegar',
-              closeText: 'para fechar'
+              selectText: "para selecionar",
+              navigateText: "para navegar",
+              closeText: "para fechar"
             }
           }
         }
       }
     },
 
-    // Ícone do GitHub no menu superior
     socialLinks: [
       {
         icon: "github",
@@ -62,27 +58,30 @@ export default defineConfig({
     ],
     
     outline: {
-      label: 'Nesta página'
+      label: "Nesta página"
     },
 
     nav: [
-      { text: 'Início', link: '/' }
+      { 
+        text: "Início", 
+        link: "/inicio" 
+      }
     ],
     
     sidebar: [
       {
-        text: 'Guias',
+        text: "Guias",
         items: [
-          { text: 'Ajustes Gerais', link: '/ajustes-gerais' },
-          { text: 'Configurar Servidor de Mídia', link: '/configurar-servidor-midia' },
-          { text: 'Instalar Codec HEVC', link: '/instalar-codec-hevc' },
+          { text: "Ajustes Gerais", link: "/ajustes-gerais" },
+          { text: "Configurar Servidor de Mídia", link: "/configurar-servidor-midia" },
+          { text: "Instalar Codec HEVC", link: "/instalar-codec-hevc" },
         ]
       }
     ],
 
     editLink: {
-      pattern: 'https://github.com/wagchi22/wiki/edit/main/docs/:path',
-      text: 'Edite essa página no GitHub'
+      pattern: "https://github.com/wagchi22/wiki/edit/main/docs/:path",
+      text: "Edite essa página no GitHub"
     },
     
     docFooter: {
@@ -90,7 +89,6 @@ export default defineConfig({
       next: false,
     },
 
-    // Configurações Mobile (Corrigidas para dentro de themeConfig)
     returnToTopLabel: "Voltar ao topo",
     sidebarMenuLabel: "Menu"
   },
