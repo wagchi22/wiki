@@ -63,8 +63,8 @@ export default defineConfig({
 
     nav: [
       { 
-        text: "Início", 
-        link: "/inicio" 
+        text: "Guias", 
+        link: "/guias" 
       }
     ],
     
@@ -72,7 +72,7 @@ export default defineConfig({
       {
         text: "Guias",
         items: [
-          { text: "Ajustes Gerais", link: "/guias/ajustes-gerais" },
+          { text: "Meus Ajustes Gerais", link: "/guias/meus-ajustes-gerais" },
           { text: "Configurar Servidor de Mídia", link: "/guias/configurar-servidor-midia" },
           { text: "Instalar Codec HEVC", link: "/guias/instalar-codec-hevc" },
         ]

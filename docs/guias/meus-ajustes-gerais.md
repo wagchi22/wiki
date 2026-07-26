@@ -1,4 +1,4 @@
-# Ajustes Gerais
+# Meus Ajustes Gerais
 
 :::info Objetivo
 Ajustes gerais para todo tipo de coisa.
