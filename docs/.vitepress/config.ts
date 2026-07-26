@@ -85,8 +85,8 @@ export default defineConfig({
     },
     
     docFooter: {
-      prev: true,
-      next: true,
+      prev: "Anterior",
+      next: "Próximo",
     },
 
     returnToTopLabel: "Voltar ao topo",
