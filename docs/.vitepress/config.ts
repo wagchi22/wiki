@@ -15,17 +15,9 @@ export default defineConfig({
     [
       "link",
       {
-        rel: "icon",
-        media: "(prefers-color-scheme: light)",
-        href: "/favicon.ico",
-      },
-    ],
-    [
-      "link",
-      {
-        rel: "icon",
-        media: "(prefers-color-scheme: dark)",
-        href: "/favicon.ico",
+        rel: "shortcut icon",
+        type: "image/x-icon",
+        href: "/wiki/favicon.ico",
       },
     ],
     ['style', {}, `
