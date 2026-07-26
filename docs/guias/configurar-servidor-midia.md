@@ -2,9 +2,9 @@
 
 :::info Objetivo
 Configurar um Servidor de Mídia no Windows, usando software popular e confiável para automatizar o processo.
-:::
 
 Fontes: [TRaSH Guides](https://trash-guides.info/)
+:::
 
 ## Locais
 

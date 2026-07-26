@@ -2,9 +2,9 @@
 
 :::info Objetivo
 Ajustes gerais para todo tipo de coisa.
-:::
 
 Fontes: [RTINGS](https://www.rtings.com/tv/learn/how-to-calibrate-your-tv)
+:::
 
 ## Iluminação
 

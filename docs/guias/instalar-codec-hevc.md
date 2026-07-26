@@ -2,9 +2,9 @@
 
 :::info Objetivo
 Permite usar o codec nativo do Windows sem necessitar usar um player externo de vídeo.
-:::
 
 Fontes: [GitHub](https://gist.github.com/rajibdpi/218be47545f312cc47e577b36e56f5c7)
+:::
 
 ## Guia
 
