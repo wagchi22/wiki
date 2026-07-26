@@ -12,7 +12,22 @@ export default defineConfig({
   lastUpdated: true,
 
   head: [
-    ['link', { rel: 'icon', href: '/icon.ico' }],
+    [
+      "link",
+      {
+        rel: "icon",
+        media: "(prefers-color-scheme: light)",
+        href: "/favicon.ico",
+      },
+    ],
+    [
+      "link",
+      {
+        rel: "icon",
+        media: "(prefers-color-scheme: dark)",
+        href: "/favicon.ico",
+      },
+    ],
     ['style', {}, `
       :root {
         --vp-home-hero-name-color: transparent;
