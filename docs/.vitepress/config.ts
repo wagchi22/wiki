@@ -25,7 +25,7 @@ export default defineConfig({
       {
         rel: "icon",
         media: "(prefers-color-scheme: dark)",
-        href: "/favicon.ico",
+        href: "/favicon-dark.ico",
       },
     ],
     ['style', {}, `
