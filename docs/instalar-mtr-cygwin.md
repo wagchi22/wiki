@@ -14,7 +14,7 @@ O objetivo é obter uma versão compilada a partir do código-fonte oficial com 
 
 ---
 
-# 1. Instalar o Cygwin
+## 1. Instalar o Cygwin
 
 Baixe o instalador oficial do Cygwin:
 
@@ -50,11 +50,11 @@ https://linorg.usp.br/cygwin/
 
 ---
 
-# 2. Instalar pacotes necessários
+## 2. Instalar pacotes necessários
 
 Na tela de seleção de pacotes, instale:
 
-## Ferramentas de compilação
+# Ferramentas de compilação
 
 ```
 gcc-core
@@ -66,14 +66,14 @@ libtool
 pkg-config
 ```
 
-## Dependências do MTR
+# Dependências do MTR
 
 ```
 libncurses-devel
 libjansson-devel
 ```
 
-## Ferramentas auxiliares
+# Ferramentas auxiliares
 
 ```
 git
@@ -82,7 +82,7 @@ dos2unix
 
 ---
 
-# 3. Validar instalação do Cygwin
+## 3. Validar instalação do Cygwin
 
 Abra o:
 
@@ -112,7 +112,7 @@ Os comandos devem retornar as versões instaladas.
 
 ---
 
-# 4. Configurar o Git
+## 4. Configurar o Git
 
 O Cygwin utiliza arquivos no padrão Unix (LF). Configure o Git para não converter finais de linha:
 
@@ -122,7 +122,7 @@ git config --global core.autocrlf false
 
 ---
 
-# 5. Baixar o código-fonte do MTR
+## 5. Baixar o código-fonte do MTR
 
 No terminal Cygwin:
 
@@ -144,7 +144,7 @@ cd mtr
 
 ---
 
-# 6. Corrigir arquivos CRLF (se necessário)
+## 6. Corrigir arquivos CRLF (se necessário)
 
 Caso apareçam erros como:
 
@@ -172,7 +172,7 @@ POSIX shell script, ASCII text executable
 
 ---
 
-# 7. Gerar arquivos de compilação
+## 7. Gerar arquivos de compilação
 
 Execute:
 
@@ -189,7 +189,7 @@ Makefile.am: installing ...
 
 ---
 
-# 8. Configurar a compilação
+## 8. Configurar a compilação
 
 Execute:
 
@@ -221,7 +221,7 @@ jansson  :yes
 
 ---
 
-# 9. Compilar o MTR
+## 9. Compilar o MTR
 
 Compile utilizando todos os núcleos disponíveis:
 
@@ -238,7 +238,7 @@ mtr-packet.exe
 
 ---
 
-# 10. Testar o binário
+## 10. Testar o binário
 
 Verifique a versão:
 
@@ -254,9 +254,9 @@ mtr 0.96
 
 ---
 
-# 11. Testes IPv4 e IPv6
+## 11. Testes IPv4 e IPv6
 
-## IPv4
+# IPv4
 
 Modo interativo:
 
@@ -272,7 +272,7 @@ Relatório:
 
 ---
 
-## IPv6
+# IPv6
 
 Modo interativo:
 
@@ -288,7 +288,7 @@ Relatório:
 
 ---
 
-# 12. Exibir ASN dos saltos
+## 12. Exibir ASN dos saltos
 
 O parâmetro:
 
@@ -320,15 +320,15 @@ Exemplo de saída:
 
 ---
 
-# 13. Gerar relatórios comparativos
+## 13. Gerar relatórios comparativos
 
-## IPv4
+# IPv4
 
 ```bash
 ./mtr -4 -z -r -c 200 -w google.com > mtr_ipv4_google.txt
 ```
 
-## IPv6
+# IPv6
 
 ```bash
 ./mtr -6 -z -r -c 200 -w google.com > mtr_ipv6_google.txt
@@ -336,7 +336,7 @@ Exemplo de saída:
 
 ---
 
-# 14. Parâmetros principais do MTR
+## 14. Parâmetros principais do MTR
 
 | Parâmetro | Função |
 |---|---|
@@ -349,7 +349,7 @@ Exemplo de saída:
 
 ---
 
-# 15. Comparação IPv4 x IPv6
+## 15. Comparação IPv4 x IPv6
 
 Ao analisar os relatórios compare:
 
@@ -370,7 +370,7 @@ Também avalie:
 
 ---
 
-# 16. Atualizar o MTR
+## 16. Atualizar o MTR
 
 Para atualizar o código:
 
@@ -389,7 +389,7 @@ make -j$(nproc)
 
 ---
 
-# Conclusão
+## Conclusão
 
 Após este procedimento, o Windows terá uma versão oficial do MTR compilada via Cygwin, permitindo:
 
