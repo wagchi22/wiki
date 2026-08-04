@@ -75,6 +75,7 @@ export default defineConfig({
           { text: "Ajustes Gerais", link: "/ajustes-gerais" },
           { text: "Configurar Servidor de Mídia", link: "/configurar-servidor-midia" },
           { text: "Instalar Codec HEVC", link: "/instalar-codec-hevc" },
+          { text: "Instalar MTR Cygwin", link: "/instalar-mtr-cygwin" },
         ]
       }
     ],
