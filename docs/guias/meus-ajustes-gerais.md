@@ -36,7 +36,7 @@ Não é recomendado, pois anula o ganho de nitidez ao limitar a banda em 4K/120 
 - Nível de preto: Automático (_Se não tiver, use Baixo_)
 - Mapeamento de tom dinâmico:
   - Cinema: Desativado
-  - Jogos: HGiG (_Referente ao tipo de conteúdo exibido_)
+  - Jogos: Ativado (_HGiG: muitos jogos o evitam ou são mal implementados_)
 - TruMotion: Desativado
 - Cinema Real: Ativado
 - Full LED: Médio
