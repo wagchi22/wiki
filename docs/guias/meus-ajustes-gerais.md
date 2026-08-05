@@ -34,7 +34,9 @@ Não é recomendado, pois anula o ganho de nitidez ao limitar a banda em 4K/120 
   - Verde: 40
   - Azul: -20
 - Nível de preto: Automático (_Se não tiver, use Baixo_)
-- Mapeamento de tom dinâmico: Desativado para Cinema, HGiG para Jogos (_Referente ao tipo de conteúdo exibido_)
+- Mapeamento de tom dinâmico:
+  - Cinema: Desativado
+  - Jogos: HGiG (_Referente ao tipo de conteúdo exibido_)
 - TruMotion: Desativado
 - Cinema Real: Ativado
 - Full LED: Médio
@@ -54,7 +56,8 @@ Não é recomendado, pois anula o ganho de nitidez ao limitar a banda em 4K/120 
 ## PlayStation 5
 
 :::tip Calibração no Jogo
-Ajuste o Contraste conforme a TV, o Branco Papel coloque 200 e Brilho Máximo em 350.
+Ajuste o Contraste conforme a TV, o Branco Papel coloque 200
+e Brilho Máximo em 350.
 :::
 
 ![Valores de referência](../images/hdtvtest.jpg)
@@ -68,7 +71,8 @@ Ajuste o Contraste conforme a TV, o Branco Papel coloque 200 e Brilho Máximo em
 ## PC Dell
 
 :::tip Atualizações
-Mantenha o sistema, firmware e drivers sempre atualizados para evitar problemas de compatibilidade.
+Mantenha o sistema, firmware e drivers sempre atualizados para evitar
+problemas de compatibilidade.
 :::
 
 :::tip Wi-Fi Lento
@@ -89,25 +93,35 @@ Altere as opções de energia do Adaptador Sem Fio para Desempenho Máximo.
   - IP: Estático
   - DNS: [Control D](https://controld.com/free-dns) e selecione _Ads & Tracking_
 - Softwares:
-  - [Office](https://files.rg-adguard.net/files/031460f7-375b-1168-38bd-9c6a581d8920) com esse [ativador](https://github.com/massgravel/Microsoft-Activation-Scripts)
-  - [Chrome](https://www.google.com/intl/pt-BR/chrome/) e desative salvar _senhas, pagamentos e endereços_
+  - [Office](https://files.rg-adguard.net/files/031460f7-375b-1168-38bd-9c6a581d8920)
+com esse[ativador](https://github.com/massgravel/Microsoft-Activation-Scripts)
+  - [Chrome](https://www.google.com/intl/pt-BR/chrome/) e desative salvar
+  _senhas, pagamentos e endereços_
     - Extensões:
-      - [Bitwarden](https://bitwarden.com/download/#downloads-web-browser-extensions) e desative todas as _notificações_
-      - [AdGuard](https://adguard.com/pt_br/adguard-browser-extension/overview.html?_plc=pt_br) e ative todos os _filtros_
-      - [Tampermonkey](https://www.tampermonkey.net/) junto desse [script](https://github.com/wagchi22/guia-de-bolso/blob/main/scripts/bludv-bypass.js) e esse [script](https://github.com/wagchi22/wiki/blob/main/scripts/memoriadatv-bypass.js)
-  - [VLC](https://www.videolan.org/) e desative _redimensionar vídeo_ e _exibir título_
+      - [Bitwarden](https://bitwarden.com/download/#downloads-web-browser-extensions)
+      e desative todas as _notificações_
+      - [AdGuard](https://adguard.com/pt_br/adguard-browser-extension/overview.html?_plc=pt_br)
+      e ative todos os _filtros_
+      - [Tampermonkey](https://www.tampermonkey.net/) junto desse
+      [script](https://github.com/wagchi22/guia-de-bolso/blob/main/scripts/bludv-bypass.js)
+      e esse [script](https://github.com/wagchi22/wiki/blob/main/scripts/memoriadatv-bypass.js)
+  - [VLC](https://www.videolan.org/) e desative
+  _redimensionar vídeo_ e _exibir título_
   - [NanaZip](https://nanazip.org/)
 
 ## iPhone
 
 - Apps:
-  - [Chrome](https://www.google.com/intl/pt-BR/chrome/) e desative salvar _senhas, pagamentos e endereços_
-- Anti-spam: [Não Me Perturbe](https://www.naomeperturbe.com.br/) e em filtar números desconhecidos marque _perguntar motivo da ligação_
+  - [Chrome](https://www.google.com/intl/pt-BR/chrome/) e desative salvar
+  _senhas, pagamentos e endereços_
+- Anti-spam: [Não Me Perturbe](https://www.naomeperturbe.com.br/) e em filtar
+números desconhecidos marque _perguntar motivo da ligação_
 
 ## Roteador
 
 :::info Otimização de Sinal
-Use esse [software](https://matthafner.com/wifi-analyzer) para encontrar o melhor canal.
+Use esse [software](https://matthafner.com/wifi-analyzer)
+para encontrar o melhor canal.
 :::
 
 - Local: Parede
