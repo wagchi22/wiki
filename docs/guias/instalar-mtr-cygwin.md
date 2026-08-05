@@ -1,4 +1,4 @@
-# Instalando o MTR oficial no Windows usando Cygwin
+# Instalar MTR Cygwin
 
 ## Objetivo
 
