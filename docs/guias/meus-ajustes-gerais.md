@@ -1,4 +1,4 @@
-# Ajustes Gerais
+# Meus Ajustes Gerais
 
 :::info Objetivo
 Ajustes gerais para todo tipo de coisa.
@@ -56,6 +56,8 @@ Não é recomendado, pois anula o ganho de nitidez ao limitar a banda em 4K/120 
 :::tip Calibração no Jogo
 Ajuste o Contraste conforme a TV, o Branco Papel coloque 200 e Brilho Máximo em 350.
 :::
+
+![Valores de referência](./images/hdtvtest.jpg)
 
 - Modo gráfico preferido: Desempenho
 - Calibragem HDR:

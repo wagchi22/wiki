@@ -72,10 +72,10 @@ export default defineConfig({
       {
         text: "Guias",
         items: [
-          { text: "Ajustes Gerais", link: "/ajustes-gerais" },
-          { text: "Configurar Servidor de Mídia", link: "/configurar-servidor-midia" },
-          { text: "Instalar Codec HEVC", link: "/instalar-codec-hevc" },
-          { text: "Instalar MTR Cygwin", link: "/instalar-mtr-cygwin" },
+          { text: "Meus Ajustes Gerais", link: "guias/meus-ajustes-gerais" },
+          { text: "Configurar Midiaserver", link: "guias/configurar-midiaserver" },
+          { text: "Instalar Codec HEVC", link: "guias/instalar-codec-hevc" },
+          { text: "Instalar MTR Cygwin", link: "guias/instalar-mtr-cygwin" },
         ]
       }
     ],
