@@ -2,9 +2,11 @@
 
 ## Objetivo
 
-Este guia descreve como instalar e compilar o **MTR oficial (My Traceroute)** no Windows utilizando o ambiente **Cygwin**.
+Este guia descreve como instalar e compilar o **MTR oficial (My Traceroute)**
+no Windows utilizando o ambiente **Cygwin**.
 
-O objetivo é obter uma versão compilada a partir do código-fonte oficial com suporte a:
+O objetivo é obter uma versão compilada a partir do código-fonte oficial
+com suporte a:
 
 - IPv4
 - IPv6
@@ -54,7 +56,7 @@ https://linorg.usp.br/cygwin/
 
 Na tela de seleção de pacotes, instale:
 
-# Ferramentas de compilação
+### Ferramentas de compilação
 
 ```
 gcc-core
@@ -66,14 +68,14 @@ libtool
 pkg-config
 ```
 
-# Dependências do MTR
+### Dependências do MTR
 
 ```
 libncurses-devel
 libjansson-devel
 ```
 
-# Ferramentas auxiliares
+### Ferramentas auxiliares
 
 ```
 git
@@ -114,7 +116,8 @@ Os comandos devem retornar as versões instaladas.
 
 ## 4. Configurar o Git
 
-O Cygwin utiliza arquivos no padrão Unix (LF). Configure o Git para não converter finais de linha:
+O Cygwin utiliza arquivos no padrão Unix (LF).
+Configure o Git para não converter finais de linha:
 
 ```bash
 git config --global core.autocrlf false
@@ -256,7 +259,7 @@ mtr 0.96
 
 ## 11. Testes IPv4 e IPv6
 
-# IPv4
+## IPv4
 
 Modo interativo:
 
@@ -272,7 +275,7 @@ Relatório:
 
 ---
 
-# IPv6
+## IPv6
 
 Modo interativo:
 
@@ -322,13 +325,13 @@ Exemplo de saída:
 
 ## 13. Gerar relatórios comparativos
 
-# IPv4
+### Relatórios IPv4
 
 ```bash
 ./mtr -4 -z -r -c 200 -w google.com > mtr_ipv4_google.txt
 ```
 
-# IPv6
+### Relatórios IPv6
 
 ```bash
 ./mtr -6 -z -r -c 200 -w google.com > mtr_ipv6_google.txt
@@ -391,7 +394,8 @@ make -j$(nproc)
 
 ## Conclusão
 
-Após este procedimento, o Windows terá uma versão oficial do MTR compilada via Cygwin, permitindo:
+Após este procedimento, o Windows terá uma versão oficial do MTR
+compilada via Cygwin, permitindo:
 
 - diagnóstico avançado de rotas;
 - comparação IPv4 versus IPv6;

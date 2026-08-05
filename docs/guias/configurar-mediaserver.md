@@ -1,7 +1,8 @@
-# Configurar Midiaserver
+# Configurar Mediaserver
 
 :::info Objetivo
-Configurar um Servidor de Mídia no Windows, usando software popular e confiável para automatizar o processo.
+Configurar um Servidor de Mídia no Windows, usando software popular e confiável
+para automatizar o processo.
 
 Fontes: [TRaSH Guides](https://trash-guides.info/)
 :::
@@ -20,14 +21,17 @@ Fontes: [TRaSH Guides](https://trash-guides.info/)
 - [Bazarr](https://www.bazarr.media/)
 - [Jellyfin](https://jellyfin.org/)
 - [qBittorrent](https://www.qbittorrent.org/)
-- [Remux](https://github.com/wagchi22/meus-arquivos/blob/main/scripts/remux.py) (_Requer [python](https://www.python.org/) e [mkvmerge](https://mkvtoolnix.download/)_)
+- [Remux](https://github.com/wagchi22/meus-arquivos/blob/main/scripts/remux.py)
+  (_Requer [python](https://www.python.org/) e
+  [mkvmerge](https://mkvtoolnix.download/)_)
 
 ## Prowlarr
 
 - Usuário: Coloque um nome qualquer
 - Senha: Insira uma senha qualquer
 - Conexões (requer Chave API): Adicione o Radarr e Sonarr
-- Indexadores: [Catálogo BeTor](https://github.com/wagchi22/wiki/blob/main/scripts/catalogo-betor.yml)
+- Indexadores:
+  - [Catálogo BeTor](https://github.com/wagchi22/wiki/blob/main/scripts/catalogo-betor.yml)
 - Mínimo de semeadores: 0
 
 ## qBittorrent
@@ -50,7 +54,8 @@ Fontes: [TRaSH Guides](https://trash-guides.info/)
     - Atualizações Permitidas: Ativado
     - Atualizar até a qualidade: Bluray-1080p
     - Atualizar até pontuação de formato personalizado: 10000
-    - Ordem e definições de qualidades: (_Retire dos grupos e os mova para o topo da lista_)
+    - Ordem e definições de qualidades: (_Retire dos grupos e os mova para o
+    topo da lista_)
       - Bluray-1080p: 50,8/1999/2000
       - WEBDL-1080p: 12,5/1999/2000
     - Pontuações:
@@ -63,7 +68,8 @@ Fontes: [TRaSH Guides](https://trash-guides.info/)
     - Atualizações Permitidas: Ativado
     - Atualizar até a qualidade: Bluray-1080p
     - Atualizar até pontuação de formato personalizado: 10000
-    - Ordem e definições de qualidades: (_Retire dos grupos e os mova para o topo da lista_)
+    - Ordem e definições de qualidades: (_Retire dos grupos e os mova para o
+    topo da lista_)
       - Bluray-2160p: 102/1999/2000
       - WEBDL-2160p: 34,5/1999/2000
     - Pontuações:
@@ -74,10 +80,15 @@ Fontes: [TRaSH Guides](https://trash-guides.info/)
       - Inglês: 500
 - Renomear automaticamente: Ativado
   - Pastas: `{Movie CleanTitle} ({Release Year})`
-  - Arquivos: `{Movie.CleanTitle}.{Release.Year}.{Quality Title}.{MediaInfo VideoCodec}.{Custom.Formats}.{Mediainfo AudioChannels}`
-- Formatos personalizados: Acesse [aqui](https://github.com/wagchi22/wiki/blob/main/scripts/custom-formats.json)
+  - Arquivos:
+    `{Movie.CleanTitle}.{Release.Year}.{Quality Title}.`
+    `{MediaInfo VideoCodec}.{Custom.Formats}.{Mediainfo AudioChannels}`
+- Formatos personalizados:
+  Acesse [aqui](https://github.com/wagchi22/wiki/blob/main/scripts/custom-formats.json)
 - Conexões:
-  - Script Personalizado: `C:\ProgramData\remux.py` e marque _ao obter; importar; atualizar; adicionar; interação manual_
+  - Script Personalizado:
+    `C:\ProgramData\remux.py`
+    e marque _ao obter; importar; atualizar; adicionar; interação manual_
 - País da certificação: Brazil
 
 ## Sonarr
@@ -92,7 +103,8 @@ Fontes: [TRaSH Guides](https://trash-guides.info/)
     - Atualizações Permitidas: Ativado
     - Atualizar até a qualidade: Bluray-1080p
     - Atualizar até pontuação de formato personalizado: 10000
-    - Ordem e definições de qualidades: (_Retire dos grupos e os mova para o topo da lista_)
+    - Ordem e definições de qualidades: (_Retire dos grupos e os mova para o
+    topo da lista_)
       - Bluray-1080p: 50,4/995/1000
       - WEBDL-1080p: 15/995/1000
     - Pontuações:
@@ -105,7 +117,8 @@ Fontes: [TRaSH Guides](https://trash-guides.info/)
     - Atualizações Permitidas: Ativado
     - Atualizar até a qualidade: Bluray-1080p
     - Atualizar até pontuação de formato personalizado: 10000
-    - Ordem e definições de qualidades: (_Retire dos grupos e os mova para o topo da lista_)
+    - Ordem e definições de qualidades: (_Retire dos grupos e os mova para o
+    topo da lista_)
       - Bluray-2160p: 94,6/995/1000
       - WEBDL-2160p: 25/995/1000
     - Pontuações:
@@ -116,10 +129,16 @@ Fontes: [TRaSH Guides](https://trash-guides.info/)
       - Inglês: 500
 - Renomear automaticamente: Ativado
   - Pastas: `{Series CleanTitleWithoutYear} {(Series Year)}`
-  - Arquivos: `{Series.CleanTitleWithoutYear}.{Series.Year}.S{season:00}E{episode:00}.{Quality Title}.{MediaInfo VideoCodec}.{Custom.Formats}.{Mediainfo AudioChannels}`
-- Formatos personalizados: Acesse [aqui](https://github.com/wagchi22/wiki/blob/main/scripts/custom-formats.json)
+  - Arquivos:
+    `{Series.CleanTitleWithoutYear}.{Series.Year}.S{season:00}E{episode:00}.`
+    `{Quality Title}.{MediaInfo VideoCodec}.{Custom.Formats}.`
+    `{Mediainfo AudioChannels}`
+- Formatos personalizados:
+  Acesse [aqui](https://github.com/wagchi22/wiki/blob/main/scripts/custom-formats.json)
 - Conexões:
-  - Script Personalizado: `C:\ProgramData\remux.py` e marque _ao obter; importar; atualizar; adicionar; interação manual_
+  - Script Personalizado:
+    `C:\ProgramData\remux.py`
+    e marque _ao obter; importar; atualizar; adicionar; interação manual_
 
 ## Bazarr
 
