@@ -18,7 +18,7 @@ O objetivo é obter uma versão compilada a partir do código-fonte oficial com 
 
 Baixe o instalador oficial do Cygwin:
 
-https://www.cygwin.com/
+<https://www.cygwin.com/>
 
 Utilize:
 
@@ -339,7 +339,7 @@ Exemplo de saída:
 ## 14. Parâmetros principais do MTR
 
 | Parâmetro | Função |
-|---|---|
+| --- | --- |
 | `-4` | Força IPv4 |
 | `-6` | Força IPv6 |
 | `-z` | Exibe ASN |
@@ -354,7 +354,7 @@ Exemplo de saída:
 Ao analisar os relatórios compare:
 
 | Campo | Significado |
-|---|---|
+| --- | --- |
 | Loss% | Perda de pacotes |
 | Avg | Latência média |
 | Best | Menor latência |
