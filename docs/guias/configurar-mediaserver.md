@@ -1,29 +1,49 @@
+<!-- markdownlint-disable MD013 -->
+
 # Configurar Mediaserver
 
 :::info Objetivo
 Configurar um Servidor de Mídia no Windows, usando software popular e confiável
 para automatizar o processo.
-
-Fontes: [TRaSH Guides](https://trash-guides.info/)
 :::
+
+## Fontes
+
+- [Gemini](https://gemini.google.com/)
+- [TRaSH Guides](https://trash-guides.info)
+- [Reddit](https://reddit.com/)
 
 ## Locais
 
-- Softwares e scripts: `C:\ProgramData`
-- Torrents: `E:\torrents`
-- Biblioteca de mídia: `E:\media`
+- Indexadores: `C:\ProgramData\Prowlarr\Definitions\Custom`
+- Ferramentas: `C:\Tools`
+- Scripts: `C:\Scripts`
+- Torrents: `E:\Torrents`
+- Mídia: `E:\Media`
 
 ## Software
 
-- [Prowlarr](https://prowlarr.com/)
-- [Radarr](https://radarr.video/)
-- [Sonarr](https://sonarr.tv/)
-- [Bazarr](https://www.bazarr.media/)
-- [Jellyfin](https://jellyfin.org/)
-- [qBittorrent](https://www.qbittorrent.org/)
-- [Remux](https://github.com/wagchi22/meus-arquivos/blob/main/scripts/remux.py)
-  (_Requer [python](https://www.python.org/) e
-  [mkvmerge](https://mkvtoolnix.download/)_)
+- Necessário:
+  - [Prowlarr](https://prowlarr.com/)
+  - [FlareSolverr](https://github.com/Flaresolverr/Flaresolverr)
+  - [Radarr](https://radarr.video/)
+  - [Sonarr](https://sonarr.tv/)
+  - [Bazarr](https://www.bazarr.media/)
+  - [Jellyfin](https://jellyfin.org/)
+    - Plugins:  
+      - [Prevent Sleep](https://github.com/jonschz/jellyfin-plugin-preventsleep)
+  - [qBittorrent](https://www.qbittorrent.org/)
+  - [MediaInfo](https://mediaarea.net/MediaInfo)
+- Opcional:
+  - Ferramentas: (_Insira no PATH do sistema_)
+    - [Python](https://www.python.org/)
+    - [MKVToolNix](https://mkvtoolnix.download/)
+    - [dovi_tool](https://github.com/quietvoid/dovi_tool)
+  - Scripts:
+    - [remux_mkv.py](../../scripts/remux_mkv.py)
+    - [remove_dolby_vision.py](../../scripts/remove_dolby_vision.py)
+    - [clean_orphan_subs.ps1](../../scripts/clean_orphan_subs.ps1)
+    - [flaresolverr_manager.ps1](../../scripts/flaresolverr_manager.ps1)
 
 ## Prowlarr
 
@@ -31,8 +51,14 @@ Fontes: [TRaSH Guides](https://trash-guides.info/)
 - Senha: Insira uma senha qualquer
 - Conexões (requer Chave API): Adicione o Radarr e Sonarr
 - Indexadores:
-  - [Catálogo BeTor](https://github.com/wagchi22/wiki/blob/main/scripts/catalogo-betor.yml)
+  - [Catálogo BeTor](../../scripts/catalogo-betor.yml)
+  - Knaben
 - Mínimo de semeadores: 0
+- Etiquetas: `flaresolverr`
+
+## FlareSolverr
+
+- Execute o script `C:\Scripts\flaresolverr_manager.ps1` para iniciar automaticamente
 
 ## qBittorrent
 
@@ -41,6 +67,9 @@ Fontes: [TRaSH Guides](https://trash-guides.info/)
 - Senha: Insira uma senha qualquer
 - Limite de semeadura: Parar ao alcançar 0,0
 - Modo de gerenciamento de torrents: Automático
+- Protocolo: TCP
+- Máximo de conexões por torrent: 250
+- Encriptação: Requerido
 
 ## Radarr
 
@@ -49,47 +78,16 @@ Fontes: [TRaSH Guides](https://trash-guides.info/)
 - Conexões: Adicione o qBittorrent (_Requer Chave API_)
 - Propers e repacks: Desativado
 - Monitorar: Somente filme
-- Perfis de qualidade:
-  - 1080p:
-    - Atualizações Permitidas: Ativado
-    - Atualizar até a qualidade: Bluray-1080p
-    - Atualizar até pontuação de formato personalizado: 10000
-    - Ordem e definições de qualidades: (_Retire dos grupos e os mova para o
-    topo da lista_)
-      - Bluray-1080p: 50,8/1999/2000
-      - WEBDL-1080p: 12,5/1999/2000
-    - Pontuações:
-      - Bluray: 4000
-      - WEBDL: 3000
-      - DUAL: 1500
-      - Português: 1000
-      - Inglês: 500
-  - 2160p:
-    - Atualizações Permitidas: Ativado
-    - Atualizar até a qualidade: Bluray-1080p
-    - Atualizar até pontuação de formato personalizado: 10000
-    - Ordem e definições de qualidades: (_Retire dos grupos e os mova para o
-    topo da lista_)
-      - Bluray-2160p: 102/1999/2000
-      - WEBDL-2160p: 34,5/1999/2000
-    - Pontuações:
-      - Bluray: 4000
-      - WEBDL: 3000
-      - DUAL: 1500
-      - Português: 1000
-      - Inglês: 500
+- Perfis, formatos e nomeclatura: Obtenha [aqui](https://trash-guides.info/)
 - Renomear automaticamente: Ativado
-  - Pastas: `{Movie CleanTitle} ({Release Year})`
-  - Arquivos:
-    `{Movie.CleanTitle}.{Release.Year}.{Quality Title}.`
-    `{MediaInfo VideoCodec}.{Custom.Formats}.{Mediainfo AudioChannels}`
-- Formatos personalizados:
-  Acesse [aqui](https://github.com/wagchi22/wiki/blob/main/scripts/custom-formats.json)
 - Conexões:
-  - Script Personalizado:
-    `C:\ProgramData\remux.py`
-    e marque _ao obter; importar; atualizar; adicionar; interação manual_
-- País da certificação: Brazil
+  - Scripts Personalizados:
+    - Remux MKV:
+      - Caminho: `C:\Scripts\remux_mkv.py`
+      - Opções: Obter, importar e atualizar
+    - Clean orphan subs:
+      - Caminho: `C:\Scripts\clean_orphan_subs.ps1`
+      - Opções: Importar, atualizar e renomear
 
 ## Sonarr
 
@@ -98,57 +96,38 @@ Fontes: [TRaSH Guides](https://trash-guides.info/)
 - Conexões: Adicione o qBittorrent (_Requer Chave API_)
 - Propers e repacks: Desativado
 - Monitorar: Todos os episódios
-- Perfis de qualidade:
-  - 1080p:
-    - Atualizações Permitidas: Ativado
-    - Atualizar até a qualidade: Bluray-1080p
-    - Atualizar até pontuação de formato personalizado: 10000
-    - Ordem e definições de qualidades: (_Retire dos grupos e os mova para o
-    topo da lista_)
-      - Bluray-1080p: 50,4/995/1000
-      - WEBDL-1080p: 15/995/1000
-    - Pontuações:
-      - Bluray: 4000
-      - WEBDL: 3000
-      - DUAL: 1500
-      - Português: 1000
-      - Inglês: 500
-  - 2160p:
-    - Atualizações Permitidas: Ativado
-    - Atualizar até a qualidade: Bluray-1080p
-    - Atualizar até pontuação de formato personalizado: 10000
-    - Ordem e definições de qualidades: (_Retire dos grupos e os mova para o
-    topo da lista_)
-      - Bluray-2160p: 94,6/995/1000
-      - WEBDL-2160p: 25/995/1000
-    - Pontuações:
-      - Bluray: 4000
-      - WEBDL: 3000
-      - DUAL: 1500
-      - Português: 1000
-      - Inglês: 500
+- Perfis, formatos e nomeclatura: Obtenha [aqui](https://trash-guides.info/)
 - Renomear automaticamente: Ativado
-  - Pastas: `{Series CleanTitleWithoutYear} {(Series Year)}`
-  - Arquivos:
-    `{Series.CleanTitleWithoutYear}.{Series.Year}.S{season:00}E{episode:00}.`
-    `{Quality Title}.{MediaInfo VideoCodec}.{Custom.Formats}.`
-    `{Mediainfo AudioChannels}`
-- Formatos personalizados:
-  Acesse [aqui](https://github.com/wagchi22/wiki/blob/main/scripts/custom-formats.json)
 - Conexões:
-  - Script Personalizado:
-    `C:\ProgramData\remux.py`
-    e marque _ao obter; importar; atualizar; adicionar; interação manual_
+  - Scripts Personalizados:
+    - Remux MKV:
+      - Caminho: `C:\Scripts\remux_mkv.py`
+      - Opções: Obter, importar e atualizar
+    - Clean orphan subs:
+      - Caminho: `C:\Scripts\clean_orphan_subs.ps1`
+      - Opções: Importar, atualizar e renomear
 
 ## Bazarr
 
 - Usuário: Coloque um nome qualquer
 - Senha: Insira uma senha qualquer
 - Conexões: Adicione o Radarr e Sonarr (_Requer Chave API_)
-- Legenda padrão para nova mídia: Ativado
+- Filtro de idioma:
+  - Português
+  - Português (Brasil)
+  - Inglês
+- Perfil de idioma:
+  - Português:
+    - Idioma: Português (Brasil)
+  - Inglês:
+    - Idioma: Inglês
+- Legenda padrão para nova mídia: Português
 - Sincronização automática de legenda: Ativado
-- Modificações Sub-Zero: Ative as opções principais
-- Provedor de legendas: [OpenSubtitles.com](https://www.opensubtitles.com/)
+- Modificações Sub-Zero: Hearing Impaired
+- Provedor de legendas:
+  - [OpenSubtitles.com](https://www.opensubtitles.com/)
+  - Gestdown
+  - SubDL
 
 ## Jellyfin
 
@@ -159,3 +138,8 @@ Fontes: [TRaSH Guides](https://trash-guides.info/)
   - Taxa de atualização: No dispositivo
   - Cor de legenda: Amarelo
   - Tamanho de legenda: 125%
+- Transcodificação por hardware: Intel QSV
+- Codificador de hardware Intel H.264 de baixo processamento: Ativado
+- Mapeamento de tons: Ativado
+- Limitar transcodificação: Ativado
+- Remover segmentos: Ativado
