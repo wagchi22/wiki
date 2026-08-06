@@ -40,10 +40,10 @@ para automatizar o processo.
     - [MKVToolNix](https://mkvtoolnix.download/)
     - [dovi_tool](https://github.com/quietvoid/dovi_tool)
   - Scripts:
-    - [remux-mkv.py](../../scripts/remux-mkv.py)
-    - [remove-dolby-vision.py](../../scripts/remove-dolby-vision.py)
-    - [clean-orphan-subs.ps1](../../scripts/clean-orphan-subs.ps1)
-    - [flaresolverr-manager.ps1](../../scripts/flaresolverr-manager.ps1)
+    - [remux-mkv.py](/scripts/remux-mkv.py)
+    - [remove-dolby-vision.py](/scripts/remove-dolby-vision.py)
+    - [clean-orphan-subs.ps1](/scripts/clean-orphan-subs.ps1)
+    - [flaresolverr-manager.ps1](/scripts/flaresolverr-manager.ps1)
 
 ## Prowlarr
 
@@ -51,7 +51,7 @@ para automatizar o processo.
 - Senha: Insira uma senha qualquer
 - Conexões (requer Chave API): Adicione o Radarr e Sonarr
 - Indexadores:
-  - [Catálogo BeTor](../../scripts/catalogo-betor.yml)
+  - [Catálogo BeTor](/scripts/catalogo-betor.yml)
   - Knaben
 - Mínimo de semeadores: 0
 - Etiquetas: `flaresolverr`
