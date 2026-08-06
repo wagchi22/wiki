@@ -13,7 +13,7 @@ export default defineConfig({
     [
       "link",
       {
-        rel: "icon",
+        rel: "shortcut icon",
         href: "/wiki/favicon.ico"
       },
     ],
