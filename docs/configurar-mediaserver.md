@@ -39,11 +39,11 @@ para automatizar o processo.
     - [Python](https://www.python.org/)
     - [MKVToolNix](https://mkvtoolnix.download/)
     - [dovi_tool](https://github.com/quietvoid/dovi_tool)
-  <!-- - Scripts:
-    - [remux-mkv.py](/remux-mkv.py)
-    - [remove-dolby-vision.py](/remove-dolby-vision.py)
-    - [clean-orphan-subs.ps1](/clean-orphan-subs.ps1)
-    - [flaresolverr-manager.ps1](/flaresolverr-manager.ps1) -->
+  - Scripts:
+    - [remux-mkv](/remux-mkv.py)
+    <!-- - [remove-dolby-vision](/remove-dolby-vision.py)
+    - [clean-orphan-subs](/clean-orphan-subs.ps1)
+    - [flaresolverr-manager](/flaresolverr-manager.ps1) -->
 
 ## Prowlarr
 
