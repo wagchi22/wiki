@@ -14,7 +14,8 @@ export default defineConfig({
       "link",
       {
         rel: "shortcut icon",
-        href: "/wiki/favicon.ico"
+        type: "image/x-icon",
+        href: "/wiki/favicon.ico",
       },
     ],
     ["style", {}, `
@@ -26,7 +27,7 @@ export default defineConfig({
   ],
 
   themeConfig: {
-    logo: "/wiki/logo.svg",
+    logo: "/logo.svg",
     lastUpdatedText: "Última atualização em",
     search: {
       provider: "local",
