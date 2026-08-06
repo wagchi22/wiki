@@ -26,7 +26,7 @@ export default defineConfig({
   ],
 
   themeConfig: {
-    logo: "/logo.svg",
+    logo: "/wiki/logo.svg",
     lastUpdatedText: "Última atualização em",
     search: {
       provider: "local",
