@@ -40,7 +40,7 @@ para automatizar o processo.
     - [MKVToolNix](https://mkvtoolnix.download/)
     - [dovi_tool](https://github.com/quietvoid/dovi_tool)
   - Scripts:
-    - [remux-mkv](/remux-mkv.py)
+    - [remux-mkv.py](remux-mkv.py)
     <!-- - [remove-dolby-vision](/remove-dolby-vision.py)
     - [clean-orphan-subs](/clean-orphan-subs.ps1)
     - [flaresolverr-manager](/flaresolverr-manager.ps1) -->
