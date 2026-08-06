@@ -116,8 +116,8 @@ Altere as opções de energia do Adaptador Sem Fio para Desempenho Máximo.
       - [uBlock Origin Lite](https://chromewebstore.google.com/detail/ublock-origin-lite/ddkjiahejlhfcafbddmgiahcphecmpfh)
       com modo de filtragem em _completo_ e todos os _filtros_ ativados
       - [Tampermonkey](https://www.tampermonkey.net/) junto desse
-      [script](/scripts/bludv-bypass.js)
-      e esse [script](/scripts/memoriadatv-bypass.js)
+      [script](/wiki/scripts/bludv-bypass.js)
+      e esse [script](/wiki/scripts/memoriadatv-bypass.js)
   - [VS Code](https://code.visualstudio.com/)
   - [Git](https://git-scm.com/)
   - [Node.js](https://nodejs.org/pt-br)
