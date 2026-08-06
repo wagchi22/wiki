@@ -69,7 +69,7 @@ Ajuste o Contraste conforme a TV, o Branco Papel coloque 200
 e Brilho Máximo em 350.
 :::
 
-![Valores de referência](https://github.com/wagchi22/wiki/images/hdtvtest.jpg)
+![Valores de referência](/images/hdtvtest.jpg)
 
 - HDR: Adaptável
 - Calibragem HDR:
