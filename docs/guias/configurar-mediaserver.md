@@ -40,10 +40,10 @@ para automatizar o processo.
     - [MKVToolNix](https://mkvtoolnix.download/)
     - [dovi_tool](https://github.com/quietvoid/dovi_tool)
   - Scripts:
-    - [remux-mkv.py](https://github.com/wagchi22/wiki/scripts/remux-mkv.py)
-    - [remove-dolby-vision](https://github.com/wagchi22/wiki/scripts/remove-dolby-vision.py)
-    - [clean-orphan-subs](https://github.com/wagchi22/wiki/scripts/clean-orphan-subs.ps1)
-    - [flaresolverr-manager](https://github.com/wagchi22/wiki/scripts/flaresolverr-manager.ps1)
+    - [remux-mkv.py](https://raw.githubusercontent.com/wagchi22/wiki/refs/heads/main/scripts/remux-mkv.py)
+    - [remove-dolby-vision](https://raw.githubusercontent.com/wagchi22/wiki/refs/heads/main/scripts/remove-dolby-vision.py)
+    - [clean-orphan-subs](https://raw.githubusercontent.com/wagchi22/wiki/refs/heads/main/scripts/clean-orphan-subs.ps1)
+    - [flaresolverr-manager](https://raw.githubusercontent.com/wagchi22/wiki/refs/heads/main/scripts/flaresolverr-manager.ps1)
 
 ## Prowlarr
 
@@ -51,7 +51,7 @@ para automatizar o processo.
 - Senha: Insira uma senha qualquer
 - Conexões (requer Chave API): Adicione o Radarr e Sonarr
 - Indexadores:
-  - [Catálogo BeTor](https://github.com/wagchi22/wiki/scripts/catalogo-betor.yml)
+  - [Catálogo BeTor](https://raw.githubusercontent.com/wagchi22/wiki/refs/heads/main/scripts/catalogo-betor.yml)
   - Knaben
 - Mínimo de semeadores: 0
 - Etiquetas: `flaresolverr`
