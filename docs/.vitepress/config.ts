@@ -15,7 +15,7 @@ export default defineConfig({
       {
         rel: "shortcut icon",
         type: "image/x-icon",
-        href: "/images/favicon.ico",
+        href: "https://github.com/wagchi22/wiki/tree/main/images/favicon.ico",
       },
     ],
     ["style", {}, `
@@ -27,7 +27,7 @@ export default defineConfig({
   ],
 
   themeConfig: {
-    logo: "/images/logo.svg",
+    logo: "https://github.com/wagchi22/wiki/tree/main/images/logo.svg",
     lastUpdatedText: "Última atualização em",
     search: {
       provider: "local",
