@@ -1,26 +1,24 @@
+<!-- markdownlint-disable MD040 -->
+
 # Instalar MTR Cygwin
 
-## Objetivo
-
-Este guia descreve como instalar e compilar o **MTR oficial (My Traceroute)**
-no Windows utilizando o ambiente **Cygwin**.
-
-O objetivo é obter uma versão compilada a partir do código-fonte oficial
-com suporte a:
+:::info Objetivo
+Este guia descreve como instalar e compilar o MTR no Windows utilizando o ambiente Cygwin com suporte a:
 
 - IPv4
 - IPv6
 - ASN (Sistema Autônomo)
 - Relatórios estatísticos
 - Medição de perda, latência e jitter
+:::
 
----
+## Fontes
 
-## 1. Instalar o Cygwin
+- [Gemini](https://gemini.google.com/)
 
-Baixe o instalador oficial do Cygwin:
+## Instalar o Cygwin
 
-<https://www.cygwin.com/>
+Baixe o instalador oficial do Cygwin [aqui](https://www.cygwin.com/):
 
 Utilize:
 
@@ -52,7 +50,7 @@ https://linorg.usp.br/cygwin/
 
 ---
 
-## 2. Instalar pacotes necessários
+## Instalar pacotes necessários
 
 Na tela de seleção de pacotes, instale:
 
@@ -84,7 +82,7 @@ dos2unix
 
 ---
 
-## 3. Validar instalação do Cygwin
+## Validar instalação do Cygwin
 
 Abra o:
 
@@ -114,7 +112,7 @@ Os comandos devem retornar as versões instaladas.
 
 ---
 
-## 4. Configurar o Git
+## Configurar o Git
 
 O Cygwin utiliza arquivos no padrão Unix (LF).
 Configure o Git para não converter finais de linha:
@@ -125,7 +123,7 @@ git config --global core.autocrlf false
 
 ---
 
-## 5. Baixar o código-fonte do MTR
+## Baixar o código-fonte do MTR
 
 No terminal Cygwin:
 
@@ -147,7 +145,7 @@ cd mtr
 
 ---
 
-## 6. Corrigir arquivos CRLF (se necessário)
+## Corrigir arquivos CRLF (se necessário)
 
 Caso apareçam erros como:
 
@@ -175,7 +173,7 @@ POSIX shell script, ASCII text executable
 
 ---
 
-## 7. Gerar arquivos de compilação
+## Gerar arquivos de compilação
 
 Execute:
 
@@ -192,7 +190,7 @@ Makefile.am: installing ...
 
 ---
 
-## 8. Configurar a compilação
+## Configurar a compilação
 
 Execute:
 
@@ -224,7 +222,7 @@ jansson  :yes
 
 ---
 
-## 9. Compilar o MTR
+## Compilar o MTR
 
 Compile utilizando todos os núcleos disponíveis:
 
@@ -241,7 +239,7 @@ mtr-packet.exe
 
 ---
 
-## 10. Testar o binário
+## Testar o binário
 
 Verifique a versão:
 
@@ -257,9 +255,9 @@ mtr 0.96
 
 ---
 
-## 11. Testes IPv4 e IPv6
+## Testes IPv4 e IPv6
 
-## IPv4
+### IPv4
 
 Modo interativo:
 
@@ -275,7 +273,7 @@ Relatório:
 
 ---
 
-## IPv6
+### IPv6
 
 Modo interativo:
 
@@ -291,7 +289,7 @@ Relatório:
 
 ---
 
-## 12. Exibir ASN dos saltos
+## Exibir ASN dos saltos
 
 O parâmetro:
 
@@ -323,7 +321,7 @@ Exemplo de saída:
 
 ---
 
-## 13. Gerar relatórios comparativos
+## Gerar relatórios comparativos
 
 ### Relatórios IPv4
 
@@ -339,7 +337,7 @@ Exemplo de saída:
 
 ---
 
-## 14. Parâmetros principais do MTR
+## Parâmetros principais do MTR
 
 | Parâmetro | Função |
 | --- | --- |
@@ -352,7 +350,7 @@ Exemplo de saída:
 
 ---
 
-## 15. Comparação IPv4 x IPv6
+## Comparação IPv4 x IPv6
 
 Ao analisar os relatórios compare:
 
@@ -373,7 +371,7 @@ Também avalie:
 
 ---
 
-## 16. Atualizar o MTR
+## Atualizar o MTR
 
 Para atualizar o código:
 

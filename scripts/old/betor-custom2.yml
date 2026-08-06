@@ -1,0 +1,276 @@
+---
+id: betor
+name: Catálogo BeTor
+description: "Agregador de agregadores ;)"
+language: pt-BR
+type: public
+encoding: UTF-8
+links:
+- https://catalogo.betor.top/
+
+caps:
+  categories:
+    movie: Movies
+    tv: TV
+  modes:
+    search: [q]
+    tv-search: [q, imdbid, season]
+    movie-search: [q, imdbid]
+
+settings:
+  - name: provider
+    type: select
+    label: Provedor
+    default: todos
+    options:
+      todos: Todos
+      bludv: BLUDV
+
+search:
+  paths:
+    - path: "{{ if .Query.Q }}/search/{{ else }}/{{ end }}{{ if .Query.IMDBID }}imdb/{{ .Query.IMDBID }}/{{ else }}filmes/{{ end }}"
+      inputs:
+        q: "{{ .Query.Q }}"
+      categories: ["movie"]
+    - path: "{{ if .Query.Q }}/search/{{ else }}/{{ end }}{{ if .Query.IMDBID }}imdb/{{ .Query.IMDBID }}/{{ else }}{{ end }}{{ if and (.Query.IMDBID) (.Query.Season) }}season/{{ .Query.Season }}/{{ else }}{{ end }}{{ if or (.Query.IMDBID) (.Query.Season) }}{{ else }}series/{{ end }}"
+      inputs:
+        q: "{{ .Query.Q }}"
+        season: "{{ .Query.Season }}"
+      categories: ["tv"]
+  
+  rows:
+    selector: "{{ if eq .Config.provider \"bludv\" }}[data-provider-url*=\"bludv\"]{{ else }}[data-provider-url]{{ end }}"
+  
+  fields:
+    _name:
+      attribute: data-provider-url
+      filters:
+    _name:
+      attribute: data-provider-url
+      filters:
+      - name: re_replace
+        args: ["^https?://[^/]+/",""]
+      - name: re_replace
+        args: ["/$",""]
+      - name: re_replace
+        args: ["[-_]"," "]
+      - name: re_replace
+        args: ["(?i)^(catalog|filme|serie)/",""]
+      - name: re_replace
+        args: ["(?i)^([a-zá-ú]+)\\s+([a-z]+)\\s+(torrent|dublado|dual|audio|legendado|download).*","$1"]
+      - name: re_replace
+        args: ["(?i)\\b[0-9]{1,2}[ ._-][0-9]{1,2}[ ._-](19|20)[0-9]{2}\\b",""]
+      - name: re_replace
+        args: ["(?i)\\b[0-9]{1,2}[ ._-][0-9]{1,2}\\b",""]
+      - name: re_replace
+        args: ["(?i)\\b(19|20)[0-9]{2}\\b",""]
+      - name: re_replace
+        args: ["(?i)\\b(2160p|1080p|720p|8k|4k|fullhd|cam|camrip|webdl|web[- .]?dl|webrip|web[- .]?rip|bluray|blu[- .]?ray|brrip|remux|hdtv|x264|x265|h264|h265|hevc|hdr10|hdr|dv|atmos|dts|aac|ac3|2[- .]?0|5[- .]?1|7[- .]?1)\\b",""]
+      - name: re_replace
+        args: ["(?i)\\b(download|audio|torrent|legendado|dublado|dual|sub|dub|fan|mkv|yts|gg|bz|10bit|amzn|uindex|www|org)\\b",""]
+      - name: re_replace
+        args: ["(?i)\\b(MIRCrew|Ben The Men|STARCKFILMES|BLUDVFILMES|COMANDOTORRENTS)\\b",""]
+      - name: re_replace
+        args: ["\\[[^\\]]*\\]",""]
+      - name: re_replace
+        args: ["\\([^\\)]*\\)",""]
+      - name: re_replace
+        args: ["\\{[^\\}]*\\}",""]
+      - name: re_replace
+        args: ["(?i)\\s+"," "]
+      - name: re_replace
+        args: ["\\s+$",""]
+    _yeartn:
+      attribute: data-torrent-name
+      filters:
+      - name: re_replace
+        args: [".*?\\b(20[0-9]{2})\\b.*","$1"]
+      - name: re_replace
+        args: ["[^0-9]",""]
+      - name: re_replace
+        args: ["^(20[0-9]{2})$","$1"]
+      - name: re_replace
+        args: ["^(?!20[0-9]{2}$).*",""]
+    _yearpu:
+      attribute: data-provider-url
+      filters:
+      - name: re_replace
+        args: [".*?\\b(20[0-9]{2})\\b.*","$1"]
+      - name: re_replace
+        args: ["[^0-9]",""]
+      - name: re_replace
+        args: ["^(20[0-9]{2})$","$1"]
+      - name: re_replace
+        args: ["^(?!20[0-9]{2}$).*",""]
+    _quality:
+      attribute: data-torrent-name
+      filters:
+      - name: re_replace
+        args: ["(?i)^.*?\\b(2160p|1080p|720p|8k|4k|fullhd)\\b.*$","$1"]
+    _formats:
+      attribute: data-torrent-name
+      filters:
+      - name: re_replace
+        args: ["(?i).*?(cam[- .]?rip|camrip).*", "camrip"]
+      - name: re_replace
+        args: ["(?i).*?(web[- .]?dl|webdl).*", "webdl"]
+      - name: re_replace
+        args: ["(?i).*?(web[- .]?rip|webrip).*", "webrip"]
+      - name: re_replace
+        args: ["(?i).*?(blu[- .]?ray|bluray).*", "bluray"]
+      - name: re_replace
+        args: ["(?i).*?\\b(x[ ._-]?264|h[ ._-]?264)\\b.*", "x264"]
+      - name: re_replace
+        args: ["(?i).*?\\b(x[ ._-]?265|h[ ._-]?265|hevc)\\b.*", "x265"]
+      - name: re_replace
+        args: ["(?i).*?(hdr10\\+?|hdr).*", "hdr"]
+      - name: re_replace
+        args: ["(?i).*?(dolby[ ._-]?vision|dv).*", "dv"]
+      - name: re_replace
+        args: ["(?i).*?atmos.*", "atmos"]
+      - name: re_replace
+        args: ["(?i).*?dts.*", "dts"]
+      - name: re_replace
+        args: ["(?i).*?aac.*", "aac"]
+      - name: re_replace
+        args: ["(?i).*?ac[ ._-]?3.*", "ac3"]
+      - name: re_replace
+        args: ["(?i)^(?!.*(web[- .]?dl|webdl|web[- .]?rip|webrip|blu[- .]?ray|bluray|cam[- .]?rip|camrip|x[ ._-]?264|h[ ._-]?264|x[ ._-]?265|h[ ._-]?265|hevc|hdr10\\+?|hdr|dolby[ ._-]?vision|dv|atmos|dts|aac|ac[ ._-]?3)).*$", ""]
+    _channels:
+      attribute: data-torrent-name
+      filters:
+      - name: re_replace
+        args: ["(?i)^.*?\\b2[- .]?0\\b.*$","2.0"]
+      - name: re_replace
+        args: ["(?i)^.*?\\b5[- .]?1\\b.*$","5.1"]
+      - name: re_replace
+        args: ["(?i)^.*?\\b7[- .]?1\\b.*$","7.1"]
+      - name: re_replace
+        args: ["(?i)^(?!2\\.0$|5\\.1$|7\\.1$).*$",""]
+    _group:
+      attribute: data-provider-url
+      filters:
+      - name: re_replace
+        args: ["(?i).*comando.*", "comandotorrents"]
+      - name: re_replace
+        args: ["(?i).*torrentdosfilmes.*", "torrentdosfilmes"]
+      - name: re_replace
+        args: ["(?i).*bludv.*", "bludvfilmes"]
+      - name: re_replace
+        args: ["(?i).*starck.*", "starckfilmes"]
+      - name: re_replace
+        args: ["(?i).*semtorrent.*", "semtorrent"]
+      - name: re_replace
+        args: ["(?i).*rede.*", "redetorrent"]
+    _language:
+      attribute: data-provider-url
+      filters:
+      - name: re_replace
+        args: ["(?i).*\\bdual\\b.*", "[portuguese,english]"]
+      - name: re_replace
+        args: ["(?i).*\\bdublado\\b.*", "[brazilian]"]
+      - name: re_replace
+        args: ["(?i).*\\blegendado\\b.*", "[english]"]
+      - name: re_replace
+        args: ["^(?!\\[brazilian\\]$|\\[english\\]$|\\[portuguese,english\\]$).*$", ""]
+    title:
+      text: "{{ .Result._name }} {{ or .Result._yeartn .Result._yearpu }} {{ .Result._quality }} {{ .Result._formats }} {{ .Result._channels }} {{ .Result._group }} {{ .Result._language }}"
+      filters:
+      - name: re_replace
+        args: ["(?i)\\b(mkv|yts|gg|bz|10bit|amzn|www|uindex|org)\\b",""]
+      - name: re_replace
+        args: ["(?i)\\b(V\\s*2|sub)\\b",""]
+      - name: re_replace
+        args: ["(?i)\\b(MIRCrew|Ben The Men)\\b.*",""]
+      - name: re_replace
+        args: ["(?i)\\b(eng|ita|por|spa|fre|fra|ger|deu|jpn|kor|chi|zho|rus|dut|nld|pol|swe|nor|dan|fin|tur|ara|hin)\\b",""]
+      - name: re_replace
+        args: ["(?i)\\s+-\\s+"," "]
+      - name: re_replace
+        args: ["\\[(?!portuguese,english|brazilian|english)[^\\]]*\\]",""]
+      - name: re_replace
+        args: ["\\((?!portuguese,english|brazilian|english)[^\\)]*\\)",""]
+      - name: re_replace
+        args: ["\\{(?!portuguese,english|brazilian|english)[^\\}]*\\}",""]
+      - name: re_replace
+        args: ["(?i)\\blegendado\\b","legendado"]
+      - name: re_replace
+        args: ["(?i)\\bdublado\\b","dublado"]
+      - name: re_replace
+        args: ["(?i)\\bdual\\b","dual"]
+      - name: re_replace
+        args: ["(?i)\\b(2160P)\\b","2160p"]
+      - name: re_replace
+        args: ["(?i)\\b(1080P)\\b","1080p"]
+      - name: re_replace
+        args: ["(?i)\\b(720P)\\b","720p"]
+      - name: re_replace
+        args: ["(?i)\\b(8K)\\b","8k"]
+      - name: re_replace
+        args: ["(?i)\\b(4K)\\b","4k"]
+      - name: re_replace
+        args: ["(?i)\\b(FULLHD)\\b","fullhd"]
+      - name: re_replace
+        args: ["(?i)\\b(WEB[- .]?DL)\\b","webdl"]
+      - name: re_replace
+        args: ["(?i)\\b(WEB[- .]?RIP)\\b","webrip"]
+      - name: re_replace
+        args: ["(?i)\\b(BLU[- .]?RAY)\\b","bluray"]
+      - name: re_replace
+        args: ["(?i)\\b(BRRIP)\\b","brrip"]
+      - name: re_replace
+        args: ["(?i)\\b(REMUX)\\b","remux"]
+      - name: re_replace
+        args: ["(?i)\\b(HDTV)\\b","hdtv"]
+      - name: re_replace
+        args: ["(?i)\\b(CAM[- .]?RIP)\\b","camrip"]
+      - name: re_replace
+        args: ["(?i)\\b(X264)\\b","x264"]
+      - name: re_replace
+        args: ["(?i)\\b(X265)\\b","x265"]
+      - name: re_replace
+        args: ["(?i)\\b(H264)\\b","h264"]
+      - name: re_replace
+        args: ["(?i)\\b(H265)\\b","h265"]
+      - name: re_replace
+        args: ["(?i)\\b(HEVC)\\b","hevc"]
+      - name: re_replace
+        args: ["(?i)\\b(HDR10)\\b","hdr10"]
+      - name: re_replace
+        args: ["(?i)\\b(HDR)\\b","hdr"]
+      - name: re_replace
+        args: ["(?i)\\b(DV)\\b","dv"]
+      - name: re_replace
+        args: ["(?i)\\b(ATMOS)\\b","atmos"]
+      - name: re_replace
+        args: ["(?i)\\b(DTS)\\b","dts"]
+      - name: re_replace
+        args: ["(?i)\\b(AAC)\\b","aac"]
+      - name: re_replace
+        args: ["(?i)\\b(AC3)\\b","ac3"]
+      - name: re_replace
+        args: ["(?<!\\d)\\.(?!\\d)"," "]
+      - name: re_replace
+        args: ["(?i)\\s+"," "]
+      - name: re_replace
+        args: ["\\s+$",""]
+    category:
+      attribute: data-item-type
+    details:
+      attribute: data-provider-url
+    magnet:
+      attribute: data-torrent-magnet-uri
+    imdbid:
+      attribute: data-item-imdb-id
+    tmdbid:
+      attribute: data-item-tmdb-id
+    date:
+      attribute: data-torrent-inserted-at
+    size:
+      attribute: data-torrent-size
+    seeders:
+      attribute: data-torrent-num-seeds
+    leechers:
+      attribute: data-torrent-num-peers
+
+# json engine n/a
