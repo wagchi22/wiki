@@ -33,7 +33,7 @@ while ($true) {
             $null = $Host.UI.RawUI.ReadKey("NoEcho,IncludeKeyDown")
         }
         '2' {
-            $taskExists = schtasks /query /tn "FlareSolverr" 2>&1
+            schtasks /query /tn "FlareSolverr" > $null 2>&1
             if ($LASTEXITCODE -eq 0) {
                 Stop-Process -Name "flaresolverr" -Force -ErrorAction SilentlyContinue
                 Stop-Process -Name "cmd" -Force -ErrorAction SilentlyContinue
