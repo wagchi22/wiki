@@ -40,10 +40,10 @@ para automatizar o processo.
     - [MKVToolNix](https://mkvtoolnix.download/)
     - [dovi_tool](https://github.com/quietvoid/dovi_tool)
   - Scripts:
-    - [remux_mkv.py](../../scripts/remux_mkv.py)
-    - [remove_dolby_vision.py](../../scripts/remove_dolby_vision.py)
-    - [clean_orphan_subs.ps1](../../scripts/clean_orphan_subs.ps1)
-    - [flaresolverr_manager.ps1](../../scripts/flaresolverr_manager.ps1)
+    - [remux-mkv.py](../../scripts/remux-mkv.py)
+    - [remove-dolby-vision.py](../../scripts/remove-dolby-vision.py)
+    - [clean-orphan-subs.ps1](../../scripts/clean-orphan-subs.ps1)
+    - [flaresolverr-manager.ps1](../../scripts/flaresolverr-manager.ps1)
 
 ## Prowlarr
 
@@ -58,7 +58,7 @@ para automatizar o processo.
 
 ## FlareSolverr
 
-- Execute o script `C:\Scripts\flaresolverr_manager.ps1` para iniciar automaticamente
+- Execute o script `C:\Scripts\flaresolverr-manager.ps1` para iniciar automaticamente
 
 ## qBittorrent
 
@@ -83,10 +83,10 @@ para automatizar o processo.
 - Conexões:
   - Scripts Personalizados:
     - Remux MKV:
-      - Caminho: `C:\Scripts\remux_mkv.py`
+      - Caminho: `C:\Scripts\remux-mkv.py`
       - Opções: Obter, importar e atualizar
     - Clean orphan subs:
-      - Caminho: `C:\Scripts\clean_orphan_subs.ps1`
+      - Caminho: `C:\Scripts\clean-orphan-subs.ps1`
       - Opções: Importar, atualizar e renomear
 
 ## Sonarr
@@ -101,10 +101,10 @@ para automatizar o processo.
 - Conexões:
   - Scripts Personalizados:
     - Remux MKV:
-      - Caminho: `C:\Scripts\remux_mkv.py`
+      - Caminho: `C:\Scripts\remux-mkv.py`
       - Opções: Obter, importar e atualizar
     - Clean orphan subs:
-      - Caminho: `C:\Scripts\clean_orphan_subs.ps1`
+      - Caminho: `C:\Scripts\clean-orphan-subs.ps1`
       - Opções: Importar, atualizar e renomear
 
 ## Bazarr
