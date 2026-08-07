@@ -31,11 +31,11 @@ Não recomendado, pois anula o ganho de nitidez ao limitar a banda em 4K/120 Hz/
 - Cor: 50
 - Gama de cores: Automático/Padrão
 - Gama: 2.2
-- Temperatura de cor: Quente 2
+- Temperatura de cor: Warm 2
 - Nível de preto: Baixo
 - Mapeamento de tom dinâmico:
-  - Cinema: Desativado
-  - Jogos: Ativado
+  - Streaming: Desativado
+  - Gaming: Ativado
 - TruMotion: Desativado
 - Cinema Real: Ativado
 - Full LED: Médio
@@ -47,7 +47,7 @@ Não recomendado, pois anula o ganho de nitidez ao limitar a banda em 4K/120 Hz/
 
 ## Fire TV
 
-- Nome dos dispositivos: FireTVStick Sala/FireTVStick Quarto
+- Nome dos dispositivos: FireTVStick Sala/Quarto
 - Igualar taxa de quadros original: Ativado
 - Nível de preto: Limitado
 - HDR: Adaptável/Desativado (_1080p_)
