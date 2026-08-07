@@ -21,25 +21,20 @@ Meus ajustes gerais para todo tipo de coisa.
 Não é recomendado, pois anula o ganho de nitidez ao limitar a banda em 4K/120 Hz/HDR.
 :::
 
-- Local: Parede
-- Modo de imagem: Avançado, Cinema, Jogos (_Avançado não está disponível em HDR_)
+- Modo de imagem: Avançado/Cinema ou Jogos (_HDR_)
 - Escala da tela: Just Scan
-- Backlight: 80 (_Ou 100 em HDR_)
-- Contraste: 80 (_Ou 100 em HDR_)
+- Backlight: 80/100 (_HDR_)
+- Contraste: 80/100 (_HDR_)
 - Brilho: 50
-- Nitidez: 10
+- Nitidez: 0
 - Cor: 50
-- Gama de cores: Automático (_Se não tiver, use Padrão_)
+- Gama de cores: Automático/Padrão
 - Gama: 2.2
-- Balanço de branco:
-  - Temperatura de cor: Quente 2
-  - Vermelho: -10
-  - Verde: 40
-  - Azul: -20
-- Nível de preto: Automático (_Se não tiver, use Baixo_)
+- Temperatura de cor: Quente 2
+- Nível de preto: Baixo
 - Mapeamento de tom dinâmico:
   - Cinema: Desativado
-  - Jogos: Ativado (_HGiG: muitos jogos o evitam ou são mal implementados_)
+  - Jogos: Ativado
 - TruMotion: Desativado
 - Cinema Real: Ativado
 - Full LED: Médio
@@ -47,35 +42,34 @@ Não é recomendado, pois anula o ganho de nitidez ao limitar a banda em 4K/120 
 - Economia de energia: Desativado
 - Ajuda nas configurações: Desativado
 - Modo de áudio: Padrão
-- Virtual Surround: Ativado
-- Otimização de áudio: Parede
-- Volume automático: Ativado
+- Virtual Surround: Desativado
 
 ## Fire TV
 
-- Nome dos dispositivos: FireTVStick Sala e FireTVStick Quarto
+- Nome dos dispositivos: FireTVStick Sala/FireTVStick Quarto
 - Igualar taxa de quadros original: Ativado
-- HDR: Adaptável ou desativado (_Para 1080p_)
-- Intensidade de cores: 8 bits ou 10 bits (_Em HDR_)
+- Nível de preto: Limitado
+- HDR: Adaptável/Desativado (_1080p_)
+- Intensidade de cores: 8 bits/10 bits (_HDR_)
 - Wholphin:
   - Taxa de atualização: Automático
   - Tamanho da legenda: 26
-  - Cor da legenda: Amarela
+  - Cor da legenda: Amarelo
 
 ## PlayStation 5
 
 :::tip Calibração no Jogo
-Ajuste o Contraste conforme a TV, o Branco Papel coloque 200
-e Brilho Máximo em 350.
+Ajuste confome a TV.
 :::
 
 ![Valores de referência](https://raw.githubusercontent.com/wagchi22/wiki/refs/heads/main/images/hdtvtest.jpg)
 
+- Nível de preto: Limitado
 - HDR: Adaptável
 - Calibragem HDR:
-  - 1/2: 7 ou 8 clicks
-  - 3: Completo mínimo
-- Áudio 3D (TV): Ativado
+  - Etapa 1/2: +8
+  - Etapa 3: 0
+- Formato de Áudio: Linear PCM
 
 ## PC Dell
 
@@ -94,7 +88,6 @@ Altere as opções de energia do Adaptador Sem Fio para Desempenho Máximo.
 - Status da tela de bloqueio: Nenhum
 - Volume do microfone: 100
 - Aprimorar precisão do mouse: Desativado
-- Rolagem vertical: 4
 - Suspender: 30 min
 - Jogos:
   - Dados brutos do mouse: Ativado
