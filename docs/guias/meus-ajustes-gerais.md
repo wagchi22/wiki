@@ -18,7 +18,7 @@ Meus ajustes gerais para todo tipo de coisa.
 ## TV LG
 
 :::warning Modo PC em Console
-Não é recomendado, pois anula o ganho de nitidez ao limitar a banda em 4K/120 Hz/HDR.
+Não recomendado, pois anula o ganho de nitidez ao limitar a banda em 4K/120 Hz/HDR.
 :::
 
 - Local: Parede
