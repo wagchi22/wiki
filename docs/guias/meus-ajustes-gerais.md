@@ -21,6 +21,7 @@ Meus ajustes gerais para todo tipo de coisa.
 Não é recomendado, pois anula o ganho de nitidez ao limitar a banda em 4K/120 Hz/HDR.
 :::
 
+- Local: Parede
 - Modo de imagem: Avançado/Cinema ou Jogos (_HDR_)
 - Escala da tela: Just Scan
 - Backlight: 80/100 (_HDR_)
