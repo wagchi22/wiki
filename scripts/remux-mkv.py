@@ -39,6 +39,7 @@ def should_skip_subtitle(track):
     return any(x in title for x in (
         "sdh",
         "forced",
+        "stripped",
     ))
 
 
