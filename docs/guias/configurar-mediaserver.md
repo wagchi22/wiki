@@ -70,6 +70,7 @@ para automatizar o processo.
 - Protocolo: TCP
 - Máximo de conexões por torrent: 250
 - Encriptação: Requerido
+- Inibir sono do sistema enquanto faz download: Ativado
 
 ## Radarr
 
