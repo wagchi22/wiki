@@ -15,6 +15,7 @@ para automatizar o processo.
 
 ## Locais
 
+- Softwares: `C:\ProgramData`
 - Indexadores: `C:\ProgramData\Prowlarr\Definitions\Custom`
 - Ferramentas: `C:\Tools`
 - Scripts: `C:\Scripts`
@@ -23,7 +24,7 @@ para automatizar o processo.
 
 ## Software
 
-- Necessário:
+- Software necessário:
   - [Prowlarr](https://prowlarr.com/)
   - [FlareSolverr](https://github.com/Flaresolverr/Flaresolverr)
   - [Radarr](https://radarr.video/)
