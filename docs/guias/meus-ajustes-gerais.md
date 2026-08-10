@@ -22,7 +22,7 @@ Não recomendado, pois anula o ganho de nitidez ao limitar a banda em 4K/120 Hz/
 :::
 
 - Local: Parede
-- Modo de imagem: Avançado/Cinema ou Jogos (_HDR_)
+- Modo de imagem: Cinema/Jogos
 - Escala da tela: Just Scan
 - Backlight: 80/100 (_HDR_)
 - Contraste: 80/100 (_HDR_)
@@ -31,7 +31,7 @@ Não recomendado, pois anula o ganho de nitidez ao limitar a banda em 4K/120 Hz/
 - Cor: 50
 - Gama de cores: Automático/Padrão
 - Gama: 2.2
-- Temperatura de cor: Warm 2
+- Temperatura de cor: Quente 2
 - Nível de preto: Baixo
 - Mapeamento de tom dinâmico:
   - Streaming: Desativado
