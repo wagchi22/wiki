@@ -42,9 +42,9 @@ para automatizar o processo.
     - [dovi_tool](https://github.com/quietvoid/dovi_tool)
   - Scripts:
     - [remux-mkv.py](https://raw.githubusercontent.com/wagchi22/wiki/refs/heads/main/scripts/remux-mkv.py)
-    - [remove-dolby-vision](https://raw.githubusercontent.com/wagchi22/wiki/refs/heads/main/scripts/remove-dolby-vision.py)
-    - [clean-orphan-subs](https://raw.githubusercontent.com/wagchi22/wiki/refs/heads/main/scripts/clean-orphan-subs.ps1)
-    - [flaresolverr-manager](https://raw.githubusercontent.com/wagchi22/wiki/refs/heads/main/scripts/flaresolverr-manager.ps1)
+    - [remove-dolby-vision.py](https://raw.githubusercontent.com/wagchi22/wiki/refs/heads/main/scripts/remove-dolby-vision.py)
+    - [clean-orphan-subs.ps1](https://raw.githubusercontent.com/wagchi22/wiki/refs/heads/main/scripts/clean-orphan-subs.ps1)
+    - [flaresolverr-manager.ps1](https://raw.githubusercontent.com/wagchi22/wiki/refs/heads/main/scripts/flaresolverr-manager.ps1)
 
 ## Prowlarr
 
