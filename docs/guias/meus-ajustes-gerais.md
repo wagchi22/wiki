@@ -32,7 +32,7 @@ Não recomendado, pois anula o ganho de nitidez ao limitar a banda em 4K/120 Hz/
 - Gama de cores: Automático/Padrão
 - Gama: 2.2
 - Temperatura de cor: Quente 2
-- Nível de preto: Automático/Baixo (_Fallback_)
+- Nível de preto: Automático/Baixo (_TVs antigas_)
 - Mapeamento de tom dinâmico:
   - Cinema: Desativado
   - Jogos: HGiG
@@ -47,8 +47,8 @@ Não recomendado, pois anula o ganho de nitidez ao limitar a banda em 4K/120 Hz/
 ## Fire TV
 
 - Igualar taxa de quadros original: Ativado
-- HDR: Adaptável/Desativado (_1080p_)
-- Intensidade de cores: 8 bits/10 bits (_HDR_)
+- HDR: Adaptável/Desativado (_TVs antigas_)
+- Intensidade de cores: 10 bits/8 bits (_TVs antigas_)
 - Wholphin:
   - Taxa de atualização: Automático
   - Tamanho da legenda: 26
@@ -57,7 +57,7 @@ Não recomendado, pois anula o ganho de nitidez ao limitar a banda em 4K/120 Hz/
 ## PlayStation 5
 
 :::tip Calibração no Jogo
-Ajuste confome a TV.
+Necessário ajustar também para que fique o mais correto possível.
 :::
 
 ![Valores de referência](https://raw.githubusercontent.com/wagchi22/wiki/refs/heads/main/images/hdtvtest.jpg)
