@@ -32,24 +32,21 @@ Não recomendado, pois anula o ganho de nitidez ao limitar a banda em 4K/120 Hz/
 - Gama de cores: Automático/Padrão
 - Gama: 2.2
 - Temperatura de cor: Quente 2
-- Nível de preto: Baixo
+- Nível de preto: Automático/Baixo (_Fallback_)
 - Mapeamento de tom dinâmico:
-  - Streaming: Desativado
-  - Gaming: Ativado
+  - Cinema: Desativado
+  - Jogos: HGiG
 - TruMotion: Desativado
 - Cinema Real: Ativado
-- Full LED: Médio
 - EyeCare: Desativado
 - Economia de energia: Desativado
 - Ajuda nas configurações: Desativado
 - Modo de áudio: Padrão
-- Virtual Surround: Desativado
+- Volume Automático: Ativado
 
 ## Fire TV
 
-- Nome dos dispositivos: FireTVStick Sala/Quarto
 - Igualar taxa de quadros original: Ativado
-- Nível de preto: Limitado
 - HDR: Adaptável/Desativado (_1080p_)
 - Intensidade de cores: 8 bits/10 bits (_HDR_)
 - Wholphin:
@@ -65,12 +62,11 @@ Ajuste confome a TV.
 
 ![Valores de referência](https://raw.githubusercontent.com/wagchi22/wiki/refs/heads/main/images/hdtvtest.jpg)
 
-- Nível de preto: Limitado
+- Modo HDMI: Jogos
 - HDR: Adaptável
 - Calibragem HDR:
   - Etapa 1/2: +8
   - Etapa 3: 0
-- Formato de Áudio: Linear PCM
 
 ## PC Dell
 
@@ -87,6 +83,7 @@ Altere as opções de energia do Adaptador Sem Fio para Desempenho Máximo.
 - Coleta de dados e recomendações: Desativado
 - Mostrar os destaques da pesquisa: Desativado
 - Status da tela de bloqueio: Nenhum
+- Melhorias do Waves MaxxAudioPro: Desativado
 - Volume do microfone: 100
 - Aprimorar precisão do mouse: Desativado
 - Suspender: 30 min

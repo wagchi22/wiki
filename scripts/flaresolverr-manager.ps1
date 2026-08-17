@@ -17,7 +17,7 @@ while ($true) {
 
     switch ($choice) {
         '1' {
-            $baseDir = "$env:AllUsersProfile\FlareSolverr"
+            $baseDir = "C:\Tools\FlareSolverr"
             $exePath = "$baseDir\flaresolverr.exe"
             $batPath = "$baseDir\autorun.bat"
             
