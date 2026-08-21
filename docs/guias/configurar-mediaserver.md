@@ -43,7 +43,7 @@ para automatizar o processo.
   - Scripts:
     - [remux-mkv.py](https://raw.githubusercontent.com/wagchi22/wiki/refs/heads/main/scripts/remux-mkv.py)
     - [remove-dolby-vision.py](https://raw.githubusercontent.com/wagchi22/wiki/refs/heads/main/scripts/remove-dolby-vision.py)
-    - [clean-orphan-subs.ps1](https://raw.githubusercontent.com/wagchi22/wiki/refs/heads/main/scripts/clean-orphan-subs.ps1)
+    - [remove-extra-subs.ps1](https://raw.githubusercontent.com/wagchi22/wiki/refs/heads/main/scripts/remove-extra-subs.ps1)
     - [flaresolverr-manager.ps1](https://raw.githubusercontent.com/wagchi22/wiki/refs/heads/main/scripts/flaresolverr-manager.ps1)
 
 ## Prowlarr
