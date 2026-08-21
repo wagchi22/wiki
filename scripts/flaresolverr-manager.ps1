@@ -1,4 +1,5 @@
 $Host.UI.RawUI.WindowTitle = "FlareSolverr Manager"
+
 [Console]::OutputEncoding = [System.Text.Encoding]::UTF8
 
 if (-not ([Security.Principal.WindowsPrincipal][Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole([Security.Principal.WindowsBuiltInRole]::Administrator)) {
