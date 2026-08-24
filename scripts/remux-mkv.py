@@ -4,6 +4,12 @@ from pathlib import Path
 VIDEO_EXTENSIONS={".mkv",".mp4"}
 PT_LANGS={"por","pt","pt-br","pb","por-br","português","portugues"}
 
+if hasattr(sys.stdout,"reconfigure"):
+    sys.stdout.reconfigure(encoding="utf-8")
+
+if hasattr(sys.stderr,"reconfigure"):
+    sys.stderr.reconfigure(encoding="utf-8")
+
 def get_info(path):
     try:
         result=subprocess.run(
@@ -14,12 +20,15 @@ def get_info(path):
             errors="replace",
             check=True
         )
+
         return json.loads(result.stdout)
+
     except (subprocess.SubprocessError,json.JSONDecodeError):
         return None
 
 def get_language(track):
     properties=track.get("properties",{})
+
     return (
         properties.get("language_ietf")
         or properties.get("language")
@@ -77,6 +86,7 @@ def is_dirty(info):
 
         if normalize_language(audio[1])!="eng":
             return True
+
     elif any(
         normalize_language(track) not in {"por","eng"}
         for track in audio
@@ -210,7 +220,7 @@ def set_audio_languages(path):
 
 def remux_file(path,info):
     if not extract_ptbr(path,info):
-        print("Falha ao processar")
+        print(f"Falha: {path.name}")
         return
 
     tracks=info.get("tracks",[])
@@ -273,6 +283,7 @@ def remux_file(path,info):
                 "--default-track",
                 f"{track_id}:no"
             ])
+
     else:
         command.append("--no-audio")
 
@@ -285,22 +296,22 @@ def remux_file(path,info):
         )
 
         if result.returncode not in (0,1):
-            print("Falha ao processar")
+            print(f"Falha: {path.name}")
             return
 
         if not temp.exists():
-            print("Falha ao processar")
+            print(f"Falha: {path.name}")
             return
 
         if not set_audio_languages(temp):
-            print("Falha ao processar")
+            print(f"Falha: {path.name}")
             temp.unlink(missing_ok=True)
             return
 
         new_info=get_info(temp)
 
         if not new_info:
-            print("Falha ao processar")
+            print(f"Falha: {path.name}")
             temp.unlink(missing_ok=True)
             return
 
@@ -312,7 +323,7 @@ def remux_file(path,info):
 
         if len(audio)==2:
             if len(new_audio)!=2:
-                print("Falha ao processar")
+                print(f"Falha: {path.name}")
                 temp.unlink(missing_ok=True)
                 return
 
@@ -323,7 +334,7 @@ def remux_file(path,info):
                 first.get("language")!="por"
                 or first.get("language_ietf")!="pt"
             ):
-                print("Falha ao processar")
+                print(f"Falha: {path.name}")
                 temp.unlink(missing_ok=True)
                 return
 
@@ -331,17 +342,15 @@ def remux_file(path,info):
                 second.get("language")!="eng"
                 or second.get("language_ietf")!="en"
             ):
-                print("Falha ao processar")
+                print(f"Falha: {path.name}")
                 temp.unlink(missing_ok=True)
                 return
 
         path.unlink()
         temp.rename(path)
 
-        print("Concluído com sucesso")
-
     except Exception:
-        print("Falha ao processar")
+        print(f"Falha: {path.name}")
 
     finally:
         if temp.exists():
@@ -350,35 +359,49 @@ def remux_file(path,info):
 def process_file(path):
     path=Path(path)
 
-    if (
-        path.suffix.lower() not in VIDEO_EXTENSIONS
-        or "_temp" in path.name
-    ):
+    if path.suffix.lower() not in VIDEO_EXTENSIONS:
+        return
+
+    if "_temp" in path.name:
         return
 
     info=get_info(path)
 
     if not info:
-        print("Falha ao processar")
+        print(f"Falha: {path.name}")
         return
 
     if not is_dirty(info):
-        print(f"Já processado: {path.name}")
+        print(f"OK: {path.name}")
         return
 
     print(f"Processando: {path.name}")
+
     remux_file(path,info)
 
 def process_target(target):
     path=Path(target)
 
-    if path.is_dir():
-        for file in path.rglob("*"):
-            if file.is_file():
-                process_file(file)
+    if not path.exists():
+        print(f"Não encontrado: {path}")
+        return
 
-    elif path.is_file():
+    if path.is_file():
         process_file(path)
+        return
+
+    if path.is_dir():
+        for root,dirs,files in os.walk(path):
+            for filename in files:
+                file=Path(root)/filename
+
+                if file.suffix.lower() not in VIDEO_EXTENSIONS:
+                    continue
+
+                if "_temp" in file.name:
+                    continue
+
+                process_file(file)
 
 event=(
     os.environ.get("radarr_eventtype")
@@ -388,15 +411,21 @@ event=(
 if event=="Test":
     sys.exit(0)
 
-target=(
-    os.environ.get("radarr_moviefile_path")
-    or os.environ.get("sonarr_episodefile_path")
-    or (
-        sys.argv[1]
-        if len(sys.argv)>1
-        else None
-    )
-)
+radarr_target=os.environ.get("radarr_moviefile_path")
+sonarr_target=os.environ.get("sonarr_episodefile_path")
 
-if target:
-    process_target(target)
+if radarr_target:
+    process_target(radarr_target)
+
+elif sonarr_target:
+    process_target(sonarr_target)
+
+else:
+    targets=sys.argv[1:]
+
+    if not targets:
+        print("Nenhum caminho informado")
+        sys.exit(1)
+
+    for target in targets:
+        process_target(target)
