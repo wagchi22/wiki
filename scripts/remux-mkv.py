@@ -1,8 +1,10 @@
 import json,os,subprocess,sys
+from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 
 VIDEO_EXTENSIONS={".mkv",".mp4"}
 PT_LANGS={"por","pt","pt-br","pb","por-br","português","portugues"}
+VERIFY_WORKERS=4
 
 if hasattr(sys.stdout,"reconfigure"):
     sys.stdout.reconfigure(encoding="utf-8")
@@ -356,76 +358,109 @@ def remux_file(path,info):
         if temp.exists():
             temp.unlink(missing_ok=True)
 
-def process_file(path):
-    path=Path(path)
+def collect_files(targets):
+    files=[]
 
-    if path.suffix.lower() not in VIDEO_EXTENSIONS:
-        return
+    for target in targets:
+        path=Path(target)
 
-    if "_temp" in path.name:
-        return
+        if not path.exists():
+            continue
 
+        if path.is_file():
+            if (
+                path.suffix.lower() in VIDEO_EXTENSIONS
+                and "_temp" not in path.name
+            ):
+                files.append(path)
+
+            continue
+
+        if path.is_dir():
+            for root,dirs,names in os.walk(path):
+                for filename in names:
+                    file=Path(root)/filename
+
+                    if file.suffix.lower() not in VIDEO_EXTENSIONS:
+                        continue
+
+                    if "_temp" in file.name:
+                        continue
+
+                    files.append(file)
+
+    return files
+
+def verify_file(path):
     info=get_info(path)
 
     if not info:
-        print(f"Falha: {path.name}")
-        return
+        return path,None
 
     if not is_dirty(info):
-        print(f"OK: {path.name}")
-        return
+        return path,False
 
-    print(f"Processando: {path.name}")
-
-    remux_file(path,info)
+    return path,info
 
 def process_target(target):
     path=Path(target)
 
     if not path.exists():
         print(f"Não encontrado: {path}")
-        return
 
-    if path.is_file():
-        process_file(path)
-        return
+def main():
+    event=(
+        os.environ.get("radarr_eventtype")
+        or os.environ.get("sonarr_eventtype")
+    )
 
-    if path.is_dir():
-        for root,dirs,files in os.walk(path):
-            for filename in files:
-                file=Path(root)/filename
+    if event=="Test":
+        sys.exit(0)
 
-                if file.suffix.lower() not in VIDEO_EXTENSIONS:
-                    continue
+    radarr_target=os.environ.get("radarr_moviefile_path")
+    sonarr_target=os.environ.get("sonarr_episodefile_path")
 
-                if "_temp" in file.name:
-                    continue
+    if radarr_target:
+        targets=[radarr_target]
 
-                process_file(file)
+    elif sonarr_target:
+        targets=[sonarr_target]
 
-event=(
-    os.environ.get("radarr_eventtype")
-    or os.environ.get("sonarr_eventtype")
-)
-
-if event=="Test":
-    sys.exit(0)
-
-radarr_target=os.environ.get("radarr_moviefile_path")
-sonarr_target=os.environ.get("sonarr_episodefile_path")
-
-if radarr_target:
-    process_target(radarr_target)
-
-elif sonarr_target:
-    process_target(sonarr_target)
-
-else:
-    targets=sys.argv[1:]
+    else:
+        targets=sys.argv[1:]
 
     if not targets:
         print("Nenhum caminho informado")
         sys.exit(1)
 
-    for target in targets:
-        process_target(target)
+    files=collect_files(targets)
+
+    print("Verificando arquivos...")
+
+    dirty_files=[]
+
+    with ThreadPoolExecutor(
+        max_workers=VERIFY_WORKERS
+    ) as executor:
+        results=executor.map(
+            verify_file,
+            files
+        )
+
+        for path,info in results:
+            if info:
+                dirty_files.append(
+                    (path,info)
+                )
+
+    for path,info in dirty_files:
+        print(f"Processando: {path.name}")
+        remux_file(path,info)
+
+    if not dirty_files:
+        print("Nenhum arquivo precisa ser remuxado.")
+
+    print("Operação concluída.")
+
+if __name__=="__main__":
+    main()
