@@ -40,7 +40,7 @@ para automatizar o processo.
 
 - Conexões: qBittorrent
 - Renomear automaticamente: Ativado
-- Conexões: Defina o caminho para `C:\Scripts\run-remux.bat`
+- Conexões: Adicione o script `C:\Scripts\run-remux.bat`
 
 ## Jellyfin
 
