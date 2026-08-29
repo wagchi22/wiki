@@ -7,30 +7,27 @@ para automatizar o processo.
 
 ## Software
 
-- [Prowlarr](https://prowlarr.com/)
-- [FlareSolverr](https://github.com/FlareSolverr/FlareSolverr)
-- [Radarr](https://radarr.video/)
-- [Sonarr](https://sonarr.tv/)
-- [Jellyfin](https://jellyfin.org/)
-- [qBittorrent](https://www.qbittorrent.org/)
-- [Python](https://www.python.org/)
-- [MKVToolNix](https://mkvtoolnix.download/)
-
-## Scripts
-
-- [flaresolver.ps1](https://raw.githubusercontent.com/wagchi22/wiki/refs/heads/main/scripts/flaresolverr.ps1)
-- [remux.py](https://raw.githubusercontent.com/wagchi22/wiki/refs/heads/main/scripts/remux.py)
-- [run-remux.bat](https://raw.githubusercontent.com/wagchi22/wiki/refs/heads/main/scripts/run-remux.bat)
+- Instale [Prowlarr](https://prowlarr.com/)
+- Baixe [FlareSolverr](https://github.com/FlareSolverr/FlareSolverr) e coloque em alguma pasta
+- Instale [Radarr](https://radarr.video/)
+- Instale [Sonarr](https://sonarr.tv/)
+- Instale [Jellyfin](https://jellyfin.org/)
+- Instale [qBittorrent](https://www.qbittorrent.org/)
+- Instale [Python](https://www.python.org/)
+- Baixe [MKVToolNix](https://mkvtoolnix.download/) e coloque no PATH
+- Baixe [flaresolverr.ps1](https://raw.githubusercontent.com/wagchi22/wiki/refs/heads/main/scripts/flaresolverr.ps1) e coloque em alguma pasta
+- Baixe [remux.py](https://raw.githubusercontent.com/wagchi22/wiki/refs/heads/main/scripts/remux.py) e coloque em alguma pasta
+- Baixe [run-remux.bat](https://raw.githubusercontent.com/wagchi22/wiki/refs/heads/main/scripts/run-remux.bat) e coloque em alguma pasta
 
 ## Prowlarr
 
 - Conexões: Radarr/Sonarr
-- Indexadores:
-  - [Catálogo BeTor](https://catalogo.betor.top/guia/prowlarr/)
+- Indexadores: [Catálogo BeTor](https://catalogo.betor.top/guia/prowlarr/)
+- Etiquetas: `flaresolverr`
 
 ## FlareSolverr
 
-- Inicialização automática: `flaresolver.ps1`
+- Inicialização automática: `flaresolverr.ps1`
 
 ## qBittorrent
 
