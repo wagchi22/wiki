@@ -8,16 +8,16 @@ para automatizar o processo.
 ## Software
 
 - Instale [Prowlarr](https://prowlarr.com/)
-- Baixe [FlareSolverr](https://github.com/FlareSolverr/FlareSolverr) e coloque em alguma pasta
+- Baixe [FlareSolverr](https://github.com/FlareSolverr/FlareSolverr) e coloque numa pasta
 - Instale [Radarr](https://radarr.video/)
 - Instale [Sonarr](https://sonarr.tv/)
 - Instale [Jellyfin](https://jellyfin.org/)
 - Instale [qBittorrent](https://www.qbittorrent.org/)
 - Instale [Python](https://www.python.org/)
 - Baixe [MKVToolNix](https://mkvtoolnix.download/) e coloque no PATH
-- Baixe [flaresolverr.ps1](https://raw.githubusercontent.com/wagchi22/wiki/refs/heads/main/scripts/flaresolverr.ps1) e coloque em alguma pasta
-- Baixe [remux.py](https://raw.githubusercontent.com/wagchi22/wiki/refs/heads/main/scripts/remux.py) e coloque em alguma pasta
-- Baixe [run-remux.bat](https://raw.githubusercontent.com/wagchi22/wiki/refs/heads/main/scripts/run-remux.bat) e coloque em alguma pasta
+- Baixe [flaresolverr.ps1](https://raw.githubusercontent.com/wagchi22/wiki/refs/heads/main/scripts/flaresolverr.ps1) e coloque numa pasta
+- Baixe [remux.py](https://raw.githubusercontent.com/wagchi22/wiki/refs/heads/main/scripts/remux.py) e coloque numa pasta
+- Baixe [run-remux.bat](https://raw.githubusercontent.com/wagchi22/wiki/refs/heads/main/scripts/run-remux.bat) e coloque numa pasta
 
 ## Prowlarr
 
