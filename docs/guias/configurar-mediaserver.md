@@ -30,7 +30,7 @@ para automatizar o processo.
 
 ## FlareSolverr
 
-- Conexões: Radarr/Sonarr
+- Inicialização automática: `flaresolver.ps1`
 
 ## qBittorrent
 
@@ -44,7 +44,7 @@ para automatizar o processo.
 
 - Conexões: qBittorrent
 - Renomear automaticamente: Ativado
-- Conexões: `C:\GitHub\wiki\scripts\run.bat`
+- Conexões: `run-remux.bat`
 
 ## Jellyfin
 
