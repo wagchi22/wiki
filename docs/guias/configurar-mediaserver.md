@@ -26,7 +26,7 @@ para automatizar o processo.
 
 ## FlareSolverr
 
-- Inicialização automática: `flaresolverr.ps1`
+- Inicialização automática: Execute e instale `C:\Scripts\flaresolverr.ps1`
 
 ## qBittorrent
 
@@ -40,7 +40,7 @@ para automatizar o processo.
 
 - Conexões: qBittorrent
 - Renomear automaticamente: Ativado
-- Conexões: `run-remux.bat`
+- Conexões: Defina o caminho para `C:\Scripts\run-remux.bat`
 
 ## Jellyfin
 
