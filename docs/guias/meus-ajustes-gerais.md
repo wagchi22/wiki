@@ -13,23 +13,28 @@ Meus ajustes gerais para todo tipo de coisa.
 ## TV LG
 
 - Local: Parede
-- Propaganas na tela inicial: Desativado
+- Propagandas na tela inicial: Desativado
 - Referência padrão:
   - Backlight: 30 escuro/70 claro
   - Contraste: 80
   - Brilho: 50
   - Nitidez: 10
   - Cor: 50
+  - Gama: 2.2
+  - Gama de cores: Automático
+  - Nível de preto: Automático
+  - Temperatura de cor: W2
   - Mapeamento de tom dinâmico (jogos): HGiG
   - Cinema Real: Ativado
-  - Economia de energia/EyeCare/TruMotion: Desativado
-  - Demais processamentos de imagem: Desativao
+  - Just Scan: Automático
+  - Demais processamentos: Desativado
 
 ## Fire TV
 
 - Igualar taxa de quadros: Ativado
-- Escala/HDR: Ajuste conforme a TV
-- Intensidade de cores (HDR): 10 bits
+- Dimensão: Ajuste conforme a TV
+- HDR: Adaptável
+- Intensidade de cores: até 10 bits
 
 ## PlayStation 5
 
@@ -61,7 +66,6 @@ Branco papel equivale a metade do brilho máximo.
   - Legendas: Apenas diálogos
 - Rede:
   - IP: Estático
-
 - Softwares:
   - [Office](https://files.rg-adguard.net/files/031460f7-375b-1168-38bd-9c6a581d8920)
   com esse [ativador](https://github.com/massgravel/Microsoft-Activation-Scripts)
