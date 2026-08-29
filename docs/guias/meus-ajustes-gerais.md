@@ -71,7 +71,7 @@ Branco papel equivale a metade do brilho máximo.
   com esse [ativador](https://github.com/massgravel/Microsoft-Activation-Scripts)
   - [iCloud](https://support.apple.com/pt-br/103232)
   - [iTunes](https://www.apple.com/br/itunes/)
-  - [Chrome](https://www.google.com/intl/pt-BR/chrome/) e desative salvar
+  - [Chrome](https://www.google.com/intl/pt-BR/chrome/) com DNS do Cloudflare e desative salvar
   _senhas, pagamentos e endereços_
     - Extensões:
       - [Bitwarden](https://bitwarden.com/download/#downloads-web-browser-extensions)
