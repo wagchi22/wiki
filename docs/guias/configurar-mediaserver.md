@@ -1,5 +1,3 @@
-<!-- markdownlint-disable MD013 -->
-
 # Configurar Mediaserver
 
 :::info Objetivo
@@ -7,141 +5,47 @@ Configurar um Servidor de Mídia no Windows, usando software popular e confiáve
 para automatizar o processo.
 :::
 
-## Fontes
-
-- [Gemini](https://gemini.google.com/)
-- [TRaSH Guides](https://trash-guides.info)
-- [Reddit](https://reddit.com/)
-
-## Locais
-
-- Softwares: `C:\ProgramData`
-- Indexadores: `C:\ProgramData\Prowlarr\Definitions\Custom`
-- Ferramentas: `C:\Tools`
-- Scripts: `C:\Scripts`
-- Torrents: `E:\Torrents`
-- Mídia: `E:\Media`
-
 ## Software
 
-- Software necessário:
-  - [Prowlarr](https://prowlarr.com/)
-  - [FlareSolverr](https://github.com/Flaresolverr/Flaresolverr)
-  - [Radarr](https://radarr.video/)
-  - [Sonarr](https://sonarr.tv/)
-  - [Bazarr](https://www.bazarr.media/)
-  - [Jellyfin](https://jellyfin.org/)
-    - Plugins:  
-      - [Prevent Sleep](https://github.com/jonschz/jellyfin-plugin-preventsleep)
-  - [qBittorrent](https://www.qbittorrent.org/)
-  - [MediaInfo](https://mediaarea.net/MediaInfo)
-- Opcional:
-  - Ferramentas: (_Insira no PATH do sistema_)
-    - [Python](https://www.python.org/)
-    - [MKVToolNix](https://mkvtoolnix.download/)
-    - [dovi_tool](https://github.com/quietvoid/dovi_tool)
-  - Scripts:
-    - [remux-mkv.py](https://raw.githubusercontent.com/wagchi22/wiki/refs/heads/main/scripts/remux-mkv.py)
-    - [remove-dolby-vision.py](https://raw.githubusercontent.com/wagchi22/wiki/refs/heads/main/scripts/remove-dolby-vision.py)
-    - [remove-extra-subs.ps1](https://raw.githubusercontent.com/wagchi22/wiki/refs/heads/main/scripts/remove-extra-subs.ps1)
-    - [flaresolverr-manager.ps1](https://raw.githubusercontent.com/wagchi22/wiki/refs/heads/main/scripts/flaresolverr-manager.ps1)
+- [Prowlarr](https://prowlarr.com/)
+- [Radarr](https://radarr.video/)
+- [Sonarr](https://sonarr.tv/)
+- [Jellyfin](https://jellyfin.org/)
+- [qBittorrent](https://www.qbittorrent.org/)
+- [Python](https://www.python.org/)
+- [MKVToolNix](https://mkvtoolnix.download/)
+- [remux.py](https://raw.githubusercontent.com/wagchi22/wiki/refs/heads/main/scripts/remux.py)
+- [run-remux.bat](https://raw.githubusercontent.com/wagchi22/wiki/refs/heads/main/scripts/run-remux.bat)
 
 ## Prowlarr
 
-- Usuário: Coloque um nome qualquer
-- Senha: Insira uma senha qualquer
-- Conexões (requer Chave API): Adicione o Radarr e Sonarr
+- Conexões: Radarr/Sonarr
 - Indexadores:
-  - [Catálogo BeTor](https://raw.githubusercontent.com/wagchi22/wiki/refs/heads/main/scripts/catalogo-betor.yml)
-  - Knaben
-- Mínimo de semeadores: 0
-- Etiquetas: `flaresolverr`
-
-## FlareSolverr
-
-- Execute o script `C:\Scripts\flaresolverr-manager.ps1` para iniciar automaticamente
+  - [Catálogo BeTor](https://catalogo.betor.top/guia/prowlarr/)
 
 ## qBittorrent
 
 - Interface Web: Ativado
-- Usuário: Coloque um nome qualquer
-- Senha: Insira uma senha qualquer
 - Limite de semeadura: Parar ao alcançar 0,0
 - Modo de gerenciamento de torrents: Automático
-- Protocolo: TCP
 - Máximo de conexões por torrent: 250
-- Encriptação: Requerido
 - Inibir sono do sistema enquanto faz download: Ativado
 
-## Radarr
+## Radarr/Sonnar
 
-- Usuário: Coloque um nome qualquer
-- Senha: Insira uma senha qualquer
-- Conexões: Adicione o qBittorrent (_Requer Chave API_)
-- Propers e repacks: Desativado
-- Monitorar: Somente filme
-- Perfis, formatos e nomeclatura: Obtenha [aqui](https://trash-guides.info/)
+- Conexões: qBittorrent
 - Renomear automaticamente: Ativado
-- Conexões:
-  - Scripts Personalizados:
-    - Remux MKV:
-      - Caminho: `C:\Scripts\remux-mkv.py`
-      - Opções: Obter, importar e atualizar
-    - Clean orphan subs:
-      - Caminho: `C:\Scripts\clean-orphan-subs.ps1`
-      - Opções: Importar, atualizar e renomear
-
-## Sonarr
-
-- Usuário: Coloque um nome qualquer
-- Senha: Insira uma senha qualquer
-- Conexões: Adicione o qBittorrent (_Requer Chave API_)
-- Propers e repacks: Desativado
-- Monitorar: Todos os episódios
-- Perfis, formatos e nomeclatura: Obtenha [aqui](https://trash-guides.info/)
-- Renomear automaticamente: Ativado
-- Conexões:
-  - Scripts Personalizados:
-    - Remux MKV:
-      - Caminho: `C:\Scripts\remux-mkv.py`
-      - Opções: Obter, importar e atualizar
-    - Clean orphan subs:
-      - Caminho: `C:\Scripts\clean-orphan-subs.ps1`
-      - Opções: Importar, atualizar e renomear
-
-## Bazarr
-
-- Usuário: Coloque um nome qualquer
-- Senha: Insira uma senha qualquer
-- Conexões: Adicione o Radarr e Sonarr (_Requer Chave API_)
-- Filtro de idioma:
-  - Português
-  - Português (Brasil)
-  - Inglês
-- Perfil de idioma:
-  - Português:
-    - Idioma: Português (Brasil)
-  - Inglês:
-    - Idioma: Inglês
-- Legenda padrão para nova mídia: Português
-- Sincronização automática de legenda: Ativado
-- Modificações Sub-Zero: Hearing Impaired
-- Provedor de legendas:
-  - [OpenSubtitles.com](https://www.opensubtitles.com/)
-  - Gestdown
-  - SubDL
+- Conexões: `C:\GitHub\wiki\scripts\run.bat`
 
 ## Jellyfin
 
-- Usuário: Coloque um nome qualquer
-- Senha: Insira uma senha qualquer
 - Agrupar filmes em coleções: Ativado
-- Cliente:
-  - Taxa de atualização: No dispositivo
-  - Cor de legenda: Amarelo
-  - Tamanho de legenda: 125%
 - Transcodificação por hardware: Intel QSV
 - Codificador de hardware Intel H.264 de baixo processamento: Ativado
 - Mapeamento de tons: Ativado
 - Limitar transcodificação: Ativado
 - Remover segmentos: Ativado
+- Wholphin (TV):
+  - Taxa de atualização: Automático
+  - Tamanho da legenda: 26
+  - Cor da legenda: Amarelo
