@@ -58,14 +58,10 @@ Branco papel equivale a metade do brilho máximo.
 - Melhorias do Waves MaxxAudioPro: Desativado
 - Volume do microfone: 100
 - Aprimorar precisão do mouse: Desativado
-- Desligar tela: 5 minutos
+- Dados brutos do mouse (jogos): Ativado
+- Desligar vídeo: 5 minutos
 - Suspender: 2 horas
-- Jogos:
-  - Dados brutos do mouse: Ativado
-  - FOV: 90
-  - Legendas: Apenas diálogos
-- Rede:
-  - IP: Estático
+- IP: Estático
 - Softwares:
   - [Office](https://files.rg-adguard.net/files/031460f7-375b-1168-38bd-9c6a581d8920)
   com esse [ativador](https://github.com/massgravel/Microsoft-Activation-Scripts)
