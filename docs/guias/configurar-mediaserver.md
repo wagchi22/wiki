@@ -22,7 +22,7 @@ para automatizar o processo.
 
 - Conexões: Radarr/Sonarr
 - Indexadores: [Catálogo BeTor](https://catalogo.betor.top/guia/prowlarr/)
-- Etiquetas: `flaresolverr`
+- Etiquetas: Adicione `flaresolverr`
 
 ## FlareSolverr
 
