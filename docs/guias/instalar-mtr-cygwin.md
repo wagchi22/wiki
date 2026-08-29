@@ -12,10 +12,6 @@ Este guia descreve como instalar e compilar o MTR no Windows utilizando o ambien
 - Medição de perda, latência e jitter
 :::
 
-## Fontes
-
-- [Gemini](https://gemini.google.com/)
-
 ## Instalar o Cygwin
 
 Baixe o instalador oficial do Cygwin [aqui](https://www.cygwin.com/):

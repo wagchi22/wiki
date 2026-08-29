@@ -4,11 +4,6 @@
 Meus ajustes gerais para todo tipo de coisa.
 :::
 
-## Fontes
-
-- [RTINGS](https://www.rtings.com/tv/learn/how-to-calibrate-your-tv)
-- [HDTVtest](https://www.youtube.com/@hdtvtest)
-
 ## Iluminação
 
 - Tipo: LED
@@ -17,76 +12,49 @@ Meus ajustes gerais para todo tipo de coisa.
 
 ## TV LG
 
-:::warning Modo PC em Console
-Não recomendado, pois anula o ganho de nitidez ao limitar a banda em 4K/120 Hz/HDR.
-:::
-
 - Local: Parede
-- Modo de imagem: Cinema/Jogos
-- Escala da tela: Just Scan
-- Backlight: 80/100 (_HDR_)
-- Contraste: 80/100 (_HDR_)
-- Brilho: 50
-- Nitidez: 0
-- Cor: 50
-- Gama de cores: Automático/Padrão
-- Gama: 2.2
-- Temperatura de cor: Quente 2
-- Nível de preto: Automático/Baixo (_TVs antigas_)
-- Mapeamento de tom dinâmico:
-  - Cinema: Desativado
-  - Jogos: HGiG
-- TruMotion: Desativado
-- Cinema Real: Ativado
-- EyeCare: Desativado
-- Economia de energia: Desativado
-- Ajuda nas configurações: Desativado
-- Modo de áudio: Padrão
-- Volume Automático: Ativado
+- Propaganas na tela inicial: Desativado
+- Referência padrão:
+  - Backlight: 30 escuro/70 claro
+  - Contraste: 80
+  - Brilho: 50
+  - Nitidez: 10
+  - Cor: 50
+  - Mapeamento de tom dinâmico (jogos): HGiG
+  - Cinema Real: Ativado
+  - Economia de energia/EyeCare/TruMotion: Desativado
+  - Demais processamentos de imagem: Desativao
 
 ## Fire TV
 
-- Igualar taxa de quadros original: Ativado
-- HDR: Adaptável/Desativado (_TVs antigas_)
-- Intensidade de cores: 10 bits/8 bits (_TVs antigas_)
-- Wholphin:
-  - Taxa de atualização: Automático
-  - Tamanho da legenda: 26
-  - Cor da legenda: Amarelo
+- Igualar taxa de quadros: Ativado
+- Escala/HDR: Ajuste conforme a TV
+- Intensidade de cores (HDR): 10 bits
 
 ## PlayStation 5
 
-:::tip Calibração no Jogo
-Necessário ajustar também para que fique o mais correto possível.
+:::tip No jogo
+Branco papel equivale a metade do brilho máximo.
 :::
 
-![Valores de referência](https://raw.githubusercontent.com/wagchi22/wiki/refs/heads/main/images/hdtvtest.jpg)
+![Referência de brilho máximo](https://raw.githubusercontent.com/wagchi22/wiki/refs/heads/main/images/hdtvtest.jpg)
 
-- Modo HDMI: Jogos
-- HDR: Adaptável
+- HDR: Quando compatível
 - Calibragem HDR:
   - Etapa 1/2: +8
   - Etapa 3: 0
 
 ## PC Dell
 
-:::tip Atualizações
-Mantenha o sistema, firmware e drivers sempre atualizados para evitar
-problemas de compatibilidade.
-:::
-
-:::tip Wi-Fi Lento
-Altere as opções de energia do Adaptador Sem Fio para Desempenho Máximo.
-:::
-
 - Rótulo da partição: Sistema
-- Coleta de dados e recomendações: Desativado
-- Mostrar os destaques da pesquisa: Desativado
+- Recomendações: Desativado
+- Destaques da pesquisa: Desativado
 - Status da tela de bloqueio: Nenhum
 - Melhorias do Waves MaxxAudioPro: Desativado
 - Volume do microfone: 100
 - Aprimorar precisão do mouse: Desativado
-- Suspender: 30 min
+- Desligar tela: 5 minutos
+- Suspender: 2 horas
 - Jogos:
   - Dados brutos do mouse: Ativado
   - FOV: 90
@@ -105,14 +73,9 @@ Altere as opções de energia do Adaptador Sem Fio para Desempenho Máximo.
       - [Bitwarden](https://bitwarden.com/download/#downloads-web-browser-extensions)
       e desative todas as _notificações_
       - [uBlock Origin Lite](https://chromewebstore.google.com/detail/ublock-origin-lite/ddkjiahejlhfcafbddmgiahcphecmpfh)
-      com modo de filtragem em _completo_ e todos os _filtros_ ativados
-      - [Tampermonkey](https://www.tampermonkey.net/) junto desse
-      [script](/scripts/bludv-bypass.js)
-      e esse [script](/scripts/memoriadatv-bypass.js)
   - [VS Code](https://code.visualstudio.com/)
   - [Git](https://git-scm.com/)
   - [Node.js](https://nodejs.org/pt-br)
-  - [InkScape](https://inkscape.org/)
 
 ## iPhone
 
@@ -135,10 +98,10 @@ para encontrar o melhor canal.
 - Band Steering: Desativado
 - Rede 2.4 GHz:
   - Largura de banda: 40 MHz
-  - Canal: 1, 6, 11
+  - Melhores canais: 1, 6, 11
 - Rede 5 GHz:
   - Largura de banda: 80 MHz
-  - Canal: 36-48, 149-161
+  - Melhores canais: 36-48, 149-161
 
 ## HD Toshiba
 
