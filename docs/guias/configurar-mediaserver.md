@@ -33,7 +33,6 @@ para automatizar o processo.
 - Interface Web: Ativado
 - Limite de semeadura: Parar ao alcançar 0,0
 - Modo de gerenciamento de torrents: Automático
-- Máximo de conexões por torrent: 250
 - Inibir sono do sistema enquanto faz download: Ativado
 
 ## Radarr/Sonnar
