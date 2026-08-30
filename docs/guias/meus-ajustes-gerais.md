@@ -14,6 +14,7 @@ Meus ajustes gerais para todo tipo de coisa.
 
 :::note HDR
 Se a TV for de entrada, desative.
+Pesquise no `Google` por `modelo-da-tv nits´ para descobrir o brilho máximo.
 :::
 
 - Local: Parede
