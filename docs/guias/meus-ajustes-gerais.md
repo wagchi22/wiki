@@ -13,7 +13,6 @@ Meus ajustes gerais para todo tipo de coisa.
 ## TV LG
 
 :::note HDR
-
 Para descobrir quantos nits tem a TV basta pesquisar no Google por `modelo-da-tv nits`.
 Se ela tiver menos que 600 nits, desative o HDR.
 :::
