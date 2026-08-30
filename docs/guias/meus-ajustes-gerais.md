@@ -13,8 +13,9 @@ Meus ajustes gerais para todo tipo de coisa.
 ## TV LG
 
 :::note HDR
-Se a TV for de entrada, desative.
-Pesquise no `Google` por `modelo-da-tv nits´ para descobrir o brilho máximo.
+
+Para descobrir quantos nits tem a TV basta pesquisar no Google por `modelo-da-tv nits`.
+Se ela tiver menos que 600 nits, desative o HDR.
 :::
 
 - Local: Parede
@@ -44,6 +45,7 @@ Pesquise no `Google` por `modelo-da-tv nits´ para descobrir o brilho máximo.
 
 :::tip No jogo
 Acesse [aqui](https://nikitamgrimm.github.io/hlg-reference-white-calc/) para descobrir o valor do branco papel.
+Certos jogos usam o termo `pouco visível` para descrever _quase invisível_.
 :::
 
 ![Referência de brilho máximo](https://raw.githubusercontent.com/wagchi22/wiki/refs/heads/main/images/hdtvtest.jpg)
