@@ -12,6 +12,10 @@ Meus ajustes gerais para todo tipo de coisa.
 
 ## TV LG
 
+:::note HDR
+Se a TV for de entrada, desative.
+:::
+
 - Local: Parede
 - Propagandas na tela inicial: Desativado
 - Referência padrão:
@@ -26,20 +30,19 @@ Meus ajustes gerais para todo tipo de coisa.
   - Temperatura de cor: W2
   - Mapeamento de tom dinâmico (jogos): HGiG
   - Cinema Real: Ativado
-  - Just Scan: Automático
+  - Just Scan: Ativado
   - Demais processamentos: Desativado
 
 ## Fire TV
 
 - Igualar taxa de quadros: Ativado
-- Dimensão: Ajuste conforme a TV
 - HDR: Adaptável
 - Intensidade de cores: até 10 bits
 
 ## PlayStation 5
 
 :::tip No jogo
-Branco papel equivale a metade do brilho máximo.
+Acesse [aqui](https://nikitamgrimm.github.io/hlg-reference-white-calc/) para descobrir o valor do branco papel.
 :::
 
 ![Referência de brilho máximo](https://raw.githubusercontent.com/wagchi22/wiki/refs/heads/main/images/hdtvtest.jpg)
