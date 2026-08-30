@@ -12,6 +12,7 @@ if hasattr(sys.stdout,"reconfigure"):
 if hasattr(sys.stderr,"reconfigure"):
     sys.stderr.reconfigure(encoding="utf-8")
 
+
 def get_info(path):
     try:
         result=subprocess.run(
@@ -28,6 +29,7 @@ def get_info(path):
     except (subprocess.SubprocessError,json.JSONDecodeError):
         return None
 
+
 def get_language(track):
     properties=track.get("properties",{})
 
@@ -36,6 +38,7 @@ def get_language(track):
         or properties.get("language")
         or "und"
     ).lower()
+
 
 def normalize_language(track):
     language=get_language(track)
@@ -50,6 +53,7 @@ def normalize_language(track):
         return "eng"
 
     return "und"
+
 
 def should_skip_subtitle(track):
     properties=track.get("properties",{})
@@ -67,20 +71,42 @@ def should_skip_subtitle(track):
         for value in ("sdh","forced","stripped")
     )
 
+
+def get_ptbr_subtitles(info):
+    return [
+        track
+        for track in info.get("tracks",[])
+        if (
+            track["type"]=="subtitles"
+            and normalize_language(track)=="por"
+            and not should_skip_subtitle(track)
+        )
+    ]
+
+
 def is_dirty(info):
     tracks=info.get("tracks",[])
-
-    if any(
-        track["type"]=="subtitles"
-        for track in tracks
-    ):
-        return True
 
     audio=[
         track
         for track in tracks
         if track["type"]=="audio"
     ]
+
+    subtitles=get_ptbr_subtitles(info)
+
+    # Se já existe exatamente uma legenda PT-BR válida,
+    # ela será mantida dentro do MKV.
+    #
+    # Porém, qualquer existência de legendas ainda torna o arquivo
+    # candidato a remux para remover as legendas indesejadas.
+    has_subtitles=any(
+        track["type"]=="subtitles"
+        for track in tracks
+    )
+
+    if has_subtitles:
+        return True
 
     if len(audio)==2:
         if normalize_language(audio[0])!="por":
@@ -119,39 +145,6 @@ def is_dirty(info):
         for track in tracks
     )
 
-def extract_ptbr(path,info):
-    subtitles=[
-        track
-        for track in info.get("tracks",[])
-        if (
-            track["type"]=="subtitles"
-            and normalize_language(track)=="por"
-            and not should_skip_subtitle(track)
-        )
-    ]
-
-    for index,track in enumerate(subtitles,1):
-        suffix=f".{index}" if index>1 else ""
-
-        output=(
-            path.parent
-            /f"{path.stem}.pt-BR{suffix}.srt"
-        )
-
-        result=subprocess.run(
-            [
-                "mkvextract",
-                "tracks",
-                str(path),
-                f"{track['id']}:{output}"
-            ],
-            capture_output=True
-        )
-
-        if result.returncode!=0:
-            return False
-
-    return True
 
 def set_audio_languages(path):
     info=get_info(path)
@@ -220,11 +213,8 @@ def set_audio_languages(path):
         and second.get("language_ietf")=="en"
     )
 
-def remux_file(path,info):
-    if not extract_ptbr(path,info):
-        print(f"Falha: {path.name}")
-        return
 
+def remux_file(path,info):
     tracks=info.get("tracks",[])
 
     video=[
@@ -239,6 +229,8 @@ def remux_file(path,info):
         if track["type"]=="audio"
     ]
 
+    subtitles=get_ptbr_subtitles(info)
+
     temp=path.with_name(
         f"{path.stem}_temp.mkv"
     )
@@ -247,14 +239,16 @@ def remux_file(path,info):
         "mkvmerge",
         "-o",
         str(temp),
-        "--no-subtitles",
+
         "--no-attachments",
         "--no-global-tags",
         "--no-chapters",
+
         "--title",
         ""
     ]
 
+    # VIDEO
     if video:
         video_id=video[0]["id"]
 
@@ -267,6 +261,7 @@ def remux_file(path,info):
             f"{video_id}:"
         ])
 
+    # AUDIO
     if audio:
         command.extend([
             "--audio-tracks",
@@ -288,6 +283,41 @@ def remux_file(path,info):
 
     else:
         command.append("--no-audio")
+
+    # SUBTITLES
+    #
+    # Mantém somente as legendas PT-BR válidas
+    # diretamente dentro do MKV.
+    if subtitles:
+        subtitle_ids=",".join(
+            str(track["id"])
+            for track in subtitles
+        )
+
+        command.extend([
+            "--subtitle-tracks",
+            subtitle_ids
+        ])
+
+        for index,track in enumerate(subtitles):
+            track_id=track["id"]
+
+            # A primeira legenda PT-BR fica como padrão.
+            default="yes" if index==0 else "no"
+
+            command.extend([
+                "--language",
+                f"{track_id}:pt",
+                "--track-name",
+                f"{track_id}:",
+                "--default-track",
+                f"{track_id}:{default}",
+                "--forced-track",
+                f"{track_id}:no"
+            ])
+
+    else:
+        command.append("--no-subtitles")
 
     command.append(str(path))
 
@@ -323,6 +353,13 @@ def remux_file(path,info):
             if track["type"]=="audio"
         ]
 
+        new_subtitles=[
+            track
+            for track in new_info.get("tracks",[])
+            if track["type"]=="subtitles"
+        ]
+
+        # VERIFICA ÁUDIO
         if len(audio)==2:
             if len(new_audio)!=2:
                 print(f"Falha: {path.name}")
@@ -348,6 +385,13 @@ def remux_file(path,info):
                 temp.unlink(missing_ok=True)
                 return
 
+        # VERIFICA LEGENDAS
+        if len(new_subtitles)!=len(subtitles):
+            print(f"Falha: {path.name}")
+            temp.unlink(missing_ok=True)
+            return
+
+        # Substitui o MKV original
         path.unlink()
         temp.rename(path)
 
@@ -357,6 +401,7 @@ def remux_file(path,info):
     finally:
         if temp.exists():
             temp.unlink(missing_ok=True)
+
 
 def collect_files(targets):
     files=[]
@@ -391,6 +436,7 @@ def collect_files(targets):
 
     return files
 
+
 def verify_file(path):
     info=get_info(path)
 
@@ -402,11 +448,13 @@ def verify_file(path):
 
     return path,info
 
+
 def process_target(target):
     path=Path(target)
 
     if not path.exists():
         print(f"Não encontrado: {path}")
+
 
 def main():
     event=(
@@ -435,7 +483,7 @@ def main():
 
     files=collect_files(targets)
 
-    print("Verificando arquivos...")
+    print("Verificando...")
 
     dirty_files=[]
 
@@ -458,9 +506,10 @@ def main():
         remux_file(path,info)
 
     if not dirty_files:
-        print("Nenhum arquivo precisa ser remuxado.")
+        print("Não precisa ser remuxado.")
 
     print("Operação concluída.")
+
 
 if __name__=="__main__":
     main()
