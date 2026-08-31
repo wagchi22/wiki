@@ -14,21 +14,21 @@ Meus ajustes gerais para todo tipo de coisa.
 
 :::tip HDR
 Pesquise `modelo-da-tv nits` no Google para descobrir o valor em nits da TV.
-Se ela tiver menos que 600 nits, desative o HDR.
+Se for menos que 600 nits, desative o HDR.
 :::
 
 - Local: Parede
 - Propagandas na tela inicial: Desativado
-- Referência padrão:
-  - Backlight: 30 escuro/70 claro
-  - Contraste: 80
-  - Brilho: 50
+- Modo de imagem: Padrão/Jogos
+  - Backlight: 70/100 para HDR
+  - Contraste: 80/100 para HDR
+  - Brilho: 48
   - Nitidez: 10
-  - Cor: 50
+  - Cor: 50/55 para HDR
   - Gama: 2.2
   - Gama de cores: Automático
   - Nível de preto: Automático
-  - Temperatura de cor: W2
+  - Temperatura de cor: 0/Médio
   - Mapeamento de tom dinâmico (jogos): HGiG
   - Cinema Real: Ativado
   - Just Scan: Ativado
