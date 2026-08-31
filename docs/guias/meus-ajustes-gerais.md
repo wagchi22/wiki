@@ -12,7 +12,6 @@ Meus ajustes gerais para todo tipo de coisa.
 
 :::tip HDR
 Pesquise `modelo-da-tv nits` no Google para descobrir o valor em nits da TV.
-
 Se for menos que 600 nits, desative o HDR.
 :::
 
