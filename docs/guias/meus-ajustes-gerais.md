@@ -13,7 +13,7 @@ Meus ajustes gerais para todo tipo de coisa.
 ## TV LG
 
 :::tip HDR
-Para descobrir quantos nits tem a TV basta pesquisar no Google por `modelo-da-tv nits`.
+Pesquise `modelo-da-tv nits` no Google para descobrir o valor em nits da TV.
 Se ela tiver menos que 600 nits, desative o HDR.
 :::
 
@@ -38,20 +38,18 @@ Se ela tiver menos que 600 nits, desative o HDR.
 
 - Igualar taxa de quadros: Ativado
 - HDR: Adaptável
-- Intensidade de cores: até 10 bits
+- Intensidade de cores: Ajuste conforme a TV
 
 ## PlayStation 5
 
 :::tip No jogo
-Acesse [aqui](https://nikitamgrimm.github.io/hlg-reference-white-calc/) para descobrir o valor do branco papel.
-Certos jogos usam o termo `pouco visível` para descrever _quase invisível_.
+Alguns jogos usam `pouco visível` para descrever _quase invisível_.
+O valor do branco papel pode ser obtido [aqui](https://nikitamgrimm.github.io/hlg-reference-white-calc/).
 :::
-
-![Referência de brilho máximo](https://raw.githubusercontent.com/wagchi22/wiki/refs/heads/main/images/hdtvtest.jpg)
 
 - HDR: Quando compatível
 - Calibragem HDR:
-  - Etapa 1/2: +8
+  - Etapa 1/2: [Referência](https://raw.githubusercontent.com/wagchi22/wiki/refs/heads/main/images/hdtvtest.jpg)
   - Etapa 3: 0
 
 ## PC Dell
