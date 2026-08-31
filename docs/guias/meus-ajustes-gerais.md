@@ -12,6 +12,7 @@ Meus ajustes gerais para todo tipo de coisa.
 
 :::tip HDR
 Pesquise `modelo-da-tv nits` no Google para descobrir o valor em nits da TV.
+
 Se for menos que 600 nits, desative o HDR.
 :::
 
@@ -42,6 +43,7 @@ Se for menos que 600 nits, desative o HDR.
 
 :::tip No jogo
 Alguns jogos usam `pouco visível` para descrever _quase invisível_.
+
 O valor do branco papel pode ser obtido [aqui](https://nikitamgrimm.github.io/hlg-reference-white-calc/).
 :::
 
