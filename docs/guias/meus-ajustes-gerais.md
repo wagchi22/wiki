@@ -6,9 +6,7 @@ Meus ajustes gerais para todo tipo de coisa.
 
 ## Iluminação
 
-- Tipo: LED
-- Potência: 9W
-- Cor: 4000K
+- Tipo: LED 9W 4000K
 
 ## TV LG
 
