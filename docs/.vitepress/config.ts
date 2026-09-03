@@ -76,7 +76,8 @@ export default defineConfig({
           { text: "Configurar Mediaserver", link: "/guias/configurar-mediaserver" },
           { text: "Instalar Codec HEVC", link: "/guias/instalar-codec-hevc" },
           { text: "Instalar MTR Cygwin", link: "/guias/instalar-mtr-cygwin" },
-          { text: "Instalar SmartTube", link: "/guias/instalar-smarttube" }
+          { text: "Instalar SmartTube", link: "/guias/instalar-smarttube" },
+          { text: "Softwares Úteis", link: "/guias/softwares-uteis" }
         ]
       }
     ],
