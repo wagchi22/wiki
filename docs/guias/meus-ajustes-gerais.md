@@ -62,7 +62,7 @@ O valor do branco papel pode ser obtido [aqui](https://nikitamgrimm.github.io/hl
 - Aprimorar precisão do mouse: Desativado
 - Dados brutos do mouse (jogos): Ativado
 - Desligar vídeo: 5 minutos
-- Suspender: 2 horas
+- Suspender: 5 horas
 - IP: Estático
 - Softwares:
   - [Office](https://files.rg-adguard.net/files/031460f7-375b-1168-38bd-9c6a581d8920)
