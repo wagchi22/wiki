@@ -65,16 +65,10 @@ O valor do branco papel pode ser obtido [aqui](https://nikitamgrimm.github.io/hl
 - Suspender: 5 horas
 - IP: Estático
 - Softwares:
-  - [Office](https://files.rg-adguard.net/files/031460f7-375b-1168-38bd-9c6a581d8920)
-  com esse [ativador](https://github.com/massgravel/Microsoft-Activation-Scripts)
+  - [Office](https://files.rg-adguard.net/files/031460f7-375b-1168-38bd-9c6a581d8920) + [ativador](https://github.com/massgravel/Microsoft-Activation-Scripts)
   - [iCloud](https://support.apple.com/pt-br/103232)
   - [iTunes](https://www.apple.com/br/itunes/)
-  - [Chrome](https://www.google.com/intl/pt-BR/chrome/) com DNS do Cloudflare e desative salvar
-  _senhas, pagamentos e endereços_
-    - Extensões:
-      - [Bitwarden](https://bitwarden.com/download/#downloads-web-browser-extensions)
-      e desative todas as _notificações_
-      - [uBlock Origin Lite](https://chromewebstore.google.com/detail/ublock-origin-lite/ddkjiahejlhfcafbddmgiahcphecmpfh)
+  - [Firefox](https://www.firefox.com/pt-BR/) + Bitwarden + uBlock Origin e ative esses [filtros](https://raw.githubusercontent.com/wagchi22/wiki/refs/heads/main/images/ubo.png)
   - [VS Code](https://code.visualstudio.com/)
   - [Git](https://git-scm.com/)
   - [Node.js](https://nodejs.org/pt-br)
@@ -82,12 +76,10 @@ O valor do branco papel pode ser obtido [aqui](https://nikitamgrimm.github.io/hl
 ## iPhone
 
 - Apps:
-  - [Chrome](https://apps.apple.com/br/app/google-chrome/id535886823) e desative
-  salvar
-  _senhas, pagamentos e endereços_
-- Anti-spam: [Não Me Perturbe](https://www.naomeperturbe.com.br/) e em filtar
-números desconhecidos marque _perguntar motivo da ligação_
-- DNS: [Control D](https://controld.com/free-dns) com perfil _Ads & Tracking_
+  - [Firefox](https://apps.apple.com/br/app/firefox-browser-privado/id989804926) e ative o adblocker
+- Anti-spam:
+  - [Não Me Perturbe](https://www.naomeperturbe.com.br/)
+  - Filtar números desconhecidos: Perguntar motivo da ligação
 
 ## Roteador
 
