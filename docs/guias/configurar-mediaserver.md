@@ -47,13 +47,13 @@ Após, desative `Start browser on startup` nas configurações.
 
 - Cliente de download: qBittorrent
 - Renomear automaticamente: Ativado
-  - Formato de filmes:
+  - Filmes:
 
     ```
     {Movie Title} ({Release Year}) {Custom Formats} {MediaInfo VideoCodec} {MediaInfo AudioCodec} {MediaInfo AudioChannels}
     ```
 
-  - Formato de séries:
+  - Séries:
 
     ```
     {Series Title} S{season:00}E{episode:00} {Episode Title} {Custom Formats} {MediaInfo VideoCodec} {MediaInfo AudioCodec} {MediaInfo AudioChannels}
