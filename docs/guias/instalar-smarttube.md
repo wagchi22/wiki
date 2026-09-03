@@ -1,4 +1,4 @@
-# Instalar Smarttube
+# Instalar SmartTube
 
 :::info Objetivo
 Instalar o Smarttube no Fire TV.
@@ -6,7 +6,7 @@ Instalar o Smarttube no Fire TV.
 
 ## Instalar
 
-Procure e baixe `Downloader` na loja.
+Procure e instale `downloader` na loja.
 
 Abra o Downloader e pesquise por `smarttube`.
 
