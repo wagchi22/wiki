@@ -76,7 +76,7 @@ O valor do branco papel pode ser obtido [aqui](https://nikitamgrimm.github.io/hl
 ## iPhone
 
 - Apps:
-  - [Firefox](https://apps.apple.com/br/app/firefox-browser-privado/id989804926) e altere para `Rigoroso` a Proteção Aprimorada contra Rastreamento
+  - [Firefox](https://apps.apple.com/br/app/firefox-browser-privado/id989804926) e ative o adblocker
 - Anti-spam:
   - [Não Me Perturbe](https://www.naomeperturbe.com.br/)
   - Filtar números desconhecidos: Perguntar motivo da ligação
