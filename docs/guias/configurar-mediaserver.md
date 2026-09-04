@@ -327,8 +327,8 @@ Depois desative `Start browser on startup` nas configurações.
 - Mapeamento de tons: Ativado
 - Limitar transcodificação: Ativado
 - Remover segmentos: Ativado
-- Jellyfin (TV):
+- App:
   - Taxa de atualização: Escala no dispositivo
   - Saída de áudio: Downmix para estéreo
-  - Tamanho da legenda: 125%
   - Cor da legenda: Amarelo
+  - Tamanho da legenda: 125%
