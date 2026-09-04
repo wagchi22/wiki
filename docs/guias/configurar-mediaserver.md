@@ -329,6 +329,6 @@ Depois desative `Start browser on startup` nas configurações.
 - Remover segmentos: Ativado
 - Wholphin (TV):
   - Taxa de atualização: Automático
+  - Sempre mixar para estéreo: Ativado
   - Tamanho da legenda: 26
   - Cor da legenda: Amarelo
-  - Sempre mixar para estéreo: Ativado

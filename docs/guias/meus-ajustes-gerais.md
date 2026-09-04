@@ -19,19 +19,20 @@ Se a TV tiver menos de 600 nits, recomenda-se desativar o HDR. Porém, faça o t
 - Local: Parede
 - Propagandas na tela inicial: Desativado
 - Modo de imagem: Padrão/Jogos
+  - Just Scan: Ativado
   - Backlight: 70/100 para HDR
   - Contraste: 80/100 para HDR
   - Brilho: 48
   - Nitidez: 10
-  - Cor: 40/50 para HDR
+  - Cor: 45/50 para HDR
   - Gama: 2.2
   - Gama de cores: Automático
   - Nível de preto: Automático
-  - Temperatura de cor: 0/Médio
-  - Mapeamento de tom dinâmico (jogos): HGiG
+  - Temperatura de cor: W2
+  - Mapeamento de tom dinâmico: HGiG para jogos
   - Cinema Real: Ativado
-  - Just Scan: Ativado
-  - Demais processamentos: Desativado
+  - Full LED: Baixo
+  - Demais opções de imagem: Desativado
   - Volume automático: Ativado
 
 ## Fire TV
