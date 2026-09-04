@@ -11,8 +11,8 @@ Meus ajustes gerais para todo tipo de coisa.
 ## TV LG
 
 :::tip HDR
-Pesquise `modelo-da-tv nits` no Google para descobrir o valor em nits da TV.
-Se for menos que 600 nits, desative o HDR.
+Para descobrir o valor em nits da TV, pesquise `modelo-da-tv nits` no Google.
+Se for menos que 600 nits, recomenda-se desativar o HDR ou por via das dúvidas testar com ele ativado ou não e ver se a imagem fica melhor ou pior.
 :::
 
 - Local: Parede
@@ -22,7 +22,7 @@ Se for menos que 600 nits, desative o HDR.
   - Contraste: 80/100 para HDR
   - Brilho: 48
   - Nitidez: 10
-  - Cor: 50/55 para HDR
+  - Cor: 40/50 para HDR
   - Gama: 2.2
   - Gama de cores: Automático
   - Nível de preto: Automático
@@ -31,19 +31,22 @@ Se for menos que 600 nits, desative o HDR.
   - Cinema Real: Ativado
   - Just Scan: Ativado
   - Demais processamentos: Desativado
+  - Volume automático: Ativado
 
 ## Fire TV
 
 - Igualar taxa de quadros: Ativado
 - HDR: Adaptável
-- Intensidade de cores: Ajuste conforme a TV
+- Intensidade de cores (bits): Ajuste conforme a TV
 
 ## PlayStation 5
 
 :::tip No jogo
-Alguns jogos usam `pouco visível` para descrever _quase invisível_.
+Ajuste o `brilho médio ou branco papel` (obtido [aqui](https://nikitamgrimm.github.io/hlg-reference-white-calc/)) e `brilho máximo` mesmo após definir o mapeamento de tons em `HGiG` e calibrado o HDR no console.
 
-O valor do branco papel pode ser obtido [aqui](https://nikitamgrimm.github.io/hlg-reference-white-calc/).
+O GTA V possui valores de branco papel a partir de 100.
+
+O Call of Duty usa 3 caixas de texto para ajuste do brilho/HDR. A barra do meio descrita como `pouco visível` deve ficar quase invisível mas ainda sim perceptível.
 :::
 
 - HDR: Quando compatível
