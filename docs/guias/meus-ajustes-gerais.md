@@ -12,7 +12,8 @@ Meus ajustes gerais para todo tipo de coisa.
 
 :::tip HDR
 Para descobrir o valor em nits da TV, pesquise `modelo-da-tv nits` no Google.
-Se for menos que 600 nits, recomenda-se desativar o HDR ou por via das dúvidas testar com ele ativado ou não e ver se a imagem fica melhor ou pior.
+Se a TV tiver menos de 600 nits, recomenda-se desativar o HDR. Porém, faça o teste: se o HDR deixar a imagem mais bonita e detalhada, use-o; se apenas deixá-la mais escura, desative e prefira o SDR.
+
 :::
 
 - Local: Parede
