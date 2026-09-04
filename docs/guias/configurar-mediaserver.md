@@ -327,8 +327,8 @@ Depois desative `Start browser on startup` nas configurações.
 - Mapeamento de tons: Ativado
 - Limitar transcodificação: Ativado
 - Remover segmentos: Ativado
-- Wholphin (TV):
-  - Taxa de atualização: Automático
-  - Sempre mixar para estéreo: Ativado
-  - Tamanho da legenda: 26
+- Jellyfin (TV):
+  - Taxa de atualização: Escala no dispositivo
+  - Saída de áudio: Downmix para estéreo
+  - Tamanho da legenda: 125%
   - Cor da legenda: Amarelo
