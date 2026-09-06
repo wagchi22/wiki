@@ -24,4 +24,4 @@ Execute o arquivo recém criado.
 
 Reinicie o processo `explorer.exe`.
 
-Pode apagar após o uso.
+Pode apagar o arquivo após o uso.
