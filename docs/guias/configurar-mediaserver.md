@@ -15,12 +15,17 @@ Ao instalar, marque a opção `Install shortcuts in Startup folder`.
 Depois desative `Start browser on startup` nas configurações.
 :::
 
+Necessário:
+
 - Instale [Prowlarr](https://prowlarr.com/)
-- (Opcional) Baixe [FlareSolverr](https://github.com/FlareSolverr/FlareSolverr) em `C:\Tools`
 - Instale [Radarr](https://radarr.video/)
 - Instale [Sonarr](https://sonarr.tv/)
 - Instale [Jellyfin](https://jellyfin.org/)
 - Instale [qBittorrent](https://www.qbittorrent.org/)
+
+Opcional:
+
+- Baixe [FlareSolverr](https://github.com/FlareSolverr/FlareSolverr) em `C:\Tools`
 - Instale [Python](https://www.python.org/)
 - Baixe [MKVToolNix](https://mkvtoolnix.download/) em `C:\Tools` e insira no PATH
 - Baixe [flaresolverr.ps1](https://raw.githubusercontent.com/wagchi22/wiki/refs/heads/main/scripts/flaresolverr.ps1) em `C:\Scripts`
@@ -34,7 +39,7 @@ Depois desative `Start browser on startup` nas configurações.
 
 ## FlareSolverr
 
-- Inicialização automática: Execute e instale `C:\Scripts\flaresolverr.ps1`
+- Inicio automático: Execute e instale `C:\Scripts\flaresolverr.ps1`
 
 ## qBittorrent
 
