@@ -20,3 +20,7 @@ Lista de softwares que podem ser úteis.
 ## Legendas
 
 - [Rustitles](https://github.com/fosterbarnes/rustitles) - Download de legendas em lote
+
+## Metadados
+
+- [MediaInfo](https://mediaarea.net/pt/MediaInfo) - Informações e metadados de arquivos de vídeo e áudio
