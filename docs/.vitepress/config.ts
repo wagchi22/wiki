@@ -77,7 +77,8 @@ export default defineConfig({
           { text: "Instalar Codec HEVC", link: "/guias/instalar-codec-hevc" },
           { text: "Instalar MTR Cygwin", link: "/guias/instalar-mtr-cygwin" },
           { text: "Instalar SmartTube", link: "/guias/instalar-smarttube" },
-          { text: "Softwares Úteis", link: "/guias/softwares-uteis" }
+          { text: "Softwares Úteis", link: "/guias/softwares-uteis" },
+          { text: "Corrigir Miniaturas MP4", link: "/guias/corrigir-miniaturas-mp4" }
         ]
       }
     ],
