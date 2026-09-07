@@ -329,10 +329,8 @@ Opcional:
 - Agrupar filmes em coleções: Ativado
 - Transcodificação por hardware: Intel QSV
 - Codificador de hardware Intel H.264 de baixo processamento: Ativado
-- Mapeamento de tons: Ativado
 - Limitar transcodificação: Ativado
-- Remover segmentos: Ativado
-- App:
+- App (TV):
   - Taxa de atualização: Escala no dispositivo
   - Saída de áudio: Downmix para estéreo
   - Cor da legenda: Amarelo
