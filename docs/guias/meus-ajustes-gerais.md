@@ -22,7 +22,7 @@ Se a TV tiver menos de 600 nits, recomenda-se desativar o HDR. Porém, faça o t
   - Just Scan: Ativado
   - Backlight: 70/100 para HDR
   - Contraste: 80/100 para HDR
-  - Brilho: 48
+  - Brilho: 49
   - Nitidez: 10
   - Cor: 45/50 para HDR
   - Gama: 2.2
@@ -44,11 +44,9 @@ Se a TV tiver menos de 600 nits, recomenda-se desativar o HDR. Porém, faça o t
 ## PlayStation 5
 
 :::tip No jogo
-Ajuste o `brilho médio ou branco papel` (obtido [aqui](https://nikitamgrimm.github.io/hlg-reference-white-calc/)) e `brilho máximo` mesmo após definir o mapeamento de tons em `HGiG` e calibrado o HDR no console.
+É necessário ajustar também o `brilho médio ou branco papel` ([referência](https://nikitamgrimm.github.io/hlg-reference-white-calc/)) e `brilho máximo`.
 
-O GTA V possui valores de branco papel a partir de 100.
-
-O Call of Duty usa 3 caixas de texto para ajuste do brilho/HDR. A barra do meio descrita como `pouco visível` deve ficar quase invisível mas ainda sim perceptível.
+Alguns ajustes de brilho/HDR consideram algo `pouco visível` como quase invisível (ainda perceptível).
 :::
 
 - HDR: Quando compatível
@@ -58,7 +56,6 @@ O Call of Duty usa 3 caixas de texto para ajuste do brilho/HDR. A barra do meio 
 
 ## PC Dell
 
-- Rótulo da partição: Sistema
 - Recomendações: Desativado
 - Destaques da pesquisa: Desativado
 - Status da tela de bloqueio: Nenhum
@@ -105,4 +102,3 @@ para encontrar o melhor canal.
 ## HD Toshiba
 
 - Tipo de partição: exFAT
-- Rótulo da partição: Dados
