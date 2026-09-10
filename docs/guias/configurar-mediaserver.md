@@ -45,6 +45,9 @@ Opcional:
 
 - Interface Web: Ativado
 - Modo de gerenciamento de torrents: Automático
+- Limites de velocidade:
+  - Download: 15 MB/s
+  - Upload: 5 MB/s
 
 ## Radarr/Sonnar
 
