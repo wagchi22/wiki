@@ -78,7 +78,8 @@ export default defineConfig({
           { text: "Instalar MTR Cygwin", link: "/guias/instalar-mtr-cygwin" },
           { text: "Instalar SmartTube", link: "/guias/instalar-smarttube" },
           { text: "Softwares Úteis", link: "/guias/softwares-uteis" },
-          { text: "Corrigir Miniaturas MP4", link: "/guias/corrigir-miniaturas-mp4" }
+          { text: "Corrigir Miniaturas MP4", link: "/guias/corrigir-miniaturas-mp4" },
+          { text: "Atualizar Pacotes Winget", link: "/guias/atualizar-pacotes-winget" }
         ]
       }
     ],
