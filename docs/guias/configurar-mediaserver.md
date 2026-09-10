@@ -44,9 +44,7 @@ Opcional:
 ## qBittorrent
 
 - Interface Web: Ativado
-- Limite de semeadura: Parar ao alcançar 0,0
 - Modo de gerenciamento de torrents: Automático
-- Inibir sono do sistema enquanto faz download: Ativado
 
 ## Radarr/Sonnar
 
