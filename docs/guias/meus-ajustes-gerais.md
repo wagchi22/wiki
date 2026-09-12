@@ -66,7 +66,6 @@ Alguns ajustes de brilho/HDR consideram algo `pouco visível` como quase invisí
 - Desligar vídeo: 5 minutos
 - Suspender: 5 horas
 - IP: Estático
-- DNS: [AdGuard](https://adguard-dns.io/pt_br/public-dns.html)
 - Softwares:
   - [Office](https://files.rg-adguard.net/files/031460f7-375b-1168-38bd-9c6a581d8920) + [ativador](https://github.com/massgravel/Microsoft-Activation-Scripts)
   - [iCloud](https://support.apple.com/pt-br/103232)
@@ -83,7 +82,6 @@ Alguns ajustes de brilho/HDR consideram algo `pouco visível` como quase invisí
 - Anti-spam:
   - [Não Me Perturbe](https://www.naomeperturbe.com.br/)
   - Filtar números desconhecidos: Perguntar motivo da ligação
-- DNS: [AdGuard](https://adguard-dns.io/pt_br/public-dns.html)
 
 ## Roteador
 
