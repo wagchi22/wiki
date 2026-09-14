@@ -45,7 +45,7 @@ Portanto, as opções de HDR mencionadas abaixo são recomendadas apenas para TV
 :::tip No jogo
 HDR: É necessário ajustar o `brilho médio/branco papel` ([referência](https://nikitamgrimm.github.io/hlg-reference-white-calc/)) e `brilho máximo`.
 
-Brilho: A regra geral é seguir o que é descrito sem deixar a imagem nem muito escura nem muito clara.
+Brilho (SDR): Geralmente não precisa ajustar mas a regra é seguir o que é descrito sem deixar a imagem nem muito escura nem muito clara.
 :::
 
 - HDR: Conforme a TV
