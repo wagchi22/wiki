@@ -10,18 +10,22 @@ Meus ajustes gerais para todo tipo de coisa.
 
 ## TV LG
 
-:::warning HDR
+:::warning TVs de entrada e HDR
 Se a TV tiver menos de 600 nits, recomenda-se desativar o HDR (pesquise `modelo-da-tv nits` no Google para descobrir).
 
 Portanto, as opções de HDR mencionadas abaixo são recomendadas apenas para TVs que possuem HDR acima de 600 nits.
+:::
+
+:::info Backlight e Constraste em HDR
+Geralmente essas duas opções devem ficar no máximo.
 :::
 
 - Local: Parede
 - Propagandas na tela inicial: Desativado
 - Modo de imagem: Padrão/Jogos
   - Just Scan: Ativado
-  - Backlight: 70/100 para HDR
-  - Contraste: 80/100 para HDR
+  - Backlight: 70
+  - Contraste: 80
   - Brilho: 50
   - Nitidez: 10
   - Cor: 50
