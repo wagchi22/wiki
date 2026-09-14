@@ -49,7 +49,7 @@ Brilho (SDR): Geralmente não precisa ajustar mas a regra é seguir o que é des
 :::
 
 - HDR: Conforme a TV
-- Calibragem HDR:
+- Calibragem HDR: _Ajuste após definir Mapeamento de tom dinâmico para HGiG na TV_
   - Etapa 1/2: [Referência](https://raw.githubusercontent.com/wagchi22/wiki/refs/heads/main/images/hdtvtest.jpg)
   - Etapa 3: 0
 
