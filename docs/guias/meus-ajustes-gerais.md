@@ -29,7 +29,6 @@ Portanto, as opções de HDR mencionadas abaixo são recomendadas apenas para TV
   - Gama de cores: Automático
   - Nível de preto: Automático
   - Temperatura de cor: W2
-  - Mapeamento de tom dinâmico (jogos HDR): HGiG
   - Cinema Real: Ativado
   - Full LED: Baixo
   - Demais opções de imagem: Desativado
@@ -48,8 +47,12 @@ HDR: É necessário ajustar o `brilho médio/branco papel` ([referência](https:
 Brilho (SDR): Geralmente não precisa ajustar mas a regra é seguir o que é descrito sem deixar a imagem nem muito escura nem muito clara.
 :::
 
+:::warning Antes de calibrar o HDR
+Defina o Mapeamento de tom dinâmico na TV para HGiG.
+:::
+
 - HDR: Conforme a TV
-- Calibragem HDR: _Ajuste após definir Mapeamento de tom dinâmico para HGiG na TV_
+- Calibragem HDR:
   - Etapa 1/2: [Referência](https://raw.githubusercontent.com/wagchi22/wiki/refs/heads/main/images/hdtvtest.jpg)
   - Etapa 3: 0
 
