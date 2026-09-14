@@ -59,6 +59,7 @@ Altere o nome das categorias padrão utilizadas pelo Radarr e Sonarr ao configur
 - Renomear automaticamente: Ativado
   - Filmes:
 
+:::details Exibir
     ```
     {Movie Title} ({Release Year}) {Custom Formats} {MediaInfo VideoCodec} {MediaInfo AudioCodec} {MediaInfo AudioChannels}
     ```
@@ -315,6 +316,7 @@ Altere o nome das categorias padrão utilizadas pelo Radarr e Sonarr ao configur
       ]
     }
     ```
+:::
 
 - Perfil HD-1080p:
   - Ordem de qualides: Bluray-1080p/WEBDL-1080p
