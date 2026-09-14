@@ -10,10 +10,10 @@ Meus ajustes gerais para todo tipo de coisa.
 
 ## TV LG
 
-:::tip HDR
-Para descobrir o valor em nits da TV, pesquise `modelo-da-tv nits` no Google.
-Se a TV tiver menos de 600 nits, recomenda-se desativar o HDR. Porém, faça o teste: se o HDR deixar a imagem mais bonita e detalhada, use-o; se apenas deixá-la mais escura, desative e prefira o SDR.
+:::warning HDR
+Se a TV tiver menos de 600 nits, recomenda-se desativar o HDR (pesquise `modelo-da-tv nits` no Google para descobrir).
 
+Portanto, as opções de HDR mencionadas abaixo são recomendadas apenas para TVs que possuem HDR acima de 600 nits.
 :::
 
 - Local: Parede
@@ -22,34 +22,33 @@ Se a TV tiver menos de 600 nits, recomenda-se desativar o HDR. Porém, faça o t
   - Just Scan: Ativado
   - Backlight: 70/100 para HDR
   - Contraste: 80/100 para HDR
-  - Brilho: 49
+  - Brilho: 50
   - Nitidez: 10
-  - Cor: 45/50 para HDR
+  - Cor: 50
   - Gama: 2.2
   - Gama de cores: Automático
   - Nível de preto: Automático
   - Temperatura de cor: W2
-  - Mapeamento de tom dinâmico: HGiG para jogos
+  - Mapeamento de tom dinâmico (jogos HDR): HGiG
   - Cinema Real: Ativado
   - Full LED: Baixo
   - Demais opções de imagem: Desativado
-  - Volume automático: Ativado
 
 ## Fire TV
 
 - Igualar taxa de quadros: Ativado
-- HDR: Adaptável
-- Intensidade de cores (bits): Ajuste conforme a TV
+- HDR: Conforme a TV
+- Intensidade de cores (bits): Conforme a TV
 
 ## PlayStation 5
 
 :::tip No jogo
-É necessário ajustar também o `brilho médio ou branco papel` ([referência](https://nikitamgrimm.github.io/hlg-reference-white-calc/)) e `brilho máximo`.
+HDR: É necessário ajustar o `brilho médio/branco papel` ([referência](https://nikitamgrimm.github.io/hlg-reference-white-calc/)) e `brilho máximo`.
 
-Alguns ajustes de brilho/HDR consideram algo `pouco visível` como quase invisível (ainda perceptível).
+Brilho: A regra geral é seguir o que é descrito sem deixar a imagem nem muito escura nem muito clara.
 :::
 
-- HDR: Quando compatível
+- HDR: Conforme a TV
 - Calibragem HDR:
   - Etapa 1/2: [Referência](https://raw.githubusercontent.com/wagchi22/wiki/refs/heads/main/images/hdtvtest.jpg)
   - Etapa 3: 0
