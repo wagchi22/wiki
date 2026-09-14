@@ -3,7 +3,7 @@
 # Corrigir Miniaturas MP4
 
 :::info Objetivo
-Resolve um bug do Windows que não exibe corretamente as miniaturas de arquivos .mp4.
+Resolve um bug do Windows que não exibe corretamente as miniaturas de arquivos MP4.
 :::
 
 ## Corrigir
