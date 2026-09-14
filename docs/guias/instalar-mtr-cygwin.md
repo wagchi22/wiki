@@ -3,13 +3,7 @@
 # Instalar MTR Cygwin
 
 :::info Objetivo
-Este guia descreve como instalar e compilar o MTR no Windows utilizando o ambiente Cygwin com suporte a:
-
-- IPv4
-- IPv6
-- ASN (Sistema Autônomo)
-- Relatórios estatísticos
-- Medição de perda, latência e jitter
+Descreve como instalar e compilar o MTR no Windows utilizando o ambiente Cygwin com suporte a análises e diagnóstico avançado de rede.
 :::
 
 ## Instalar o Cygwin
@@ -383,15 +377,3 @@ Depois recompilar:
 ./configure
 make -j$(nproc)
 ```
-
----
-
-## Conclusão
-
-Após este procedimento, o Windows terá uma versão oficial do MTR
-compilada via Cygwin, permitindo:
-
-- diagnóstico avançado de rotas;
-- comparação IPv4 versus IPv6;
-- identificação de Sistemas Autônomos;
-- análise de perda, latência e jitter.
