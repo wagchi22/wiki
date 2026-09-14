@@ -84,7 +84,7 @@ Brilho (SDR): Geralmente não precisa ajustar mas a regra é seguir o que é des
 
 ## Roteador
 
-:::info Otimização de Sinal
+:::tip Otimização de Sinal
 Use esse [software](https://matthafner.com/wifi-analyzer)
 para encontrar o melhor canal.
 :::
