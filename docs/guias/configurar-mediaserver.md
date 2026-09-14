@@ -59,24 +59,24 @@ Altere o nome das categorias padrão utilizadas pelo Radarr e Sonarr ao configur
 - Renomear automaticamente: Ativado
   - Filmes:
 
-:::details Exibir
+    :::details Exibir
     ```
     {Movie Title} ({Release Year}) {Custom Formats} {MediaInfo VideoCodec} {MediaInfo AudioCodec} {MediaInfo AudioChannels}
     ```
-:::
+    :::
 
   - Séries:
 
-:::details Exibir
+    :::details Exibir
     ```
     {Series Title} S{season:00}E{episode:00} {Episode Title} {Custom Formats} {MediaInfo VideoCodec} {MediaInfo AudioCodec} {MediaInfo AudioChannels}
     ```
-:::
+    :::
 
 - Formatos personalizados:
   - Filmes:
 
-:::details Exibir
+    :::details Exibir
     ```json
     {
       "name": "Bluray 1080p",
@@ -197,11 +197,11 @@ Altere o nome das categorias padrão utilizadas pelo Radarr e Sonarr ao configur
       ]
     }
     ```
-:::
+    :::
 
   - Séries:
 
-:::details Exibir
+    :::details Exibir
     ```json
     {
       "name": "Bluray 1080p",
@@ -322,7 +322,7 @@ Altere o nome das categorias padrão utilizadas pelo Radarr e Sonarr ao configur
       ]
     }
     ```
-:::
+    :::
 
 - Perfil HD-1080p:
   - Ordem de qualides: Bluray-1080p/WEBDL-1080p
