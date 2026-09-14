@@ -193,9 +193,11 @@ Altere o nome das categorias padrão utilizadas pelo Radarr e Sonarr ao configur
       ]
     }
     ```
+:::
 
   - Séries:
 
+:::details Exibir
     ```json
     {
       "name": "Bluray 1080p",
