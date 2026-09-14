@@ -11,6 +11,6 @@ Acesse [aqui](https://store.rg-adguard.net/).
 
 Selecione `ProductID` e cole `9n4wgh0z6vhq` e clique em procurar.
 
-Selecione a opção desejada e clique com o botão direito em `Salvar link como...`.
+Selecione a opção desejada e clique com o botão direito em `Salvar link`.
 
 Execute o arquivo para instalar.
