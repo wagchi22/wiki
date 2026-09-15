@@ -22,7 +22,7 @@ libncurses-devel,libjansson-devel,git,dos2unix
 
 ## Instalar o MTR
 
-Execute todos os comandos abaixo no terminal do Cygwin:
+Execute no terminal do Cygwin:
 
 ```
 cd ~
@@ -43,6 +43,8 @@ make -j"$(nproc)"
 ```
 
 ## Atualizar o MTR
+
+Execute no terminal do Cygwin:
 
 ```
 cd ~/mtr
