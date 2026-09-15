@@ -45,9 +45,6 @@ Opcional:
 
 - Interface Web: Ativado
 - Modo de gerenciamento de torrents: Automático
-- Limites de velocidade:
-  - Download: 15 MB/s
-  - Upload: 5 MB/s
 
 ## Radarr/Sonnar
 
@@ -85,6 +82,33 @@ Altere o nome das categorias padrão do Radarr e Sonarr ao configurar o cliente 
           "required": false,
           "fields": {
             "value": 9
+          }
+        },
+        {
+          "name": "Resolução",
+          "implementation": "ResolutionSpecification",
+          "negate": false,
+          "required": false,
+          "fields": {
+            "value": 1080
+          }
+        }
+      ]
+    }
+    ```
+
+    ```json
+    {
+      "name": "WEB-Rip 1080p",
+      "includeCustomFormatWhenRenaming": true,
+      "specifications": [
+        {
+          "name": "Fonte",
+          "implementation": "SourceSpecification",
+          "negate": false,
+          "required": false,
+          "fields": {
+            "value": 8
           }
         },
         {
@@ -227,6 +251,33 @@ Altere o nome das categorias padrão do Radarr e Sonarr ao configurar o cliente 
 
     ```json
     {
+      "name": "WEB-Rip 1080p",
+      "includeCustomFormatWhenRenaming": true,
+      "specifications": [
+        {
+          "name": "Fonte",
+          "implementation": "SourceSpecification",
+          "negate": false,
+          "required": false,
+          "fields": {
+            "value": 4
+          }
+        },
+        {
+          "name": "Resolução",
+          "implementation": "ResolutionSpecification",
+          "negate": false,
+          "required": false,
+          "fields": {
+            "value": 1080
+          }
+        }
+      ]
+    }
+    ```
+
+    ```json
+    {
       "name": "Dual Áudio",
       "includeCustomFormatWhenRenaming": true,
       "specifications": [
@@ -321,7 +372,10 @@ Altere o nome das categorias padrão do Radarr e Sonarr ao configurar o cliente 
     :::
 
 - Perfil HD-1080p:
-  - Ordem de qualides: Bluray-1080p/WEBDL-1080p
+  - Ordem de qualidades:
+    - Bluray 1080p
+    - WEB-DL 1080p
+    - WEB-Rip 10180p
   - Atualizações Permitidas: Ativado
   - Atualizar até: Bluray-1080p
   - Atualizar até pontuação de formato personalizado: 10000
@@ -329,6 +383,7 @@ Altere o nome das categorias padrão do Radarr e Sonarr ao configurar o cliente 
     - Bluray 1080p: 5000
     - Dual Áudio: 5000
     - WEB-DL 10180p: 4000
+    - WEB-Rip 10180p: 4000
     - Dublado: 0
     - Legendado: 0
 - Conexões: Script C:\Scripts\remux.py e marque obter, importar e atualizar

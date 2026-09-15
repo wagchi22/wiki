@@ -72,6 +72,7 @@ Defina o mapeamento de tom dinâmico na TV para HGiG.
 - Desligar vídeo: 5 minutos
 - Suspender: 5 horas
 - IP: Estático
+- DNS: [Cloudflare](https://one.one.one.one/dns/)
 - Softwares:
   - [Office](https://files.rg-adguard.net/files/031460f7-375b-1168-38bd-9c6a581d8920) + [ativador](https://github.com/massgravel/Microsoft-Activation-Scripts)
   - [iCloud](https://support.apple.com/pt-br/103232)
