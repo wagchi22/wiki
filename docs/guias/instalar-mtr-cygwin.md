@@ -26,19 +26,12 @@ Execute no terminal do Cygwin:
 
 ```
 cd ~
-
 git config --global core.autocrlf false
-
 git clone https://github.com/traviscross/mtr.git
-
 cd ~/mtr
-
 find . -type f -exec dos2unix {} \;
-
 ./bootstrap.sh
-
 ./configure
-
 make -j"$(nproc)"
 ```
 
@@ -48,11 +41,8 @@ Execute no terminal do Cygwin:
 
 ```
 cd ~/mtr
-
 git pull
-
 find . -type f -exec dos2unix {} \;
-
 ./bootstrap.sh
 ./configure
 make -j"$(nproc)"
