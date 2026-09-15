@@ -8,9 +8,7 @@ Como atualizar pacotes no Windows usando o Winget.
 
 ## Listar atualizações
 
-Abra o Terminal como Administrador.
-
-Para listar as atualizaçãoes disponíveis execute:
+Para listar as atualizaçãoes disponíveis execute no terminal:
 
 ```
 winget upgrade
@@ -18,7 +16,7 @@ winget upgrade
 
 ## Instalar atualizações
 
-Para atualizar tudo silenciosamente execute:
+Para atualizar tudo silenciosamente execute no terminal:
 
 ```
 winget upgrade -r -h
