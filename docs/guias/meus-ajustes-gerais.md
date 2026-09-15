@@ -46,13 +46,13 @@ Geralmente essas duas opções devem ficar no máximo.
 ## PlayStation 5
 
 :::tip No jogo
-HDR: É necessário ajustar o __brilho médio/branco papel__ ([referência](https://nikitamgrimm.github.io/hlg-reference-white-calc/)) e __brilho máximo__.
+Para HDR é necessário ajustar o __branco papel__ ([referência](https://nikitamgrimm.github.io/hlg-reference-white-calc/)) e __brilho máximo__.
 
-Brilho (SDR): Geralmente não precisa ajustar mas a regra é seguir o que é descrito sem deixar a imagem nem muito escura nem muito clara.
+O brilho geralmente não precisa ajustar mas a regra é seguir o que é descrito sem deixar a imagem __nem muito escura nem muito clara__.
 :::
 
 :::warning Antes de calibrar o HDR
-Defina o Mapeamento de tom dinâmico na TV para HGiG.
+Defina o mapeamento de tom dinâmico na TV para __HGiG__.
 :::
 
 - HDR: Conforme a TV
@@ -76,7 +76,7 @@ Defina o Mapeamento de tom dinâmico na TV para HGiG.
   - [Office](https://files.rg-adguard.net/files/031460f7-375b-1168-38bd-9c6a581d8920) + [ativador](https://github.com/massgravel/Microsoft-Activation-Scripts)
   - [iCloud](https://support.apple.com/pt-br/103232)
   - [iTunes](https://www.apple.com/br/itunes/)
-  - [Firefox](https://www.firefox.com/pt-BR/) + Bitwarden + uBlock Origin e ative esses [filtros](https://raw.githubusercontent.com/wagchi22/wiki/refs/heads/main/images/ubo.png)
+  - [Firefox](https://www.firefox.com/pt-BR/) + uBlock Origin e esses [filtros](https://raw.githubusercontent.com/wagchi22/wiki/refs/heads/main/images/ubo.png)
   - [VS Code](https://code.visualstudio.com/)
   - [Git](https://git-scm.com/)
   - [Node.js](https://nodejs.org/pt-br)

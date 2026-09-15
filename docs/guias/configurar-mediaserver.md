@@ -25,21 +25,21 @@ Necessário:
 
 Opcional:
 
-- Baixe [FlareSolverr](https://github.com/FlareSolverr/FlareSolverr) em __C:\Tools__
+- Baixe [FlareSolverr](https://github.com/FlareSolverr/FlareSolverr) em C:\Tools
 - Instale [Python](https://www.python.org/)
-- Baixe [MKVToolNix](https://mkvtoolnix.download/) em __C:\Tools__ e insira no PATH
-- Baixe [flaresolverr.ps1](https://raw.githubusercontent.com/wagchi22/wiki/refs/heads/main/scripts/flaresolverr.ps1) em __C:\Scripts__
-- Baixe [remux.py](https://raw.githubusercontent.com/wagchi22/wiki/refs/heads/main/scripts/remux.py) em __C:\Scripts__
+- Baixe [MKVToolNix](https://mkvtoolnix.download/) em C:\Tools e insira no PATH
+- Baixe [flaresolverr.ps1](https://raw.githubusercontent.com/wagchi22/wiki/refs/heads/main/scripts/flaresolverr.ps1) em C:\Scripts
+- Baixe [remux.py](https://raw.githubusercontent.com/wagchi22/wiki/refs/heads/main/scripts/remux.py) em C:\Scripts
 
 ## Prowlarr
 
 - Conexões: Radarr/Sonarr
 - Indexadores: [Catálogo BeTor](https://catalogo.betor.top/guia/prowlarr/)
-- Etiquetas: __flaresolverr__
+- Etiquetas: flaresolverr
 
 ## FlareSolverr
 
-- Inicio automático: Execute e instale __C:\Scripts\flaresolverr.ps1__
+- Inicio automático: Execute e instale C:\Scripts\flaresolverr.ps1
 
 ## qBittorrent
 
@@ -331,7 +331,7 @@ Altere o nome das categorias padrão utilizadas pelo Radarr e Sonarr ao configur
     - WEB-DL 10180p: 4000
     - Dublado: 0
     - Legendado: 0
-- Conexões: Marque __Ao obter__, __Ao importar__, __Ao atualizar__ e o caminho __C:\Scripts\remux.py__
+- Conexões: Script C:\Scripts\remux.py e marque obter, importar e atualizar
 
 ## Jellyfin
 
