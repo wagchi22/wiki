@@ -8,7 +8,7 @@ Como instalar e compilar o MTR no Windows utilizando o ambiente Cygwin com supor
 
 ## Instalar o Cygwin
 
-Baixe Cygwin [aqui](https://www.cygwin.com/) e depois instale.
+Baixe o Cygwin [aqui](https://www.cygwin.com/) e depois instale.
 
 ## Instalar pacotes necessários
 
