@@ -1,4 +1,4 @@
-<!-- markdownlint-disable MD040 -->
+<!-- markdownlint-disable MD040 MD031-->
 
 # Configurar Mediaserver
 
@@ -10,9 +10,9 @@ para automatizar o processo.
 ## Software
 
 :::tip Servarr
-Ao instalar, marque a opção `Install shortcuts in Startup folder`.
+Ao instalar, marque a opção __Install shortcuts in Startup folder__.
 
-Depois desative `Start browser on startup` nas configurações.
+Depois desative __Start browser on startup__ nas configurações.
 :::
 
 Necessário:
@@ -25,21 +25,21 @@ Necessário:
 
 Opcional:
 
-- Baixe [FlareSolverr](https://github.com/FlareSolverr/FlareSolverr) em `C:\Tools`
+- Baixe [FlareSolverr](https://github.com/FlareSolverr/FlareSolverr) em __C:\Tools__
 - Instale [Python](https://www.python.org/)
-- Baixe [MKVToolNix](https://mkvtoolnix.download/) em `C:\Tools` e insira no PATH
-- Baixe [flaresolverr.ps1](https://raw.githubusercontent.com/wagchi22/wiki/refs/heads/main/scripts/flaresolverr.ps1) em `C:\Scripts`
-- Baixe [remux.py](https://raw.githubusercontent.com/wagchi22/wiki/refs/heads/main/scripts/remux.py) em `C:\Scripts`
+- Baixe [MKVToolNix](https://mkvtoolnix.download/) em __C:\Tools__ e insira no PATH
+- Baixe [flaresolverr.ps1](https://raw.githubusercontent.com/wagchi22/wiki/refs/heads/main/scripts/flaresolverr.ps1) em __C:\Scripts__
+- Baixe [remux.py](https://raw.githubusercontent.com/wagchi22/wiki/refs/heads/main/scripts/remux.py) em __C:\Scripts__
 
 ## Prowlarr
 
 - Conexões: Radarr/Sonarr
 - Indexadores: [Catálogo BeTor](https://catalogo.betor.top/guia/prowlarr/)
-- Etiquetas: `flaresolverr`
+- Etiquetas: __flaresolverr__
 
 ## FlareSolverr
 
-- Inicio automático: Execute e instale `C:\Scripts\flaresolverr.ps1`
+- Inicio automático: Execute e instale __C:\Scripts\flaresolverr.ps1__
 
 ## qBittorrent
 
@@ -331,7 +331,7 @@ Altere o nome das categorias padrão utilizadas pelo Radarr e Sonarr ao configur
     - WEB-DL 10180p: 4000
     - Dublado: 0
     - Legendado: 0
-- Conexões: Marque `Ao obter`, `Ao importar`, `Ao atualizar` e coloque o caminho `C:\Scripts\remux.py`
+- Conexões: Marque __Ao obter__, __Ao importar__, __Ao atualizar__ e o caminho __C:\Scripts\remux.py__
 
 ## Jellyfin
 
