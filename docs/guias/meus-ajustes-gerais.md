@@ -46,13 +46,13 @@ Geralmente essas duas opções devem ficar no máximo.
 ## PlayStation 5
 
 :::tip No jogo
-Para HDR é necessário ajustar o __branco papel__ ([referência](https://nikitamgrimm.github.io/hlg-reference-white-calc/)) e __brilho máximo__.
+Para HDR é necessário ajustar o __branco papel__ ([referência](https://nikitamgrimm.github.io/hlg-reference-white-calc/)) e __brilho máximo__ (valor máximo em nits da sua TV).
 
-O brilho geralmente não precisa ajustar mas a regra é seguir o que é descrito sem deixar a imagem __nem muito escura nem muito clara__.
+O brilho geralmente não precisa ajustar mas a regra é seguir o que é descrito sem deixar a imagem nem muito escura nem muito clara.
 :::
 
 :::warning Antes de calibrar o HDR
-Defina o mapeamento de tom dinâmico na TV para __HGiG__.
+Defina o mapeamento de tom dinâmico na TV para HGiG.
 :::
 
 - HDR: Conforme a TV
