@@ -46,7 +46,7 @@ Geralmente essas duas opções devem ficar no máximo.
 ## PlayStation 5
 
 :::tip No jogo
-HDR: É necessário ajustar o `brilho médio/branco papel` ([referência](https://nikitamgrimm.github.io/hlg-reference-white-calc/)) e `brilho máximo`.
+HDR: É necessário ajustar o __brilho médio/branco papel__ ([referência](https://nikitamgrimm.github.io/hlg-reference-white-calc/)) e __brilho máximo__.
 
 Brilho (SDR): Geralmente não precisa ajustar mas a regra é seguir o que é descrito sem deixar a imagem nem muito escura nem muito clara.
 :::

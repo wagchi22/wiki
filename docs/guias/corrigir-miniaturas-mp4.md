@@ -8,7 +8,7 @@ Resolve um bug do Windows que não exibe corretamente as miniaturas de arquivos 
 
 ## Corrigir
 
-Copie e cole o código abaixo num arquivo de texto e salve como `fix-mp4-thumbs.reg`:
+Copie e cole o código abaixo em um arquivo de texto e salve como __fix-mp4-thumbs.reg__:
 
 ```
 Windows Registry Editor Version 5.00
@@ -22,6 +22,6 @@ Windows Registry Editor Version 5.00
 
 Execute o arquivo recém criado.
 
-Reinicie o processo `explorer.exe`.
+Reinicie o processo __Windows Explorer__.
 
 Pode apagar o arquivo após o uso.

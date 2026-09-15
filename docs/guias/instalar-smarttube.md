@@ -6,12 +6,12 @@ Instalar o Smarttube no Fire TV.
 
 ## Instalar
 
-Procure e instale `downloader` na loja.
+Procure `downloader` na loja e instale.
 
 Abra o Downloader e pesquise por `smarttube`.
 
-Abra o segundo link `yuliskov/SmartTube`.
+Abra o link __yuliskov/SmartTube__.
 
-Baixe e instale a versão `universal.apk`.
+Baixe e instale a versão __universal.apk__.
 
 Pode desinstalar o Downloader agora.
