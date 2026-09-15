@@ -52,7 +52,7 @@ Opcional:
 ## Radarr/Sonnar
 
 :::tip Categorias
-Altere o nome das categorias padrão utilizadas pelo Radarr e Sonarr ao configurar o cliente de download neles. Isso garante que os arquivos sejam baixados diretamente para o local de sua escolha ao invés de uma pasta separada.
+Altere o nome das categorias padrão do Radarr e Sonarr ao configurar o cliente de download, garantindo que os arquivos sejam baixados diretamente para o local de sua escolha.
 :::
 
 - Cliente de download: qBittorrent
