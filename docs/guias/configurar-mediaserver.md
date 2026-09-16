@@ -391,9 +391,7 @@ Altere o nome das categorias padrão do Radarr e Sonarr ao configurar o cliente 
 ## Jellyfin
 
 - Agrupar filmes em coleções: Ativado
-- Transcodificação por hardware: Intel QSV
-- Codificador de hardware Intel H.264 de baixo processamento: Ativado
-- Limitar transcodificação: Ativado
+- Algoritmo de downmix estéreo: NightmodeDialogue
 - App (TV):
   - Taxa de atualização: Escala no dispositivo
   - Saída de áudio: Downmix para estéreo
