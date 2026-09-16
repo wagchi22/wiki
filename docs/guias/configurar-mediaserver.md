@@ -56,16 +56,23 @@ Altere o nome das categorias padrão do Radarr e Sonarr ao configurar o cliente 
 - Cliente de download: qBittorrent
 - Renomear automaticamente: Ativado
   - Filmes:
+    - Arquivos:
 
-    ```
-    {Movie Title} ({Release Year}) {Custom Formats} {MediaInfo VideoCodec} {MediaInfo AudioCodec} {MediaInfo AudioChannels}
-    ```
+      ```
+      {Movie Title} ({Release Year}) {Custom Formats} {MediaInfo VideoCodec} {MediaInfo AudioCodec} {MediaInfo AudioChannels}
+      ```
 
   - Séries:
+    - Arquivos:
 
-    ```
-    {Series Title} S{season:00}E{episode:00} {Episode Title} {Custom Formats} {MediaInfo VideoCodec} {MediaInfo AudioCodec} {MediaInfo AudioChannels}
-    ```
+      ```
+      {Series Title} S{season:00}E{episode:00} {Episode Title} {Custom Formats} {MediaInfo VideoCodec} {MediaInfo AudioCodec} {MediaInfo AudioChannels}
+      ```
+
+    - Pastas:
+      ```
+      {Series TitleYear}
+      ```
 
 - Formatos personalizados:
   - Filmes:
