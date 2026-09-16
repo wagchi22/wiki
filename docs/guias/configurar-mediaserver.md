@@ -375,15 +375,15 @@ Altere o nome das categorias padrão do Radarr e Sonarr ao configurar o cliente 
   - Ordem de qualidades:
     - Bluray 1080p
     - WEB-DL 1080p
-    - WEB-Rip 10180p
+    - WEB-Rip 1080p
   - Atualizações Permitidas: Ativado
   - Atualizar até: Bluray-1080p
   - Atualizar até pontuação de formato personalizado: 10000
   - Pontuação:
     - Bluray 1080p: 5000
     - Dual Áudio: 5000
-    - WEB-DL 10180p: 4000
-    - WEB-Rip 10180p: 4000
+    - WEB-DL 1080p: 4000
+    - WEB-Rip 1080p: 4000
     - Dublado: 0
     - Legendado: 0
 - Conexões: Script C:\Scripts\remux.py e marque obter, importar e atualizar
