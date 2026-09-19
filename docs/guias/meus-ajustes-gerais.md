@@ -35,7 +35,8 @@ Geralmente essas duas opções devem ficar no máximo.
   - Temperatura de cor: W2
   - Cinema Real: Ativado
   - Full LED: Baixo
-  - Demais opções de imagem: Desativado
+  - Demais opções: Desativado
+- Modo de áudio: Clear Voice
 
 ## Fire TV
 
