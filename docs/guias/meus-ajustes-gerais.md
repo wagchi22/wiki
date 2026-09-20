@@ -36,7 +36,7 @@ Geralmente essas duas opções devem ficar no máximo.
   - Cinema Real: Ativado
   - Full LED: Baixo
   - Demais opções: Desativado
-- Modo de áudio: Clear Voice
+- Modo de áudio: Padrão/Clear Voice
 
 ## Fire TV
 
