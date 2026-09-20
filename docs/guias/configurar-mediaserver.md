@@ -45,7 +45,6 @@ Opcional:
 
 - Interface Web: Ativado
 - Modo de gerenciamento de torrents: Automático
-- Layout do conteúdo do torrent: Não criar sub-pasta
 
 ## Radarr/Sonnar
 
