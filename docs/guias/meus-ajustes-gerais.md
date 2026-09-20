@@ -22,7 +22,7 @@ Geralmente essas duas opções devem ficar no máximo.
 
 - Local: Parede
 - Propagandas na tela inicial: Desativado
-- Modo de imagem: Padrão/Jogos
+- Modo de imagem: Padrão ou Jogos
   - Just Scan: Ativado
   - Backlight: 70
   - Contraste: 80
@@ -36,7 +36,7 @@ Geralmente essas duas opções devem ficar no máximo.
   - Cinema Real: Ativado
   - Full LED: Baixo
   - Demais opções: Desativado
-- Modo de áudio: Padrão/Clear Voice
+- Modo de áudio: Padrão
 
 ## Fire TV
 
