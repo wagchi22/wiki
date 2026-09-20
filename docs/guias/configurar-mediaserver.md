@@ -402,3 +402,4 @@ Altere o nome das categorias padrão do Radarr e Sonarr ao configurar o cliente 
   - Taxa de atualização: Escala no dispositivo
   - Cor da legenda: Amarelo
   - Tamanho da legenda: 125%
+  - Modo noturno para áudio: Ativado
