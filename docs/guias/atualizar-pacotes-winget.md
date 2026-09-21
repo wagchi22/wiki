@@ -3,12 +3,12 @@
 # Atualizar Pacotes usando o Winget
 
 :::info Objetivo
-Como atualizar pacotes no Windows usando o Winget.
+Como verificar e atualizar pacotes no Windows usando o Winget.
 :::
 
-## Listar atualizações
+## Verificar atualizações
 
-Para listar as atualizaçãoes disponíveis execute no terminal:
+Execute no terminal:
 
 ```
 winget upgrade
@@ -16,8 +16,8 @@ winget upgrade
 
 ## Instalar atualizações
 
-Para atualizar tudo silenciosamente execute no terminal:
+Execute no terminal:
 
 ```
-winget upgrade -r -h
+winget upgrade -r
 ```
