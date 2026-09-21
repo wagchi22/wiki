@@ -73,13 +73,14 @@ export default defineConfig({
         text: "Guias",
         items: [
           { text: "Meus Ajustes Gerais", link: "/guias/meus-ajustes-gerais" },
-          { text: "Configurar Mediaserver", link: "/guias/configurar-mediaserver" },
-          { text: "Instalar Codec HEVC", link: "/guias/instalar-codec-hevc" },
-          { text: "Instalar MTR Cygwin", link: "/guias/instalar-mtr-cygwin" },
-          { text: "Instalar TizenTube", link: "/guias/instalar-tizentube" },
-          { text: "Softwares Úteis", link: "/guias/softwares-uteis" },
-          { text: "Corrigir Miniaturas MP4", link: "/guias/corrigir-miniaturas-mp4" },
-          { text: "Atualizar Pacotes Winget", link: "/guias/atualizar-pacotes-winget" }
+          { text: "Configurando um servidor de mídia", link: "/guias/configurando-um-servidor-de-midia" },
+          { text: "Instalando HEVC no Windows 11", link: "/guias/instalando-hevc-no-windows-11" },
+          { text: "Diagnosticando rede usando MTR no Windows 11", link: "/guias/diagnosticando-rede-usando-mtr-no-windows-11" },
+          { text: "Instalando TizenTube no Fire TV Android", link: "/guias/instalando-tizentube-no-fire-tv-android" },
+          { text: "Lista de softwares úteis", link: "/guias/lista-de-softwares-uteis" },
+          { text: "Corrigindo miniaturas MP4 no Windows 11", link: "/guias/corrigindo-miniaturas-mp4-no-windows-11" },
+          { text: "Gerenciando pacotes com Winget", link: "/guias/gerenciando-pacotes-com-winget" },
+          { text: "Escolhendo iluminação ideal para casa", link: "/guias/escolhendo-iluminacao-ideal-para-casa" }
         ]
       }
     ],
