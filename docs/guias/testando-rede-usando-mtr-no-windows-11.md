@@ -1,6 +1,6 @@
 <!-- markdownlint-disable MD040 -->
 
-# Diagnosticando rede usando MTR no Windows 11
+# Testando rede usando MTR no Windows 11
 
 :::tip Confiabilidade dos testes
 Prefira cabo Ethernet ao invés do Wi-Fi.
@@ -27,7 +27,7 @@ echo 'export PATH="/usr/local/sbin:$PATH"' >> ~/.bashrc
 
 Reinicie o terminal do Cygwin.
 
-## Diagnósticos
+## Testes
 
 Execute no terminal do Cygwin:
 
