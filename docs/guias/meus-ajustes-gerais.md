@@ -1,12 +1,4 @@
-# Meus Ajustes Gerais
-
-:::info Objetivo
-Meus ajustes gerais para todo tipo de coisa.
-:::
-
-## Iluminação
-
-- Tipo: LED 9W 4000K
+# Meus ajustes gerais
 
 ## TV LG
 

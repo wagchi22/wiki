@@ -1,10 +1,6 @@
 <!-- markdownlint-disable MD040 -->
 
-# Atualizar Pacotes usando o Winget
-
-:::info Objetivo
-Como verificar e atualizar pacotes no Windows usando o Winget.
-:::
+# Gerenciando pacotes com Winget
 
 ## Verificar atualizações
 
