@@ -15,7 +15,7 @@ Baixe o Cygwin [aqui](https://www.cygwin.com/) e depois instale.
 Execute no terminal:
 
 ```
-setup-x86_64.exe -q -P gcc-core,gcc-g++,make,automake,autoconf,libtool,pkg-config,libncurses-devel,libjansson-devel,git,dos2unix
+setup-x86_64.exe -q -R C:\cygwin64 -s https://linorg.usp.br/cygwin/ -P "gcc-core,gcc-g++,make,automake,autoconf,libtool,pkg-config,libncurses-devel,libjansson-devel,git,dos2unix"
 ```
 
 ## Instalar o MTR
