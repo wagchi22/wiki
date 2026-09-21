@@ -8,7 +8,7 @@ Se a TV tiver menos de 600 nits, recomenda-se desativar o HDR (pesquise `modelo-
 Portanto, as opções de HDR mencionadas abaixo são recomendadas apenas para TVs que possuem HDR acima de 600 nits.
 :::
 
-:::info Backlight e Constraste em HDR
+:::info Backlight e constraste em HDR
 Geralmente essas duas opções devem ficar no máximo.
 :::
 
@@ -85,7 +85,7 @@ Defina o mapeamento de tom dinâmico na TV para HGiG.
 
 ## Roteador
 
-:::tip Otimização de Sinal
+:::tip Otimização do sinal
 Use esse [software](https://matthafner.com/wifi-analyzer)
 para encontrar o melhor canal.
 :::
