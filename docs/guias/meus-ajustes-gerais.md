@@ -1,5 +1,7 @@
 # Meus ajustes gerais
 
+<Icons />
+
 ## TV LG
 
 :::warning TVs de entrada e HDR
