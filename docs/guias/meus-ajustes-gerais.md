@@ -43,7 +43,7 @@ Para HDR é necessário ajustar o __branco papel__ ([referência](https://nikita
 :::
 
 :::tip 💡 Evitando upscale
-Se configurado a mesma resolução do jogo no console, pode-se obter uma imagem mais suave e menos serrilhada, embora com perda de nitidez.
+Ao configurar a mesma resolução do jogo no console, a imagem pode ficar mais suave e menos serrilhada, embora com perda de nitidez.
 :::
 
 :::warning ⚠️ Antes de calibrar o HDR
@@ -93,7 +93,7 @@ para encontrar o melhor canal.
 :::
 
 :::tip 💡 Lentidão, perda de pacotes ou ping alto
-Teste com o [MTR](https://wagchi22.github.io/wiki/guias/testando-rede-com-mtr-no-windows-11) tanto o IPv4 como IPv6 e compare. Se o IPv6 tiver uma rota pior, desativar __pode__ resolver o problema.
+Teste com o [MTR](https://wagchi22.github.io/wiki/guias/testando-rede-com-mtr-no-windows-11) tanto o IPv4 como IPv6 e compare. Se o IPv6 tiver uma rota pior, desativar talvez resolva o problema.
 :::
 
 - Local: Parede
