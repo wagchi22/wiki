@@ -74,7 +74,7 @@ Defina o mapeamento de tom dinâmico na TV para HGiG.
   - [iTunes](https://www.apple.com/br/itunes/)
   - [Firefox](https://www.firefox.com/pt-BR/) + uBlock Origin e esses [filtros](https://raw.githubusercontent.com/wagchi22/wiki/refs/heads/main/images/ubo.png)
   - [VS Code](https://code.visualstudio.com/) + Portuguese (Brazil) Language Pack + GitHub Actions + markdownlint + Batch Runner + PowerShell + Python + Vue
-  - [Git](https://git-scm.com/)
+  - [Git](https://git-scm.com/) (repositórios em %USERPROFILE%\GitHub)
   - [Node.js](https://nodejs.org/pt-br)
 
 ## 📱 iPhone
