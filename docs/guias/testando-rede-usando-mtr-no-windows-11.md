@@ -1,12 +1,12 @@
 <!-- markdownlint-disable MD040 -->
 
-# Testando rede usando MTR no Windows 11
+# 🛜 Testando rede usando MTR no Windows 11
 
-:::tip Confiabilidade dos testes
+:::tip 💡 Confiabilidade dos testes
 Prefira cabo Ethernet ao invés do Wi-Fi.
 :::
 
-## Instalar software
+## ⬇️ Instalar software
 
 Baixe o [Cygwin](https://www.cygwin.com/) e execute no terminal:
 
@@ -27,7 +27,7 @@ echo 'export PATH="/usr/local/sbin:$PATH"' >> ~/.bashrc
 
 Reinicie o terminal do Cygwin.
 
-## Testes
+## ✅ Testes
 
 Execute no terminal do Cygwin:
 

@@ -1,16 +1,14 @@
-# Meus ajustes gerais
+# ⚙️ Meus ajustes gerais
 
-<Icons />
+## 📺 TV LG
 
-## TV LG
-
-:::warning TVs de entrada e HDR
+:::warning ⚠️ TVs de entrada e HDR
 Se a TV tiver menos de 600 nits, recomenda-se desativar o HDR (pesquise `modelo-da-tv nits` no Google para descobrir).
 
 Portanto, as opções de HDR mencionadas abaixo são recomendadas apenas para TVs que possuem HDR acima de 600 nits.
 :::
 
-:::info Backlight e constraste em HDR
+:::info ℹ️  Backlight e constraste em HDR
 Geralmente essas duas opções devem ficar no máximo.
 :::
 
@@ -32,21 +30,21 @@ Geralmente essas duas opções devem ficar no máximo.
   - Demais opções: Desativado
 - Modo de áudio: Padrão
 
-## Fire TV
+## 🎬 Fire TV
 
 - Igualar taxa de quadros: Ativado
 - HDR: Conforme a TV
 - Intensidade de cores (bits): Conforme a TV
 
-## PlayStation 5
+## 🎮 PlayStation 5
 
-:::tip No jogo
+:::tip 💡 No jogo
 Para HDR é necessário ajustar o __branco papel__ ([referência](https://nikitamgrimm.github.io/hlg-reference-white-calc/)) e __brilho máximo__ (valor máximo em nits da sua TV).
 
 O brilho geralmente não precisa ajustar mas a regra é seguir o que é descrito sem deixar a imagem nem muito escura nem muito clara.
 :::
 
-:::warning Antes de calibrar o HDR
+:::warning ⚠️ Antes de calibrar o HDR
 Defina o mapeamento de tom dinâmico na TV para HGiG.
 :::
 
@@ -55,7 +53,7 @@ Defina o mapeamento de tom dinâmico na TV para HGiG.
   - Etapa 1/2: [Referência](https://raw.githubusercontent.com/wagchi22/wiki/refs/heads/main/images/hdtvtest.jpg)
   - Etapa 3: 0
 
-## PC Dell
+## 🖥️ PC Dell
 
 - Recomendações: Desativado
 - Destaques da pesquisa: Desativado
@@ -77,7 +75,7 @@ Defina o mapeamento de tom dinâmico na TV para HGiG.
   - [Git](https://git-scm.com/)
   - [Node.js](https://nodejs.org/pt-br)
 
-## iPhone
+## 📱 iPhone
 
 - Apps:
   - [Firefox](https://apps.apple.com/br/app/firefox-browser-privado/id989804926) e ative o adblocker
@@ -85,9 +83,9 @@ Defina o mapeamento de tom dinâmico na TV para HGiG.
   - [Não Me Perturbe](https://www.naomeperturbe.com.br/)
   - Filtar números desconhecidos: Perguntar motivo da ligação
 
-## Roteador
+## 🌐 Roteador
 
-:::tip Otimização do sinal
+:::tip 💡 Otimização do sinal
 Use esse [software](https://matthafner.com/wifi-analyzer)
 para encontrar o melhor canal.
 :::
@@ -101,6 +99,6 @@ para encontrar o melhor canal.
   - Largura de banda: 80 MHz
   - Melhores canais: 36-48, 149-161
 
-## HD Toshiba
+## 💾 HD Toshiba
 
 - Tipo de partição: exFAT

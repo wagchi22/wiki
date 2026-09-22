@@ -1,8 +1,8 @@
 <!-- markdownlint-disable MD040 -->
 
-# Corrigindo miniaturas MP4 no Windows 11
+# 🖼️ Corrigindo miniaturas MP4 no Windows 11
 
-## Guia
+## 📝 Guia
 
 Copie e cole o código abaixo em um arquivo de texto e salve como __fix-mp4-thumbs.reg__:
 

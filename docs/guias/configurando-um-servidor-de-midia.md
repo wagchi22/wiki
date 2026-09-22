@@ -1,10 +1,10 @@
 <!-- markdownlint-disable MD040 MD031-->
 
-# Configurando um servidor de mídia
+# 🎬 Configurando um servidor de mídia
 
-## Instalar software
+## ⬇️ Instalar software
 
-:::tip Servarr
+:::tip 💡 Servarr
 Ao instalar, marque a opção __Install shortcuts in Startup folder__.
 
 Depois desative __Start browser on startup__ nas configurações.
@@ -26,24 +26,24 @@ Opcional:
 - Baixe [flaresolverr.ps1](https://raw.githubusercontent.com/wagchi22/wiki/refs/heads/main/scripts/flaresolverr.ps1) em C:\Scripts
 - Baixe [remux.py](https://raw.githubusercontent.com/wagchi22/wiki/refs/heads/main/scripts/remux.py) em C:\Scripts
 
-## Prowlarr
+## 🔎 Prowlarr
 
 - Conexões: Radarr/Sonarr
 - Indexadores: [Catálogo BeTor](https://catalogo.betor.top/guia/prowlarr/)
 - Etiquetas: flaresolverr
 
-## FlareSolverr
+## 🔓 FlareSolverr
 
 - Inicio automático: Execute e instale C:\Scripts\flaresolverr.ps1
 
-## qBittorrent
+## 🧲 qBittorrent
 
 - Interface Web: Ativado
 - Modo de gerenciamento de torrents: Automático
 
-## Radarr/Sonnar
+## 🎞️ Radarr/Sonnar
 
-:::tip Categorias
+:::tip 💡 Categorias
 Altere o nome das categorias padrão do Radarr e Sonarr ao configurar o cliente de download, garantindo que os arquivos sejam baixados diretamente para o local de sua escolha.
 :::
 
@@ -390,7 +390,7 @@ Altere o nome das categorias padrão do Radarr e Sonarr ao configurar o cliente 
     - Legendado: 0
 - Conexões: Script C:\Scripts\remux.py e marque obter, importar e atualizar
 
-## Jellyfin
+## 🍿 Jellyfin
 
 - Agrupar filmes em coleções: Ativado
 - App (TV):
