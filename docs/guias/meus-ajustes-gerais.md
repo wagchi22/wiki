@@ -88,12 +88,12 @@ Defina o mapeamento de tom dinâmico na TV para HGiG.
 ## 🌐 Roteador
 
 :::tip 💡 Potência do sinal
-Use esse [software](https://matthafner.com/wifi-analyzer)
+Use o [WiFi Analyzer](https://matthafner.com/wifi-analyzer)
 para encontrar o melhor canal.
 :::
 
 :::tip 💡 Lentidão, perda de pacotes ou ping alto
-Teste com o MTR tanto o IPv4 como IPv6 e compare. Se o IPv6 tiver uma rota pior, desativar __pode__ resolver o problema.
+Teste com o [MTR](https://wagchi22.github.io/wiki/guias/testando-rede-com-mtr-no-windows-11) tanto o IPv4 como IPv6 e compare. Se o IPv6 tiver uma rota pior, desativar __pode__ resolver o problema.
 :::
 
 - Local: Parede
