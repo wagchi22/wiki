@@ -10,7 +10,7 @@ hero:
   tagline: Configurações, guias e referências para consultas futuras.
   actions:
     - theme: brand
-      text: Explorar documentação
+      text: Explorar
       link: /inicio
     - theme: alt
       text: Ver no GitHub
@@ -21,7 +21,7 @@ features:
     title: Configurações
     details: Documentação de ajustes, configurações e personalizações de sistemas, dispositivos e ferramentas.
 
-  - icon: 📖
+  - icon: 📝
     title: Guias
     details: Documentação de procedimentos, instalações e configurações para diferentes sistemas e ferramentas.
 
