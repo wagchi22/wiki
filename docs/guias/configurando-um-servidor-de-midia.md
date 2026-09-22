@@ -4,27 +4,23 @@
 
 ## ⬇️ Instalar software
 
-:::tip 💡 Servarr
-Ao instalar, marque a opção __Install shortcuts in Startup folder__.
+:::tip 💡 Arr
+Marque a opção __Install shortcuts in Startup folder__ durante a instalação.
 
-Depois desative __Start browser on startup__ nas configurações.
+Desative a opção __Start browser on startup__ nas configurações.
 :::
 
-Necessário:
-
-- Instale [Prowlarr](https://prowlarr.com/)
-- Instale [Radarr](https://radarr.video/)
-- Instale [Sonarr](https://sonarr.tv/)
-- Instale [Jellyfin](https://jellyfin.org/)
-- Instale [qBittorrent](https://www.qbittorrent.org/)
+- [Prowlarr](https://prowlarr.com/)
+- [Radarr](https://radarr.video/)
+- [Sonarr](https://sonarr.tv/)
+- [Jellyfin](https://jellyfin.org/) + Webhook
+- [qBittorrent](https://www.qbittorrent.org/)
+- [Node.js](https://nodejs.org/pt-br) + [qrcode-terminal](https://github.com/gtanner/qrcode-terminal) + [whatsapp-web.js](https://github.com/wwebjs/whatsapp-web.js)
 
 Opcional:
 
-- Baixe [FlareSolverr](https://github.com/FlareSolverr/FlareSolverr) em C:\Tools
-- Instale [Python](https://www.python.org/)
-- Baixe [MKVToolNix](https://mkvtoolnix.download/) em C:\Tools e insira no PATH
-- Baixe [flaresolverr.ps1](https://raw.githubusercontent.com/wagchi22/wiki/refs/heads/main/scripts/flaresolverr.ps1) em C:\Scripts
-- Baixe [remux.py](https://raw.githubusercontent.com/wagchi22/wiki/refs/heads/main/scripts/remux.py) em C:\Scripts
+- [FlareSolverr](https://github.com/FlareSolverr/FlareSolverr) + [flaresolverr-autorun.ps1](https://raw.githubusercontent.com/wagchi22/wiki/refs/heads/main/scripts/flaresolverr.ps1)
+- [MKVToolNix](https://mkvtoolnix.download/) (coloque no PATH) + [Python](https://www.python.org/) + [remux-media.py](https://raw.githubusercontent.com/wagchi22/wiki/refs/heads/main/scripts/remux.py)
 
 ## 🔎 Prowlarr
 
@@ -34,7 +30,7 @@ Opcional:
 
 ## 🔓 FlareSolverr
 
-- Inicio automático: Execute e instale C:\Scripts\flaresolverr.ps1
+- Inicio automático: Execute `flaresolverr-autorun.ps1` e instale
 
 ## 🧲 qBittorrent
 
@@ -48,6 +44,7 @@ Altere o nome das categorias padrão do Radarr e Sonarr ao configurar o cliente 
 :::
 
 - Cliente de download: qBittorrent
+- Remover downloads importados do cliente de download: Desativado
 - Renomear automaticamente: Ativado
   - Filmes:
     - Arquivos:
@@ -388,7 +385,7 @@ Altere o nome das categorias padrão do Radarr e Sonarr ao configurar o cliente 
     - WEB-Rip 1080p: 4000
     - Dublado: 0
     - Legendado: 0
-- Conexões: Script C:\Scripts\remux.py e marque obter, importar e atualizar
+- Conexões: Adicione o script `remux-media.py` e marque obter, importar e atualizar
 
 ## 🍿 Jellyfin
 
@@ -398,3 +395,31 @@ Altere o nome das categorias padrão do Radarr e Sonarr ao configurar o cliente 
   - Cor da legenda: Amarelo
   - Tamanho da legenda: 125%
   - Modo noturno para áudio: Ativado
+
+## 🔔 Webhook/WhatsApp
+
+Crie o arquivo `whatsapp-web.js\server.js` e coloque isso:
+
+```js
+const { Client } = require('whatsapp-web.js');
+const qrcode = require('qrcode-terminal');
+
+const client = new Client();
+
+client.on('qr', (qr) => {
+    qrcode.generate(qr, { small: true });
+});
+
+client.on('ready', () => {
+    console.log('Client is ready!');
+});
+
+client.initialize();
+
+```
+
+Inicie o servidor:
+
+```
+node .\server.js
+```
