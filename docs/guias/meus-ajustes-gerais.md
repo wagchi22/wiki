@@ -39,9 +39,11 @@ Geralmente essas duas opções devem ficar no máximo.
 ## 🎮 PlayStation 5
 
 :::tip 💡 No jogo
-Para HDR é necessário ajustar o __branco papel__ ([referência](https://nikitamgrimm.github.io/hlg-reference-white-calc/)) e __brilho máximo__ (valor máximo em nits da sua TV).
+Para HDR é necessário ajustar o __branco papel__ ([referência](https://nikitamgrimm.github.io/hlg-reference-white-calc/)) e __brilho máximo__ (valor máximo em nits da sua TV). O brilho geralmente não precisa ajustar mas a regra é seguir o que é descrito sem deixar a imagem nem muito escura nem muito clara.
+:::
 
-O brilho geralmente não precisa ajustar mas a regra é seguir o que é descrito sem deixar a imagem nem muito escura nem muito clara.
+:::tip 💡 Evitando upscale
+Se configurado a mesma resolução do jogo no console, pode-se obter uma imagem mais suave e menos serrilhada, embora com perda de nitidez.
 :::
 
 :::warning ⚠️ Antes de calibrar o HDR
@@ -85,9 +87,13 @@ Defina o mapeamento de tom dinâmico na TV para HGiG.
 
 ## 🌐 Roteador
 
-:::tip 💡 Otimização do sinal
+:::tip 💡 Potência do sinal
 Use esse [software](https://matthafner.com/wifi-analyzer)
 para encontrar o melhor canal.
+:::
+
+:::tip 💡 Lentidão, perda de pacotes ou ping alto
+Teste com o MTR tanto o IPv4 como IPv6 e compare. Se o IPv6 tiver uma rota pior, desativar __pode__ resolver o problema.
 :::
 
 - Local: Parede
