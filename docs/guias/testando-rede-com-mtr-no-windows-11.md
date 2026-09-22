@@ -1,6 +1,6 @@
 <!-- markdownlint-disable MD040 -->
 
-# 🛜 Testando rede usando MTR no Windows 11
+# 🛜 Testando rede com MTR no Windows 11
 
 :::tip 💡 Confiabilidade dos testes
 Prefira cabo Ethernet ao invés do Wi-Fi.
