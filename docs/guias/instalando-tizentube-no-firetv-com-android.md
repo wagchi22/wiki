@@ -1,6 +1,6 @@
-# Instalando TizenTube no Fire TV com Android
+# 📺 Instalando TizenTube no Fire TV com Android
 
-## Guia
+## 📝 Guia
 
 Procure `downloader` na loja e instale.
 

@@ -1,8 +1,8 @@
 <!-- markdownlint-disable MD040 -->
 
-# Gerenciando pacotes com Winget
+# 📦 Gerenciando pacotes com Winget
 
-## Verificar atualizações
+## 🔍 Verificar atualizações
 
 Execute no terminal:
 
@@ -10,7 +10,7 @@ Execute no terminal:
 winget upgrade
 ```
 
-## Instalar atualizações
+## 🔄 Instalar atualizações
 
 Execute no terminal:
 

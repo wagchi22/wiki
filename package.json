@@ -13,8 +13,5 @@
   },
   "allowScripts": {
     "esbuild@0.21.5": true
-  },
-  "dependencies": {
-    "@lucide/vue": "^1.47.0"
   }
 }

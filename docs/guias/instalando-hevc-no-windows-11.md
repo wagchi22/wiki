@@ -1,6 +1,6 @@
-# Instalando HEVC no Windows 11
+# 📽️ Instalando HEVC no Windows 11
 
-## Guia
+## 📝 Guia
 
 Acesse [aqui](https://store.rg-adguard.net/).
 
