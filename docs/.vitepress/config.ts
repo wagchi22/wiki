@@ -75,7 +75,7 @@ export default defineConfig({
           { text: "⚙️ Meus Ajustes Gerais", link: "/guias/meus-ajustes-gerais" },
           { text: "🎬 Configurando um servidor de mídia", link: "/guias/configurando-um-servidor-de-midia" },
           { text: "📽️ Instalando HEVC no Windows 11", link: "/guias/instalando-hevc-no-windows-11" },
-          { text: "🛜 Testando rede usando MTR no Windows 11", link: "/guias/testando-rede-usando-mtr-no-windows-11" },
+          { text: "🛜 Testando rede com MTR no Windows 11", link: "/guias/testando-rede-com-mtr-no-windows-11" },
           { text: "📺 Instalando TizenTube no Fire TV com Android", link: "/guias/instalando-tizentube-no-firetv-com-android" },
           { text: "📄 Lista de softwares úteis", link: "/guias/lista-de-softwares-uteis" },
           { text: "🖼️ Corrigindo miniaturas MP4 no Windows 11", link: "/guias/corrigindo-miniaturas-mp4-no-windows-11" },
