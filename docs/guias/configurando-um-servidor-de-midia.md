@@ -44,7 +44,6 @@ Altere o nome das categorias padrão do Radarr e Sonarr ao configurar o cliente 
 :::
 
 - Cliente de download: qBittorrent
-- Remover downloads importados do cliente de download: Desativado
 - Renomear automaticamente: Ativado
   - Filmes:
     - Arquivos:
