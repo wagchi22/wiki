@@ -15,7 +15,7 @@ Desative a opção __Start browser on startup__ nas configurações.
 - [Sonarr](https://sonarr.tv/)
 - [Jellyfin](https://jellyfin.org/) + Webhook
 - [qBittorrent](https://www.qbittorrent.org/)
-- [Node.js](https://nodejs.org/pt-br) + [qrcode-terminal](https://github.com/gtanner/qrcode-terminal) + [whatsapp-web.js](https://github.com/wwebjs/whatsapp-web.js)
+- [Node.js](https://nodejs.org/pt-br) + [whatsapp-web.js](https://github.com/wwebjs/whatsapp-web.js) + [qrcode-terminal](https://github.com/gtanner/qrcode-terminal)
 
 Opcional:
 
@@ -398,15 +398,22 @@ Altere o nome das categorias padrão do Radarr e Sonarr ao configurar o cliente 
 
 ## 🔔 Webhook/WhatsApp
 
+:::info ℹ️ Módulo qrcode-terminal
+Esse módulo deve ser instalado dentro da pasta `whatsapp-web.js` sem a opção `-g`.
+:::
+
 Crie o arquivo `whatsapp-web.js\server.js` e coloque isso:
 
 ```js
+console.log('Creating QR Code, please wait...');
+
 const { Client } = require('whatsapp-web.js');
 const qrcode = require('qrcode-terminal');
 
 const client = new Client();
 
 client.on('qr', (qr) => {
+    console.log('QR Code created, scan with your phone:');
     qrcode.generate(qr, { small: true });
 });
 
@@ -415,7 +422,6 @@ client.on('ready', () => {
 });
 
 client.initialize();
-
 ```
 
 Inicie o servidor:
