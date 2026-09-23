@@ -64,8 +64,8 @@ Defina o mapeamento de tom dinâmico na TV para HGiG.
 - Volume do microfone: 100
 - Aprimorar precisão do mouse: Desativado
 - Dados brutos do mouse (jogos): Ativado
-- Desligar vídeo: 5 minutos
-- Suspender: 5 horas
+- Desligar vídeo: 2 minutos
+- Suspender: 3 horas
 - IP: Estático
 - DNS: [Cloudflare](https://one.one.one.one/dns/)
 - Softwares:
