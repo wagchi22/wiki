@@ -395,7 +395,7 @@ Altere o nome das categorias padrão do Radarr e Sonarr ao configurar o cliente 
   - Tamanho da legenda: 125%
   - Modo noturno para áudio: Ativado
 
-## 🔔 Webhook/WhatsApp
+## 🔔 Webhook WhatsApp
 
 :::info ℹ️ Módulo qrcode-terminal
 Esse módulo deve ser instalado dentro da pasta `whatsapp-web.js` sem a opção `-g`.
