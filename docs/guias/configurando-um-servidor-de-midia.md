@@ -30,7 +30,7 @@ Opcional:
 
 ## 🔓 FlareSolverr
 
-- Inicio automático: Execute `flaresolverr-autorun.ps1` e instale
+- Inicio automático: Execute `flaresolverr-autorun.ps1` e instale a tarefa agendada
 
 ## 🧲 qBittorrent
 
