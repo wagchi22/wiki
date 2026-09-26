@@ -32,8 +32,8 @@ Reinicie o terminal do Cygwin.
 Execute no terminal do Cygwin:
 
 ```
-mtr -4 -r -c 500 8.8.8.8
-mtr -6 -r -c 500 2001:4860:4860::8888
+mtr -4 -c 1000 -i 0.5 -n -r 8.8.8.8
+mtr -6 -c 1000 -i 0.5 -n -r 2001:4860:4860::8888
 ```
 
 ## 📊 Outras ferramentas
