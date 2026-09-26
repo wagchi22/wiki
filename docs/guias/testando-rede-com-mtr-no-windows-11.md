@@ -36,7 +36,7 @@ mtr -4 -r -c 500 8.8.8.8
 mtr -6 -r -c 500 2001:4860:4860::8888
 ```
 
-## Comparativo e outras ferramentas
+## Comparativo entre outras ferramentas
 
 | Ferramenta | O que faz | Quando usar |
 | --- | --- | --- |
