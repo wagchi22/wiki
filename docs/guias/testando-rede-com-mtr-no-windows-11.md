@@ -2,8 +2,8 @@
 
 # 🛜 Testando rede com MTR no Windows 11
 
-:::tip 💡 Confiabilidade dos testes
-Prefira cabo Ethernet ao invés do Wi-Fi.
+:::tip 💡 O que é e como usar o MTR
+[Blog ServerSP](https://serversp.com.br/blog/informacoes/mtr-teste-rede-windows-linux/)
 :::
 
 ## ⬇️ Instalar software
@@ -32,6 +32,16 @@ Reinicie o terminal do Cygwin.
 Execute no terminal do Cygwin:
 
 ```
-mtr -4 -r -c 100 8.8.8.8
-mtr -6 -r -c 100 2001:4860:4860::8888
+mtr -4 -r -c 500 8.8.8.8
+mtr -6 -r -c 500 2001:4860:4860::8888
 ```
+
+## Comparativo e outras ferramentas
+
+| Ferramenta | O que faz | Quando usar |
+| --- | --- | --- |
+| __iPerf3__ | Testa velocidade e desempenho da rede. | Quando quiser medir __throughput/banda__ entre dois pontos. |
+| __SmokePing__ | Monitora latência e perda de pacotes ao longo do tempo. | Quando quiser __acompanhar a estabilidade__ da rede por horas ou dias. |
+| __PingPlotter__ | Mostra graficamente latência e perda em cada salto. | Quando quiser __investigar problemas de conexão__ de forma visual. |
+| __MTR__ | Combina ping e traceroute continuamente. | Quando quiser __identificar em qual salto__ pode estar ocorrendo latência ou perda. |
+| __WinMTR__ | Versão para Windows do conceito do MTR. | Quando estiver no __Windows__ e precisar diagnosticar problemas por salto. |
