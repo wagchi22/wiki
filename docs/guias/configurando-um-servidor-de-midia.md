@@ -3,9 +3,7 @@
 ## Instalar
 
 :::tip Arr
-Marque a opção __Install shortcuts in Startup folder__ durante a instalação.
-
-Desative a opção __Start browser on startup__ nas configurações.
+Instale os atalhos na pasta de inicialização e desative o inicio automático nas configurações.
 :::
 
 - [Prowlarr](https://prowlarr.com/)
@@ -18,7 +16,7 @@ Desative a opção __Start browser on startup__ nas configurações.
 Opcional:
 
 - [FlareSolverr](https://github.com/FlareSolverr/FlareSolverr) + [flaresolverr-autorun.ps1](https://raw.githubusercontent.com/wagchi22/wiki/refs/heads/main/scripts/flaresolverr.ps1)
-- [MKVToolNix](https://mkvtoolnix.download/) (coloque no PATH) + [Python](https://www.python.org/) + [remux-media.py](https://raw.githubusercontent.com/wagchi22/wiki/refs/heads/main/scripts/remux.py)
+- [MKVToolNix](https://mkvtoolnix.download/) colocando no PATH + [Python](https://www.python.org/) + [remux-media.py](https://raw.githubusercontent.com/wagchi22/wiki/refs/heads/main/scripts/remux.py)
 
 ## Prowlarr
 

@@ -23,7 +23,7 @@ make install
 echo 'export PATH="/usr/local/sbin:$PATH"' >> ~/.bashrc
 ```
 
-Reinicie o terminal do Cygwin e execute:
+Reinicie o terminal do Cygwin.
 
 ## Testes
 
