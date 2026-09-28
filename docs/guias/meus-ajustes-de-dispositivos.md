@@ -49,31 +49,9 @@ Ajuste o __branco papel__ ([referência](https://nikitamgrimm.github.io/hlg-refe
 - Suspender: 3 horas
 - IP: Estático
 - DNS: [Cloudflare](https://one.one.one.one/dns/)
-- Softwares:
-  - [Office](https://files.rg-adguard.net/files/031460f7-375b-1168-38bd-9c6a581d8920) + [ativador](https://github.com/massgravel/Microsoft-Activation-Scripts)
-  - [iCloud](https://support.apple.com/pt-br/103232)
-  - [iTunes](https://www.apple.com/br/itunes/)
-  - [Chrome](https://www.google.com/intl/pt-BR/chrome/) + [Bitwarden](https://bitwarden.com/download/#downloads-web-browser-extensions)
-  - [VLC](https://www.videolan.org/)
-  - [VS Code](https://code.visualstudio.com/) + Pacote de idioma + GitHub Actions
-  - [Git](https://git-scm.com/) usando a pasta %USERPROFILE%\GitHub
-  - [Node.js](https://nodejs.org/pt-br)
 
 ## Smartphone
 
-- Apps:
-  - Chrome
-  - Bitwarden
-  - YouTube
-  - Drive
-  - Keep
-  - 99
-  - PlayStation
-  - Mercado Livre
-  - Amazon
-  - Gov.br
-  - Nubank
-  - Reddit
 - Anti-spam:
   - [Não Me Perturbe](https://www.naomeperturbe.com.br/)
   - Filtar números desconhecidos: Perguntar motivo da ligação
