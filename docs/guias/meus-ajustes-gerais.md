@@ -1,44 +1,38 @@
 # Meus ajustes gerais
 
-## TV LG
+## TV
 
 :::warning HDR em TVs de entrada
-Recomenda-se desativar o HDR em TVs abaixo de 600 nits (pesquise `modelo-da-tv nits` no Google para descobrir).
+Recomenda-se desativar o HDR em TVs de entrada (abaixo de 600 nits).
 :::
 
 :::info Configurações em HDR
-Normalmente o backlight e contraste ficam no máximo.
+Normalmente o backlight e contraste ficam no máximo quando em HDR.
 :::
 
-- Local: Parede
-- Propagandas na tela inicial: Desativado
 - Modo de imagem: Padrão ou Jogos
   - Just Scan: Ativado
   - Backlight: 70
   - Contraste: 80
   - Brilho: 50
-  - Nitidez: 10
+  - Nitidez: 0
   - Cor: 50
   - Gama: 2.2
   - Gama de cores: Automático
   - Nível de preto: Automático
-  - Temperatura de cor: W2
+  - Temperatura de cor: Quente 2
   - Cinema Real: Ativado
   - Full LED: Baixo
-  - Demais opções: Desativado
+  - Outros: Desativado
 
-## Fire TV
+## Streaming
 
 - Igualar taxa de quadros: Ativado
 
-## PlayStation 5
+## Console
 
 :::tip HDR no jogo
 Ajuste o __branco papel__ ([referência](https://nikitamgrimm.github.io/hlg-reference-white-calc/)) e __brilho máximo__ em nits. A regra é seguir o que é descrito sem deixar a imagem muito escura nem muito clara.
-:::
-
-:::tip Evitando o upscale
-Ao configurar a mesma resolução do jogo no console, a imagem pode ficar mais suave e menos serrilhada, embora com perda de nitidez.
 :::
 
 - Modo gráfico: Desempenho
@@ -46,13 +40,9 @@ Ao configurar a mesma resolução do jogo no console, a imagem pode ficar mais s
   - Etapa 1/2: [Referência](https://raw.githubusercontent.com/wagchi22/wiki/refs/heads/main/images/hdtvtest.jpg)
   - Etapa 3: 0
 
-## PC Dell
+## Desktop
 
-- Recomendações: Desativado
-- Destaques da pesquisa: Desativado
-- Status da tela de bloqueio: Nenhum
 - Melhorias do Waves MaxxAudioPro: Desativado
-- Volume do microfone: 100
 - Aprimorar precisão do mouse: Desativado
 - Dados brutos do mouse (jogos): Ativado
 - Desligar vídeo: 2 minutos
@@ -63,12 +53,12 @@ Ao configurar a mesma resolução do jogo no console, a imagem pode ficar mais s
   - [Office](https://files.rg-adguard.net/files/031460f7-375b-1168-38bd-9c6a581d8920) + [ativador](https://github.com/massgravel/Microsoft-Activation-Scripts)
   - [iCloud](https://support.apple.com/pt-br/103232)
   - [iTunes](https://www.apple.com/br/itunes/)
-  - [Firefox](https://www.firefox.com/pt-BR/) + uBlock Origin + [filtros](https://raw.githubusercontent.com/wagchi22/wiki/refs/heads/main/images/ubo.png)
-  - [VS Code](https://code.visualstudio.com/) + Pacote de idioma pt-BR + GitHub Actions
-  - [Git](https://git-scm.com/) e altere a pasta de trabalho para %USERPROFILE%\GitHub
+  - [Firefox](https://www.firefox.com/pt-BR/) + uBlock Origin + [filtros](https://raw.githubusercontent.com/wagchi22/wiki/refs/heads/main/images/ubo.png) e desative o gerenciador de senhas
+  - [VS Code](https://code.visualstudio.com/) + Pacote de idioma + GitHub Actions
+  - [Git](https://git-scm.com/) e use na pasta %USERPROFILE%\GitHub
   - [Node.js](https://nodejs.org/pt-br)
 
-## iPhone
+## Smarphone
 
 - Apps:
   - Firefox e ative o bloqueador de anúncios
@@ -83,7 +73,6 @@ Use o [WiFi Analyzer](https://matthafner.com/wifi-analyzer)
 para encontrar o melhor canal.
 :::
 
-- Local: Parede
 - Band Steering: Desativado
 - Rede 2.4 GHz:
   - Largura de banda: 40 MHz
@@ -92,6 +81,6 @@ para encontrar o melhor canal.
   - Largura de banda: 80 MHz
   - Melhores canais: 36-48, 149-161
 
-## HD Toshiba
+## HD externo
 
 - Tipo de partição: exFAT
