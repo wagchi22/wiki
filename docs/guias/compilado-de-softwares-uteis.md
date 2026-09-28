@@ -1,4 +1,4 @@
-# Lista de softwares úteis
+# Compilado de softwares úteis
 
 ## Registro
 

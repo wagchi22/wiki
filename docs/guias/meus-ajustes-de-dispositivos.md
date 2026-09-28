@@ -1,4 +1,4 @@
-# Meus ajustes gerais
+# Meus ajustes de dispositivos
 
 ## TV
 
