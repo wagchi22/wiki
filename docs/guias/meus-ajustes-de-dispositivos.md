@@ -53,15 +53,27 @@ Ajuste o __branco papel__ ([referência](https://nikitamgrimm.github.io/hlg-refe
   - [Office](https://files.rg-adguard.net/files/031460f7-375b-1168-38bd-9c6a581d8920) + [ativador](https://github.com/massgravel/Microsoft-Activation-Scripts)
   - [iCloud](https://support.apple.com/pt-br/103232)
   - [iTunes](https://www.apple.com/br/itunes/)
-  - [Firefox](https://www.firefox.com/pt-BR/) + uBlock Origin + [filtros](https://raw.githubusercontent.com/wagchi22/wiki/refs/heads/main/images/ubo.png) e desative o gerenciador de senhas
+  - [Chrome](https://www.google.com/intl/pt-BR/chrome/) + [Bitwarden](https://bitwarden.com/download/#downloads-web-browser-extensions)
+  - [VLC](https://www.videolan.org/)
   - [VS Code](https://code.visualstudio.com/) + Pacote de idioma + GitHub Actions
-  - [Git](https://git-scm.com/) e use na pasta %USERPROFILE%\GitHub
+  - [Git](https://git-scm.com/) usando a pasta %USERPROFILE%\GitHub
   - [Node.js](https://nodejs.org/pt-br)
 
 ## Smartphone
 
 - Apps:
-  - Firefox e ative o bloqueador de anúncios
+  - Chrome
+  - Bitwarden
+  - YouTube
+  - Drive
+  - Keep
+  - 99
+  - PlayStation
+  - Mercado Livre
+  - Amazon
+  - Gov.br
+  - Nubank
+  - Reddit
 - Anti-spam:
   - [Não Me Perturbe](https://www.naomeperturbe.com.br/)
   - Filtar números desconhecidos: Perguntar motivo da ligação
