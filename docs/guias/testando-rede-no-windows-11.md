@@ -1,18 +1,16 @@
-<!-- markdownlint-disable MD040 -->
+# Testando rede no Windows 11
 
-# 🛜 Testando rede no Windows 11
-
-:::tip 💡 Confiabilidade
+:::tip Confiabilidade
 Use cabo Ethernet ao invés do Wi-Fi.
 :::
 
-:::info ℹ️ Mais informações
+:::info Mais informações
 [ServerSP](https://serversp.com.br/blog/informacoes/mtr-teste-rede-windows-linux/)
 
 [LazyAdmin](https://lazyadmin.nl/it/pathping-command/)
 :::
 
-## 🐧 MTR
+## MTR
 
 Baixe o [Cygwin](https://www.cygwin.com/) e execute no terminal:
 
@@ -38,13 +36,13 @@ mtr -4 -c 1000 -i 0.5 -n -r 8.8.8.8
 mtr -6 -c 1000 -i 0.5 -n -r 2001:4860:4860::8888
 ```
 
-## 🪟 WinMTR
+## WinMTR
 
 Baixe o software [aqui](https://winmtr.net/).
 
 Desative a opção de resolver nomes.
 
-## 🪟 Pathping
+## Pathping
 
 Execute no terminal:
 

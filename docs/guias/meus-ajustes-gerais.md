@@ -1,15 +1,13 @@
-# ⚙️ Meus ajustes gerais
+# Meus ajustes gerais
 
-## 📺 TV LG
+## TV LG
 
-:::warning ⚠️ TVs de entrada e HDR
-Se a TV tiver menos de 600 nits, recomenda-se desativar o HDR (pesquise `modelo-da-tv nits` no Google para descobrir).
-
-Portanto, as opções de HDR mencionadas abaixo são recomendadas apenas para TVs que possuem HDR acima de 600 nits.
+:::warning HDR em TVs de entrada
+Recomenda-se desativar o HDR em TVs abaixo de 600 nits (pesquise `modelo-da-tv nits` no Google para descobrir).
 :::
 
-:::info ℹ️  Backlight e constraste em HDR
-Geralmente essas duas opções devem ficar no máximo.
+:::info Configurações em HDR
+Normalmente o backlight e contraste ficam no máximo.
 :::
 
 - Local: Parede
@@ -28,34 +26,27 @@ Geralmente essas duas opções devem ficar no máximo.
   - Cinema Real: Ativado
   - Full LED: Baixo
   - Demais opções: Desativado
-- Modo de áudio: Padrão
 
-## 🎬 Fire TV
+## Fire TV
 
 - Igualar taxa de quadros: Ativado
-- HDR: Conforme a TV
-- Intensidade de cores (bits): Conforme a TV
 
-## 🎮 PlayStation 5
+## PlayStation 5
 
-:::tip 💡 No jogo
-Para HDR é necessário ajustar o __branco papel__ ([referência](https://nikitamgrimm.github.io/hlg-reference-white-calc/)) e __brilho máximo__ (valor máximo em nits da sua TV). O brilho geralmente não precisa ajustar mas a regra é seguir o que é descrito sem deixar a imagem nem muito escura nem muito clara.
+:::tip HDR no jogo
+Ajuste o __branco papel__ ([referência](https://nikitamgrimm.github.io/hlg-reference-white-calc/)) e __brilho máximo__ em nits. A regra é seguir o que é descrito sem deixar a imagem muito escura nem muito clara.
 :::
 
-:::tip 💡 Evitando upscale
+:::tip Evitando o upscale
 Ao configurar a mesma resolução do jogo no console, a imagem pode ficar mais suave e menos serrilhada, embora com perda de nitidez.
 :::
 
-:::warning ⚠️ Antes de calibrar o HDR
-Defina o mapeamento de tom dinâmico na TV para HGiG.
-:::
-
-- HDR: Conforme a TV
+- Modo gráfico: Desempenho
 - Calibragem HDR:
   - Etapa 1/2: [Referência](https://raw.githubusercontent.com/wagchi22/wiki/refs/heads/main/images/hdtvtest.jpg)
   - Etapa 3: 0
 
-## 🖥️ PC Dell
+## PC Dell
 
 - Recomendações: Desativado
 - Destaques da pesquisa: Desativado
@@ -72,28 +63,24 @@ Defina o mapeamento de tom dinâmico na TV para HGiG.
   - [Office](https://files.rg-adguard.net/files/031460f7-375b-1168-38bd-9c6a581d8920) + [ativador](https://github.com/massgravel/Microsoft-Activation-Scripts)
   - [iCloud](https://support.apple.com/pt-br/103232)
   - [iTunes](https://www.apple.com/br/itunes/)
-  - [Firefox](https://www.firefox.com/pt-BR/) + uBlock Origin e esses [filtros](https://raw.githubusercontent.com/wagchi22/wiki/refs/heads/main/images/ubo.png)
-  - [VS Code](https://code.visualstudio.com/) + Portuguese (Brazil) Language Pack + GitHub Actions + markdownlint + Batch Runner + PowerShell + Python + Vue
-  - [Git](https://git-scm.com/) (repositórios em %USERPROFILE%\GitHub)
+  - [Firefox](https://www.firefox.com/pt-BR/) + uBlock Origin + [filtros](https://raw.githubusercontent.com/wagchi22/wiki/refs/heads/main/images/ubo.png)
+  - [VS Code](https://code.visualstudio.com/) + Pacote de idioma pt-BR + GitHub Actions
+  - [Git](https://git-scm.com/) e altere a pasta de trabalho para %USERPROFILE%\GitHub
   - [Node.js](https://nodejs.org/pt-br)
 
-## 📱 iPhone
+## iPhone
 
 - Apps:
-  - [Firefox](https://apps.apple.com/br/app/firefox-browser-privado/id989804926) e ative o adblocker
+  - Firefox e ative o bloqueador de anúncios
 - Anti-spam:
   - [Não Me Perturbe](https://www.naomeperturbe.com.br/)
   - Filtar números desconhecidos: Perguntar motivo da ligação
 
-## 🌐 Roteador
+## Roteador
 
-:::tip 💡 Potência do sinal
+:::tip Potência do sinal
 Use o [WiFi Analyzer](https://matthafner.com/wifi-analyzer)
 para encontrar o melhor canal.
-:::
-
-:::tip 💡 Lentidão, perda de pacotes ou ping alto
-Teste com o [MTR](https://wagchi22.github.io/wiki/guias/testando-rede-com-mtr-no-windows-11) tanto o IPv4 como IPv6 e compare. Se o IPv6 tiver uma rota pior, desativar talvez resolva o problema.
 :::
 
 - Local: Parede
@@ -105,6 +92,6 @@ Teste com o [MTR](https://wagchi22.github.io/wiki/guias/testando-rede-com-mtr-no
   - Largura de banda: 80 MHz
   - Melhores canais: 36-48, 149-161
 
-## 💾 HD Toshiba
+## HD Toshiba
 
 - Tipo de partição: exFAT

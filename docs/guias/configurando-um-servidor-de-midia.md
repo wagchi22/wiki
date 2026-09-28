@@ -1,10 +1,8 @@
-<!-- markdownlint-disable MD040 MD031-->
+# Configurando um servidor de mídia
 
-# 🎬 Configurando um servidor de mídia
+## ⬇Instalar software
 
-## ⬇️ Instalar software
-
-:::tip 💡 Arr
+:::tip Arr
 Marque a opção __Install shortcuts in Startup folder__ durante a instalação.
 
 Desative a opção __Start browser on startup__ nas configurações.
@@ -22,24 +20,24 @@ Opcional:
 - [FlareSolverr](https://github.com/FlareSolverr/FlareSolverr) + [flaresolverr-autorun.ps1](https://raw.githubusercontent.com/wagchi22/wiki/refs/heads/main/scripts/flaresolverr.ps1)
 - [MKVToolNix](https://mkvtoolnix.download/) (coloque no PATH) + [Python](https://www.python.org/) + [remux-media.py](https://raw.githubusercontent.com/wagchi22/wiki/refs/heads/main/scripts/remux.py)
 
-## 🔎 Prowlarr
+## Prowlarr
 
 - Conexões: Radarr/Sonarr
 - Indexadores: [Catálogo BeTor](https://catalogo.betor.top/guia/prowlarr/)
 - Etiquetas: flaresolverr
 
-## 🔓 FlareSolverr
+## FlareSolverr
 
 - Inicio automático: Execute `flaresolverr-autorun.ps1` e instale a tarefa agendada
 
-## 🧲 qBittorrent
+## qBittorrent
 
 - Interface Web: Ativado
 - Modo de gerenciamento de torrents: Automático
 
-## 🎞️ Radarr/Sonnar
+## Radarr/Sonnar
 
-:::tip 💡 Categorias
+:::tip Categorias
 Altere o nome das categorias padrão do Radarr e Sonarr ao configurar o cliente de download, garantindo que os arquivos sejam baixados diretamente para o local de sua escolha.
 :::
 
@@ -386,7 +384,7 @@ Altere o nome das categorias padrão do Radarr e Sonarr ao configurar o cliente 
     - Legendado: 0
 - Conexões: Adicione o script `remux-media.py` e marque obter, importar e atualizar
 
-## 🍿 Jellyfin
+## Jellyfin
 
 - Agrupar filmes em coleções: Ativado
 - App (TV):
@@ -395,9 +393,9 @@ Altere o nome das categorias padrão do Radarr e Sonarr ao configurar o cliente 
   - Tamanho da legenda: 125%
   - Modo noturno para áudio: Ativado
 
-## 🔔 Notificações
+## Notificações
 
-:::info ℹ️ Módulo qrcode-terminal
+:::info Módulo qrcode-terminal
 Esse módulo deve ser instalado dentro da pasta `whatsapp-web.js` sem a opção `-g`.
 :::
 
