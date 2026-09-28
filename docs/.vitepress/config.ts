@@ -72,7 +72,7 @@ export default defineConfig({
       {
         text: "Guias",
         items: [
-          { text: "Meus ajustes de dispositivos", link: "/guias/meus-ajustes-de-dispositivos" },
+          { text: "Ajustes de dispositivos", link: "/guias/ajustes-de-dispositivos" },
           { text: "Configurando um servidor de mídia", link: "/guias/configurando-um-servidor-de-midia" },
           { text: "Testando rede com MTR no Windows", link: "/guias/testando-rede-com-mtr-no-windows" },
           { text: "Gerenciando atualizações com Winget", link: "/guias/gerenciando-atualizacoes-com-winget" }

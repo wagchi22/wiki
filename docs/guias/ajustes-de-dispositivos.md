@@ -1,4 +1,4 @@
-# Meus ajustes de dispositivos
+# Ajustes de dispositivos
 
 ## TV
 
@@ -70,7 +70,3 @@ para encontrar o melhor canal.
 - Rede 5 GHz:
   - Largura de banda: 80 MHz
   - Melhores canais: 36-48, 149-161
-
-## HD externo
-
-- Tipo de partição: exFAT
