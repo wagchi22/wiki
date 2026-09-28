@@ -58,7 +58,7 @@ Ajuste o __branco papel__ ([referência](https://nikitamgrimm.github.io/hlg-refe
   - [Git](https://git-scm.com/) e use na pasta %USERPROFILE%\GitHub
   - [Node.js](https://nodejs.org/pt-br)
 
-## Smarphone
+## Smartphone
 
 - Apps:
   - Firefox e ative o bloqueador de anúncios
