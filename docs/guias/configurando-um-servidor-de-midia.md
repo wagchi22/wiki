@@ -1,6 +1,6 @@
 # Configurando um servidor de mídia
 
-## Instalar software
+## Instalar
 
 :::tip Arr
 Marque a opção __Install shortcuts in Startup folder__ durante a instalação.

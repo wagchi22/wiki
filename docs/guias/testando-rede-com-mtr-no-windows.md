@@ -4,7 +4,7 @@
 Use cabo Ethernet ao invés do Wi-Fi.
 :::
 
-## MTR
+## Instalar
 
 Baixe o [Cygwin](https://www.cygwin.com/) e execute no terminal:
 
@@ -24,6 +24,10 @@ echo 'export PATH="/usr/local/sbin:$PATH"' >> ~/.bashrc
 ```
 
 Reinicie o terminal do Cygwin e execute:
+
+## Testes
+
+Execute no terminal do Cygwin:
 
 ```
 mtr -4 -c 1000 -i 0.5 -n -r 8.8.8.8
