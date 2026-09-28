@@ -1,6 +1,6 @@
-# Gerenciando pacotes com Winget
+# Gerenciando atualizações com Winget
 
-## Verificar atualizações
+## Verificar
 
 Execute no terminal:
 
@@ -8,7 +8,7 @@ Execute no terminal:
 winget upgrade
 ```
 
-## Instalar atualizações
+## Instalar
 
 Execute no terminal:
 

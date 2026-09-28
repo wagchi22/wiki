@@ -76,7 +76,7 @@ export default defineConfig({
           { text: "Configurando um servidor de mídia", link: "/guias/configurando-um-servidor-de-midia" },
           { text: "Testando rede com MTR no Windows", link: "/guias/testando-rede-com-mtr-no-windows" },
           { text: "Instalando TizenTube no Fire TV com Android", link: "/guias/instalando-tizentube-no-firetv-com-android" },
-          { text: "Gerenciando pacotes com Winget", link: "/guias/gerenciando-pacotes-com-winget" }
+          { text: "Gerenciando atualizações com Winget", link: "/guias/gerenciando-atualizacoes-com-winget" }
         ]
       }
     ],
