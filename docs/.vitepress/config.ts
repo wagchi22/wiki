@@ -1,7 +1,7 @@
 import { defineConfig } from "vitepress"
 
 export default defineConfig({
-  title: "Wiki",
+  title: "personal-wiki",
   description: "Documentação pessoal.",
   base: "/wiki/", 
   
