@@ -15,8 +15,8 @@ Instale os atalhos na pasta de inicialização e desative o inicio automático n
 
 Opcional:
 
-- [FlareSolverr](https://github.com/FlareSolverr/FlareSolverr) + [flaresolverr-autorun.ps1](https://raw.githubusercontent.com/wagchi22/wiki/refs/heads/main/scripts/flaresolverr.ps1)
-- [MKVToolNix](https://mkvtoolnix.download/) colocando no PATH + [Python](https://www.python.org/) + [remux-media.py](https://raw.githubusercontent.com/wagchi22/wiki/refs/heads/main/scripts/remux.py)
+- [FlareSolverr](https://github.com/FlareSolverr/FlareSolverr) + [flaresolverr-autorun.ps1](https://raw.githubusercontent.com/wagchi22/personal-wiki/refs/heads/main/scripts/flaresolverr.ps1)
+- [MKVToolNix](https://mkvtoolnix.download/) colocando no PATH + [Python](https://www.python.org/) + [remux-media.py](https://raw.githubusercontent.com/wagchi22/personal-wiki/refs/heads/main/scripts/remux.py)
 
 ## Prowlarr
 

@@ -1,4 +1,4 @@
-# Wiki
+# Documentação pessoal
 
 Uma base de conhecimento técnica pessoal para documentar configurações, ajustes, procedimentos e soluções que quero manter acessíveis para consultas futuras.
 
@@ -14,7 +14,7 @@ A documentação é construída de forma incremental, conforme novas configuraç
 
 ## Acesso
 
-**[Acessar o Wiki](https://wagchi22.github.io/wiki/)**
+**[Documentação pessoal](https://wagchi22.github.io/personal-wiki/)**
 
 ## Tecnologia
 

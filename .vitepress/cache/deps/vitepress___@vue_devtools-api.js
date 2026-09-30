@@ -847,7 +847,7 @@ var require_speakingurl = __commonJS2({
         "ޮ": "o",
         "ޯ": "oa",
         "ް": "",
-        // Georgian https://en.wikipedia.org/wiki/Romanization_of_Georgian
+        // Georgian https://en.wikipedia.org/personal-wiki/Romanization_of_Georgian
         // National system (2002)
         "ა": "a",
         "ბ": "b",
@@ -1022,7 +1022,7 @@ var require_speakingurl = __commonJS2({
         "Ț": "T",
         "ţ": "t",
         "Ţ": "T",
-        // Russian https://en.wikipedia.org/wiki/Romanization_of_Russian
+        // Russian https://en.wikipedia.org/personal-wiki/Romanization_of_Russian
         // ICAO
         "а": "a",
         "б": "b",

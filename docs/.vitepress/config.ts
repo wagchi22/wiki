@@ -3,7 +3,7 @@ import { defineConfig } from "vitepress"
 export default defineConfig({
   title: "personal-wiki",
   description: "Documentação pessoal.",
-  base: "/wiki/", 
+  base: "/personal-wiki/", 
   
   cleanUrls: true,
   
@@ -15,7 +15,7 @@ export default defineConfig({
       {
         rel: "shortcut icon",
         type: "image/x-icon",
-        href: "/wiki/favicon.ico",
+        href: "/personal-wiki/favicon.ico",
       },
     ],
     ["style", {}, `
@@ -81,7 +81,7 @@ export default defineConfig({
     ],
 
     editLink: {
-      pattern: "https://github.com/wagchi22/wiki/edit/main/docs/:path",
+      pattern: "https://github.com/wagchi22/personal-wiki/edit/main/docs/:path",
       text: "Edite essa página no GitHub"
     },
     

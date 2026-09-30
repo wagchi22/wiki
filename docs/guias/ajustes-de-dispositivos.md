@@ -37,7 +37,7 @@ Ajuste o __branco papel__ ([referência](https://nikitamgrimm.github.io/hlg-refe
 
 - Modo gráfico: Desempenho
 - Calibragem HDR:
-  - Etapa 1/2: [Referência](https://raw.githubusercontent.com/wagchi22/wiki/refs/heads/main/images/hdtvtest.jpg)
+  - Etapa 1/2: [Referência](https://raw.githubusercontent.com/wagchi22/personal-wiki/refs/heads/main/images/hdtvtest.jpg)
   - Etapa 3: 0
 
 ## Desktop
