@@ -55,11 +55,6 @@ Altere o nome das categorias padrão do Radarr e Sonarr ao configurar o cliente 
       {Series Title} S{season:00}E{episode:00} {Episode Title} {Custom Formats} {MediaInfo VideoCodec} {MediaInfo AudioCodec} {MediaInfo AudioChannels}
       ```
 
-    - Pastas:
-      ```
-      {Series TitleYear}
-      ```
-
 - Formatos personalizados:
   - Filmes:
 
