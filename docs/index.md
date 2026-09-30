@@ -2,8 +2,8 @@
 layout: home
 
 hero:
-  name: "Documentação"
-  text: "pessoal"
+  name: "Documentação pessoal"
+  text: ""
   image:
     src: /logo.svg
     alt: Documentação pessoal
