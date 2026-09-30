@@ -3,7 +3,7 @@ layout: home
 
 hero:
   name: "Documentação pessoal"
-  text: 
+  text: ""
   image:
     src: /logo.svg
     alt: Documentação pessoal
