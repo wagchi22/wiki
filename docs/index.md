@@ -2,11 +2,11 @@
 layout: home
 
 hero:
-  name: "Base de conhecimento"
+  name: "Documentação"
   text: "pessoal"
   image:
     src: /logo.svg
-    alt: Wiki
+    alt: Documentação pessoal
   tagline: Configurações, guias e referências para consultas futuras.
   actions:
     - theme: brand
@@ -14,7 +14,7 @@ hero:
       link: /inicio
     - theme: alt
       text: Ver no GitHub
-      link: https://github.com/wagchi22/wiki
+      link: https://github.com/wagchi22/personal-wiki
 
 features:
   - icon: ⚙️
