@@ -396,6 +396,11 @@ Opcional:
 ## Jellyfin
 
 - Agrupar filmes em coleções: Ativado
+- Usuários:
+  - Reproduzir a faixa de áudio padrão, independente do idioma: Desativado
+  - Idioma do áudio: Português (Brasil)
+  - Idioma da legenda: Português (Brasil)
+  - Tipo de legenda: Inteligente
 - App (TV):
   - Taxa de atualização: Escala no dispositivo
   - Cor da legenda: Amarelo
