@@ -9,7 +9,7 @@ Este guia descreve uma configuração doméstica para automatizar downloads, org
 - `Radarr` e `Sonarr` para organização de filmes e séries
 - `Jellyfin` para reprodução e biblioteca
 - `FlareSolverr` para facilitar acesso a indexadores
-- `whatsapp-bot` para notificações via WhatsApp para acompanhar eventos
+- `jeliwhats-bot` para notificações via WhatsApp para acompanhar eventos
 
 ## Checklist rápido
 
@@ -31,7 +31,7 @@ Instale os atalhos na pasta de inicialização e desative o início automático 
 - [Sonarr](https://sonarr.tv/)
 - [Jellyfin](https://jellyfin.org/) + [Webhook](https://github.com/jellyfin/jellyfin-plugin-webhook)
 - [qBittorrent](https://www.qbittorrent.org/)
-- [Node.js](https://nodejs.org/pt-br) + [whatsapp-bot](https://github.com/wagchi22/whatsapp-bot)
+- [Node.js](https://nodejs.org/pt-br) + [jeliwhats-bot](https://github.com/wagchi22/jeliwhats-bot)
 
 Opcional:
 
@@ -404,4 +404,4 @@ Opcional:
 
 ## Notificações
 
-Siga o passo a passo [aqui](https://github.com/wagchi22/whatsapp-bot).
+Siga o passo a passo [aqui](https://github.com/wagchi22/jeliwhats-bot).
