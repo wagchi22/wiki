@@ -9,7 +9,7 @@ Este guia descreve uma configuração doméstica para automatizar downloads, org
 - `Radarr` e `Sonarr` para organização de filmes e séries
 - `Jellyfin` para reprodução e biblioteca
 - `FlareSolverr` para facilitar acesso a indexadores
-- notificações via WhatsApp para acompanhar eventos
+- `whatsapp-bot` para notificações via WhatsApp para acompanhar eventos
 
 ## Checklist rápido
 
@@ -29,9 +29,9 @@ Instale os atalhos na pasta de inicialização e desative o início automático 
 - [Prowlarr](https://prowlarr.com/)
 - [Radarr](https://radarr.video/)
 - [Sonarr](https://sonarr.tv/)
-- [Jellyfin](https://jellyfin.org/) + Webhook
+- [Jellyfin](https://jellyfin.org/) + [Webhook](https://github.com/jellyfin/jellyfin-plugin-webhook)
 - [qBittorrent](https://www.qbittorrent.org/)
-- [Node.js](https://nodejs.org/pt-br) + [whatsapp-web.js](https://github.com/wwebjs/whatsapp-web.js) + [qrcode-terminal](https://github.com/gtanner/qrcode-terminal)
+- [Node.js](https://nodejs.org/pt-br) + [whatsapp-bot](https://github.com/wagchi22/whatsapp-bot)
 
 Opcional:
 
@@ -404,34 +404,4 @@ Opcional:
 
 ## Notificações
 
-:::info Módulo qrcode-terminal
-Esse módulo deve ser instalado dentro da pasta `whatsapp-web.js` sem a opção `-g`.
-:::
-
-Crie o arquivo `whatsapp-web.js\server.js` e coloque isso:
-
-```js
-console.log('Creating QR Code, please wait...');
-
-const { Client } = require('whatsapp-web.js');
-const qrcode = require('qrcode-terminal');
-
-const client = new Client();
-
-client.on('qr', (qr) => {
-    console.log('QR Code created, scan with your phone:');
-    qrcode.generate(qr, { small: true });
-});
-
-client.on('ready', () => {
-    console.log('Client is ready!');
-});
-
-client.initialize();
-```
-
-Inicie o servidor:
-
-```
-node .\server.js
-```
+Siga o passo a passo [aqui](https://github.com/wagchi22/whatsapp-bot).
