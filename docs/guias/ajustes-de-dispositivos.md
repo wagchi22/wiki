@@ -18,8 +18,8 @@ Em HDR, normalmente o backlight e o contraste ficam no máximo.
   - Just Scan: Ativado
   - Backlight: 70
   - Contraste: 80
-  - Brilho: 50
-  - Nitidez: 0
+  - Brilho: 45
+  - Nitidez: 10
   - Cor: 50
   - Gama: 2.2
   - Gama de cores: Automático
