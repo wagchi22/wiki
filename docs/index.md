@@ -2,11 +2,11 @@
 layout: home
 
 hero:
-  name: "Documentação pessoal"
+  name: "Wiki"
   text: ""
   image:
     src: /logo.svg
-    alt: Documentação pessoal
+    alt: Wiki
   tagline: Guias práticos e referências para resolver problemas e configurar seus dispositivos.
   actions:
     - theme: brand

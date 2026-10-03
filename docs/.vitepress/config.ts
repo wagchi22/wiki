@@ -1,8 +1,8 @@
 import { defineConfig } from "vitepress"
 
 export default defineConfig({
-  title: "Documentação pessoal",
-  description: "Uma base de conhecimento técnica pessoal para documentar configurações, ajustes, procedimentos e soluções que quero manter acessíveis para consultas futuras.",
+  title: "Wiki",
+  description: "Uma base de conhecimento técnico para documentar configurações, ajustes, procedimentos e soluções que podem ser consultados novamente quando necessário.",
   base: "/wiki/",
 
   cleanUrls: true,

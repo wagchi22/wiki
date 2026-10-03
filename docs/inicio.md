@@ -1,6 +1,6 @@
 # Bem-vindo
 
-Esta wiki serve como referência pessoal para configurar sistemas, ajustar dispositivos, manter ambientes e registrar soluções que vale a pena revisitar.
+Esta wiki reúne referências para configurar sistemas, ajustar dispositivos, manter ambientes e registrar soluções que vale a pena revisitar.
 
 ## Comece por aqui
 

@@ -1,6 +1,6 @@
-# Documentação pessoal
+# Wiki
 
-Uma base de conhecimento técnica pessoal para registrar configurações, procedimentos, soluções e referências que eu quero manter acessíveis para consultas futuras.
+Uma base de conhecimento técnico para registrar configurações, procedimentos, soluções e referências que podem ser consultadas novamente quando necessário.
 
 ## Conteúdo
 
@@ -14,7 +14,7 @@ A documentação cresce de forma incremental conforme novas necessidades surgem.
 
 ## Acesso
 
-**[Documentação pessoal](https://wagchi22.github.io/wiki/)**
+**[Wiki](https://wagchi22.github.io/wiki/)**
 
 ## Executar localmente
 
