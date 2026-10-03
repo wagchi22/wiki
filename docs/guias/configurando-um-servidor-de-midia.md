@@ -1,9 +1,29 @@
 # Configurando um servidor de mídia
 
-## Instalar
+## Visão geral
+
+Este guia descreve uma configuração doméstica para automatizar downloads, organizar bibliotecas e reproduzir mídia no Jellyfin. Os componentes são:
+
+- `Prowlarr` para pesquisa de indexadores
+- `qBittorrent` para downloads
+- `Radarr` e `Sonarr` para organização de filmes e séries
+- `Jellyfin` para reprodução e biblioteca
+- `FlareSolverr` para facilitar acesso a indexadores
+- notificações via WhatsApp para acompanhar eventos
+
+## Checklist rápido
+
+Antes de começar, confirme:
+
+- acesso administrativo no Windows
+- espaço suficiente em disco para downloads e biblioteca final
+- um cliente de torrent funcional
+- um processo para monitorar downloads e renomeações
+
+## Instalação
 
 :::tip Arr
-Instale os atalhos na pasta de inicialização e desative o inicio automático nas configurações.
+Instale os atalhos na pasta de inicialização e desative o início automático nas configurações.
 :::
 
 - [Prowlarr](https://prowlarr.com/)
@@ -15,8 +35,8 @@ Instale os atalhos na pasta de inicialização e desative o inicio automático n
 
 Opcional:
 
-- [FlareSolverr](https://github.com/FlareSolverr/FlareSolverr) + [flaresolverr-autorun.ps1](https://raw.githubusercontent.com/wagchi22/personal-wiki/refs/heads/main/scripts/flaresolverr.ps1)
-- [MKVToolNix](https://mkvtoolnix.download/) colocando no PATH + [Python](https://www.python.org/) + [remux-media.py](https://raw.githubusercontent.com/wagchi22/personal-wiki/refs/heads/main/scripts/remux.py)
+- [FlareSolverr](https://github.com/FlareSolverr/FlareSolverr) + [flaresolverr-autorun.ps1](https://raw.githubusercontent.com/wagchi22/wiki/refs/heads/main/scripts/flaresolverr.ps1)
+- [MKVToolNix](https://mkvtoolnix.download/) colocando no PATH + [Python](https://www.python.org/) + [remux-media.py](https://raw.githubusercontent.com/wagchi22/wiki/refs/heads/main/scripts/remux.py)
 
 ## Prowlarr
 

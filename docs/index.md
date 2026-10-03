@@ -7,25 +7,28 @@ hero:
   image:
     src: /logo.svg
     alt: Documentação pessoal
-  tagline: Configurações, guias e referências para consultas futuras.
+  tagline: Guias práticos e referências para resolver problemas e configurar seus dispositivos.
   actions:
     - theme: brand
-      text: Explorar
+      text: Ver os guias
       link: /inicio
     - theme: alt
-      text: Ver no GitHub
-      link: https://github.com/wagchi22/personal-wiki
+      text: Referências rápidas
+      link: /referencias-rapidas
+    - theme: alt
+      text: GitHub
+      link: https://github.com/wagchi22/wiki
 
 features:
   - icon: ⚙️
-    title: Configurações
-    details: Documentação de ajustes, configurações e personalizações de sistemas, dispositivos e ferramentas.
+    title: Configurar
+    details: Ajustes para dispositivos, rede e serviços domésticos.
 
   - icon: 📝
-    title: Guias
-    details: Documentação de procedimentos, instalações e configurações para diferentes sistemas e ferramentas.
+    title: Seguir guias
+    details: Instruções para instalar, configurar e validar ferramentas.
 
-  - icon: 🔎
-    title: Referências
-    details: Documentação de comandos, soluções e informações técnicas para consultas rápidas.
+  - icon: 🔧
+    title: Resolver problemas
+    details: Diagnósticos e soluções para situações recorrentes.
 ---

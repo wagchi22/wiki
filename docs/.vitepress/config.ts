@@ -3,10 +3,10 @@ import { defineConfig } from "vitepress"
 export default defineConfig({
   title: "Documentação pessoal",
   description: "Uma base de conhecimento técnica pessoal para documentar configurações, ajustes, procedimentos e soluções que quero manter acessíveis para consultas futuras.",
-  base: "/personal-wiki/", 
-  
+  base: "/wiki/",
+
   cleanUrls: true,
-  
+
   lastUpdated: true,
 
   head: [
@@ -15,7 +15,7 @@ export default defineConfig({
       {
         rel: "shortcut icon",
         type: "image/x-icon",
-        href: "/personal-wiki/favicon.ico",
+        href: "/wiki/favicon.ico",
       },
     ],
     ["style", {}, `
@@ -62,12 +62,20 @@ export default defineConfig({
     },
 
     nav: [
-      { 
-        text: "Início", 
-        link: "/inicio" 
+      {
+        text: "Início",
+        link: "/inicio"
+      },
+      {
+        text: "Referências rápidas",
+        link: "/referencias-rapidas"
+      },
+      {
+        text: "Soluções comuns",
+        link: "/solucoes-comuns"
       }
     ],
-    
+
     sidebar: [
       {
         text: "Guias",
@@ -77,11 +85,20 @@ export default defineConfig({
           { text: "Testando rede com MTR no Windows", link: "/guias/testando-rede-com-mtr-no-windows" },
           { text: "Gerenciando atualizações com Winget", link: "/guias/gerenciando-atualizacoes-com-winget" }
         ]
+      },
+      {
+        text: "Recursos",
+        items: [
+          { text: "Referências rápidas", link: "/referencias-rapidas" },
+          { text: "Soluções comuns", link: "/solucoes-comuns" },
+          { text: "Template de guia", link: "/templates/guia-template" },
+          { text: "Contribuindo", link: "/contribuindo" }
+        ]
       }
     ],
 
     editLink: {
-      pattern: "https://github.com/wagchi22/personal-wiki/edit/main/docs/:path",
+      pattern: "https://github.com/wagchi22/wiki/edit/main/docs/:path",
       text: "Edite essa página no GitHub"
     },
     

@@ -12,3 +12,40 @@
   );
   --vp-home-hero-image-filter: blur(44px);
 }
+
+.VPHero .name {
+  letter-spacing: -0.04em;
+}
+
+.VPHero .text {
+  max-width: 15em;
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  line-height: 1.12;
+}
+
+.VPHero .tagline {
+  max-width: 34rem;
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+
+.VPHero .actions {
+  gap: 0.75rem;
+}
+
+.VPFeature {
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 14px;
+  transition: border-color 160ms ease, transform 160ms ease;
+}
+
+.VPFeature:hover {
+  border-color: var(--vp-c-brand-1);
+  transform: translateY(-2px);
+}
+
+@media (max-width: 640px) {
+  .VPHero .tagline {
+    font-size: 1rem;
+  }
+}

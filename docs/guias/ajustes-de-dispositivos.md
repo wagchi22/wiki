@@ -1,13 +1,17 @@
 # Ajustes de dispositivos
 
+## Visão geral
+
+Referência de ajustes para TVs, consoles, computadores, smartphones e roteadores. Os nomes e valores podem variar conforme o modelo.
+
 ## TV
 
 :::warning HDR em TVs de entrada
-Recomenda-se desativar o HDR em TVs de entrada (abaixo de 600 nits).
+Em TVs de entrada (abaixo de 600 nits), considere desativar o HDR.
 :::
 
 :::info Configurações em HDR
-Normalmente o backlight e contraste ficam no máximo quando em HDR.
+Em HDR, normalmente o backlight e o contraste ficam no máximo.
 :::
 
 - Modo de imagem: Padrão ou Jogos
@@ -32,12 +36,12 @@ Normalmente o backlight e contraste ficam no máximo quando em HDR.
 ## Console
 
 :::tip HDR no jogo
-Ajuste o __branco papel__ ([referência](https://nikitamgrimm.github.io/hlg-reference-white-calc/)) e __brilho máximo__ em nits. A regra é seguir o que é descrito sem deixar a imagem muito escura nem muito clara.
+Ajuste o __branco papel__ ([referência](https://nikitamgrimm.github.io/hlg-reference-white-calc/)) e o __brilho máximo__ em nits. Use a imagem de referência sem deixar a cena muito escura ou clara.
 :::
 
 - Modo gráfico: Desempenho
 - Calibragem HDR:
-  - Etapa 1/2: [Referência](https://raw.githubusercontent.com/wagchi22/personal-wiki/refs/heads/main/images/hdtvtest.jpg)
+  - Etapa 1/2: [Referência](https://raw.githubusercontent.com/wagchi22/wiki/refs/heads/main/images/hdtvtest.jpg)
   - Etapa 3: 0
 
 ## Desktop
@@ -54,7 +58,7 @@ Ajuste o __branco papel__ ([referência](https://nikitamgrimm.github.io/hlg-refe
 
 - Anti-spam:
   - [Não Me Perturbe](https://www.naomeperturbe.com.br/)
-  - Filtar números desconhecidos: Perguntar motivo da ligação
+  - Filtrar números desconhecidos: Perguntar motivo da ligação
 
 ## Roteador
 
