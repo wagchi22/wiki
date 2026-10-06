@@ -6,28 +6,7 @@ Referência de ajustes para TVs, consoles, computadores, smartphones e roteadore
 
 ## TV
 
-:::warning HDR em TVs de entrada
-Em TVs de entrada (abaixo de 600 nits), considere desativar o HDR.
-:::
-
-:::info Configurações em HDR
-Em HDR, normalmente o backlight e o contraste ficam no máximo.
-:::
-
-- Modo de imagem: Padrão ou Jogos
-  - Just Scan: Ativado
-  - Backlight: 70
-  - Contraste: 80
-  - Brilho: 45
-  - Nitidez: 10
-  - Cor: 50
-  - Gama: 2.2
-  - Gama de cores: Automático
-  - Nível de preto: Automático
-  - Temperatura de cor: Quente 2
-  - Cinema Real: Ativado
-  - Full LED: Baixo
-  - Outros: Desativado
+Use [esse](https://www.rtings.com/tv/learn/how-to-calibrate-your-tv?utm_source=chatgpt.com) guia para ajustar a TV.
 
 ## Streaming
 
