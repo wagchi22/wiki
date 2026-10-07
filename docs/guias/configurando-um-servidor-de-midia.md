@@ -27,7 +27,7 @@ Instale os atalhos na pasta de inicialização e desative o início automático 
 - Interface Web: Ativado
 - Modo de gerenciamento de torrents: Automático
 
-## Radarr/Sonarr
+## Radarr e Sonarr
 
 - Cliente de download: qBittorrent
 - Renomear automaticamente: Ativado
