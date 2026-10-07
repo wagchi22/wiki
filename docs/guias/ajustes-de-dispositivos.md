@@ -15,7 +15,10 @@ Calibração da imagem: [RTINGS](https://www.rtings.com/tv/learn/how-to-calibrat
 ## Console
 
 :::tip HDR no jogo
-Ajuste o __branco papel__ (brilho médio, geralmente no padrão ou 200) e __brilho máximo__ em nits. Use a imagem de referência sem deixar a cena muito escura ou clara.
+Use a imagem de referência sem deixar a cena muito escura ou clara.
+
+Brilho médio (branco papel): geralmente no padrão ou 200
+Brilho máximo: valor máximo em nits da TV.
 :::
 
 - Modo gráfico: Desempenho
