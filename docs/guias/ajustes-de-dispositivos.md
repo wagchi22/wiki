@@ -6,7 +6,7 @@ Referência de ajustes para TVs, consoles, computadores, smartphones e roteadore
 
 ## TV
 
-Use [esse](https://www.rtings.com/tv/learn/how-to-calibrate-your-tv?utm_source=chatgpt.com) guia para ajustar a TV.
+Use o guia do [RTINGS](https://www.rtings.com/tv/learn/how-to-calibrate-your-tv?utm_source=chatgpt.com) para fazer a calibração.
 
 ## Streaming
 
@@ -15,13 +15,11 @@ Use [esse](https://www.rtings.com/tv/learn/how-to-calibrate-your-tv?utm_source=c
 ## Console
 
 :::tip HDR no jogo
-Ajuste o __branco papel__ ([referência](https://nikitamgrimm.github.io/hlg-reference-white-calc/)) e o __brilho máximo__ em nits. Use a imagem de referência sem deixar a cena muito escura ou clara.
+Ajuste o __branco papel__ (brilho médio, geralmente no padrão ou 200) e __brilho máximo__ em nits. Use a imagem de referência sem deixar a cena muito escura ou clara.
 :::
 
 - Modo gráfico: Desempenho
-- Calibragem HDR:
-  - Etapa 1/2: [Referência](https://raw.githubusercontent.com/wagchi22/wiki/refs/heads/main/images/hdtvtest.jpg)
-  - Etapa 3: 0
+- Calibragem HDR: [HDTVTest](https://youtu.be/6h92l5teghw?list=LL)
 
 ## Desktop
 
