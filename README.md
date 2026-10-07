@@ -6,9 +6,9 @@ Uma base de conhecimento técnico para registrar configurações, procedimentos,
 
 O Wiki reúne principalmente:
 
-- **Configurações** — ajustes de sistemas, dispositivos, ferramentas e ambientes.
-- **Guias** — procedimentos de instalação, configuração e manutenção.
-- **Referências** — comandos, soluções e informações técnicas para consultas rápidas.
+- **Guias técnicos** — procedimentos de instalação, configuração e manutenção.
+- **Configurações documentadas** — ajustes de sistemas, dispositivos, ferramentas e ambientes.
+- **Conhecimento reutilizável** — informações técnicas organizadas para consulta posterior.
 
 A documentação cresce de forma incremental conforme novas necessidades surgem.
 
@@ -31,11 +31,10 @@ npm run docs:build
 
 ## Estrutura da wiki
 
-A documentação está organizada em três níveis:
+A documentação está organizada em guias e recursos de apoio:
 
 - **Guias**: procedimentos completos para configuração e manutenção
-- **Referências rápidas**: comandos e ajustes usados com frequência
-- **Soluções comuns**: diagnósticos e correções práticas para problemas recorrentes
+- **Recursos**: template para novos artigos e orientações para contribuir
 
 O template para novos artigos está em [docs/templates/guia-template.md](./docs/templates/guia-template.md).
 
