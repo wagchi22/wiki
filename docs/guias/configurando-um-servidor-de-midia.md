@@ -2,14 +2,7 @@
 
 ## Visão geral
 
-Este guia descreve uma configuração doméstica para automatizar downloads, organizar bibliotecas e reproduzir mídia no Jellyfin. Os componentes são:
-
-- `Prowlarr` para pesquisa de indexadores
-- `qBittorrent` para downloads
-- `Radarr` e `Sonarr` para organização de filmes e séries
-- `Jellyfin` para reprodução e biblioteca
-- `FlareSolverr` para facilitar acesso a indexadores
-- `jeliwhats-bot` para notificações via WhatsApp para acompanhar eventos
+Este guia descreve uma configuração doméstica para automatizar downloads, organizar bibliotecas e reproduzir mídia no Jellyfin.
 
 ## Instalação
 
@@ -28,14 +21,13 @@ Instale os atalhos na pasta de inicialização e desative o início automático 
 
 - Conexões: Radarr/Sonarr
 - Indexadores: [Catálogo BeTor](https://catalogo.betor.top/guia/prowlarr/)
-- Etiquetas: flaresolverr
 
 ## qBittorrent
 
 - Interface Web: Ativado
 - Modo de gerenciamento de torrents: Automático
 
-## Radarr/Sonnar
+## Radarr/Sonarr
 
 - Cliente de download: qBittorrent
 - Renomear automaticamente: Ativado
@@ -378,10 +370,10 @@ Instale os atalhos na pasta de inicialização e desative o início automático 
 
 - Agrupar filmes em coleções: Ativado
 - Usuários:
-  - Reproduzir a faixa de áudio padrão, independente do idioma: Desativado
+  - Reproduzir áudio padrão independente do idioma: Desativado
   - Idioma do áudio: Português (Brasil)
   - Idioma da legenda: Português (Brasil)
-  - Tipo de legenda: Inteligente
+  - Tipo de legenda: Apenas legendas forçadas
 - App (TV):
   - Taxa de atualização: Escala no dispositivo
   - Cor da legenda: Amarelo
