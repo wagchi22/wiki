@@ -18,7 +18,8 @@ Calibração da imagem: [RTINGS](https://www.rtings.com/tv/learn/how-to-calibrat
 Use a imagem de referência sem deixar a cena muito escura ou clara.
 
 Brilho médio (branco papel): geralmente no padrão ou 200
-Brilho máximo: valor máximo em nits da TV.
+
+Brilho máximo: valor máximo em nits da TV
 :::
 
 - Modo gráfico: Desempenho
