@@ -6,7 +6,7 @@ Referência de ajustes para TVs, consoles, computadores, smartphones e roteadore
 
 ## TV
 
-Use o guia do [RTINGS](https://www.rtings.com/tv/learn/how-to-calibrate-your-tv?utm_source=chatgpt.com) para fazer a calibração.
+Calibração da imagem: [RTINGS](https://www.rtings.com/tv/learn/how-to-calibrate-your-tv?utm_source=chatgpt.com)
 
 ## Streaming
 
@@ -19,7 +19,7 @@ Ajuste o __branco papel__ (brilho médio, geralmente no padrão ou 200) e __bril
 :::
 
 - Modo gráfico: Desempenho
-- Calibragem HDR: [HDTVTest](https://youtu.be/6h92l5teghw?list=LL)
+- Calibração do HDR: [HDTVTest](https://youtu.be/6h92l5teghw?list=LL)
 
 ## Desktop
 
