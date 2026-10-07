@@ -4,10 +4,6 @@
 
 Compile o MTR no Cygwin para analisar latência e perda de pacotes em rotas de rede.
 
-:::tip Confiabilidade
-Use cabo Ethernet em vez de Wi-Fi para reduzir interferências durante o teste.
-:::
-
 ## Instalação
 
 Instale o [Cygwin](https://www.cygwin.com/) com os pacotes necessários:
@@ -29,7 +25,11 @@ echo 'export PATH="/usr/local/sbin:$PATH"' >> ~/.bashrc
 
 Reinicie o terminal do Cygwin.
 
-## Executar testes
+## Testes
+
+:::tip Confiabilidade
+Use cabo Ethernet em vez de Wi-Fi para reduzir interferências durante o teste.
+:::
 
 No terminal do Cygwin, execute os testes IPv4 e IPv6:
 
