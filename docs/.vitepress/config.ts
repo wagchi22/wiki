@@ -81,8 +81,7 @@ export default defineConfig({
       {
         text: "Recursos",
         items: [
-          { text: "Template de guia", link: "/templates/guia-template" },
-          { text: "Contribuindo", link: "/contribuindo" }
+          { text: "Template", link: "/templates/guia-template" }
         ]
       }
     ],

@@ -29,9 +29,9 @@ Instale os atalhos na pasta de inicialização e desative o início automático 
 - [Prowlarr](https://prowlarr.com/)
 - [Radarr](https://radarr.video/)
 - [Sonarr](https://sonarr.tv/)
-- [Jellyfin](https://jellyfin.org/) + [Webhook](https://github.com/jellyfin/jellyfin-plugin-webhook)
+- [Jellyfin](https://jellyfin.org/)
 - [qBittorrent](https://www.qbittorrent.org/)
-- [Node.js](https://nodejs.org/pt-br) + [jeliwhats-bot](https://github.com/wagchi22/jeliwhats-bot)
+- [jeliwhats-bot](https://github.com/wagchi22/jeliwhats-bot)
 
 Opcional:
 

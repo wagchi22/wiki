@@ -2,13 +2,6 @@
 
 Esta wiki reúne referências para configurar sistemas, ajustar dispositivos, manter ambientes e registrar soluções que vale a pena revisitar.
 
-## Comece por aqui
+## Manutenção
 
-- [Configuração de servidor de mídia](./guias/configurando-um-servidor-de-midia)
-- [Ajustes de dispositivos](./guias/ajustes-de-dispositivos)
-- [Gerenciando atualizações com Winget](./guias/gerenciando-atualizacoes-com-winget)
-- [Testando rede com MTR no Windows](./guias/testando-rede-com-mtr-no-windows)
-
-## Manutenção da wiki
-
-Para criar ou atualizar artigos, consulte [Contribuindo](./contribuindo) e use o [Template de guia](./templates/guia-template).
+Para criar ou atualizar artigos, use o [Template](./templates/guia-template).
