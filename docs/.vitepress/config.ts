@@ -2,7 +2,7 @@ import { defineConfig } from "vitepress"
 
 export default defineConfig({
   title: "Wiki",
-  description: "Uma base de conhecimento técnico para documentar configurações, ajustes, procedimentos e soluções que podem ser consultados novamente quando necessário.",
+  description: "Uma base de conhecimento técnico com guias e configurações documentadas para consulta.",
   base: "/wiki/",
 
   cleanUrls: true,
@@ -66,14 +66,6 @@ export default defineConfig({
         text: "Início",
         link: "/inicio"
       },
-      {
-        text: "Referências rápidas",
-        link: "/referencias-rapidas"
-      },
-      {
-        text: "Soluções comuns",
-        link: "/solucoes-comuns"
-      }
     ],
 
     sidebar: [
@@ -89,8 +81,6 @@ export default defineConfig({
       {
         text: "Recursos",
         items: [
-          { text: "Referências rápidas", link: "/referencias-rapidas" },
-          { text: "Soluções comuns", link: "/solucoes-comuns" },
           { text: "Template de guia", link: "/templates/guia-template" },
           { text: "Contribuindo", link: "/contribuindo" }
         ]
