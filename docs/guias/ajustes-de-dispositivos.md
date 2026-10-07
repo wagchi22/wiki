@@ -6,7 +6,8 @@ Referência de ajustes para TVs, consoles, computadores, smartphones e roteadore
 
 ## TV
 
-Calibração da imagem: [RTINGS](https://www.rtings.com/tv/learn/how-to-calibrate-your-tv?utm_source=chatgpt.com)
+- Calibração da imagem: [RTINGS](https://www.rtings.com/tv/learn/how-to-calibrate-your-tv?utm_source=chatgpt.com)
+- Modo de áudio: Clear Voice
 
 ## Streaming
 
@@ -43,15 +44,6 @@ Brilho máximo: valor máximo em nits da TV
 
 ## Roteador
 
-:::tip Potência do sinal
-Use o [WiFi Analyzer](https://matthafner.com/wifi-analyzer)
-para encontrar o melhor canal.
-:::
-
 - Band Steering: Desativado
-- Rede 2.4 GHz:
-  - Largura de banda: 40 MHz
-  - Melhores canais: 1, 6, 11
-- Rede 5 GHz:
-  - Largura de banda: 80 MHz
-  - Melhores canais: 36-48, 149-161
+- Largura de banda: Máximo possível
+- Melhores canais: [WiFi Analyzer](https://matthafner.com/wifi-analyzer)
