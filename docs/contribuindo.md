@@ -11,7 +11,6 @@ Todo guia novo deve seguir esta estrutura:
 3. Passo a passo
 4. Configurações relevantes
 5. Troubleshooting
-6. Checklist final
 
 ## Template base
 

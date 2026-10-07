@@ -11,15 +11,6 @@ Este guia descreve uma configuração doméstica para automatizar downloads, org
 - `FlareSolverr` para facilitar acesso a indexadores
 - `jeliwhats-bot` para notificações via WhatsApp para acompanhar eventos
 
-## Checklist rápido
-
-Antes de começar, confirme:
-
-- acesso administrativo no Windows
-- espaço suficiente em disco para downloads e biblioteca final
-- um cliente de torrent funcional
-- um processo para monitorar downloads e renomeações
-
 ## Instalação
 
 :::tip Arr
@@ -33,20 +24,11 @@ Instale os atalhos na pasta de inicialização e desative o início automático 
 - [qBittorrent](https://www.qbittorrent.org/)
 - [jeliwhats-bot](https://github.com/wagchi22/jeliwhats-bot)
 
-Opcional:
-
-- [FlareSolverr](https://github.com/FlareSolverr/FlareSolverr) + [flaresolverr-autorun.ps1](https://raw.githubusercontent.com/wagchi22/wiki/refs/heads/main/scripts/flaresolverr.ps1)
-- [MKVToolNix](https://mkvtoolnix.download/) colocando no PATH + [Python](https://www.python.org/) + [remux-media.py](https://raw.githubusercontent.com/wagchi22/wiki/refs/heads/main/scripts/remux.py)
-
 ## Prowlarr
 
 - Conexões: Radarr/Sonarr
 - Indexadores: [Catálogo BeTor](https://catalogo.betor.top/guia/prowlarr/)
 - Etiquetas: flaresolverr
-
-## FlareSolverr
-
-- Inicio automático: Execute `flaresolverr-autorun.ps1` e instale a tarefa agendada
 
 ## qBittorrent
 
@@ -391,7 +373,6 @@ Opcional:
     - WEB-Rip 1080p: 4000
     - Dublado: 0
     - Legendado: 0
-- Conexões: Adicione o script `remux-media.py` e marque obter, importar e atualizar
 
 ## Jellyfin
 

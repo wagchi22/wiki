@@ -44,13 +44,6 @@ Liste opções, valores e exemplos que podem ser reutilizados no futuro.
 - Como verificar
 - Como corrigir
 
-## Checklist final
-
-- [ ] Tudo foi instalado corretamente
-- [ ] A configuração foi validada
-- [ ] O ambiente foi testado
-- [ ] A documentação foi atualizada quando necessário
-
 ## Referências
 
 Inclua links oficiais, materiais complementares e fontes consultadas.
