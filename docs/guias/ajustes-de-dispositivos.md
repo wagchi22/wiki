@@ -4,9 +4,15 @@
 
 Referência de ajustes para TVs, consoles, computadores, smartphones e roteadores. Os nomes e valores podem variar conforme o modelo.
 
-## TV
+## TVs
 
 - Calibração da imagem: [RTINGS](https://www.rtings.com/tv/learn/how-to-calibrate-your-tv?utm_source=chatgpt.com)
+
+| TV | Conteúdo SDR | Conteúdo HDR |
+|---|---|---|
+| LG LM6400 | Expert | — |
+| LG UN7300 | Expert | FMM |
+| LG UN7300 (jogos) | Jogo | Jogo + HGiG |
 
 ## Streaming
 
