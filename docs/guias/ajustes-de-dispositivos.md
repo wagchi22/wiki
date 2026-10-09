@@ -14,7 +14,7 @@ Referência rápida:
 |---|---|---|---|---|---|---|---|---|
 | LG LM6400 | Expert | — | 80 | 100 | 0 | BT709 | Padrão + CV | Sim |
 | LG UN7300 | Expert | FMM | 100 | 100 | 0 | Auto | CV | — |
-| LG UN7300 (jogo) | Jogo | Jogo + HGiG | 100 | 100 | 0 | Auto | Jogos | — |
+| LG UN7300 (jogos) | Jogo | Jogo + HGiG | 100 | 100 | 0 | Auto | Jogos | — |
 
 ## Streaming
 
