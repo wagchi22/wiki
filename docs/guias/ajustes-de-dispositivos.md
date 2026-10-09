@@ -8,7 +8,7 @@ Referência de ajustes para TVs, consoles, computadores, smartphones e roteadore
 
 - Calibração da imagem: [RTINGS](https://www.rtings.com/tv/learn/how-to-calibrate-your-tv?utm_source=chatgpt.com)
 
-| TV | Conteúdo SDR | Conteúdo HDR |
+| TV | Modo SDR | Modo HDR |
 |---|---|---|
 | LG LM6400 | Expert | — |
 | LG UN7300 | Expert | FMM |
