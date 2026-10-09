@@ -10,11 +10,11 @@ Referência de ajustes para TVs, consoles, computadores, smartphones e roteadore
 
 Referência rápida:
 
-| Modelo | SDR | HDR | Backlight | Contraste | Nitidez | Cor | Áudio | Simplink
-|---|---|---|---|---|---|---|---|---|
-| LG LM6400 | Expert | — | 80 | 100 | 0 | BT709 | Padrão + CV | Sim |
-| LG UN7300 | Expert | FMM | 100 | 100 | 0 | Auto | CV | — |
-| LG UN7300 (jogos) | Jogo | Jogo + HGiG | 100 | 100 | 0 | Auto | Jogos | — |
+| Modelo | SDR | HDR | Backlight | Contraste | Nitidez | Cores
+|---|---|---|---|---|---|---|
+| LG LM6400 | Expert | — | 80 | 100 | 0 | BT709 |
+| LG UN7300 | Expert | FMM | 100 | 100 | 0 | Auto |
+| LG UN7300 (jogos) | Jogo | Jogo + HGiG | 100 | 100 | 0 | Auto |
 
 ## Streaming
 
