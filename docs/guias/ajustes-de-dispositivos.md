@@ -10,7 +10,7 @@ Referência de ajustes para TVs, consoles, computadores, smartphones e roteadore
 
 Referência rápida:
 
-| Modelo | SDR | HDR | Backlight | Contraste | Nitidez | Cores
+| Modelo | SDR | HDR | Backlight | Contraste | Nitidez | Gama de cores
 |---|---|---|---|---|---|---|
 | LG LM6400 | Expert | — | 80 | 100 | 0 | BT709 |
 | LG UN7300 | Expert | FMM | 100 | 100 | 0 | Auto |
