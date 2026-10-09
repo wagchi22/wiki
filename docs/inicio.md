@@ -2,6 +2,6 @@
 
 Esta wiki reúne referências para configurar sistemas, ajustar dispositivos, manter ambientes e registrar soluções que vale a pena revisitar.
 
-## Template
+## Recursos
 
-Para criar ou atualizar artigos, use o [Template](./templates/guia-template).
+Para criar artigos, use esse [template](./templates/guia-template).

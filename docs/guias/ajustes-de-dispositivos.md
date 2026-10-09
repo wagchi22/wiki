@@ -24,11 +24,9 @@ Referência rápida:
 ## Console
 
 :::tip Brilho e HDR do jogo
-Use a imagem de referência sem deixar a cena escura ou clara demais.
-
-Branco papel: padrão, ou 200
-
-Brilho máximo: valor em nits da TV
+Evite deixar a imagem escura ou clara demais.<br>
+Deixe o branco papel no padrão, ou 200.<br>
+O brilho máximo equivale ao valor em nits da TV.
 :::
 
 - Escala: Ajuste manualmente
