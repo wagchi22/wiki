@@ -18,14 +18,14 @@ hero:
 
 features:
   - icon: 📚
-    title: Guias técnicos
+    title: Guias
     details: Procedimentos práticos para instalar, configurar e manter ferramentas e serviços.
 
   - icon: ⚙️
-    title: Configurações documentadas
+    title: Configurações
     details: Ajustes de dispositivos, sistemas e ambientes registrados para consulta.
 
   - icon: 🔎
-    title: Conhecimento reutilizável
+    title: Conhecimento
     details: Informações técnicas organizadas para encontrar e consultar novamente quando necessário.
 ---
