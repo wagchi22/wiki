@@ -7,7 +7,6 @@ Referência de ajustes para TVs, consoles, computadores, smartphones e roteadore
 ## TV
 
 - Calibração da imagem: [RTINGS](https://www.rtings.com/tv/learn/how-to-calibrate-your-tv?utm_source=chatgpt.com)
-- Modo de áudio: Clear Voice
 
 ## Streaming
 
@@ -18,12 +17,12 @@ Referência de ajustes para TVs, consoles, computadores, smartphones e roteadore
 :::tip HDR no jogo
 Use a imagem de referência sem deixar a cena muito escura ou clara.
 
-Brilho médio (branco papel): geralmente no padrão ou 200
+Branco papel: padrão, ou 200
 
-Brilho máximo: valor máximo em nits da TV
+Brilho máximo: valor em nits da TV
 :::
 
-- Modo gráfico: Desempenho
+- Modo gráfico padrão: Desempenho
 - Calibração do HDR: [HDTVTest](https://youtu.be/6h92l5teghw?list=LL)
 
 ## Desktop
