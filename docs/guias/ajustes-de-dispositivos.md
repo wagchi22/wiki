@@ -6,13 +6,15 @@ Referência de ajustes para TVs, consoles, computadores, smartphones e roteadore
 
 ## TVs
 
-- Calibração da imagem: [RTINGS](https://www.rtings.com/tv/learn/how-to-calibrate-your-tv?utm_source=chatgpt.com)
+- Calibração da imagem: [RTINGS](https://www.rtings.com/tv/learn/how-to-calibrate-your-tv)
 
-| TV | Modo SDR | Modo HDR |
-|---|---|---|
-| LG LM6400 | Expert | — |
-| LG UN7300 | Expert | FMM |
-| LG UN7300 (jogos) | Jogo | Jogo + HGiG |
+Referência rápida:
+
+| Modelo | SDR | HDR | Backlight | Contraste | Nitidez | Cor | Áudio | Simplink
+|---|---|---|---|---|---|---|---|---|
+| LG LM6400 | Expert | — | 80 | 100 | 0 | BT709 | Padrão + CV | Sim |
+| LG UN7300 | Expert | FMM | 100 | 100 | 0 | Auto | CV | — |
+| LG UN7300 (jogo) | Jogo | Jogo + HGiG | 100 | 100 | 0 | Auto | Jogos | — |
 
 ## Streaming
 
