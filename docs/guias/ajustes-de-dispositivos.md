@@ -17,17 +17,19 @@ Referência de ajustes para TVs, consoles, computadores, smartphones e roteadore
 ## Streaming
 
 - Igualar taxa de quadros: Ativado
+- Escala: Ajuste manualmente
 
 ## Console
 
-:::tip HDR no jogo
-Use a imagem de referência sem deixar a cena muito escura ou clara.
+:::tip Brilho e HDR do jogo
+Use a imagem de referência sem deixar a cena escura ou clara demais.
 
 Branco papel: padrão, ou 200
 
 Brilho máximo: valor em nits da TV
 :::
 
+- Escala: Ajuste manualmente
 - Modo gráfico padrão: Desempenho
 - Calibração do HDR: [HDTVTest](https://youtu.be/6h92l5teghw?list=LL)
 
