@@ -13,8 +13,8 @@ Referência rápida:
 | Modelo | SDR | HDR | Backlight | Contraste | Nitidez | Gama de cores
 |---|---|---|---|---|---|---|
 | LG LM6400 | Expert | — | 80 | 100 | 0 | BT709 |
-| LG UN7300 | Expert | FMM | 100 | 100 | 0 | Auto |
-| LG UN7300 (jogos) | Jogo | Jogo + HGiG | 100 | 100 | 0 | Auto |
+| LG UN7300 | Expert | FMM | 80 SDR<br> 100 HDR | 100 | 0 | Auto |
+| LG UN7300 (jogos) | Jogo | Jogo + HGiG | 80 SDR<br> 100 HDR | 100 | 0 | Auto |
 
 ## Streaming
 
