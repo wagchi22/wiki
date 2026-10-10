@@ -31,7 +31,7 @@ O brilho máximo equivale ao valor em nits da TV.
 
 - Escala: Ajuste manualmente
 - Modo gráfico padrão: Desempenho
-- Calibração do HDR: [HDTVTest](https://youtu.be/6h92l5teghw?list=LL)
+- Calibração do HDR: [HDTVTest](https://youtu.be/6h92l5teghw?list=LL&t=292)
 
 ## Desktop
 
