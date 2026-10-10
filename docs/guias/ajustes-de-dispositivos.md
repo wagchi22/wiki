@@ -14,7 +14,7 @@ Referência rápida:
 |---|---|---|---|---|---|---|
 | LG LM6400 | Expert | — | 80 | 100 | 0 | BT709 |
 | LG UN7300 | Expert | FMM | 80 SDR<br> 100 HDR | 100 | 0 | Auto |
-| LG UN7300 (jogos) | Jogo | Jogo + HGiG | 80 SDR<br> 100 HDR | 100 | 0 | Auto |
+| LG UN7300 (games) | Game | Game + HGiG | 80 SDR<br> 100 HDR | 100 | 0 | Auto |
 
 ## Streaming
 
@@ -37,7 +37,7 @@ O brilho máximo equivale ao valor em nits da TV.
 
 - Melhorias do Waves MaxxAudioPro: Desativado
 - Aprimorar precisão do mouse: Desativado
-- Dados brutos do mouse (jogos): Ativado
+- Dados brutos do mouse (games): Ativado
 - Desligar vídeo: 2 minutos
 - Suspender: 3 horas
 - IP: Estático
