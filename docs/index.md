@@ -13,7 +13,7 @@ hero:
       text: Explorar
       link: /inicio
     - theme: alt
-      text: GitHub
+      text: Contribuir
       link: https://github.com/wagchi22/wiki
 
 features:
