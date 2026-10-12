@@ -378,6 +378,7 @@ Instale os atalhos na pasta de inicialização e desative o início automático 
   - Taxa de atualização: Escala no dispositivo
   - Cor da legenda: Amarelo
   - Tamanho da legenda: 125%
+  - Áudio: Downmix para estéreo
   - Modo noturno para áudio: Ativado
 
 ## Notificações
