@@ -12,7 +12,7 @@ Referência rápida:
 
 | Modelo | Modo SDR | Modo HDR | Backlight | Contraste | Nitidez | Gama Cores | Tone Mapping
 |---|---|---|---|---|---|---|---|
-| LG LM6400 | Expert | — | 80 SDR | 100 | 0 | BT709 | —
+| LG LM6400 | Expert | — | 80 SDR | 100 | 0 | BT.709 | —
 | LG UN7300 | Expert | FMM | 80 SDR 100 HDR | 100 | 0 | Auto | Ativado
 | LG UN7300 (games) | Game | Game | 80 SDR 100 HDR | 100 | 0 | Auto | HGiG
 
