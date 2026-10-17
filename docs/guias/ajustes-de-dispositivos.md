@@ -41,7 +41,7 @@ O brilho máximo equivale ao valor em nits da TV.
 - Desligar vídeo: 2 minutos
 - Suspender: 3 horas
 - IP: Estático
-- DNS: [Cloudflare](https://one.one.one.one/dns/)
+- DNS alternativo: [Cloudflare](https://one.one.one.one/dns/)
 
 ## Smartphone
 
