@@ -2,10 +2,31 @@
 
 ## Visão geral
 
-Compile o MTR no Cygwin para analisar latência e perda de pacotes em rotas de rede.
+Analisa rotas de rede ao combinar teste de latência e perda de pacotes.
 
-## Instalação
+:::tip Confiabilidade do teste
+Use cabo Ethernet em vez de Wi-Fi para reduzir interferências durante o teste.
+:::
 
+## Opção 1 - WinMTR-refresh
+
+Baixe e execute __(recomendado)__
+
+:::details Exibir
+Baixe o [WinMTR-refresh](https://github.com/leeter/WinMTR-refresh) e execute.
+
+Antes de testar, vá em em opções e desative __Resolve names__.
+
+Em __Hosts__, insira um IP para teste e clique em __Start__.
+
+Para um teste preciso, aguarde o envio de pelo menos 500 pacotes.
+:::
+
+## Opção 2 - MTR Cygwin
+
+Requer compilar o binário
+
+:::details Exibir
 Instale o [Cygwin](https://www.cygwin.com/) com os pacotes necessários:
 
 ```bash
@@ -25,15 +46,10 @@ echo 'export PATH="/usr/local/sbin:$PATH"' >> ~/.bashrc
 
 Reinicie o terminal do Cygwin.
 
-## Testes
-
-:::tip Confiabilidade
-Use cabo Ethernet em vez de Wi-Fi para reduzir interferências durante o teste.
-:::
-
 No terminal do Cygwin, execute os testes IPv4 e IPv6:
 
 ```bash
 mtr -4 -c 1000 -i 0.5 -n -r 8.8.8.8
 mtr -6 -c 1000 -i 0.5 -n -r 2001:4860:4860::8888
 ```
+:::

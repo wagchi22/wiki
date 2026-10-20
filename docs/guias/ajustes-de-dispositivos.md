@@ -19,7 +19,7 @@ Referência rápida:
 ## Streaming
 
 - Igualar taxa de quadros: Ativado
-- Escala: Ajuste manualmente
+- Escala: Ajuste
 
 ## Console
 
@@ -29,7 +29,7 @@ Deixe o branco papel no padrão, ou 200.<br>
 O brilho máximo equivale ao valor em nits da TV.
 :::
 
-- Escala: Ajuste manualmente
+- Escala: Ajuste
 - Modo gráfico padrão: Desempenho
 - Calibração do HDR: [HDTVTest](https://youtu.be/6h92l5teghw?list=LL&t=292)
 
@@ -47,10 +47,10 @@ O brilho máximo equivale ao valor em nits da TV.
 
 - Anti-spam:
   - [Não Me Perturbe](https://www.naomeperturbe.com.br/)
-  - Filtrar números desconhecidos: Perguntar motivo da ligação
+  - Filtrar desconhecidos: Perguntar
 
 ## Roteador
 
 - Band Steering: Desativado
-- Largura de banda: Máximo possível
-- Melhores canais: [WiFi Analyzer](https://matthafner.com/wifi-analyzer)
+- Largura de banda: Máximo
+- Canal ideal: [WiFi Analyzer](https://matthafner.com/wifi-analyzer)
