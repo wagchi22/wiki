@@ -305,6 +305,24 @@ Instale os atalhos na pasta de inicialização e desative o início automático 
 
     ```json
     {
+      "name": "DVD-Ups 1080p",
+      "includeCustomFormatWhenRenaming": true,
+      "specifications": [
+        {
+          "name": "Fonte",
+          "implementation": "SourceSpecification",
+          "negate": false,
+          "required": false,
+          "fields": {
+            "value": 5
+          }
+        }
+      ]
+    }
+    ```
+
+    ```json
+    {
       "name": "Legendado",
       "includeCustomFormatWhenRenaming": true,
       "specifications": [
