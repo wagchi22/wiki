@@ -8,12 +8,12 @@ Analisa rotas de rede ao combinar teste de latência e perda de pacotes.
 Use cabo Ethernet em vez de Wi-Fi para reduzir interferências durante o teste.
 :::
 
-## Opção 1 - WinMTR-refresh
+## Opção 1 - WinMTR
 
-Baixe e execute __(recomendado)__
+Baixe e execute __(recomendado)__.
 
 :::details Exibir
-Baixe o [WinMTR-refresh](https://github.com/leeter/WinMTR-refresh) e execute.
+Baixe o [WinMTR-](https://github.com/leeter/WinMTR-refresh) e execute.
 
 Antes de testar, vá em em opções e desative __Resolve names__.
 
@@ -24,7 +24,7 @@ Para um teste preciso, aguarde o envio de pelo menos 500 pacotes.
 
 ## Opção 2 - MTR Cygwin
 
-Requer compilar o binário
+Requer compilar o binário.
 
 :::details Exibir
 Instale o [Cygwin](https://www.cygwin.com/) com os pacotes necessários:
