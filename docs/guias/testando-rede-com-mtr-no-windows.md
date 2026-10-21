@@ -10,7 +10,7 @@ Use cabo Ethernet em vez de Wi-Fi para reduzir interferências durante o teste.
 
 ## Opção 1 - WinMTR
 
-Apenas baixe e execute __(recomendado)__.
+Recomendado, só baixar e executar.
 
 :::details Exibir
 Baixe o [WinMTR-](https://github.com/leeter/WinMTR-refresh) e execute.
