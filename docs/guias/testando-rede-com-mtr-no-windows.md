@@ -10,7 +10,7 @@ Use cabo Ethernet em vez de Wi-Fi para reduzir interferências durante o teste.
 
 ## Opção 1 - WinMTR
 
-Baixe e execute __(recomendado)__.
+Apenas baixe e execute __(recomendado)__.
 
 :::details Exibir
 Baixe o [WinMTR-](https://github.com/leeter/WinMTR-refresh) e execute.
@@ -22,9 +22,9 @@ Em __Hosts__, insira um IP para teste e clique em __Start__.
 Para um teste preciso, aguarde o envio de pelo menos 500 pacotes.
 :::
 
-## Opção 2 - MTR Cygwin
+## Opção 2 - MTR
 
-Requer compilar o binário.
+Requer Cygwin e compilar o binário.
 
 :::details Exibir
 Instale o [Cygwin](https://www.cygwin.com/) com os pacotes necessários:
