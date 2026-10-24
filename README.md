@@ -1,5 +1,7 @@
 # wiki
 
+> Documentar aquilo que eu gostaria de encontrar novamente.
+
 Uma base de conhecimento técnico para registrar configurações, procedimentos, soluções e referências que podem ser consultadas novamente quando necessário.
 
 ## Conteúdo
@@ -45,7 +47,3 @@ Este projeto está licenciado sob a [MIT License](./LICENSE).
 ## Tecnologia
 
 Construído com [VitePress](https://vitepress.dev/) e publicado em GitHub Pages a partir do repositório `wagchi22/wiki`.
-
----
-
-> Documentar aquilo que eu gostaria de encontrar novamente.
