@@ -1,10 +1,10 @@
-# Wiki
+# wiki
 
 Uma base de conhecimento técnico para registrar configurações, procedimentos, soluções e referências que podem ser consultadas novamente quando necessário.
 
 ## Conteúdo
 
-O Wiki reúne principalmente:
+Reúne principalmente:
 
 - **Guias técnicos** — procedimentos de instalação, configuração e manutenção.
 - **Configurações documentadas** — ajustes de sistemas, dispositivos, ferramentas e ambientes.
@@ -14,7 +14,7 @@ A documentação cresce de forma incremental conforme novas necessidades surgem.
 
 ## Acesso
 
-**[Wiki](https://wagchi22.github.io/wiki/)**
+https://wagchi22.github.io/wiki/
 
 ## Executar localmente
 
