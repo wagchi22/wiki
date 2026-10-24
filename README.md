@@ -29,6 +29,18 @@ Para gerar a versão estática localmente:
 npm run docs:build
 ```
 
+## Commits e releases
+
+As mensagens de commit seguem [Conventional Commits](https://www.conventionalcommits.org/pt-br/). O Husky valida o formato antes de cada commit. Exemplos:
+
+```text
+feat: adiciona uma nova funcionalidade
+fix: corrige um problema
+docs: atualiza a documentação
+```
+
+Ao enviar commits para `main`, o Semantic Release determina se há uma nova versão e, quando aplicável, cria automaticamente uma release no GitHub com as notas correspondentes.
+
 ## Estrutura da wiki
 
 A documentação está organizada em guias e recursos de apoio:
