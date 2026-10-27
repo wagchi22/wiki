@@ -35,7 +35,9 @@ O brilho máximo equivale ao valor em nits da TV.
 
 ## Desktop
 
-- Melhorias do Waves MaxxAudioPro: Desativado
+- Aprimoramentos do Waves MaxxAudioPro: Desativado
+- Aprimoramento de áudio do dispositivo: Voice Clarity
+- Aumento de sensibilidade do microfone: +10.0 dB
 - Aprimorar precisão do mouse: Desativado
 - Dados brutos do mouse (games): Ativado
 - Desligar vídeo: 2 minutos
