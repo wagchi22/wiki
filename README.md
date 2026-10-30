@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="public/logo.svg" alt="Logo do projeto" width="200">
+</p>
+
 # wiki
 
 > Documentar aquilo que eu gostaria de encontrar novamente.

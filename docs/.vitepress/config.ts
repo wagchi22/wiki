@@ -73,9 +73,10 @@ export default defineConfig({
         text: "Guias",
         items: [
           { text: "Ajustes de dispositivos", link: "/guias/ajustes-de-dispositivos" },
-          { text: "Configurando um servidor de mídia", link: "/guias/configurando-um-servidor-de-midia" },
-          { text: "Testando rede com MTR no Windows", link: "/guias/testando-rede-com-mtr-no-windows" },
-          { text: "Gerenciando atualizações com Winget", link: "/guias/gerenciando-atualizacoes-com-winget" }
+          { text: "Como configurar um Servarr", link: "/guias/como-configurar-um-servarr" },
+          { text: "Como instalar o Docker", link: "/guias/como-instalar-o-docker" },
+          { text: "Como instalar e usar o WinMTR", link: "/guias/como-instalar-e-usar-o-winmtr" },
+          { text: "Como usar o Winget", link: "/guias/como-usar-o-winget" }
         ]
       },
       {

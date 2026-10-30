@@ -1,39 +1,56 @@
 # Ajustes de dispositivos
 
-## Visão geral
-
-Referência de ajustes para TVs, consoles, computadores, smartphones e roteadores. Os nomes e valores podem variar conforme o modelo.
-
-## TVs
-
-- Calibração da imagem: [RTINGS](https://www.rtings.com/tv/learn/how-to-calibrate-your-tv)
-
-Referência rápida:
-
-| Modelo | Modo SDR | Modo HDR | Backlight | Contraste | Nitidez | Gama Cores | Tone Mapping
-|---|---|---|---|---|---|---|---|
-| LG LM6400 | Expert | — | 80 | 100 | 0 | BT.709 | — |
-| LG UN7300 | Expert | FMM | 80 SDR 100 HDR | 100 | 0 | Auto | Ativado |
-| LG UN7300 (games) | Game | Game | 80 SDR 100 HDR | 100 | 0 | Auto | HGiG |
-
-## Streaming
-
-- Igualar taxa de quadros: Ativado
-- Escala: Ajuste
-
-## Console
-
-:::tip Brilho e HDR do jogo
-Evite deixar a imagem escura ou clara demais.<br>
-Deixe o branco papel no padrão, ou 200.<br>
-O brilho máximo equivale ao valor em nits da TV.
+:::info Visão geral
+Diversos ajustes para dispositivos.
 :::
 
-- Escala: Ajuste
-- Modo gráfico padrão: Desempenho
-- Calibração do HDR: [HDTVTest](https://youtu.be/6h92l5teghw?list=LL&t=292)
+## TV LG
 
-## Desktop
+:::tip Imagem
+Calibre a TV usando o guia [RTINGS](https://www.rtings.com/tv/learn/how-to-calibrate-your-tv).
+:::
+
+Resumo rápido:
+
+|Opção|Cinema|Games|HDR|
+|---|---|---|---|
+|Modo HDMI|Padrão|Console|Padrão/Console|
+|Aspecto de imagem|Just Scan|Just Scan|Just Scan|
+|Modo de imagem*|Expert|Expert|FMM|
+|Backlight*|90|90|100|
+|Contraste|90|90|100|
+|Brilho|50|50|50|
+|Nitidez|0|0|0|
+|Cor|50|50|50|
+|Gama|2.2|2.2|2.2|
+|Gama de cores*|Automático|Automático|Automático|
+|Nível de preto*|Baixo|Baixo|Baixo|
+|Temperatura da cor|Warm|Warm|Warm|
+|Mapeamento de tons*|-|-|Ativado/HGiG|
+|Cinema real|Ativado|Desativado|Desativado|
+|Demais ajustes de imagem|Desativado|Desativado|Desativado|
+|Economia de energia|Desativado|Desativado|Desativado|
+
+\* *Modo de imagem e backlight: ajuste conforme a luz ambiente.<br>*
+\* *Gama de cores: Rec/BT.709 = SDR, DCI-P3 = Cinema/HDR e Rec/BT.2020 = 4K HDR.<br>*
+\* *Nível de preto: fonte e TV devem combinar (Limitado = Baixo, Completo = Alto).<br>*
+\* *Mapeamento de tons (só em HDR, se disponível): Ativado para cinema, HGiG para games.*
+
+## Fire TV
+
+- Igualar taxa de quadros: Ativado (necessário para Cinema real)
+- Faixa RGB: Limitado
+
+## PS5
+
+:::tip Brilho e HDR
+É recomendado desativar o HDR se a TV possui pouca luminosidade.<br>
+Ajuste no console seguindo o guia [HDTVTest](https://youtu.be/6h92l5teghw?t=292) e em seguida dentro do jogo.
+:::
+
+- Faixa RGB: Limitado
+
+## PC Dell
 
 - Aprimoramentos do Waves MaxxAudioPro: Desativado
 - Aprimoramento de áudio do dispositivo: Voice Clarity
@@ -45,13 +62,13 @@ O brilho máximo equivale ao valor em nits da TV.
 - IP: Estático
 - DNS alternativo: [Cloudflare](https://one.one.one.one/pt-BR/dns/#setup-instructions)
 
-## Smartphone
+## iPhone
 
 - Anti-spam:
   - [Não Me Perturbe](https://www.naomeperturbe.com.br/)
   - Filtrar desconhecidos: Perguntar
 
-## Roteador
+## Roteador 
 
 - Band Steering: Desativado
 - Largura de banda: Máximo
