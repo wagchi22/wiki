@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="public/logo.svg" alt="Logo do projeto" width="200">
+  <img src="docs/public/logo.svg" alt="Logo do projeto" width="200">
 </p>
 
 # wiki
