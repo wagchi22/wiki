@@ -1,8 +1,8 @@
-# Gerenciando atualizações com Winget
+# Como usar o Winget
 
-## Visão geral
-
-Use o Winget para listar atualizações disponíveis e instalar todas de uma vez.
+:::info Visão geral
+Guia rápido de como usar o Winget.
+:::
 
 ## Verificar
 
