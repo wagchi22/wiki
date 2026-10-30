@@ -2,7 +2,11 @@
   <img src="docs/public/logo.svg" alt="Logo do projeto" width="400">
 </p>
 
+<div align="center">
+
 > Documentar aquilo que eu gostaria de encontrar novamente.
+
+</div>
 
 # wiki
 
