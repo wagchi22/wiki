@@ -1,10 +1,10 @@
 <p align="center">
-  <img src="docs/public/logo.svg" alt="Logo do projeto" width="200">
+  <img src="docs/public/logo.svg" alt="Logo do projeto" width="400">
 </p>
 
-# wiki
-
 > Documentar aquilo que eu gostaria de encontrar novamente.
+
+# wiki
 
 Uma base de conhecimento técnico para registrar configurações, procedimentos, soluções e referências que podem ser consultadas novamente quando necessário.
 
