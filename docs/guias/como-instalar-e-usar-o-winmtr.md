@@ -6,7 +6,7 @@ Guia rápido de instalação do WinMTR e como usar.
 
 ## Instalar
 
-Baixe o [WinMTR](https://github.com/leeter/WinMTR-refresh)..
+Baixe o [WinMTR](https://github.com/leeter/WinMTR-refresh).
 
 ## Usar
 
