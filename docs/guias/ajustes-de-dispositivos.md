@@ -23,6 +23,7 @@ Resumo rápido:
 |Nitidez|0|0|0|
 |Cor|50|50|50|
 |Gama|2.2|2.2|2.2|
+|Gama de cores*|Automático|Automático|Automático|
 |Nível de preto*|Baixo|Baixo|Baixo|
 |Temperatura da cor|Warm|Warm|Warm|
 |Mapeamento de tons*|-|-|Ativado/HGiG|
@@ -31,6 +32,7 @@ Resumo rápido:
 |Economia de energia|Desativado|Desativado|Desativado|
 
 \* *Modo de imagem e backlight: ajuste conforme a luz ambiente.<br>*
+\* *Gama de cores: Rec/BT.709 = SDR, DCI-P3 = Cinema/HDR e Rec/BT.2020 = 4K HDR.<br>*
 \* *Nível de preto: fonte e TV devem combinar (Limitado = Baixo, Completo = Alto).<br>*
 \* *Mapeamento de tons (só em HDR, se disponível): Ativado para cinema, HGiG para games.*
 
