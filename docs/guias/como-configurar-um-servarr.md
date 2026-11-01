@@ -27,7 +27,7 @@ media/
 
 Veja [como instalar o Docker](como-instalar-o-docker.md).<br>
 
-Salve o arquivo [docker-compose.yml](scripts/docker-compose.yml).
+Salve o arquivo [docker-compose.yml](https://raw.githubusercontent.com/wagchi22/wiki/refs/heads/main/docs/guias/scripts/docker-compose.yml).
 
 Para crie o container, execute no terminal do Docker:
 
