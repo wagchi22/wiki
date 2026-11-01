@@ -10,31 +10,17 @@ Diversos ajustes para dispositivos.
 Calibre a TV usando o guia [RTINGS](https://www.rtings.com/tv/learn/how-to-calibrate-your-tv).
 :::
 
-Resumo rápido:
+Dicas adicionais:
 
-|Opção|Cinema|Games|HDR|
-|---|---|---|---|
-|Modo HDMI|Padrão|Console|Padrão/Console|
-|Aspecto de imagem|Just Scan|Just Scan|Just Scan|
-|Modo de imagem*|Expert|Expert|FMM|
-|Backlight*|90|90|100|
-|Contraste|90|90|100|
-|Brilho|50|50|50|
-|Nitidez|0|0|0|
-|Cor|50|50|50|
-|Gama|2.2|2.2|2.2|
-|Gama de cores*|Automático|Automático|Automático|
-|Nível de preto*|Baixo|Baixo|Baixo|
-|Temperatura da cor|Warm|Warm|Warm|
-|Mapeamento de tons*|-|-|Ativado/HGiG|
-|Cinema real|Ativado|Desativado|Desativado|
-|Demais ajustes de imagem|Desativado|Desativado|Desativado|
-|Economia de energia|Desativado|Desativado|Desativado|
-
-\* *Modo de imagem e backlight: ajuste conforme a luz ambiente.<br>*
-\* *Gama de cores: Rec/BT.709 = SDR, DCI-P3 = Cinema/HDR e Rec/BT.2020 = 4K HDR.<br>*
-\* *Nível de preto: fonte e TV devem combinar (Limitado = Baixo, Completo = Alto).<br>*
-\* *Mapeamento de tons (só em HDR, se disponível): Ativado para cinema, HGiG para games.*
+- Modo de imagem Game para consoles.
+- HGiG para games em HDR.
+- Desative Eye Care.
+- Desative economia de energia.
+- Desative processamentos extras de imagem.
+- Ative Cinema Real em streaming.
+- Ative o Just Scan.
+- Nível de preto Baixo.
+- Nitidez 0 em resolução nativa ou 10 para upscale.
 
 ## Fire TV
 
