@@ -7,12 +7,12 @@ Guia rápido de instalação do Servarr.
 ## Estrutura
 
 :::info Armazenamento
-Eu estarei usando um HD externo na unidade E:\ com bind mounts.
+Mídias em `\media\data` e configurações em `\mnt\docker-desktop-disk\data\docker\volumes`.
 :::
 
 ```text
 media/
-├── docker-compose.yml
+├── docker-compose.yml (pode ser apagado após deploy)
 └── data/
     ├── torrents/
         ├── movies/
@@ -88,4 +88,13 @@ Adicione o indexador [Catálogo BeTor](https://catalogo.betor.top/guia/prowlarr/
 
 ## Notificações
 
-Veja em [jwbot](https://github.com/wagchi22/jwbot).
+Pré-instalado no container, aprenda a configurar em [jwbot](https://github.com/wagchi22/jwbot).
+
+Para conectar o WhatsApp, abra o Windows Terminal, maximize a janela e execute:
+
+```powershell
+docker restart jwbot
+docker logs -f jwbot
+```
+
+Escaneie o QR code exibido nos logs em **WhatsApp → Aparelhos conectados → Conectar aparelho**. Se o código expirar, aguarde o próximo ou reinicie o container para gerar outro. Não compartilhe capturas dos logs enquanto um QR code estiver visível: ele pode ser usado para conectar à sessão do WhatsApp.

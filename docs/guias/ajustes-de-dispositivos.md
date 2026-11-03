@@ -7,19 +7,19 @@ Diversos ajustes para dispositivos.
 ## TV LG
 
 :::tip Imagem
-Calibre a TV usando o guia [RTINGS](https://www.rtings.com/tv/learn/how-to-calibrate-your-tv).
+Um bom guia de calibração básica é o [RTINGS](https://www.rtings.com/tv/learn/how-to-calibrate-your-tv).
 :::
 
-Dicas adicionais:
+Outras dicas:
 
-- Modo de imagem Game para consoles.
+- Modo de imagem Game ao jogar.
 - HGiG para games em HDR.
 - Desative Eye Care.
 - Desative economia de energia.
 - Desative processamentos extras de imagem.
-- Ative Cinema Real em streaming.
+- Ative Cinema Real ao ver streaming.
 - Ative o Just Scan.
-- Nível de preto Baixo.
+- Nível de preto Baixo (como na fonte) invez de Automático.
 - Nitidez 0 em resolução nativa ou 10 para upscale.
 
 ## Fire TV

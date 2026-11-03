@@ -1,4 +1,19 @@
 services:
+  jwbot:
+    image: ghcr.io/wagchi22/jwbot:latest
+    container_name: jwbot
+    init: true
+    restart: unless-stopped
+    environment:
+      DOTENV_CONFIG_PATH: /app/.wwebjs_auth/.env
+      PUPPETEER_EXECUTABLE_PATH: /usr/bin/chromium
+      PUPPETEER_NO_SANDBOX: "1"
+    command: ["node", "-r", "dotenv/config", "src/index.js"]
+    ports:
+      - "3000:3000"
+    volumes:
+      - jwbot:/app/.wwebjs_auth
+
   qbittorrent:
     image: lscr.io/linuxserver/qbittorrent:latest
     container_name: qbittorrent
@@ -8,7 +23,7 @@ services:
       - TZ=America/Sao_Paulo
       - WEBUI_PORT=8080
     volumes:
-      - ./config/qbittorrent:/config
+      - qbittorrent:/config
       - ./data:/data
     ports:
       - 8080:8080
@@ -24,7 +39,7 @@ services:
       - PGID=1000
       - TZ=America/Sao_Paulo
     volumes:
-      - ./config/prowlarr:/config
+      - prowlarr:/config
     ports:
       - 9696:9696
     restart: always
@@ -37,7 +52,7 @@ services:
       - PGID=1000
       - TZ=America/Sao_Paulo
     volumes:
-      - ./config/sonarr:/config
+      - sonarr:/config
       - ./data:/data
     ports:
       - 8989:8989
@@ -51,7 +66,7 @@ services:
       - PGID=1000
       - TZ=America/Sao_Paulo
     volumes:
-      - ./config/radarr:/config
+      - radarr:/config
       - ./data:/data
     ports:
       - 7878:7878
@@ -65,8 +80,22 @@ services:
       - PGID=1000
       - TZ=America/Sao_Paulo
     volumes:
-      - ./config/jellyfin:/config
+      - jellyfin:/config
       - ./data:/data
     ports:
       - 8096:8096
     restart: always
+
+volumes:
+  jwbot:
+    name: jwbot
+  qbittorrent:
+    name: qbittorrent
+  prowlarr:
+    name: prowlarr
+  sonarr:
+    name: sonarr
+  radarr:
+    name: radarr
+  jellyfin:
+    name: jellyfin
