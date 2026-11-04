@@ -76,15 +76,14 @@ Adicione o indexador [Catálogo BeTor](https://catalogo.betor.top/guia/prowlarr/
 - Aumento do áudio ao executar downmix: 3
 - Usuários:
   - Reproduzir áudio padrão independente do idioma: Desativado
-  - Idioma do áudio: Português (Brasil)
-  - Idioma da legenda: Português (Brasil)
+  - Idioma do áudio e legenda: Português (Brasil)
   - Tipo de legenda: Apenas legendas forçadas
-- App (TV):
+- App da TV:
+  - Tamanho do pôster: Grande
   - Taxa de atualização: Escala no dispositivo
   - Cor da legenda: Amarelo
   - Tamanho da legenda: 125%
   - Áudio: Downmix para estéreo
-  - Modo noturno para áudio: Ativado
 
 ## Notificações
 

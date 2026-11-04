@@ -14,8 +14,8 @@ Baixe o [WinMTR](https://github.com/leeter/WinMTR-refresh).
 Use cabo Ethernet em vez de Wi-Fi para reduzir interferências durante o teste.
 :::
 
-Antes de testar, vá em em opções e desative __Resolve names__.
+Antes de testar, vá em em opções e desative **Resolve names**.
 
-Em __Hosts__, insira um IP para teste e clique em __Start__.
+Em **Hosts**, insira um IP para teste e clique em **Start**.
 
 Para um teste preciso, aguarde o envio de pelo menos 500 pacotes.
