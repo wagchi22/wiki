@@ -7,20 +7,25 @@ Diversos ajustes para dispositivos.
 ## TV LG
 
 :::tip Imagem
-Um bom guia de calibração básica é o [RTINGS](https://www.rtings.com/tv/learn/how-to-calibrate-your-tv).
+Guia básico de ajuste da imagem: [RTINGS](https://www.rtings.com/tv/learn/how-to-calibrate-your-tv).
 :::
 
-Outras dicas:
-
-- Modo de imagem Game ao jogar.
-- HGiG para games em HDR.
-- Desative Eye Care.
-- Desative economia de energia.
-- Desative processamentos extras de imagem.
-- Ative Cinema Real ao ver streaming.
-- Ative o Just Scan.
-- Nível de preto Baixo (como na fonte) invez de Automático.
-- Nitidez 0 em resolução nativa ou 10 para upscale.
+Opção|Streaming|Gaming
+---|---|---
+Modo HDMI|Padrão|Console
+Modo imagem|Padrão|Jogos
+HDR (se aplicável)|Desativado|HGiG
+Just Scan|Ativado|Ativado
+Backlight|70|70
+Contraste|100|100
+Brilho|50|50
+Cor|50|50
+Nitidez|10|10
+Gama|2.2|2.2
+Gama cores|Automático|Automático
+Temperatura cor|Quente1|Quente1
+Nível preto|Baixo|Baixo
+Modo áudio|Padrão|Padrão
 
 ## Fire TV
 
@@ -29,12 +34,13 @@ Outras dicas:
 
 ## PS5
 
-:::tip Brilho e HDR
+:::tip HDR
 É recomendado desativar o HDR se a TV possui pouca luminosidade.<br>
-Ajuste no console seguindo o guia [HDTVTest](https://youtu.be/6h92l5teghw?t=292) e em seguida dentro do jogo.
+Como ajustar corretamente o HDR do console: [HDTVTest](https://youtu.be/6h92l5teghw?t=292).<br>
 :::
 
 - Faixa RGB: Limitado
+- Brilho no jogo: Ajuste manualmente
 
 ## PC Dell
 
