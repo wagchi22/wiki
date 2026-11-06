@@ -11,41 +11,50 @@ Diversos ajustes para dispositivos.
 :::
 
 :::tip Imagem
-Aprenda a calibrar a imagem da TV em [RTINGS](https://www.rtings.com/tv/learn/how-to-calibrate-your-tv).
+[Como ajustar](https://www.rtings.com/tv/learn/how-to-calibrate-your-tv).
 :::
 
-Opção|Streaming|Gaming
----|---|---
-Modo HDMI|Padrão|Console
-Modo imagem|Padrão|Jogos
-HDR (se aplicável)|Desativado|HGiG
-Just Scan|Ativado|Ativado
-Backlight|70|70
-Contraste|100|100
-Brilho|50|50
-Cor|50|50
-Nitidez|10|10
-Gama|2.2|2.2
-Gama cores|Automático|Automático
-Temperatura cor|Quente1|Quente1
-Nível preto|Baixo|Baixo
-Modo áudio|Padrão|Padrão
+<table>
+  <thead>
+    <tr>
+      <th align="left">Opção</th>
+      <th align="center">Streaming</th>
+      <th align="center">Games</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td align="left">Modo HDMI</td><td colspan="2" align="center">Automático</td></tr>
+    <tr><td align="left">Modo de imagem</td><td align="center">Padrão</td><td align="center">Jogos</td></tr>
+    <tr><td align="left">Just Scan</td><td colspan="2" align="center">Ativado</td></tr>
+    <tr><td align="left">Backlight</td><td colspan="2" align="center">70</td></tr>
+    <tr><td align="left">Contraste</td><td colspan="2" align="center">100</td></tr>
+    <tr><td align="left">Brilho</td><td colspan="2" align="center">50</td></tr>
+    <tr><td align="left">Cor</td><td colspan="2" align="center">50</td></tr>
+    <tr><td align="left">Nitidez</td><td colspan="2" align="center">10</td></tr>
+    <tr><td align="left">Gama</td><td colspan="2" align="center">2.2</td></tr>
+    <tr><td align="left">Gama RGB</td><td colspan="2" align="center">Automático</td></tr>
+    <tr><td align="left">Temperatura de cor</td><td colspan="2" align="center">Morno1</td></tr>
+    <tr><td align="left">Nível de preto</td><td colspan="2" align="center">Automático</td></tr>
+    <tr><td align="left">Mapeamento de tons</td><td align="center">Desativado</td><td align="center">HGiG</td></tr>
+    <tr><td align="left">Modo de áudio</td><td colspan="2" align="center">Padrão</td></tr>
+  </tbody>
+</table>
 
 ## Fire TV
 
 - HDR: Desativado
-- Faixa RGB: Limitado
+- Gama RGB: Automático
 - Igualar taxa de quadros: Ativado (necessário para Cinema real)
 
 ## PS5
 
 :::tip HDR
-Ajuste corretamente o HDR do console em [HDTVTest](https://youtu.be/6h92l5teghw?t=292).
+[Como ajustar](https://youtu.be/6h92l5teghw?t=292).
 :::
 
 - HDR: Desativado
-- Faixa RGB: Limitado
-- Brilho no jogo: Ajuste manualmente
+- Gama RGB: Automático
+- Brilho no jogo: Ajuste conforme a luminosidade do ambiente
 
 ## PC Dell
 

@@ -12,8 +12,8 @@ services:
     ports:
       - "${PORT:-3000}:${PORT:-3000}"
     volumes:
-      - jwbot_auth:/app/.wwebjs_auth
-      - jwbot_cache:/app/.wwebjs_cache
+      - jwbot:/app/.wwebjs_auth
+      - jwbot:/app/.wwebjs_cache
 
   qbittorrent:
     image: lscr.io/linuxserver/qbittorrent:latest
@@ -88,8 +88,8 @@ services:
     restart: always
 
 volumes:
-  jwbot_auth:
-  jwbot_cache:
+  jwbot:
+    name: jwbot
   qbittorrent:
     name: qbittorrent
   prowlarr:
