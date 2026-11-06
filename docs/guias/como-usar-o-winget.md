@@ -6,7 +6,7 @@ Guia rápido de como usar o Winget.
 
 ## Verificar
 
-No PowerShell ou Prompt de Comando, liste as atualizações disponíveis:
+Rode no terminal para listar as atualizações disponíveis:
 
 ```powershell
 winget upgrade
@@ -14,7 +14,7 @@ winget upgrade
 
 ## Atualizar
 
-Para instalar todas as atualizações listadas:
+Para instalar todas as atualizações:
 
 ```powershell
 winget upgrade -r

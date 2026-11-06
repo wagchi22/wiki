@@ -6,8 +6,12 @@ Diversos ajustes para dispositivos.
 
 ## TV LG
 
+:::tip HDR
+É recomendado desativar o HDR se a TV possui pouca luminosidade.
+:::
+
 :::tip Imagem
-Guia básico de ajuste da imagem: [RTINGS](https://www.rtings.com/tv/learn/how-to-calibrate-your-tv).
+Aprenda a calibrar a imagem da TV em [RTINGS](https://www.rtings.com/tv/learn/how-to-calibrate-your-tv).
 :::
 
 Opção|Streaming|Gaming
@@ -29,16 +33,17 @@ Modo áudio|Padrão|Padrão
 
 ## Fire TV
 
-- Igualar taxa de quadros: Ativado (necessário para Cinema real)
+- HDR: Desativado
 - Faixa RGB: Limitado
+- Igualar taxa de quadros: Ativado (necessário para Cinema real)
 
 ## PS5
 
 :::tip HDR
-É recomendado desativar o HDR se a TV possui pouca luminosidade.<br>
-Como ajustar corretamente o HDR do console: [HDTVTest](https://youtu.be/6h92l5teghw?t=292).<br>
+Ajuste corretamente o HDR do console em [HDTVTest](https://youtu.be/6h92l5teghw?t=292).
 :::
 
+- HDR: Desativado
 - Faixa RGB: Limitado
 - Brilho no jogo: Ajuste manualmente
 
