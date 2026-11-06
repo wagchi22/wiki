@@ -29,11 +29,13 @@ Veja [como instalar o Docker](como-instalar-o-docker.md).<br>
 
 Salve o arquivo [docker-compose.yml](https://raw.githubusercontent.com/wagchi22/wiki/refs/heads/main/docs/guias/scripts/docker-compose.yml).
 
-Para crie o container, execute no terminal do Docker:
+Execute no terminal do Docker:
 
 ```powershell
-"[wsl2]`nprocessors=2`nmemory=2GB`nswap=0" | Set-Content -Path "$env:USERPROFILE\.wslconfig" -Encoding ASCII
+# Indica o local onde está o docker-compose.yml
 cd <local-do-docker-compose.yml>
+
+# Inicia o container no Docker
 docker compose up -d
 ```
 
@@ -87,6 +89,10 @@ Adicione o indexador [Catálogo BeTor](https://catalogo.betor.top/guia/prowlarr/
 
 ## Notificações
 
+:::warning QR code
+Não compartilhe capturas contendo o QR code.
+:::
+
 Pré-instalado no container, aprenda a configurar em [jwbot](https://github.com/wagchi22/jwbot).
 
 Para conectar o WhatsApp, abra o Windows Terminal, maximize a janela e execute:
@@ -96,4 +102,4 @@ docker restart jwbot
 docker logs -f jwbot
 ```
 
-Escaneie o QR code exibido nos logs em **WhatsApp → Aparelhos conectados → Conectar aparelho**. Se o código expirar, aguarde o próximo ou reinicie o container para gerar outro. Não compartilhe capturas dos logs enquanto um QR code estiver visível: ele pode ser usado para conectar à sessão do WhatsApp.
+Escaneie o QR code exibido nos logs usando o app WhatsApp do celular. Se o código expirar, aguarde o próximo ou reinicie o container para gerar outro.
