@@ -4,15 +4,16 @@ services:
     container_name: jwbot
     init: true
     restart: unless-stopped
+    env_file:
+      - .env
     environment:
-      DOTENV_CONFIG_PATH: /app/.wwebjs_auth/.env
       PUPPETEER_EXECUTABLE_PATH: /usr/bin/chromium
       PUPPETEER_NO_SANDBOX: "1"
-    command: ["node", "-r", "dotenv/config", "src/index.js"]
     ports:
-      - "3000:3000"
+      - "${PORT:-3000}:${PORT:-3000}"
     volumes:
-      - jwbot:/app/.wwebjs_auth
+      - jwbot_auth:/app/.wwebjs_auth
+      - jwbot_cache:/app/.wwebjs_cache
 
   qbittorrent:
     image: lscr.io/linuxserver/qbittorrent:latest
@@ -87,8 +88,8 @@ services:
     restart: always
 
 volumes:
-  jwbot:
-    name: jwbot
+  jwbot_auth:
+  jwbot_cache:
   qbittorrent:
     name: qbittorrent
   prowlarr:
