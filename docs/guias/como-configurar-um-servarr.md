@@ -6,13 +6,18 @@ Guia rápido de instalação do Servarr.
 
 ## Estrutura
 
+:::tip Acessibilidade
+Mapeie as unidades de rede facilitará o acesso ao sistema de arquivos da distribuição Linux do WSL.
+:::
+
 :::info Armazenamento
-Mídias em `\media\data` e configurações em `\mnt\docker-desktop-disk\data\docker\volumes`.
+Biblioteca de mídia em `\media\data`.<br>
+Configurações em `\mnt\docker-desktop-disk\data\docker\volumes`.
 :::
 
 ```text
 media/
-├── docker-compose.yml (pode ser apagado após deploy)
+├── docker-compose.yml
 └── data/
     ├── torrents/
         ├── movies/
@@ -25,9 +30,9 @@ media/
 
 ## Docker
 
-Veja [como instalar o Docker](como-instalar-o-docker.md).<br>
+Veja [como instalar o Docker](como-instalar-o-docker.md).
 
-Salve o arquivo [docker-compose.yml](https://raw.githubusercontent.com/wagchi22/wiki/refs/heads/main/docs/guias/scripts/docker-compose.yml).
+Baixe o arquivo [docker-compose.yml](https://raw.githubusercontent.com/wagchi22/wiki/refs/heads/main/docs/guias/scripts/docker-compose.yml).
 
 Execute no terminal do Docker:
 
@@ -95,11 +100,4 @@ Não compartilhe capturas contendo o QR code.
 
 Pré-instalado no container, aprenda a configurar em [jwbot](https://github.com/wagchi22/jwbot).
 
-Para conectar o WhatsApp, abra o Windows Terminal, maximize a janela e execute:
-
-```powershell
-docker restart jwbot
-docker logs -f jwbot
-```
-
-Escaneie o QR code exibido nos logs usando o app WhatsApp do celular. Se o código expirar, aguarde o próximo ou reinicie o container para gerar outro.
+Acesse http://localhost:3000/qr e escaneie o QR code usandao o WhatsApp do celular.

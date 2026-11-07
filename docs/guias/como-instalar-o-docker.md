@@ -19,12 +19,17 @@ Baixe o [Docker](https://www.docker.com/products/docker-desktop/?at_exp=DO112.B0
 ## Configurar o Docker
 
 :::tip Dicas
-Leia o guia do [itexto](https://insights.itexto.com.br/o-guia-do-wsl/).
+Mais informações leia o guia do [itexto](https://insights.itexto.com.br/o-guia-do-wsl/).
+:::
+
+:::warning Aviso
+Desativar o Windows Defender é arriscado e pode afetar a segurança.<br>
+Prossiga por sua conta e risco.
 :::
 
 Ative a opção para **Iniciar com o Windows** nas configurações do aplicativo.
 
-Rode no terminal como administrador:
+Para um melhor desempenho, rode no terminal como administrador:
 
 ```powershell
 # Adiciona a pasta do disco virtual do Docker na lista de exclusões do Windows Defender
@@ -47,7 +52,7 @@ Rode no terminal como administrador:
 docker system prune -a
 docker builder prune -a
 
-# Compactar disco
+# Compactar disco virtual
 wsl --shutdown
 diskpart
 select vdisk file="$env:LOCALAPPDATA\Docker\wsl\disk\docker_data.vhdx"
