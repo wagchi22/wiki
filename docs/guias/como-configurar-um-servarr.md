@@ -79,6 +79,7 @@ Adicione o indexador [Catálogo BeTor](https://catalogo.betor.top/guia/prowlarr/
 ## Jellyfin
 
 - Agrupar filmes em coleções: Ativado
+- Aumento do áudio ao executar downmix: 3
 - Algoritmo downmix estéreo: NightmodeDialogue
 - Usuários:
   - Reproduzir áudio padrão independente do idioma: Desativado

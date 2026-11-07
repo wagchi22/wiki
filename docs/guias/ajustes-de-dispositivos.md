@@ -63,6 +63,7 @@ Diversos ajustes para dispositivos.
 - Aumento de sensibilidade do microfone: +10.0 dB
 - Aprimorar precisão do mouse: Desativado
 - Dados brutos do mouse (games): Ativado
+- Plano de energia: Alto desempenho
 - Desligar vídeo: 2 minutos
 - Suspender: 3 horas
 - IP: Estático
