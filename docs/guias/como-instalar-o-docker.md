@@ -33,7 +33,7 @@ Para um melhor desempenho, rode no terminal como administrador:
 
 ```powershell
 # Adiciona a pasta do disco virtual do Docker na lista de exclusões do Windows Defender
-Add-MpPreference -ExclusionPath "$env:LOCALAPPDATA\Docker\wsl\disk"
+Add-MpPreference -ExclusionPath "%LOCALAPPDATA%\Docker\wsl\disk"
 
 # Adicionar os processos do WSL na lista de exclusões no Windows Defender
 Add-MpPreference -ExclusionProcess "vmmemWSL"
@@ -53,9 +53,10 @@ docker system prune -a
 docker builder prune -a
 
 # Compactar disco virtual
+Stop-Process -Name "Docker Desktop" -Force
 wsl --shutdown
 diskpart
-select vdisk file="$env:LOCALAPPDATA\Docker\wsl\disk\docker_data.vhdx"
+select vdisk file="%LOCALAPPDATA%\Docker\wsl\disk\docker_data.vhdx"
 attach vdisk readonly
 compact vdisk
 detach vdisk
