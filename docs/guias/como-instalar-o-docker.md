@@ -27,18 +27,15 @@ Ative a opção para **Iniciar com o Windows** nas configurações do aplicativo
 Rode no terminal como administrador:
 
 ```powershell
-# Exclui a pasta do disco virtual do Docker no Windows Defender
+# Adiciona a pasta do disco virtual do Docker na lista de exclusões do Windows Defender
 Add-MpPreference -ExclusionPath "$env:LOCALAPPDATA\Docker\wsl\disk"
 
-# Exclui os processos do WSL no Windows Defender
+# Adicionar os processos do WSL na lista de exclusões no Windows Defender
 Add-MpPreference -ExclusionProcess "vmmemWSL"
 Add-MpPreference -ExclusionProcess "wsl"
 Add-MpPreference -ExclusionProcess "wslhost"
 Add-MpPreference -ExclusionProcess "wslrelay"
 Add-MpPreference -ExclusionProcess "wslservice"
-
-# Limita recursos do WSL2 (2 CPUs, 2 GB de RAM, sem swap)
-"[wsl2]`nprocessors=2`nmemory=2GB`nswap=0" | Set-Content -Path "$env:USERPROFILE\.wslconfig" -Encoding ASCII
 ```
 
 ## Manutenção
