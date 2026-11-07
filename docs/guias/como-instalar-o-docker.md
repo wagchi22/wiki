@@ -27,15 +27,13 @@ Desativar o Windows Defender é arriscado e pode afetar a segurança.<br>
 Prossiga por sua conta e risco.
 :::
 
-Ative a opção para **Iniciar com o Windows** nas configurações do aplicativo.
+## Desempenho
 
 Para um melhor desempenho, rode no terminal como administrador:
 
 ```powershell
-# Adiciona a pasta do disco virtual do Docker na lista de exclusões do Windows Defender
+# Adiciona os itens abaixo na lista de exclusões do Windows Defender
 Add-MpPreference -ExclusionPath "%LOCALAPPDATA%\Docker\wsl\disk"
-
-# Adicionar os processos do WSL na lista de exclusões no Windows Defender
 Add-MpPreference -ExclusionProcess "vmmemWSL"
 Add-MpPreference -ExclusionProcess "wsl"
 Add-MpPreference -ExclusionProcess "wslhost"
@@ -53,7 +51,7 @@ docker system prune -a
 docker builder prune -a
 
 # Compactar disco virtual
-Stop-Process -Name "Docker Desktop" -Force
+docker desktop stop
 wsl --shutdown
 diskpart
 select vdisk file="%LOCALAPPDATA%\Docker\wsl\disk\docker_data.vhdx"
