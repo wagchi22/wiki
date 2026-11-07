@@ -22,12 +22,12 @@ Baixe o [Docker](https://www.docker.com/products/docker-desktop/?at_exp=DO112.B0
 Mais informações leia o guia do [itexto](https://insights.itexto.com.br/o-guia-do-wsl/).
 :::
 
+## Desempenho
+
 :::warning Aviso
 Desativar o Windows Defender é arriscado e pode afetar a segurança.<br>
 Prossiga por sua conta e risco.
 :::
-
-## Desempenho
 
 Para um melhor desempenho, rode no terminal como administrador:
 

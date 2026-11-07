@@ -7,7 +7,7 @@ Guia rápido de instalação do Servarr.
 ## Estrutura
 
 :::tip Acessibilidade
-Mapeie as unidades de rede facilitará o acesso ao sistema de arquivos da distribuição Linux do WSL.
+Mapear as unidades de rede facilitará o acesso ao sistema de arquivos da distribuição Linux do WSL.
 :::
 
 :::info Armazenamento
