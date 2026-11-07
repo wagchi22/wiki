@@ -80,7 +80,6 @@ Adicione o indexador [Catálogo BeTor](https://catalogo.betor.top/guia/prowlarr/
 
 - Agrupar filmes em coleções: Ativado
 - Algoritmo downmix estéreo: NightmodeDialogue
-- Aumento do áudio ao executar downmix: 3
 - Usuários:
   - Reproduzir áudio padrão independente do idioma: Desativado
   - Idioma do áudio e legenda: Português (Brasil)
@@ -99,5 +98,3 @@ Não compartilhe capturas contendo o QR code.
 :::
 
 Pré-instalado no container, aprenda a configurar em [jwbot](https://github.com/wagchi22/jwbot).
-
-Acesse http://localhost:3000/qr e escaneie o QR code usandao o WhatsApp do celular.
