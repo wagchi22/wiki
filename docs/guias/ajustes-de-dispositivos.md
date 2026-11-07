@@ -11,7 +11,7 @@ Diversos ajustes para dispositivos.
 :::
 
 :::tip Imagem
-[Como ajustar](https://www.rtings.com/tv/learn/how-to-calibrate-your-tv).
+[Como ajustar na TV](https://www.rtings.com/tv/learn/how-to-calibrate-your-tv).
 :::
 
 <table>
@@ -49,7 +49,7 @@ Diversos ajustes para dispositivos.
 ## PS5
 
 :::tip HDR
-[Como ajustar](https://youtu.be/6h92l5teghw?t=292).
+[Como ajustar no console](https://youtu.be/6h92l5teghw?t=292).
 :::
 
 - HDR: Desativado
