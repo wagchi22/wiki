@@ -25,7 +25,7 @@ services:
       - WEBUI_PORT=8080
     volumes:
       - qbittorrent:/config
-      - ./data:/data
+      - "E:/data:/data"
     ports:
       - 8080:8080
       - 6881:6881
@@ -54,7 +54,7 @@ services:
       - TZ=America/Sao_Paulo
     volumes:
       - sonarr:/config
-      - ./data:/data
+      - "E:/data:/data"
     ports:
       - 8989:8989
     restart: always
@@ -68,7 +68,7 @@ services:
       - TZ=America/Sao_Paulo
     volumes:
       - radarr:/config
-      - ./data:/data
+      - "E:/data:/data"
     ports:
       - 7878:7878
     restart: always
@@ -82,7 +82,7 @@ services:
       - TZ=America/Sao_Paulo
     volumes:
       - jellyfin:/config
-      - ./data:/data
+      - "E:/data:/data"
     ports:
       - 8096:8096
     restart: always
