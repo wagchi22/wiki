@@ -4,24 +4,15 @@
 Guia rápido de instalação do Servarr.
 :::
 
-## Estrutura
+## Diretórios
 
-:::tip Acessibilidade
-Mapear as unidades de rede facilitará o acesso ao sistema de arquivos da distribuição Linux do WSL.
-:::
-
-:::info Armazenamento
-Biblioteca de mídia em `\media\data`.<br>
-Configurações em `\mnt\docker-desktop-disk\data\docker\volumes`.
-:::
+Crie a árvore de diretórios (no caso estarei usando em `E:\`):
 
 ```text
-media/
-├── docker-compose.yml
-└── data/
-    ├── torrents/
+data/
+└── media/
+    ├── downloads/
         ├── movies/
-        ├── porn/
         └── tv/
     ├── movies/
     ├── porn/
@@ -44,39 +35,40 @@ cd <local-do-docker-compose.yml>
 docker compose up -d
 ```
 
-## qBittorrent
+## Imagens
 
-Para criar os diretórios, execute no terminal do WSL:
+:::warning Autenticação
+A maioria das imagens ao ser iniciada geram credências temporárias localizado nos logs do Docker, sendo recomendado alterar isso após o login.
+:::
 
-```bash
-mkdir -p /mnt/e/media/data/{movies,porn,tv} /mnt/e/media/data/torrents/{movies,porn,tv}
-```
+### qBittorrent
 
-- Login/senha: procure nos logs (altere depois de fazer login)
 - Modo de gerenciamento de torrents: Automático
 - Locais de salvamento: 
-  - Padrão: /data/torrents
-  - Categoria movies: /data/torrents/movies
-  - Categoria porn: /data/torrents/porn
-  - Categoria tv: /data/torrents/tv
+  - Padrão: /data/downloads
+  - Categoria movies: /data/downloads/movies
+  - Categoria porn: /data/media/porn
+  - Categoria tv: /data/downloads/tv
 
 Reinicie o container para aplicar as mudanças.
 
-## Prowlarr
+### Prowlarr
 
 Adicione o indexador [Catálogo BeTor](https://catalogo.betor.top/guia/prowlarr/).
 
-## Radarr
+### Radarr
 
 - Renomear automaticamente: Ativado
 - Categoria usada no qBittorrent: movies
+- Perfil de qualidade padrão: HD-1080p
 
-## Sonarr
+### Sonarr
 
 - Renomear automaticamente: Ativado
 - Categoria usada no qBittorrent: tv
+- Perfil de qualidade padrão: HD-1080p
 
-## Jellyfin
+### Jellyfin
 
 - Agrupar filmes em coleções: Ativado
 - Aumento do áudio ao executar downmix: 3
@@ -92,10 +84,10 @@ Adicione o indexador [Catálogo BeTor](https://catalogo.betor.top/guia/prowlarr/
   - Tamanho da legenda: 125%
   - Áudio: Downmix para estéreo
 
-## Notificações
+### Jwbot
 
 :::warning QR code
 Não compartilhe capturas contendo o QR code.
 :::
 
-Pré-instalado no container, aprenda a configurar em [jwbot](https://github.com/wagchi22/jwbot).
+Aprenda a configurar em [jwbot](https://github.com/wagchi22/jwbot).

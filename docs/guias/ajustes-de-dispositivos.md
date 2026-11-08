@@ -67,7 +67,12 @@ Diversos ajustes para dispositivos.
 - Desligar vídeo: 2 minutos
 - Suspender: 3 horas
 - IP: Estático
-- DNS alternativo: [Cloudflare](https://one.one.one.one/pt-BR/dns/#setup-instructions)
+- DNS: [Cloudflare](https://one.one.one.one/pt-BR/dns/#setup-instructions)
+- Placa de rede wifi:
+  - Banda preferencial: 5 GHz
+  - Impulsionador de throughput: Ativado
+  - Economia de energia MIMO: Sem SMPS
+  - Modo sem fio 802.11a/b/g: 5 GHz 802.11a
 
 ## iPhone
 
