@@ -69,7 +69,6 @@ Diversos ajustes para dispositivos.
 - IP: Estático
 - DNS: [Cloudflare](https://one.one.one.one/pt-BR/dns/#setup-instructions)
 - Placa de rede wifi:
-  - Banda preferencial: 5 GHz
   - Impulsionador de throughput: Ativado
   - Economia de energia MIMO: Sem SMPS
   - Modo sem fio 802.11a/b/g: 5 GHz 802.11a
@@ -82,6 +81,12 @@ Diversos ajustes para dispositivos.
 
 ## Roteador 
 
+:::warning Canais DFS
+Evite usar `52-64` e `100-144`.
+:::
+
 - Band Steering: Desativado
 - Largura de banda: Máximo
-- Canal ideal: [WiFi Analyzer](https://matthafner.com/wifi-analyzer)
+- Software para escolha de melhor canal:
+  - [Acrylic Wifi Analyzer](https://www.acrylicwifi.com/en/wifi-analyzer/)
+  - [inSSIDer](https://www.oscium.com/products/inssider/)

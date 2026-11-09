@@ -1,3 +1,4 @@
+name: servarr
 services:
   jwbot:
     image: ghcr.io/wagchi22/jwbot:latest
