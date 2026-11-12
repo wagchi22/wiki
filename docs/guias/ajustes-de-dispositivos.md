@@ -6,7 +6,7 @@ Diversos ajustes para dispositivos.
 
 ## TV LG
 
-:::tip HDR
+:::warning HDR
 É recomendado desativar o HDR se a TV possui pouca luminosidade.
 :::
 
@@ -64,12 +64,11 @@ Diversos ajustes para dispositivos.
 - Aprimorar precisão do mouse: Desativado
 - Dados brutos do mouse (games): Ativado
 - Plano de energia: Alto desempenho
-- Desligar vídeo: 2 minutos
-- Suspender: 3 horas
-- IP: Estático
+- Tempo para desligar vídeo: 2 minutos
+- Tempo para suspender: 3 horas
+- Economia de energia do adaptador Wifi: Desativado
+- Endereço IPv4: Estático
 - DNS (alternativo): [Cloudflare](https://one.one.one.one/pt-BR/dns/#setup-instructions)
-- Adaptador de rede Wifi:
-  - Economia de energia MIMO: Sem SMPS
 
 ## iPhone
 
