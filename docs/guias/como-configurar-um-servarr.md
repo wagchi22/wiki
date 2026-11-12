@@ -50,8 +50,6 @@ A maioria das imagens ao ser iniciada geram credências temporárias localizado 
   - Categoria porn: /data/media/porn
   - Categoria tv: /data/downloads/tv
 
-Reinicie o container para aplicar as mudanças.
-
 ### Prowlarr
 
 Adicione o indexador [Catálogo BeTor](https://catalogo.betor.top/guia/prowlarr/).
