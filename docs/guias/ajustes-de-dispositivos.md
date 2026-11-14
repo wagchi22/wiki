@@ -48,6 +48,10 @@ Diversos ajustes para dispositivos.
 
 ## PS5
 
+:::info MTU
+Não é preciso alterar essa configuração a menos que tenha problemas.
+:::
+
 :::tip HDR
 [Como ajustar no console](https://youtu.be/6h92l5teghw?t=292).
 :::
@@ -58,32 +62,35 @@ Diversos ajustes para dispositivos.
 
 ## PC Dell
 
-- Aprimoramentos do Waves MaxxAudioPro: Desativado
-- Aprimoramento de áudio do dispositivo: Voice Clarity
-- Aumento de sensibilidade do microfone: +10.0 dB
-- Aprimorar precisão do mouse: Desativado
-- Dados brutos do mouse (games): Ativado
+:::info MTU
+Não é preciso alterar essa configuração a menos que tenha problemas.
+:::
+
+:::warning DNS
+Altere em caso de sites bloqueados, pois geralmente o do provedor é mais rápido.
+:::
+
+- Melhorias do Waves MaxxAudioPro: Desativado
+- Melhorias de áudio do dispositivo: Voice Clarity
+- Sensibilidade do microfone: +10.0 dB
+- Melhorar precisão do mouse: Desativado
+- Dados brutos do mouse em games: Ativado
 - Plano de energia: Alto desempenho
-- Tempo para desligar vídeo: 2 minutos
-- Tempo para suspender: 3 horas
 - Economia de energia do adaptador Wifi: Desativado
-- Endereço IPv4: Estático
-- DNS (alternativo): [Cloudflare](https://one.one.one.one/pt-BR/dns/#setup-instructions)
+- DNS: [Cloudflare](https://one.one.one.one/pt-BR/dns/#setup-instructions)
 
 ## iPhone
 
-- Anti-spam:
-  - [Não Me Perturbe](https://www.naomeperturbe.com.br/)
-  - Filtrar desconhecidos: Perguntar
+- Anti-spam: Cadastre em [Não Me Perturbe](https://www.naomeperturbe.com.br/) e altere para `Perguntar` no filtro de desconhecidos
 
 ## Roteador 
 
-:::warning Canais DFS
-Evite usar `52-64` e `100-144`.
+:::warning Canal
+Em caso de problemas, use o [Acrylic Wifi Analyzer](https://www.acrylicwifi.com/en/wifi-analyzer/) e ajuste manualmente.<br>
+É importante evitar os canais da faixa DFS `52-144`.
 :::
 
+- WPS: Desativado
 - Band Steering: Desativado
 - Largura de banda: Máximo
-- Software para escolha de melhor canal:
-  - [Acrylic Wifi Analyzer](https://www.acrylicwifi.com/en/wifi-analyzer/)
-  - [inSSIDer](https://www.oscium.com/products/inssider/)
+- Canal: Automático
